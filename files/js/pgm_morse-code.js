@@ -98,25 +98,6 @@ var letters = {
 	91:"[",
 	93:"]",
 }
-$(document).on("keypress", function(e) {
-	e = e.which;
-	//addText("main", e);
-	if (e == 8) { // Backspace
-		confirm("Backspace");
-		var morseText = document.getElementById("main").innerHTML;
-		for (var i = morseText.length - 1; i > 0; i--) {
-			if (morseText.substring(i-1, i) == " ") {
-				htmlPrint("main", morseText.substring(0, i));
-				break;
-			} //*/
-		}
-		var engText = document.getElementById("bottom").innerHTML;
-		htmlPrint("bottom", engText.substring(0, engText.length - 1));
-	} else if (morse[e] != undefined) {
-		addText("main", morse[e] + " ");
-		addText("bottom", letters[e]);
-	}
-});
 function addText(loc, text) {
 	var oddText = document.getElementById(loc).innerHTML;
 	document.getElementById(loc).innerHTML = oddText + text;
@@ -125,3 +106,21 @@ function htmlPrint(loc, text) {
 	document.getElementById(loc).innerHTML = text;
 	return false;
 }
+$(document).on("keypress", function(e) {
+	e = e.which;
+	//addText("main", e);
+	if (e == 8) { // Backspace
+		var morseText = document.getElementById("main").innerHTML;
+		for (var i = morseText.length - 1; i > 0; i--) {
+			if (morseText.substring(i-1, i) == " ") {
+				htmlPrint("main", morseText.substring(0, i));
+				break;
+			}
+		}
+		var engText = document.getElementById("bottom").innerHTML;
+		htmlPrint("bottom", engText.substring(0, engText.length - 1));
+	} else if (morse[e] != undefined) {
+		addText("main", morse[e] + " ");
+		addText("bottom", letters[e]);
+	}
+});
