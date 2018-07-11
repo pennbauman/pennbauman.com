@@ -15,12 +15,12 @@
 
 	function URLVar($varName) {
 		if (isset($_GET[$varName])) {
-		$fin = $_GET[$varName];
-	} else {
-		$fin = NULL;
-	}
-	return $fin;
-	}
+			$fin = $_GET[$varName];
+		} else {
+			$fin = NULL;
+		}
+		return $fin;
+		}
 	$url = URLVar("a");
 	
 	//$n = "<br/> \n";
