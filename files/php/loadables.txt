@@ -1,0 +1,24 @@
+/files/php/auth_error.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth_error.php";
+	Requires
+		auth.php
+		file_path.php
+	Echo
+		full error page, 401 or 403 depending on auth
+
+/files/php/file_path.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
+	Sets
+		$filePath // full server location
+		$filePathShort  // website url section of file path
+		$filePathArray // array of sections in $filePathShort
+		$returnLink // url ender for automatic return
+
+/files/php/return_path.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/php/return_path.php";
+	Requires
+		std.php
+	Sets
+		$URLVarR // URL var for "r"
+		$URLEnd // ender to recreate URL var  "r"
+		$returnPath // URL for automatic return

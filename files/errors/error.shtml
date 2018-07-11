@@ -1,0 +1,21 @@
+<html>
+	<head> 
+		<title>ERROR: Unknown</title>
+		<link rel="shortcut icon" href="/files/images/error_favicon.png"> 
+		<link rel="stylesheet" type="text/css" href="/files/css/backend.css">
+	</head>
+	<body onload="document.body.style.fontSize = window.innerHeight*0.01; return false;">
+		<h1 class="error">ERROR: Unknown</h1>
+		<h4> Page: <!--#echo var="REQUEST_URI" --> </h4>
+		<p>We are sorry for the inconvenience. If the error persists please contact <a href="mailto:penn.bauman@gmail.com">Penn Bauman.</a> </p>
+		<p><a href="/">Home</a></p>
+		<p>
+			Refering URL: <!--#echo var="HTTP_REFERER" --> <br/>
+			Visitor's IP Address: <!--#echo var="REMOTE_ADDR" --> <br/>
+			Requesting URL: <!--#echo var="REQUEST_URI" --> <br/>
+			Server's Name: <!--#echo var="HTTP_HOST" --> <br/>
+			Visitor's Browser: <!--#echo var="HTTP_USER_AGENT" --> <br/>
+			Redirected Code Status: <!--#echo var="REDIRECT_STATUS" --> <br/>
+		</p>
+	</body>
+</html>

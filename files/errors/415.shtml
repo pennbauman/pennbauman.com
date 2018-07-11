@@ -1,0 +1,13 @@
+<html>
+	<head> 
+		<title>ERROR: 415 Unsupported Media Type</title>
+		<link rel="shortcut icon" href="/files/images/error_favicon.png"> 
+		<link rel="stylesheet" type="text/css" href="/files/css/errors.css">
+	</head>
+	<body>
+		<h1>ERROR: 415 Unsupported Media Type</h1>
+		<h2> <!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --> </h2>
+		<h3></h3>
+		<p><a href="/">Home</a> - <a href="mailto:penn.bauman@gmail.com">Contact</a></p>
+	</body>
+</html>
