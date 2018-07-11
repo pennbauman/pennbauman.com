@@ -12,8 +12,8 @@
 			<?php
 				$color = URLVar("color");
 				if ($color != NULL) {
-					if (substr($color, 0, 2) == "%23") {
-						$color = substr($color, 3);
+					if (substr($color, 0, 1) != "#") {
+						$color = "#".$color;
 					}
 					echo "body { background:#";
 					echo $color;
