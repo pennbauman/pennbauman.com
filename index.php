@@ -9,7 +9,7 @@
 		$links = explode("\n", $links);
 		for ($i = 0; $i < count($links); $i++) {
 			$links[$i] = explode(":", $links[$i]);
-			if ($link[$i][0] == $linkCode) {
+			if ($links[$i][0] == $linkCode) {
 				header("Location ".$links[$i][1]);
 			}
 		}
