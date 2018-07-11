@@ -88,7 +88,7 @@ function reset() {
 	pi = 0.0;
 	htmlPrint("n_points", "0");
 	n = 0;
-	stat = false;\
+	stat = false;
 	t = 0;
 	htmlPrint("run_button", "RUN");
 	circleDraw();
