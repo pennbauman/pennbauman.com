@@ -58,6 +58,9 @@ h6 {
 }
  ul {list-style-type: square;}
 /* Form */
+form {
+	font-size:2rem;
+}
 input[type=text], input[type=password], textarea {
 	display:inline-block;
 	border-radius:0;

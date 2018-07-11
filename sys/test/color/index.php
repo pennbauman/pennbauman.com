@@ -8,14 +8,20 @@
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
-		<?php
-			$color = URLVar("color");
-			if ($color != NULL) {
-				echo "<style type='text/css'> body { background:#";
-				echo $color;
-				echo "} </style>";
+		<style type='text/css'>
+			<?php
+				$color = URLVar("color");
+				if ($color != NULL) {
+					echo "body { background:#";
+					echo $color;
+					echo "} ";
+				}
+			?>
+			#content_box {
+				background:var(--black);
+				padding:2rem;
 			}
-		?>
+		</style>
 	</head>
 	<body>
 		<div id="content_box">
