@@ -110,8 +110,8 @@ $(document).on("keypress", function(e) {
 		}
 		var engText = document.getElementById("bottom").innerHTML;
 		engText = engText.substring(0, engText.length - 1);
-	} 
-	if (morse[e] != undefined) {
+		htmlPrint("bottom", engText);
+	} else if (morse[e] != undefined) {
 		addText("main", morse[e] + " ");
 		addText("bottom", letters[e]);
 	}
