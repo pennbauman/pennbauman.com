@@ -25,14 +25,15 @@
 <html>
 	<head>
 		<title>Login</title>
-		<?php
-			include $_SERVER["DOCUMENT_ROOT"]."/files/head.php";
-		?>
+		<!--link rel='icon' href='/files/images/sys_favicon.png'-->
+		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script src='/files/js/general.js'></script>
 	</head>
 	<body onload="format()">
 		<?php
-			$urlEnd = "";
-			include $_SERVER["DOCUMENT_ROOT"]."/files/header.php";
+			//$urlEnd = "";
+			//include $_SERVER["DOCUMENT_ROOT"]."/files/header.php";
 		?>
 		<div class = "bottomHalf">
 			<div class = "tabpage" id = "home">

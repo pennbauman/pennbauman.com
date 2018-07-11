@@ -13,19 +13,15 @@
 		echo "</head>\n<body>";
 		//Print Content
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
-		echo "<h1>System</h1>";
+		echo "<h1>Links</h1>";
+
 		echo "<h6>Links.txt</h6> <br/>";
 		$links = file_get_contents("links.txt");
 		echo "<pre>".$links."</pre>";
 
-		echo "<p>";
-		echo "<a href='/sys/hash/'>Hash</a> <br/>";
-		echo "<a href='/sys/page-size/'>Page Size</a> <br/>";
-		echo "<a href='/sys/test/'>Test</a> <br/>";
-		echo "<a href='/sys/test/favicon/'>Favicon Tester</a> <br/>";
-		echo "<a href='/sys/test/color/'>Color Tester</a> <br/>";
-		echo "</p>";
-		echo '<br/><a href="/">Home</a>';
+		echo "<form action'/links.php' method='post'>";
+
+		echo '<br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
 	} else {
 		//echo "<a href='/account/login/".$returnLink."'>Login</a>";
