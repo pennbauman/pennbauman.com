@@ -105,7 +105,7 @@ $(document).on("keypress", function(e) {
 		confirm("Backspace");
 		var morseText = document.getElementById("main").innerHTML;
 		for (var i = morseText.length - 1; i > 0; i--) {
-			/*if (morseText.substring(i-1, i) == " ") {
+			if (morseText.substring(i-1, i) == " ") {
 				morseText.substring(0, i);
 				break;
 			} //*/
