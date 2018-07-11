@@ -100,8 +100,8 @@ var letters = {
 }
 $(document).on("keypress", function(e) {
 	e = e.which;
-	addText("main", e);
-	if (e == 92) { // Backspace
+	//addText("main", e);
+	if (e == 8) { // Backspace
 		confirm("Backspace");
 		var morseText = document.getElementById("main").innerHTML;
 		for (var i = morseText.length - 1; i > 0; i--) {
