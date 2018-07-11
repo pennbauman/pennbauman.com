@@ -4,6 +4,7 @@ var w = window.innerWidth;
 var n = 0;
 var pi = 0.0;
 var t = 0;
+var state = false;
 // on load
 function setup() {
 	//confirm("JS running");
@@ -78,12 +79,12 @@ function point(x, y, color) {
 }
 // change betweening running and stopped
 function runState() {
-	var state = get("run_state");
-	if (state == "t") {
-		save_var("run_state", "f");
+	//var state = get("run_state");
+	if (state) {
+		state = false; //save_var("run_state", "f");
 		save_var("run_button", "RUN");
 	} else {
-		save_var("run_state", "t");
+		state = true; //save_var("run_state", "t");
 		save_var("run_button", "STOP");
 	}
 }
@@ -93,7 +94,7 @@ function reset() {
 	pi = 0.0;
 	save_var("n_points", "0");
 	n = 0;
-	save_var("run_state", "f");
+	stat = false; //save_var("run_state", "f");
 	t = 0; //save_var("true_num", "0");
 	save_var("run_button", "RUN");
 	circleDraw();
