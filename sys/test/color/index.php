@@ -22,6 +22,9 @@
 				}
 			?>
 			#content_box {
+				position:fixed;
+				top:0;
+				left:0;
 				background:var(--black);
 				padding:2rem;
 			}
@@ -32,7 +35,7 @@
 			<h1>Color Tester</h1>
 			<form onsubmit="color()">
 				Hex Color: <br/>
-				<input type="text" name="color"> 
+				<input type="text" name="color" value="#"> 
 				<br/><br/>
 				<input type="submit" value="Enter">
 			</form>
