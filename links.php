@@ -2,6 +2,11 @@
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
+	if (!empty($_POST)) {
+		$code = $_POST["code"];
+		$link = $_POST["link"];
+		echo $code.", ".$link;
+	}
 	if ($auth > 8) {
 		echo "<!DOCTYPE html><head>";
 		echo "<title>Links</title>";
@@ -27,7 +32,6 @@
 		echo '<br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
 	} else {
-		//echo "<a href='/account/login/".$returnLink."'>Login</a>";
 		include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth_error.php";
 	}
 ?>
