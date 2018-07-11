@@ -14,6 +14,7 @@
 		<script src='/files/js/general.js'></script>
 	</head>
 		<h1>Test</h1>
+		<a href="/">Home</a> - <a href="/sys/">System</a>
 		<?php
 			echo "<p>h1</p>";
 			$array1 = ["one", "two", "three"];
