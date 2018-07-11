@@ -12,6 +12,9 @@
 			<?php
 				$color = URLVar("color");
 				if ($color != NULL) {
+					if (substr($color, 0, 2) == "%23") {
+						$color = substr($color, 3);
+					}
 					echo "body { background:#";
 					echo $color;
 					echo "} ";
@@ -28,7 +31,7 @@
 			<h1>Color Tester</h1>
 			<form onsubmit="color()">
 				Hex Color: <br/>
-				#<input type="text" name="color"> 
+				<input type="text" name="color"> 
 				<br/><br/>
 				<input type="submit" value="Enter">
 			</form>
