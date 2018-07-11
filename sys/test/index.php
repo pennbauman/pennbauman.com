@@ -1,9 +1,7 @@
 <?php 
-	if (isset($_GET["a"])) {
-		$url = $_GET["a"];
-	} else {
-		$url = "none";
-	}
+	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
+	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
+	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
 ?>
 <!DOCTYPE html>
 	<head>
@@ -13,6 +11,9 @@
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 	</head>
+		<?php 
+			echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
+		?>
 		<h1>Test</h1>
 		<a href="/">Home</a> - <a href="/sys/">System</a>
 		<?php
