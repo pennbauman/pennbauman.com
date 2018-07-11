@@ -8,7 +8,7 @@
 		$code = $_POST["code"];
 		$link = $_POST["link"];
 		//echo $code.", ".$link;
-		$file .= $code."~".$link;
+		$file .= "\n".$code."~".$link;
 	}
 	if ($auth > 8) {
 		echo "<!DOCTYPE html><head>";
