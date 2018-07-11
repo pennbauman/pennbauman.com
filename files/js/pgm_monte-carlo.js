@@ -1,26 +1,25 @@
-var draw_dim;
+var dim;
 var h = window.innerHeight;
 var w = window.innerWidth;
 // on load
 function setup() {
+	//confirm("JS running");
 	layout();
 }
 // layout screen (basic data, css, etc)
 function layout() {
-	confirm("JS running");
 	//var h = window.innerHeight;
 	//var w = window.innerWidth;
 	if (h > w) {
 		//confirm("mobile");
 		document.getElementById("draw").width = w;
 		document.getElementById("draw").height = w;
-		draw_dim = w;
+		dim = w;
 	} else {
 		document.getElementById("draw").width = h;
 		document.getElementById("draw").height = h;
-		draw_dim = h;
+		dim = h;
 	}
-
 	//save_var("draw_dim", draw_dim);
 	circleDraw();
 	//var run = setInterval(calc, 10); 
@@ -28,8 +27,8 @@ function layout() {
 
 // clear and format visualization 
 function circleDraw() {
-	confirm("circleDraw() started");
-	var dim = draw_dim; //parseInt(get("draw_dim"));
+	//confirm("circleDraw() started");
+	//var dim = parseInt(get("draw_dim"));
 	var canvas = document.getElementById("draw");
 	var back = canvas.getContext("2d");
 	back.clearRect(0, 0, canvas.width, canvas.height);
@@ -41,6 +40,15 @@ function circleDraw() {
 		draw(x, y, 1, dim-y, "#000000");
 	}
 	confirm("circleDraw() end");
+	return false;
+}
+// draw colored recatangle
+function draw(x, y, w, h, color) {
+	//var dim = parseInt(get("draw_dim"));
+	var canvas = document.getElementById("draw");
+	var back = canvas.getContext("2d");
+	back.fillStyle = color;
+	back.fillRect(x,y,w,h);
 	return false;
 }
 /*
@@ -72,17 +80,7 @@ function calc() {
 		return false;
 	}
 }
-// draw colored recatangle
-function draw(x, y, w, h, color) {
-	var dim = parseInt(get("draw_dim"));
-	var canvas = document.getElementById("draw");
-	var back = canvas.getContext("2d");
 
-	back.fillStyle = color;
-	back.fillRect(x,y,w,h);
-
-	return false;
-}`
 // draw 1x1 points
 function point(x, y, color) {
 	draw(x, y, 1, 1, color);
