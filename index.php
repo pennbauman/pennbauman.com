@@ -3,11 +3,17 @@
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
 
-	$link = URLVar("l");
-	if ($link == "dnd5ebooks") {
-		header("Location: https://drive.google.com/drive/folders/1hVgL3hpDhLY2H0Fh4rHtmMPN1TO9Ex81");
+	$linkCode = URLVar("l");
+	if ($linkCode != NULL) {
+		$links = file_get_contents("links.txt");
+		$links = explode("\n", $links);
+		for ($i = 0; $i < count($links); $i++) {
+			$links[$i] = explode(":", $links[$i]);
+			if ($link[$i][0] == $linkCode) {
+				header("Location ".$links[$i][1]);
+			}
+		}
 	}
-	
 ?>
 <html> 
 	<head>
