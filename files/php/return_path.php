@@ -6,11 +6,13 @@
 	} else {
 		$URLEnd = "?r=".$URLVarR;
 	}
-	$URLVarR = explode("_", $URLVarR);
 	$returnPath = "/";
-	$i = 0;
-	while ($i < count($URLVarR)) {
-		$returnPath = $returnPath.$URLVarR[$i]."/";
-		$i++;
+	if ($URLEnd != "") {
+		$URLVarR = explode("_", $URLVarR);
+		$i = 0;
+		while ($i < count($URLVarR)) {
+			$returnPath = $returnPath.$URLVarR[$i]."/";
+			$i++;
+		}
 	}
 ?>
