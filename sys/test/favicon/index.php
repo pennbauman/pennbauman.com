@@ -24,5 +24,6 @@
 			<input type='text' name='url' value='/files/images/'> <br><br/>
 			<input type='submit' value='Enter'>
 		</form>
+		<br/><a href="/">Home</a> - <a href="/sys/">System</a>
 	</body>
 </html>
