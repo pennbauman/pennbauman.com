@@ -4,6 +4,7 @@ function setup() {
 }
 // layout screen (basic data, css, etc)
 function layout() {
+	confirm("JS running");
 	var h = window.innerHeight;
 	var w = window.innerWidth;
 	if (h > w) {
@@ -21,6 +22,7 @@ function layout() {
 	draw_circle();
 	var run = setInterval(calc, 10); 
 }
+/*
 // clear and format visualization 
 function draw_circle() {
 	var dim = parseInt(get("draw_dim"));
@@ -99,3 +101,4 @@ function reset() {
 	save_var("run_button", "RUN");
 	draw_circle();
 }
+//*/
