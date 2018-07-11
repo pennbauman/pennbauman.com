@@ -18,7 +18,9 @@
 		echo "<a href='/sys/hash/'>Hash</a> <br/>";
 		echo "<a href='/sys/page-size/'>Page Size</a> <br/>";
 		echo "<a href='/sys/test/'>Test</a> <br/>";
-		echo "<a href='/sys/test/favicon'>Favicon Test</a> <br/>";
+		echo "<a href='/sys/test/favicon/'>Favicon Tester</a> <br/>";
+		echo "<a href='/sys/test/color/'>Color Tester</a> <br/>";
+		echo "</p>"
 		echo "</body></html>";
 	} else {
 		//echo "<a href='/account/login/".$returnLink."'>Login</a>";
