@@ -14,7 +14,7 @@
 				if ($color != NULL) {
 					if (substr($color, 0, 1) != "#") {
 						$color = "#".$color;
-						echo "  ".substr($color, 0, 1)."  ";
+						echo "[[".substr($color, 0, 1)."]]";
 					}
 					echo "body { background:#";
 					echo $color;
