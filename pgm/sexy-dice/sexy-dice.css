@@ -13,18 +13,18 @@ h1 {
 	width:100%;
 	text-align:center; 
 	font-weight:bold; 
-	font-size:4vh; 
+	font-size:6vh; 
 	line-height:5vh; 
 	top:0; 
-	margin-top:2vh;
+	margin-top:5vh;
 }
 a {color:inherit; text-decoration:inherit;}
 .dice {
 	display:inline-block;
 	outline:0.5vh solid red;
 	text-align:center;
-	font-size:3vh;
-	line-height:3vh;
+	font-size:4vh;
+	line-height:4vh;
 	background-color:white;
 	color:red;
 }
@@ -32,7 +32,7 @@ a {color:inherit; text-decoration:inherit;}
 	display:inline-block;
 	outline:0.5vh solid red;
 	text-align:center;
-	font-size:2.5vh;
+	font-size:3vh;
 	line-height:3vh;
 	font-weight:bold;
 	background-color:white;
@@ -73,15 +73,21 @@ a {color:inherit; text-decoration:inherit;}
 	padding-top:1.5vh;
 }
 */
-.dice {
-	margin: calc(50vh - 15vw);
-	width:30vw
-	height:3.5vw;
-	padding:13.25vw 0;
 
-}
 /* Height >= Width */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
+	.dice {
+		margin: calc(45vh - 15vw) 9.6vw calc(30vh - 15vw);
+		width:30vw;
+		height:4vw;
+		padding:13vw 0;
+	}
+	#button {
+		margin:5vh 37vw;
+		width:26vw;
+		height:3vh;
+		padding:3vh 0;
+	}
 }
 /* Height < Width */
 @media (min-aspect-ratio: 1/1) {
