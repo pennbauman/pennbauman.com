@@ -48,7 +48,7 @@ function draw(x, y, w, h, color) {
 }
 // repeated run (calculate, draw, etc)
 function calc() {
-	if (get("run_state") == "t") {
+	if (state) {
 		// create random x, y
 		var x = Math.floor(Math.random() * dim);
 		var y = Math.floor(Math.random() * dim);
