@@ -3,7 +3,7 @@ body {
 	top:0; 
 	margin:0; 
 	padding:0; 
-	background:#ff33c4; 
+	background:#ff99ff; 
 	color:white; 
 	font-size:2vh;
 	font-family:Arial;
@@ -52,19 +52,19 @@ a {color:inherit; text-decoration:inherit;}
 	background-color:white;
 }
 #button:active {
-	border:.5vw solid black;
-	color:black;
+	background:red;
+	color:white;
 }
 #back {
     position:fixed;
     top:1vw;
     left:2vw;
-    font-size:1.5vw;
+    font-size:2vh;
 }
 #home {
     position:fixed;
     top:1vw;
     right:2vw;
-    font-size:1.5vw;
+    font-size:2vh;
 }
 .hl:hover { color:red; }
