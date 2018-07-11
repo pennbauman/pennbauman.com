@@ -13,7 +13,7 @@
 				//header("Location ".$links[$i][1]);
 			}
 			echo $links[$i][0]."\n";
-			echo $links[$i][1]."\n";
+			echo '"'.$links[$i][1]."\"\n";
 		}
 	}
 ?>
