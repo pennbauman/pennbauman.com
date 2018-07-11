@@ -6,7 +6,7 @@
 	} else {
 		$URLEnd = "?r=".$URLVarR;
 	}
-	$URLVarR = explode("-", $URLVarR);
+	$URLVarR = explode("_", $URLVarR);
 	$returnPath = "/";
 	$i = 0;
 	while ($i < count($URLVarR)) {

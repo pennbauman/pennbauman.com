@@ -8,7 +8,7 @@
 	while ($i < count($filePathArray)) {
 		$returnLink = $returnLink.$filePathArray[$i];
 		if ($i < count($filePathArray) - 1) {
-			$returnLink = $returnLink."-";
+			$returnLink = $returnLink."_";
 		}
 		$i++;
 	}
