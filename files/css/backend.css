@@ -6,6 +6,15 @@
 	--yellow:#ffcc00;
 	--red:#cc0000;
 }
+/* Prevent Firefox selected button/link outline */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+/* Prevent iOS input styling */
+input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
 body {
 	background:var(--black);
 	color:var(--white);
