@@ -23,7 +23,7 @@ function layout() {
 
 	//save_var("draw_dim", draw_dim);
 	circleDraw();
-	var run = setInterval(calc, 10); 
+	//var run = setInterval(calc, 10); 
 }
 
 // clear and format visualization 
@@ -34,11 +34,13 @@ function circleDraw() {
 	var back = canvas.getContext("2d");
 	back.clearRect(0, 0, canvas.width, canvas.height);
 	// draw quarter circle
+	confirm("circleDraw() middle");
 	for (var x = 0; x < dim; x++) {
 		var y = Math.pow((Math.pow(dim,2) - Math.pow(x,2)),0.5);
 		draw(x, 0, 1, y, "#ffffff"); //"#dddddd");
 		draw(x, y, 1, dim-y, "#000000");
 	}
+	confirm("circleDraw() end");
 	return false;
 }
 /*
