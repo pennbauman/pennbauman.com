@@ -1,3 +1,4 @@
+var draw_dim;
 // on load
 function setup() {
 	layout();
@@ -11,21 +12,21 @@ function layout() {
 		//confirm("mobile");
 		document.getElementById("draw").width = w;
 		document.getElementById("draw").height = w;
-		var draw_dim = w;
+		draw_dim = w;
 	} else {
 		document.getElementById("draw").width = h;
 		document.getElementById("draw").height = h;
-		var draw_dim = h;
+		draw_dim = h;
 	}
 
-	save_var("draw_dim", draw_dim);
+	//save_var("draw_dim", draw_dim);
 	draw_circle();
 	var run = setInterval(calc, 10); 
 }
-/*
+
 // clear and format visualization 
 function draw_circle() {
-	var dim = parseInt(get("draw_dim"));
+	var dim = draw_dim; //parseInt(get("draw_dim"));
 	var canvas = document.getElementById("draw");
 	var back = canvas.getContext("2d");
 	back.clearRect(0, 0, canvas.width, canvas.height);
@@ -37,6 +38,7 @@ function draw_circle() {
 	}
 	return false;
 }
+/*
 // repeated run (calculate, draw, etc)
 function calc() {
 	if (get("run_state") == "t") {
