@@ -100,6 +100,7 @@ var letters = {
 }
 $(document).on("keypress", function(e) {
 	e = e.which;
+	addText("main", e);
 	if (e == 92) { // Backspace
 		confirm("Backspace");
 		var morseText = document.getElementById("main").innerHTML;
