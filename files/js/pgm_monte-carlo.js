@@ -63,9 +63,9 @@ function calc() {
 			pi = ((t + 1.0)/(n + 1.0))*4.0;
 			t++;
 			htmlPrint("pi", pi);
-			draw(x-1, y-1, 3, 3, "#ff0000");
-		} else {
 			draw(x-1, y-1, 3, 3, "#00ff00");
+		} else {
+			draw(x-1, y-1, 3, 3, "#ff0000");
 		}
 		n++;
 		htmlPrint("n_points", n);
