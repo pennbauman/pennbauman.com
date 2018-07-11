@@ -22,7 +22,7 @@ function layout() {
 		dim = h;
 	}
 	circleDraw();
-	//var run = setInterval(calc, 10); 
+	var run = setInterval(calc, 10); 
 }
 // clear and format visualization 
 function circleDraw() {
