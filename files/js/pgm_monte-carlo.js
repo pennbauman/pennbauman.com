@@ -12,7 +12,7 @@ function htmlPrint(loc, text) {
 }
 // On load
 function setup() {
-	confirm("JS running");
+	//confirm("JS running");
 	layout();
 }
 // Layout screen (basic data, css, etc)
