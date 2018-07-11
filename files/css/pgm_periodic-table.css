@@ -1,0 +1,76 @@
+body {left:0; top:0; margin:0; padding:0; background:black; color:white; font-size:2vh;}
+h1 {text-align:center; font-weight:bold; font-size:6vh; line-height:6vh; top:0; margin-top:2vh; margin-bottom:3vh; }
+b {font-size:3vh; line-height:3vh;}
+i {font-size:1.75vh; line-height:1.75vh;}
+a {color:inherit; text-decoration:inherit;}
+#back {
+    position:fixed;
+    top:1.5vh;
+    left:2vw;
+    font-size:2.25vh;
+}
+#clear {
+    position:fixed;
+    top:1.5vh;
+    right:2vw;
+    font-size:2.25vh;
+}
+.hl:hover {text-decoration:underline;}
+.std_block{
+	width:5vw;
+	height:8vh
+	border:1px solid white;
+	text-align:center;
+	line-height:1.75vh;
+}
+#main_table {
+	margin:auto;
+	border-collapse:collapse;
+}
+.num {
+	text-align:center;
+	font-size:2.5vh;
+}
+.series {
+	font-weight:bold;
+	text-align:right;
+	padding-right:0.5vw;
+}
+#big {
+	background-color:white;
+	color:black;
+	border:2px solid white;
+	border-bottom-width:4px;
+	text-align:center;
+	width:14vw;
+	height:20vh;
+	margin:auto;
+	vertical-align:center;
+}
+#a_num {
+	font-size:3vh;
+	line-height:3vh;
+}
+#a_sym {
+	font-weight:bold;
+	font-size:6vh;
+	line-height:8vh;
+}
+#a_name {
+	font-size:3vh;
+	line-height:3vh;
+}
+#a_m {
+	font-size:2vh;
+	line-height:2vh;
+}
+#non-metals {background-color:#002282}
+#noble-gas {background-color:#b09d00}
+#alkali {background-color:#770019}
+#alkaline {background-color:#007768}
+#metaloid {background-color:#414872}
+#holagens {background-color:#026100}
+#metal {background-color:#3a3a3a}
+#trans-metal {background-color:#945b00}
+#lanthanide {background-color:#440098}
+#actinide {background-color:#9500a2}
