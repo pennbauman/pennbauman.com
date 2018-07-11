@@ -3,6 +3,8 @@
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
 
+	//header("Location")
+
 	$linkCode = URLVar("l");
 	if ($linkCode != NULL) {
 		$links = file_get_contents("links.txt");
@@ -10,7 +12,7 @@
 		for ($i = 0; $i < count($links); $i++) {
 			$links[$i] = explode("~", $links[$i]);
 			if ($links[$i][0] == $linkCode) {
-				header("Location ".$links[$i][1]);
+				header("Location: ".$links[$i][1]);
 			}
 			echo $links[$i][0]."\n";
 			echo '"'.$links[$i][1]."\"\n";
