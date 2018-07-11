@@ -11,6 +11,9 @@
 			$links[$i] = explode(":", $links[$i]);
 			if ($links[$i][0] == $linkCode) {
 				header("Location ".$links[$i][1]);
+			} else {
+				echo $links[$i][0]."\n";
+				echo $links[$i][0]."\n";
 			}
 		}
 	}
