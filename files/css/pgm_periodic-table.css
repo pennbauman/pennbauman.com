@@ -18,7 +18,7 @@ a {color:inherit; text-decoration:inherit;}
 .hl:hover {text-decoration:underline;}
 .std_block{
 	width:5vw;
-	height:8vh
+	height:8vh;
 	border:1px solid white;
 	text-align:center;
 	line-height:1.75vh;
