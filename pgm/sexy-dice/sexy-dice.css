@@ -77,7 +77,7 @@ a {color:inherit; text-decoration:inherit;}
 /* Height >= Width */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
 	.dice {
-		margin: calc(45vh - 15vw) 9.6vw calc(30vh - 15vw);
+		margin: calc(45vh - 15vw) 9.6vw calc(20vh - 15vw);
 		width:30vw;
 		height:4vw;
 		padding:13vw 0;
