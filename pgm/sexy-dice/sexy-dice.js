@@ -33,15 +33,15 @@ function setup() {
 }
 function roll() {
 	//alert("roll");
-	print("d1", text1[randInt(text1.length-1)]);
-	print("d2", text2[randInt(text2.length-1)]);
+	htmlPrint("d1", text1[randInt(text1.length-1)]);
+	htmlPrint("d2", text2[randInt(text2.length-1)]);
 	return false;
 }
 function randInt(max) {
 	var fin = Math.floor((Math.random() * max) + 1); 
 	return fin;
 } //*/
-function print(loc, text) {
+function htmlPrint(loc, text) {
   document.getElementById(loc).innerHTML = text;
   return false;
 }
