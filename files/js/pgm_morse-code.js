@@ -107,6 +107,7 @@ $(document).on("keypress", function(e) {
 		for (var i = morseText.length - 1; i > 0; i--) {
 			if (morseText.substring(i-1, i) == " ") {
 				morseText.substring(0, i);
+				htmlPrint("main", morseText);
 				break;
 			} //*/
 		}
