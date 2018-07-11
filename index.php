@@ -3,8 +3,6 @@
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
 
-	//header("Location")
-
 	$linkCode = URLVar("l");
 	if ($linkCode != NULL) {
 		$links = file_get_contents("links.txt");
