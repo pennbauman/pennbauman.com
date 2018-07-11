@@ -101,6 +101,7 @@ var letters = {
 $(document).on("keypress", function(e) {
 	e = e.which;
 	if (e == 92) { // Backspace
+		confirm("Backspace");
 		var morseText = document.getElementById("main").innerHTML;
 		for (var i = morseText.length - 1; i > 0; i--) {
 			/*if (morseText.substring(i-1, i) == " ") {
