@@ -102,12 +102,11 @@ $(document).on("keypress", function(e) {
 	e = e.which;
 	if (e == 92) { // Backspace
 		var morseText = document.getElementById("main").innerHTML;
-		for (var i = morseText.length - 1; var > 0; i++) {
-			if (morseText.substring(i-1, i) == " ") {
+		for (var i = morseText.length - 1; i > 0; i--) {
+			/*if (morseText.substring(i-1, i) == " ") {
 				morseText.substring(0, i);
 				break;
-			}
-			i--;
+			} //*/
 		}
 		var engText = document.getElementById("bottom").innerHTML;
 		engText = engText.substring(0, engText.length - 1);
