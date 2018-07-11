@@ -2,10 +2,13 @@
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
+
+	$file = file_get_contents("links.txt");
 	if (!empty($_POST)) {
 		$code = $_POST["code"];
 		$link = $_POST["link"];
-		echo $code.", ".$link;
+		//echo $code.", ".$link;
+		$file .= $code."~".$link;
 	}
 	if ($auth > 8) {
 		echo "<!DOCTYPE html><head>";
@@ -21,8 +24,7 @@
 		echo "<h1>Links</h1>";
 
 		echo "<h6>Links.txt</h6> <br/>";
-		$links = file_get_contents("links.txt");
-		echo "<pre>".$links."</pre>";
+		echo "<pre>".$file."</pre>";
 
 		echo "<form action='/links.php' method='post'>";
 		echo "<b>Code:</b> <br/> <input type='text' name='code'><br/><br/>";
