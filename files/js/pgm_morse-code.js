@@ -100,17 +100,24 @@ var letters = {
 }
 $(document).on("keypress", function(e) {
 	e = e.which;
-	//addText("main", e);
-	/*if (e == 92) { //backspace
-
-	} //*/
+	if (e == 92) { // Backspace
+		var morseText = document.getElementById("main").innerHTML;
+		for (var i = morseText.length - 1; var > 0; i++) {
+			if (morseText.substring(i-1, i) == " ") {
+				morseText.substring(0, i);
+			}
+			i--;
+		}
+		var engText = document.getElementById("bottom").innerHTML;
+		engText = engText.substring(0, engText.length - 1);
+	} 
 	if (morse[e] != undefined) {
 		addText("main", morse[e] + " ");
 		addText("bottom", letters[e]);
 	}
 });
 function addText(loc, text) {
-	var oddText = document.getElementById(loc).innerHTML 
+	var oddText = document.getElementById(loc).innerHTML;
 	document.getElementById(loc).innerHTML = oddText + text;
 }
 function htmlPrint(loc, text) {
