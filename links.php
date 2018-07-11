@@ -19,7 +19,10 @@
 		$links = file_get_contents("links.txt");
 		echo "<pre>".$links."</pre>";
 
-		echo "<form action'/links.php' method='post'>";
+		echo "<form action='/links.php' method='post'>";
+		echo "<b>Code:</b> <br/> <input type='text' name='code'><br/><br/>";
+		echo "<b>Link:</b> <br/> <input type='text' name='link'><br/><br/>";
+		echo "<input type='submit' value='Enter'></form>";
 
 		echo '<br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
