@@ -1,134 +1,16 @@
 <!DOCTYPE html>
 	<head>
-		<title> Virtual Sexy Dice | Valyr Knight</title>
+		<title> Virtual Sexy Dice</title>
 		<link rel="shortcut icon" href="http://valyrknight.com/images/heart.favicon.png">
+		<link rel='stylesheet' type='text/css' href='/pgm/sexy-dice/sexy-dice.css'>
+		<script src='/pgm/sexy-dice/sexy-dice.js'></script>
 	</head>
-	<script type="text/javascript">
-		var text1 = new Array(
-			"kiss",
-			"rub",
-			"grab",
-			"poke",
-			"hug",
-			"suck",
-			"nibble on",
-			"spank",
-			"lick",
-			"touch",
-			"blow on",
-			"caress",
-			"touch"
-		);
-		var text2 = new Array(
-			"my crotch",
-			"my ass",
-			"my face",
-			"my toes",
-			"my chest", 
-			"my neck",
-			"my navel",
-			"my hand",
-			"my ears",
-			"my thighs",
-			"my lips",
-			"my nipples"
-		);
-		/*var loc = {
-			"1":"on the floor",
-			//car
-			quickly
-			passionatly
-			repeatedly
-			in bathroom
-		//*/
-		function setup() {
-			//alert("javascript running");
-			return false;
-		}
-		function roll() {
-			//alert("roll");
-			print("d1", text1[randInt(text1.length-1)]);
-        	print("d2", text2[randInt(text2.length-1)]);
-        	return false;
-		}
-		function randInt(max) {
-			var fin = Math.floor((Math.random() * max) + 1); 
-			return fin;
-		} //*/
-		function print(loc, text) {
-          document.getElementById(loc).innerHTML = text;
-          return false;
-        }
-	</script>
-	<style type="text/css">
-		body {
-			left:0; 
-			top:0; 
-			margin:0; 
-			padding:0; 
-			background:#ff33c4; 
-			color:white; 
-			font-size:2vh;
-			font-family:Arial;
-		}
-		h1 {
-			position:fixed;
-			width:100%;
-			text-align:center; 
-			font-weight:bold; 
-			font-size:5vw; 
-			line-height:5vw; 
-			top:0; 
-			margin-top:2vw;
-		}
-		a {color:inherit; text-decoration:inherit;}
-		.dice {
-			display:inline-block;
-			margin-left:10vw;
-			margin-top:10vw;
-			width:19vw;
-			height:11vw;
-			background-color:white;
-			color:red;
-			border:0.5vw solid red;
-			padding:5vw;
-			padding-top:13vw;
-			text-align:center;
-			font-size:3vw;
-		}
-		.center {
-
-		}
-		#right { margin-left:20vw; }
-		#button {
-			display:inline-block;
-			width:18vw;
-			height:3.5vw;
-			margin-top:5vw;
-			margin-left:40vw;
-			border:.5vw solid red;
-			font-size:2vw;
-			font-weight:bold;
-			text-align:center;
-			padding-top:1.5vw;
-			color:red;
-			background-color:white;
-		}
-		#button:active {
-			border:.5vw solid black;
-			color:black;
-		}
-		#back {
-	        position:fixed;
-	        top:1vw;
-	        left:2vw;
-	        font-size:1.5vw;
-	    }
-	    .hl:hover {text-decoration:underline;}
-	</style>
 	<body onload="setup(); return false;">
 		<div id="back">
-	    	<a class="hl" href="/pgm/">Back</a> <span style="color:#ff33c4">X</span> <a class="hl" href="/">Home</a>
+	    	<a class="hl" href="/pgm/">Back</a>
+	    </div>
+	    <div id="home">
+	    	<a class="hl" href="/">Home</a>
 	    </div>
 	    <h1>Virtual Sexy Dice</h1>
 		<div class="dice">
