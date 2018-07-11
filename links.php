@@ -9,6 +9,7 @@
 		$link = $_POST["link"];
 		//echo $code.", ".$link;
 		$file .= "\n".$code."~".$link;
+		file_put_contents("links.txt", $file);
 	}
 	if ($auth > 8) {
 		echo "<!DOCTYPE html><head>";
