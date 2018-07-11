@@ -21,6 +21,9 @@ h1 {
 a {color:inherit; text-decoration:inherit;}
 .dice {
 	display:inline-block;
+	width:30vw;
+	height:4vw;
+	padding:13vw 0;
 	outline:0.5vh solid red;
 	text-align:center;
 	font-size:4vh;
@@ -30,6 +33,9 @@ a {color:inherit; text-decoration:inherit;}
 }
 #button {
 	display:inline-block;
+	width:26vw;
+	height:3vh;
+	padding:3vh 0;
 	outline:0.5vh solid red;
 	text-align:center;
 	font-size:3vh;
@@ -55,43 +61,21 @@ a {color:inherit; text-decoration:inherit;}
     font-size:2vh;
 }
 .hl:hover { color:red; }
-/*
-.dice {
-	margin-left:10vw;
-	margin-top:10vw;
-	width:19vw;
-	height:11vw;
-	padding:5vw;
-	padding-top:13vw;
-}
-#right { margin-left:20vw; }
-#button {
-	width:18vw;
-	height:3.5vh;
-	margin-top:5vw;
-	margin-left:40vw;
-	padding-top:1.5vh;
-}
-*/
-
 /* Height >= Width */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
 	.dice {
 		margin: calc(45vh - 15vw) 9.6vw calc(20vh - 15vw);
-		width:30vw;
-		height:4vw;
-		padding:13vw 0;
 	}
 	#button {
 		margin:5vh 37vw;
-		width:26vw;
-		height:3vh;
-		padding:3vh 0;
 	}
 }
 /* Height < Width */
 @media (min-aspect-ratio: 1/1) {
 	.dice {
-
+		margin: calc(45vh - 15vw) 9.6vw calc(30vh - 15vw);
+	}
+	#button {
+		margin:5vh 37vw;
 	}
 }
