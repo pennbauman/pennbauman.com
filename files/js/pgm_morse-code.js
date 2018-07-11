@@ -106,14 +106,12 @@ $(document).on("keypress", function(e) {
 		var morseText = document.getElementById("main").innerHTML;
 		for (var i = morseText.length - 1; i > 0; i--) {
 			if (morseText.substring(i-1, i) == " ") {
-				morseText.substring(0, i);
-				htmlPrint("main", morseText);
+				htmlPrint("main", morseText.substring(0, i));
 				break;
 			} //*/
 		}
 		var engText = document.getElementById("bottom").innerHTML;
-		engText = engText.substring(0, engText.length - 1);
-		htmlPrint("bottom", engText);
+		htmlPrint("bottom", engText.substring(0, engText.length - 1));
 	} else if (morse[e] != undefined) {
 		addText("main", morse[e] + " ");
 		addText("bottom", letters[e]);
