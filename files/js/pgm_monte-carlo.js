@@ -1,4 +1,6 @@
 var draw_dim;
+var h = window.innerHeight;
+var w = window.innerWidth;
 // on load
 function setup() {
 	layout();
@@ -6,8 +8,8 @@ function setup() {
 // layout screen (basic data, css, etc)
 function layout() {
 	confirm("JS running");
-	var h = window.innerHeight;
-	var w = window.innerWidth;
+	//var h = window.innerHeight;
+	//var w = window.innerWidth;
 	if (h > w) {
 		//confirm("mobile");
 		document.getElementById("draw").width = w;
@@ -20,12 +22,13 @@ function layout() {
 	}
 
 	//save_var("draw_dim", draw_dim);
-	draw_circle();
+	circleDraw();
 	var run = setInterval(calc, 10); 
 }
 
 // clear and format visualization 
-function draw_circle() {
+function circleDraw() {
+	confirm("circleDraw() started");
 	var dim = draw_dim; //parseInt(get("draw_dim"));
 	var canvas = document.getElementById("draw");
 	var back = canvas.getContext("2d");
@@ -101,6 +104,6 @@ function reset() {
 	save_var("run_state", "f");
 	save_var("true_num", "0");
 	save_var("run_button", "RUN");
-	draw_circle();
+	circleDraw();
 }
 //*/
