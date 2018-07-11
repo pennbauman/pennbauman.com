@@ -20,20 +20,15 @@ th {
 	position:fixed;
 	top:0;
 	left:0;
-	height:100vh;
-	width:100vh;
 }
 #display {
 	display:inline-block;
 	position:fixed;
 	bottom:0;
 	right:0;
-	height:100vh;
-	width:calc(100vw - 110vh);
 	padding:5vh;
 	padding-top:0;
 	padding-bottom:0;
-
 	color:white;
 	background:black;
 }
@@ -55,7 +50,6 @@ th {
 }
 #spacer { display:inline-block; }
 #explination {
-	display:none;
 	margin-top:6vh;
 	font-size:2vh;
 }
@@ -64,4 +58,36 @@ th {
 	margin-bottom:15px;
 	height:100px;
 	max-width:100%;
+}
+/* Height >= Width */
+@media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
+	#draw {
+		width:100vw;
+		height:100vw;
+	}
+	#display {
+		width:calc(100vw - 10vh);
+		height:calc(100vh - 100vw;);
+		
+	}
+	#explination {
+		display:none;
+	}
+}
+/* Height < Width */
+@media (min-aspect-ratio: 1/1) {
+	#draw {
+		height:100vh;
+		width:100vh;
+	}
+	#display {
+		height:100vh;
+		width:calc(100vw - 110vh);
+	}
+	#spacer {
+		height:2vh;
+	}
+	#explination {
+		display:inline-block;
+	}
 }

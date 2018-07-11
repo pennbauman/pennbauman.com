@@ -8,21 +8,12 @@ function layout() {
 	var w = window.innerWidth;
 	if (h > w) {
 		//confirm("mobile");
-		document.getElementById("draw").style.width = w + "px";
-		document.getElementById("draw").style.height = w + "px";
 		document.getElementById("draw").width = w;
 		document.getElementById("draw").height = w;
-		document.getElementById("display").style.width	= (w - h*.1) + "px";
-		document.getElementById("display").style.height = (h - w) + "px";
-		document.getElementById("display").style.padding.top = 0 + "px"; 
-		document.getElementById("display").style.bottom = 0 + "px";
 		var draw_dim = w;
 	} else {
 		document.getElementById("draw").width = h;
 		document.getElementById("draw").height = h;
-		document.getElementById("spacer").style.height = (h*.02) + "px";
-		document.getElementById("explination").style.display = "inline-block";
-		//document.getElementById("table").style.background = "red";
 		var draw_dim = h;
 	}
 
