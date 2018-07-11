@@ -47,9 +47,6 @@ var morse = {
 	91:"-.--.-", //[
 	93:"-.--.-", //]
 	32:"/", //" "
-
-	92:"back" // /
-	//*/
 }
 var letters = {
 	//numbers
@@ -102,12 +99,15 @@ var letters = {
 	93:"]",
 }
 $(document).on("keypress", function(e) {
-    e = e.which;
-    //addText("main", e);
-    if (e == 92) { //backspace
-    }
-    addText("main", morse[e] + " ");
-    addText("bottom", letters[e]);
+	e = e.which;
+	//addText("main", e);
+	/*if (e == 92) { //backspace
+
+	} //*/
+	if (morse[e] != undefined) {
+		addText("main", morse[e] + " ");
+		addText("bottom", letters[e]);
+	}
 });
 function addText(loc, text) {
 	var oddText = document.getElementById(loc).innerHTML 
