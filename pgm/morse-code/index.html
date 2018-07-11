@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<head>
 		<title>Morse Code | Valyr Knight</title>
-		<link rel="shortcut icon" href="http://www.valyrknight.com/images/morse.favicon.png"> 
+		<link rel="shortcut icon" href="/images/morse_favicon.png"> 
 	</head>
 	<style type="text/css">
 		body {padding:0; margin:0; font-family:monospace; font-size:2.1680216vh;}
@@ -177,7 +177,7 @@
 			var oddText = document.getElementById(loc).innerHTML 
 			document.getElementById(loc).innerHTML = oddText + text;
 		}
-		function print(loc, text) {
+		function htmlPrint(loc, text) {
         	document.getElementById(loc).innerHTML = text;
         	return false;
         }
@@ -186,11 +186,10 @@
       <a class="hl" href="/pgm/">Back</a> <span style="color:black">X</span> <a class="hl" href="/">Home</a>
     </div>
     <div id="clear">
-    	<a class="hl" href="#" onClick="print('main', ''); print('bottom', ''); return false;">Clear</a>
+    	<a class="hl" href="#" onClick="htmlPrint('main', ''); htmlPrint('bottom', ''); return false;">Clear</a>
     </div>
 	<body onload="setup(); return false">
 		<div id="header">MORSE CODE<br/> <span style="font-size:3.2520325vh">-- --- .-. ... . / -.-. --- -.. .</span></div>
-		<!--a href="#" onclick="addText('main', 'x'); return false">XXX</a-->
 		<div id="back_head"> </div>
 		<div id="main"> </div>
 		<div id="bottom"> </div>
