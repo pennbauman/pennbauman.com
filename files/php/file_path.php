@@ -12,4 +12,7 @@
 		}
 		$i++;
 	}
+	if ($returnLink == "?r=") {
+		$returnLink == "";
+	}
 ?>
