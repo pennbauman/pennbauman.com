@@ -13,7 +13,6 @@
 		echo "</head>\n<body>";
 		//Print Content
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
-		echo $filePath;
 		echo "<h1>System</h1>";
 		echo "<p>";
 		echo "<a href='/sys/hash/'>Hash</a> <br/>";
