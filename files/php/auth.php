@@ -17,8 +17,15 @@
 		$password = $_COOKIE["password"];
 	}
 	if (!empty($username)) {
-		if ($username == "penn" && $password == "ee0f07df945289af134d9da1bb7ab8ba") {
+		//Tk5#4!6^NqBsf^1u#^@S
+		if ($username == "sudo" && $password == "6db456466c3a6a0baf785c568f44250a") {
 			$auth = 10;
+		}
+		$coder = [
+			"penn" => "06a2a6feb56b46840b4c670f4f34c546",
+		];
+		if ($coder[$username] == $password) {
+			$auth = 9;
 		}
 		/*
 		$columns = "SELECT phoneNumber, password FROM users";
