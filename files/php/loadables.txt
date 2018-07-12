@@ -22,3 +22,9 @@
 		$URLVarR // URL var for "r"
 		$URLEnd // ender to recreate URL var  "r"
 		$returnPath // URL for automatic return
+
+/files/php/std_md_page.php
+/files/php/std_dr_page.php
+/files/php/std.php
+/files/php/func.php
+/files/php/auth.php
