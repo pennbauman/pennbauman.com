@@ -3,7 +3,7 @@
 	Requires
 		auth.php
 		file_path.php
-	Echo
+	Echos
 		full error page, 401 or 403 depending on auth
 
 /files/php/file_path.php

@@ -1,4 +1,6 @@
 <?php
+	// LOAD: include $_SERVER["DOCUMENT_ROOT"]."/files/php/std_dir_page.php";
+	// Page for /files/php/std_dir_index.php
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";

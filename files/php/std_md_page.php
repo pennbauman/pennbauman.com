@@ -1,4 +1,6 @@
 <?php
+	// LOAD: include $_SERVER["DOCUMENT_ROOT"]."/files/php/std_md_page.php";
+	// Page for /files/php/std_md_index.php
 	include $_SERVER["DOCUMENT_ROOT"]."/files/Parsedown/Parsedown.php";
 	$Parsedown = new Parsedown();
 	// Prepare page.md
