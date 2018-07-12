@@ -1,7 +1,7 @@
 <?php
 	// LOAD: include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
 	$filePath = getcwd();
-	$filePathShort = substr($filePath, 27);
+	$filePathShort = substr($filePath, 26);
 	$filePathArray = explode("/", $filePathShort);
 	$returnLink = "?r=";
 	$i = 1;
