@@ -2,6 +2,7 @@
 	include "/home/valypfnd/php/std/std.php";
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/file_path.php";
+	include "/home/valypfnd/php/get_site.php";
 
 	if ($auth > 8) {
 		echo "<!DOCTYPE html><head>";
@@ -17,7 +18,7 @@
 
 		echo $_SERVER["DOCUMENT_ROOT"];
 		echo "<br/>";
-		echo $filePath;
+		echo $currentSite;
 		echo "<br/><br/>";
 
 		echo "<p>h1</p>";
