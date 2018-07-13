@@ -16,6 +16,8 @@
 		echo "<h1>Test</h1>";
 
 		echo $_SERVER["DOCUMENT_ROOT"];
+		echo "<br/>";
+		echo $filePath;
 		echo "<br/><br/>";
 
 		echo "<p>h1</p>";
