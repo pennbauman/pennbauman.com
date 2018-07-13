@@ -46,7 +46,7 @@
 			$i++;
 		}
 		echo "</p>";
-		echo "<br/><a href='/'>Home</a> - <a href='/sys/'>System</a>"
+		echo "<br/><a href='/'>Home</a> - <a href='/sys/'>System</a>";
 		echo "</body></html>";
 	} else {
 		include "/home/valypfnd/php/auth_error.php";
