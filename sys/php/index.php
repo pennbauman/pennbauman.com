@@ -33,7 +33,7 @@
 			if ($files[$i] != "." && $files[$i] != "..") {
 				//echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
 				echo $files[$i]."<br/>\n";
-				if (strpos($files[$i], ".") == false) {
+				if (strpos($files[$i], ".") == false && $files[$i] != ".git") {
 					$moreFiles = scandir("/home/valypfnd/php/".$files[$i]."/");
 					echo "<ul>";
 					$q = 0;
