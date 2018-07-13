@@ -35,7 +35,7 @@
 				echo $files[$i]."<br/>\n";
 				if (strpos($files[$i], ".") == false) {
 					$moreFiles = scandir("/home/valypfnd/php/".$files[$i]."/");
-					echo "<ul>"
+					echo "<ul>";
 					$q = 0;
 					while ($q < count($moreFiles)) {
 						echo "<li>".$moreFiles[$q]."</li>\n";
