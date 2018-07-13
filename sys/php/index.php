@@ -38,7 +38,9 @@
 					echo "<ul>";
 					$q = 0;
 					while ($q < count($moreFiles)) {
-						echo "<li>".$moreFiles[$q]."</li>\n";
+						if ($moreFiles[$q] != "." && $moreFiles[$q] != "..") {
+							echo "<li>".$moreFiles[$q]."</li>\n";
+						}
 						$q++;
 					}
 					echo "</ul>";
