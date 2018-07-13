@@ -18,15 +18,8 @@
 		//Print Content
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 		echo "<h1>/php/</h1>";
-
+		echo "<p><a href='/sys/php/doc/'>documentation</a></p>";
 		$files = scandir("/home/valypfnd/php/");
-		/*echo "<p><a href='";
-		$i = 0;
-		while ($i < count($filePathArray) - 1) {
-			echo $filePathArray[$i]."/";
-			$i++;
-		}
-		echo "'> parent directory</a></p>"; //*/
 		echo "<p><h4>content</h4></br>";
 		$i = 0;
 		while ($i < count($files)) {
