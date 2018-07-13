@@ -1,7 +1,7 @@
 <?php 
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
+	include "/home/valypfnd/php/std/std.php";
+	include "/home/valypfnd/php/auth.php";
+	include "/home/valypfnd/php/file_path.php";
 
 	if ($auth > 8) {
 		echo "<!DOCTYPE html><head>";
@@ -42,6 +42,6 @@
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
 	} else {
-		include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth_error.php";
+		include "/home/valypfnd/php/auth_error.php";
 	}
 ?>

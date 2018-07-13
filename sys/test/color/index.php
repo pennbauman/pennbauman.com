@@ -1,5 +1,5 @@
 <?php 
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
+	include "/home/valypfnd/php/std.php";
 ?>
 <!DOCTYPE html>
 	<head>
@@ -34,7 +34,7 @@
 	<body>
 		<div id="content_box">
 			<h1>Color Tester</h1>
-			<form onsubmit="color()">
+			<form>
 				Hex Color: <br/>
 				<input type="text" name="color" value="#"> 
 				<br/><br/>

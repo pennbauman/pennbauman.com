@@ -1,7 +1,7 @@
 <?php 
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
+	include "/home/valypfnd/php/std.php";
+	include "/home/valypfnd/php/auth.php";
+	include "/home/valypfnd/php/file_path.php";
 
 	$linkCode = URLVar("l");
 	if ($linkCode != NULL) {

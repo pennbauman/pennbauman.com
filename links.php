@@ -1,7 +1,7 @@
 <?php
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/file_path.php";
+	include "/home/valypfnd/php/std.php";
+	include "/home/valypfnd/php/auth.php";
+	include "/home/valypfnd/php/file_path.php";
 
 	$file = file_get_contents("links.txt");
 	if (!empty($_POST)) {
@@ -35,6 +35,6 @@
 		echo '<br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
 	} else {
-		include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth_error.php";
+		include "/home/valypfnd/php/auth_error.php";
 	}
 ?>

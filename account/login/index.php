@@ -1,7 +1,7 @@
 <?php
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/std.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/files/php/return_path.php";
+	include "/home/valypfnd/php/std.php";
+	include "/home/valypfnd/php/auth.php";
+	include "/home/valypfnd/php/return_path.php";
 
 	if ($auth > 0) {
 		header("Location: ".$returnPath);
@@ -13,7 +13,7 @@
 		$password = $_POST["password"];
 		$password = hash("md5", $password);
 
-		include $_SERVER["DOCUMENT_ROOT"]."/files/php/auth.php";
+		include "/home/valypfnd/php/auth.php";
 		if ($auth > 0) {
 			header("Location: ".$returnPath);
 		} else {
