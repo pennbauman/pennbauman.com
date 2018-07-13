@@ -39,6 +39,7 @@
 					$q = 0;
 					while ($q < count($moreFiles)) {
 						echo "<li>".$moreFiles[$q]."</li>\n";
+						$q++;
 					}
 					echo "</ul>";
 				}
