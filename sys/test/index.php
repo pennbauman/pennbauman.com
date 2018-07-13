@@ -15,6 +15,9 @@
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 		echo "<h1>Test</h1>";
 
+		echo $_SERVER["DOCUMENT_ROOT"];
+		echo "<br/><br/>";
+
 		echo "<p>h1</p>";
 		$array1 = ["one", "two", "three"];
 		$array2 = ["", "one", "two"];
