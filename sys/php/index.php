@@ -20,22 +20,33 @@
 		echo "<h1>/php/</h1>";
 
 		$files = scandir("/home/valypfnd/php/");
-		echo "<p><a href='";
+		/*echo "<p><a href='";
 		$i = 0;
 		while ($i < count($filePathArray) - 1) {
 			echo $filePathArray[$i]."/";
 			$i++;
 		}
-		echo "'> parent directory</a></p><p><h4>content</h4></br>";
+		echo "'> parent directory</a></p>"; //*/
+		echo "<p><h4>content</h4></br>";
 		$i = 0;
 		while ($i < count($files)) {
 			if ($files[$i] != "." && $files[$i] != "..") {
-				echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
+				//echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
+				echo $files[$i]."<br/>\n";
+				if (strpos($files[$i], ".") == false) {
+					$moreFiles = scandir("/home/valypfnd/php/".$files[$i]."/");
+					echo "<ul>"
+					$q = 0;
+					while ($q < count($moreFiles)) {
+						echo "<li>".$moreFiles[$q]."</li>\n";
+					}
+					echo "</ul>";
+				}
 			}
 			$i++;
 		}
 		echo "</p>";
-		
+		echo "<br/><a href='/'>Home</a> - <a href='/sys/'>System</a>"
 		echo "</body></html>";
 	} else {
 		include "/home/valypfnd/php/auth_error.php";
