@@ -26,10 +26,10 @@
 		while ($i < count($files)) {
 			if ($files[$i] != "." && $files[$i] != "..") {
 				//echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
-				echo "<p>".$files[$i]."<br/>\n";
+				echo "<h4>".$files[$i]."</h4>\n";
 				echo "<pre>";
 				echo file_get_contents($location.$files[$i]);
-				echo "</pre></p>";
+				echo "</pre>\n";
 			}
 			$i++;
 		}
