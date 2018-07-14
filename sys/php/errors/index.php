@@ -28,12 +28,14 @@
 		echo "<input type='submit' value='Enter'>";
 		echo "</form>";
 		if ($location != "") {
-			echo "<p><h4>Errors: ".$location."</h4><br/>";
+			echo "<p><h4>Errors: ".$location."</h4>";
 			$errors = file_get_contents($location);
 			$errors = explode("\n", $errors);
 			$i = count($errors);
 			while ($i >= 0 ) {
-				echo $errors[$i]."<br/><br/>\n";
+				if ($errors[$i] != "") {
+					echo $errors[$i]."<br/><br/>\n";
+				}
 				$i--;
 			} //*/
 			echo "</p>";
