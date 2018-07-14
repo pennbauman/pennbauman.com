@@ -28,7 +28,7 @@
 		$errors = explode("\n", $errors);
 		$i = 0;
 		while ($i < count($errors)) {
-			echo $errors[$i]."<span class='gap'><br/><br/></span>\n";
+			echo $errors[$i]."<br/><br/>\n";
 			$i++;
 		} //*/
 		echo "</p>";
