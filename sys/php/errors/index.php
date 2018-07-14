@@ -3,10 +3,16 @@
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/file_path.php";
 
+	if (!empty($_POST)) {
+		$location = $_POST["folder"];
+	} else {
+		$location = "";
+	}
+
 	if ($auth > 9) {
 		// Print Head
 		echo "<!DOCTYPE html><head>";
-		echo "<title>/php/documentation/</title>";
+		echo "<title>PHP Errors</title>";
 		echo "<link rel='icon' href='/files/images/files_favicon.png'>";
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
@@ -15,24 +21,24 @@
 		echo "</head>\n<body>";
 		//Print Content
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
-		echo "<h1>/php/documentation/</h1>";
-		echo "<p><a href='/sys/php/'>php</a></p>";
-		$location = "/home/valypfnd/public_html/error_log";
-		$files = [
-			"main.txt",
-			"pennbauman.txt",
-			"dnd.txt",
-		];
-		echo "<p><h4>Errors: ".$location."</h4>";
-		$errors = file_get_contents($location);
-		$errors = explode("\n", $errors);
-		$i = 0;
-		while ($i < count($errors)) {
-			echo $errors[$i]."<br/><br/>\n";
-			$i++;
-		} //*/
-		echo "</p>";
-		echo "<br/><a href='/'>Home</a> - <a href='/sys/'>System</a>";
+		echo "<h1>PHP Errors</h1>";
+		echo "<form action='/sys/php/errors/' method='post'>";
+		echo "<b>Error Folder:</b> <br/> ";
+		echo "<input type='text' name='folder' value='/home/valypfnd/'> <br><br/>";
+		echo "<input type='submit' value='Enter'>";
+		echo "</form>";
+		if ($location != "") {
+			echo "<p><h4>Errors: ".$location."</h4><br/>";
+			$errors = file_get_contents($location);
+			$errors = explode("\n", $errors);
+			$i = 0;
+			while ($i < count($errors)) {
+				echo $errors[$i]."<br/><br/>\n";
+				$i++;
+			} //*/
+			echo "</p>";
+		}
+		echo "<a href='/'>Home</a> - <a href='/sys/'>System</a>";
 		echo "</body></html>";
 	} else {
 		include "/home/valypfnd/php/auth_error.php";
