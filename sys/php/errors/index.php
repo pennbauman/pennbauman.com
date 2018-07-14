@@ -4,7 +4,7 @@
 	include "/home/valypfnd/php/file_path.php";
 
 	if (!empty($_POST)) {
-		$location = $_POST["folder"];
+		$location = "/home/valypfnd/".$_POST["folder"]."/error_log";
 	} else {
 		$location = "";
 	}
@@ -24,7 +24,7 @@
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php/errors/' method='post'>";
 		echo "<b>Error Folder:</b> <br/> ";
-		echo "<input type='text' name='folder' value='/home/valypfnd/'> <br><br/>";
+		echo "/home/valypfnd/<input type='text' name='folder' value=''>/error_log <br><br/>";
 		echo "<input type='submit' value='Enter'>";
 		echo "</form>";
 		if ($location != "") {
