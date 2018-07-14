@@ -23,14 +23,11 @@
 			"pennbauman.txt",
 			"dnd.txt",
 		];
-		echo file_get_contents($location."public_html/error_log");
-		/*
+		$errors = file_get_contents($location."public_html/error_log");
+		$errors = explode("\n", $errors);
 		$i = 0;
-		while ($i < count($files)) {
-			echo "<h4>".$files[$i]."</h4>\n";
-			echo "<pre>";
-			echo file_get_contents($location.$files[$i]);
-			echo "</pre>\n";
+		while ($i < count($errors)) {
+			echo $errors[$i];
 			$i++;
 		} //*/
 		echo "</p>";
