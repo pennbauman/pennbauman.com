@@ -20,8 +20,11 @@
 		echo "<h1>/php/documentation/</h1>";
 		echo "<p><a href='/sys/php/'>php</a></p>";
 		$location = "/home/valypfnd/php/documentation/";
-		$files = scandir($location);
-		echo "<p><h4>content</h4></br>";
+		$files = [
+			"main.txt",
+			"pennbauman.txt",
+			"dnd.txt",
+		];
 		$i = 0;
 		while ($i < count($files)) {
 			if ($files[$i] != "." && $files[$i] != "..") {
