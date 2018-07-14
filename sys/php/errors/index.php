@@ -27,7 +27,7 @@
 		$errors = explode("\n", $errors);
 		$i = 0;
 		while ($i < count($errors)) {
-			echo $errors[$i];
+			echo $errors[$i]."<br/>\n";
 			$i++;
 		} //*/
 		echo "</p>";
