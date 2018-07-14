@@ -31,10 +31,10 @@
 			echo "<p><h4>Errors: ".$location."</h4><br/>";
 			$errors = file_get_contents($location);
 			$errors = explode("\n", $errors);
-			$i = 0;
-			while ($i < count($errors)) {
+			$i = count($errors);
+			while ($i >= 0 ) {
 				echo $errors[$i]."<br/><br/>\n";
-				$i++;
+				$i--;
 			} //*/
 			echo "</p>";
 		}
