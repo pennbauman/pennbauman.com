@@ -23,12 +23,11 @@
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php/errors/' method='post'>";
-		echo "<b>Error Folder:</b> <br/> ";
 		echo "/home/valypfnd/<input type='text' name='folder' value=''>/error_log <br><br/>";
 		echo "<input type='submit' value='Enter'>";
 		echo "</form>";
 		if ($location != "") {
-			echo "<p><h4>Errors: ".$location."</h4><br/>";
+			echo "<p><h4>".$location."</h4><br/>";
 			$errors = file_get_contents($location);
 			$errors = explode("\n", $errors);
 			$i = count($errors);
