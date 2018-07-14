@@ -25,7 +25,7 @@
 		echo "<form action='/sys/php/errors/' method='post'>";
 		echo "/home/valypfnd/<input type='text' name='folder' value=''>/error_log <br><br/>";
 		echo "<input type='submit' value='Enter'>";
-		echo "</form>";
+		echo "</form><br/><br/>";
 		if ($location != "") {
 			echo "<p><h4>".$location."</h4><br/>";
 			$errors = file_get_contents($location);
