@@ -23,7 +23,7 @@
 			"pennbauman.txt",
 			"dnd.txt",
 		];
-		echo "<pre style='word-wrap:break-word'>".file_get_contents($location."public_html/error_log")."</pre>";
+		echo file_get_contents($location."public_html/error_log");
 		/*
 		$i = 0;
 		while ($i < count($files)) {
