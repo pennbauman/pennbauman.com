@@ -1,10 +1,8 @@
 <?php
-	// LOAD: include "/home/valypfnd/php/std_dir_page.php";
-	// Page for /php/std_dir_index.php
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
 	
-	if ($auth > 8) {
+	if ($auth > 9) {
 		// Print Head
 		echo "<!DOCTYPE html><head>";
 		echo "<title>/php/</title>";
@@ -23,7 +21,6 @@
 		$i = 0;
 		while ($i < count($files)) {
 			if ($files[$i] != "." && $files[$i] != "..") {
-				//echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
 				echo $files[$i]."<br/>\n";
 				if (strpos($files[$i], ".") == false && $files[$i] != ".git") {
 					$moreFiles = scandir("/home/valypfnd/php/".$files[$i]."/");
