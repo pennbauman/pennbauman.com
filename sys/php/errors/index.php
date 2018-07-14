@@ -23,7 +23,7 @@
 			"pennbauman.txt",
 			"dnd.txt",
 		];
-		echo "<p><h4>Errors: ".$location."</h4>"
+		echo "<p><h4>Errors: ".$location."</h4>";
 		$errors = file_get_contents($location);
 		$errors = explode("\n", $errors);
 		$i = 0;
