@@ -18,7 +18,7 @@
 		//Print Content
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 		echo "<h1>/php/</h1>";
-		echo "<p><a href='/sys/php/doc/'>documentation</a></p>";
+		echo "<p><a href='/sys/php/documentation/'>documentation</a></p>";
 		$files = scandir("/home/valypfnd/php/");
 		echo "<p><h4>content</h4></br>";
 		$i = 0;

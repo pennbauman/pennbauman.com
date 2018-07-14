@@ -7,7 +7,7 @@
 	if ($auth > 8) {
 		// Print Head
 		echo "<!DOCTYPE html><head>";
-		echo "<title>/php/</title>";
+		echo "<title>/php/documentation/</title>";
 		echo "<link rel='icon' href='/files/images/files_favicon.png'>";
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
@@ -16,7 +16,7 @@
 		echo "</head>\n<body>";
 		//Print Content
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
-		echo "<h1>/php/</h1>";
+		echo "<h1>/php/documentation/</h1>";
 		echo "<p><a href='/sys/php/doc/'>documentation</a></p>";
 		$files = scandir("/home/valypfnd/php/");
 		echo "<p><h4>content</h4></br>";
