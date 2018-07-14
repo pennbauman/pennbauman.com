@@ -17,13 +17,14 @@
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 		echo "<h1>/php/documentation/</h1>";
 		echo "<p><a href='/sys/php/'>php</a></p>";
-		$location = "/home/valypfnd/";
+		$location = "/home/valypfnd/public_html/error_log";
 		$files = [
 			"main.txt",
 			"pennbauman.txt",
 			"dnd.txt",
 		];
-		$errors = file_get_contents($location."public_html/error_log");
+		echo "<p><h4>Errors: ".$location."</h4>"
+		$errors = file_get_contents($location);
 		$errors = explode("\n", $errors);
 		$i = 0;
 		while ($i < count($errors)) {
