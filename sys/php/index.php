@@ -3,7 +3,6 @@
 	// Page for /php/std_dir_index.php
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
-	//include "/home/valypfnd/php/file_path.php";
 	
 	if ($auth > 8) {
 		// Print Head

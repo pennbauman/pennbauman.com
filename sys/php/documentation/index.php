@@ -3,7 +3,8 @@
 	// Page for /php/std_dir_index.php
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
-	
+	include "/home/valypfnd/php/file_path.php";
+
 	if ($auth > 8) {
 		// Print Head
 		echo "<!DOCTYPE html><head>";
@@ -17,26 +18,18 @@
 		//Print Content
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 		echo "<h1>/php/documentation/</h1>";
-		echo "<p><a href='/sys/php/doc/'>documentation</a></p>";
-		$files = scandir("/home/valypfnd/php/");
+		echo "<p><a href='/sys/php/'>php</a></p>";
+		$location = "/home/valypfnd/php/documentation/";
+		$files = scandir($location);
 		echo "<p><h4>content</h4></br>";
 		$i = 0;
 		while ($i < count($files)) {
 			if ($files[$i] != "." && $files[$i] != "..") {
 				//echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
-				echo $files[$i]."<br/>\n";
-				if (strpos($files[$i], ".") == false && $files[$i] != ".git") {
-					$moreFiles = scandir("/home/valypfnd/php/".$files[$i]."/");
-					echo "<ul>";
-					$q = 0;
-					while ($q < count($moreFiles)) {
-						if ($moreFiles[$q] != "." && $moreFiles[$q] != "..") {
-							echo "<li>".$moreFiles[$q]."</li>\n";
-						}
-						$q++;
-					}
-					echo "</ul>";
-				}
+				echo "<p>".$files[$i]."<br/>\n";
+				echo "<pre>";
+				echo file_get_contents($location.$files[$i]);
+				echo "</pre></p>";
 			}
 			$i++;
 		}
