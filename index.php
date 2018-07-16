@@ -19,18 +19,30 @@
 	<head>
 		<title>Penn Bauman</title>
 		<link rel='icon' href='/files/images/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/general.css'>
+		<link rel='stylesheet' type='text/css' href='/files/hub.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/general.js'></script>
 	</head>
 	<body>
 		<?php
-			include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
+			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
 		?>
-		<h1>Penn Bauman</h1>
-		<img src="/files/images/bella_wag.gif"/>
+		<div id="header">
+
+		</div>
+		<div id="navbar">
+
+		</div>
+
+		<div id="content">
+			<h1>Penn Bauman</h1>
+			<img src="/files/images/bella_wag.gif"/>
+		</div>
 		<?php
-			include "/home/valypfnd/php/pennbauman/std_footer.php";
+			//include "/home/valypfnd/php/pennbauman/std_footer.php";
 		?>
+		<div id="footer">
+
+		</div>
 	</body>
 </html>
