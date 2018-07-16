@@ -31,7 +31,7 @@
 			<h1>Penn Bauman</h1>
 		</div>
 		<div id="navbar">
-
+			<a href="/pgm">Programs</a>
 		</div>
 
 		<div id="content">
