@@ -28,21 +28,21 @@
 			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
 		?>
 		<div id="header">
-
+			<h1>Penn Bauman</h1>
 		</div>
 		<div id="navbar">
 
 		</div>
 
 		<div id="content">
-			<h1>Penn Bauman</h1>
+			
 			<img src="/files/images/bella_wag.gif"/>
 		</div>
 		<?php
 			//include "/home/valypfnd/php/pennbauman/std_footer.php";
 		?>
 		<div id="footer">
-
+			<a href='https://gitlab.com/pennbauman/dnd-site'>\"Code\"</a> by <a href='http://pennbauman.com'>Penn Bauman</a> &copy; 2018 - <a href='mailto:penn.bauman@gmail.com'>Contact</a>
 		</div>
 	</body>
 </html>
