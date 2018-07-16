@@ -24,7 +24,13 @@
 		<script src='/files/general.js'></script>
 	</head>
 	<body>
+		<?php
+			include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
+		?>
 		<h1>Penn Bauman</h1>
 		<img src="/files/images/bella_wag.gif"/>
+		<?php
+			include "/home/valypfnd/php/pennbauman/std_footer.php";
+		?>
 	</body>
 </html>
