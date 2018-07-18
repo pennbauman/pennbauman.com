@@ -32,13 +32,13 @@
 		</div>
 		<div id="navbar">
 			<a href="/pgm/">Programs</a>
-			<a href="/games/">Games</a>
+			<a href="/games/">Games</a>git co
 			<a href="/about/">About</a>
 
 		</div>
 
 		<div id="content">
-			
+			Hello World
 			<!--img src="/files/images/bella_wag.gif"/-->
 		</div>
 		<?php
