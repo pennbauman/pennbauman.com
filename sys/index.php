@@ -2,6 +2,7 @@
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/file_path.php";
+
 	if ($auth > 8) {
 		echo "<!DOCTYPE html><head>";
 		echo "<title>System</title>";
@@ -26,7 +27,6 @@
 		echo '<br/><a href="/">Home</a>';
 		echo "</body></html>";
 	} else {
-		//echo "<a href='/account/login/".$returnLink."'>Login</a>";
 		include "/home/valypfnd/php/auth_error.php";
 	}
 ?>
