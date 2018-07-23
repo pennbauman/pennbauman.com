@@ -22,6 +22,7 @@
 		echo "<br/><br/>";
 
 		echo $_SERVER['HTTP_HOST'];
+		echo "<br/>";
 		echo $_SERVER['REQUEST_URI'];
 
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
