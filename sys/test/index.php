@@ -1,5 +1,5 @@
 <?php 
-	include "/home/valypfnd/php/std/std.php";
+	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/file_path.php";
 	include "/home/valypfnd/php/get_site.php";
