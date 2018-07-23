@@ -17,13 +17,14 @@
 		echo "<h1>Test</h1>";
 
 		echo "<p>";
-		echo "<a href='/sys/hash/'>Hash</a> <br/>";
-		echo "<a href='/sys/page-size/'>Page Size</a> <br/>";
-		echo "<a href='/sys/test/'>Test</a> <br/>";
-		echo "<a href='/sys/test/favicon/'>Favicon Tester</a> <br/>";
-		echo "<a href='/sys/test/color/'>Color Tester</a> <br/>";
-		echo "<a href='/sys/php/'>PHP</a> <br/>";
-		echo "<a href='/sys/php/errors/'>PHP Errors</a> <br/>";
+		echo $_SERVER["DOCUMENT_ROOT"];
+		echo "<br/>";
+		echo $currentSite;
+		echo "<br/><br/>";
+
+		echo $_SERVER['HTTP_HOST'];
+		echo "<br/>";
+		echo $_SERVER['REQUEST_URI'];
 		echo "</p>";
 		
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
