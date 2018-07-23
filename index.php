@@ -11,6 +11,7 @@
 			$links[$i] = explode("~", $links[$i]);
 			if ($links[$i][0] == $linkCode) {
 				header("Location: ".$links[$i][1]);
+				break;
 			}
 		}
 	}
