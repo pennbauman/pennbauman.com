@@ -28,12 +28,19 @@
 
 		<div id="content">
 			<?php 
-				echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
-				echo "<h2>Account</h2>";
-				echo "<p><b>Username: </b>".$username."<br/>";
-				echo "<b>Name: </b>".$userDisplayName."<br/>";
-				echo "<b>Email: </b>".$userEmail."<br/>";
-				echo "<b>Phone Number: </b>".$userPhoneNum."</p>";
+				if ($auth > 0) {
+					echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
+					echo "<h2>Account</h2>";
+					echo "<p><b>Username: </b>".$username."<br/>";
+					echo "<b>Name: </b>".$userDisplayName."<br/>";
+					echo "<b>Email: </b>".$userEmail."<br/>";
+					echo "<b>Phone Number: </b>".$userPhoneNum."</p>";
+				} else {
+					echo "<a href='/account/login".$returnLink."'>login</a>";
+					echo "<h2>Account</h2>";
+					echo "<p>Not logged in</div>p>";
+				}
+				
 			?>
 			
 			<!--img src="/files/images/bella_wag.gif"/-->
