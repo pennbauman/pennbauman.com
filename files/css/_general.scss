@@ -13,7 +13,9 @@ input.text, input[type="text"], input[type="button"], input[type="submit"], .inp
 	-webkit-appearance: none;
 	border-radius: 0;
 }
-
+:root {
+    font-size:1vh;
+}
 body {
 	margin:0;
 	padding:0;
@@ -22,7 +24,7 @@ body {
 
 	background:$background1;
 	color:$text;
-	font-size:1vh;
+	font-size:1rem;
 
 	display:grid;
 	grid-template-areas:

@@ -21,7 +21,7 @@
 		<title>Penn Bauman</title>
 		<link rel='icon' href='/files/images/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/general.css'>
-		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<!--script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script-->
 		<script src='/files/general.js'></script>
 	</head>
 	<body>
