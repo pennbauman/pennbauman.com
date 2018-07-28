@@ -46,6 +46,15 @@ table {
 #header {
   grid-area: header;
 }
+#header h1 {
+  color: #00ccff;
+}
+#header h1:hover {
+  color: #ffffff;
+}
+#header #navbar a:hover {
+  color: #00ccff;
+}
 
 /* Content */
 #content {

@@ -41,6 +41,18 @@ table { border-collapse: collapse; }
 /* Header */
 #header {
 	grid-area:header;
+
+	h1 {
+		color:$bright1;
+	}
+	h1:hover { color:$hl-text; }
+	
+	#navbar {
+
+		a:hover {
+			color:$bright1;
+		}
+	}
 }
 
 /* Content */
