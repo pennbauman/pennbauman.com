@@ -46,7 +46,7 @@ table { border-collapse: collapse; }
 		color:$bright1;
 	}
 	h1:hover { color:$hl-text; }
-	
+
 	#navbar {
 
 		a:hover {
@@ -69,4 +69,7 @@ table { border-collapse: collapse; }
 	grid-area:footer;
 	display:block;
 	width:100%;
+	text-align:center;
+	font-size:1.5rem;
+	height:2rem;
 }

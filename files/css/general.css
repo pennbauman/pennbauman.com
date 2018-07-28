@@ -70,6 +70,9 @@ table {
   grid-area: footer;
   display: block;
   width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 2rem;
 }
 
 @media (max-aspect-ratio: 1/1) {
