@@ -21,7 +21,7 @@
 		<title>Penn Bauman</title>
 		<link rel='icon' href='/files/images/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
-		<!--script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script-->
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 	</head>
 	<body>
@@ -32,7 +32,7 @@
 			<a href="/"><h1>Penn Bauman</h1></a>
 			<div id="navbar">
 				<a href="/pgm/">Programs</a>
-				<a href="/games/">Games</a>git co
+				<a href="/games/">Games</a>
 				<a href="/about/">About</a>
 			</div>
 		</div>
