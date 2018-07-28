@@ -20,7 +20,7 @@
 	<head>
 		<title>Penn Bauman</title>
 		<link rel='icon' href='/files/images/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/hub.css'>
+		<link rel='stylesheet' type='text/css' href='/files/general.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/general.js'></script>
 	</head>
@@ -29,13 +29,12 @@
 			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
 		?>
 		<div id="header">
-			<h1>Penn Bauman</h1>
-		</div>
-		<div id="navbar">
-			<a href="/pgm/">Programs</a>
-			<a href="/games/">Games</a>git co
-			<a href="/about/">About</a>
-
+			<a href="/"><h1>Penn Bauman</h1></a>
+			<div id="navbar">
+				<a href="/pgm/">Programs</a>
+				<a href="/games/">Games</a>git co
+				<a href="/about/">About</a>
+			</div>
 		</div>
 
 		<div id="content">
