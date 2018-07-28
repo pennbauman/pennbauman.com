@@ -25,7 +25,7 @@ body {
   min-height: 100vh;
   background: #111111;
   color: #cccccc;
-  font-size: 1rem;
+  font-size: 2rem;
   display: grid;
   grid-template-areas: "header" "content" "footer";
   grid-gap: 0;
