@@ -55,9 +55,10 @@ table {
 }
 #header h1 {
   display: inline;
+  padding: 0 0 0 1.5rem;
   color: #00ccff;
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 #header h1:hover {
   color: #ffffff;
@@ -70,9 +71,9 @@ table {
   text-align: right;
 }
 #header #navbar a {
-  padding: 1rem;
-  font-size: 3rem;
-  line-height: 3rem;
+  padding: 1rem 1rem 0.5rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 #header #navbar a:hover {
   color: #00ccff;

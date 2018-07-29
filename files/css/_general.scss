@@ -47,16 +47,16 @@ table { border-collapse: collapse; }
 	z-index:5;
 
 	width:90%;
-	
 	padding:1rem 5%;
 	background:$background1;
 
 	h1 {
 		display:inline;
+		padding:0 0 0 1.5rem;
 
 		color:$bright1;
-		font-size:5rem;
-		line-height:5rem;
+		font-size:4rem;
+		line-height:4rem;
 	}
 	h1:hover { color:$hl-text; }
 
@@ -69,9 +69,9 @@ table { border-collapse: collapse; }
 		text-align:right;
 
 		a {
-			padding:1rem;
-			font-size:3rem;
-			line-height:3rem;
+			padding:1rem 1rem 0.5rem;
+			font-size:2.5rem;
+			line-height:2.5rem;
 		}
 		a:hover {
 			color:$bright1;
