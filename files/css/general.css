@@ -46,15 +46,16 @@ table {
 #header {
   grid-area: header;
   display: inline-block;
-  position: fixed;
-  padding: 1rem;
-  background: #111111;
+  position: sticky;
+  top: 0;
   z-index: 5;
-  width: 100%;
+  width: 90%;
+  padding: 1rem 5%;
+  background: #111111;
 }
 #header h1 {
-  color: #00ccff;
   display: inline;
+  color: #00ccff;
   font-size: 5rem;
   line-height: 5rem;
 }
@@ -64,14 +65,14 @@ table {
 #header #navbar {
   display: inline-block;
   position: relative;
+  float: right;
   padding: 1rem;
   text-align: right;
-  float: right;
 }
 #header #navbar a {
+  padding: 1rem;
   font-size: 3rem;
   line-height: 3rem;
-  padding: 1rem;
 }
 #header #navbar a:hover {
   color: #00ccff;
@@ -82,22 +83,21 @@ table {
   grid-area: content;
   position: relative;
   display: block;
+  z-index: 1;
   width: 80%;
   padding: 2rem 10%;
-  z-index: 1;
-  margin-top: 8rem;
 }
 
 /* Footer */
 #footer {
   grid-area: footer;
   display: block;
+  z-index: 2;
   width: 100%;
-  text-align: center;
-  font-size: 1.5rem;
   height: 2rem;
   padding: 0.5rem 0;
-  z-index: 2;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 @media (max-aspect-ratio: 1/1) {
