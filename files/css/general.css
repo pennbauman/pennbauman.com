@@ -46,6 +46,7 @@ table {
 #header {
   grid-area: header;
   display: inline-block;
+  position: fixed;
   padding: 1rem;
 }
 #header h1 {
