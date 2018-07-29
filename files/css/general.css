@@ -45,12 +45,18 @@ table {
 /* Header */
 #header {
   grid-area: header;
+  display: inline-block;
+  padding: 1rem;
 }
 #header h1 {
   color: #00ccff;
 }
 #header h1:hover {
   color: #ffffff;
+}
+#header #navbar {
+  display: inline-block;
+  padding: 1rem;
 }
 #header #navbar a:hover {
   color: #00ccff;
@@ -73,6 +79,7 @@ table {
   text-align: center;
   font-size: 1.5rem;
   height: 2rem;
+  padding: 0.5rem 0;
 }
 
 @media (max-aspect-ratio: 1/1) {
