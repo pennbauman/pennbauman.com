@@ -46,13 +46,22 @@ table { border-collapse: collapse; }
 
 	h1 {
 		color:$bright1;
+		display:inline;
+		font-size:5rem;
+		line-height:5rem;
 	}
 	h1:hover { color:$hl-text; }
 
 	#navbar {
 		display:inline-block;
 		padding:1rem;
-
+		text-align:right;
+		
+		a {
+			font-size:3rem;
+			line-height:3rem;
+			padding:1rem;
+		}
 		a:hover {
 			color:$bright1;
 		}
