@@ -44,6 +44,7 @@ table { border-collapse: collapse; }
 	display:inline-block;
 	position:fixed;
 	padding:1rem;
+	background:$background1;
 
 	h1 {
 		color:$bright1;
@@ -55,6 +56,7 @@ table { border-collapse: collapse; }
 
 	#navbar {
 		display:inline-block;
+		position:relative;
 		padding:1rem;
 		text-align:right;
 
