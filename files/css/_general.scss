@@ -46,6 +46,7 @@ table { border-collapse: collapse; }
 	padding:1rem;
 	background:$background1;
 	z-index:5;
+	width:100%;
 
 	h1 {
 		color:$bright1;
@@ -80,6 +81,7 @@ table { border-collapse: collapse; }
 	width:80%;
 	padding:2rem 10%;
 	z-index:1;
+	margin-top:8rem;
 }
 
 /* Footer */

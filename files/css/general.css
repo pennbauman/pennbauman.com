@@ -50,6 +50,7 @@ table {
   padding: 1rem;
   background: #111111;
   z-index: 5;
+  width: 100%;
 }
 #header h1 {
   color: #00ccff;
@@ -83,6 +84,7 @@ table {
   width: 80%;
   padding: 2rem 10%;
   z-index: 1;
+  margin-top: 8rem;
 }
 
 /* Footer */
