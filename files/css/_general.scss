@@ -45,6 +45,7 @@ table { border-collapse: collapse; }
 	position:fixed;
 	padding:1rem;
 	background:$background1;
+	z-index:5;
 
 	h1 {
 		color:$bright1;
@@ -78,6 +79,7 @@ table { border-collapse: collapse; }
 	display:block;
 	width:80%;
 	padding:2rem 10%;
+	z-index:1;
 }
 
 /* Footer */
@@ -89,4 +91,5 @@ table { border-collapse: collapse; }
 	font-size:1.5rem;
 	height:2rem;
 	padding:0.5rem 0;
+	z-index:2;
 }
