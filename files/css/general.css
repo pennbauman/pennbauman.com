@@ -100,13 +100,15 @@ table {
 #content h1 {
   font-size: 4rem;
   text-align: center;
+  background: #111111;
 }
-#content h1::before, #content h1::after {
+#content h1::before {
   content: "";
   display: inline-block;
   height: 0.5rem;
   background: #00ccff;
-  width: 40%;
+  width: 100%;
+  top: 0;
 }
 #content h2 {
   font-size: 3.5rem;

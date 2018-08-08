@@ -101,14 +101,17 @@ table { border-collapse: collapse; }
 	h1 {
 		font-size:4rem;
 		text-align:center;
-		&::before, &::after {
+		background:$background1;
+
+		&::before {
 			content:"";
 			display:inline-block;
 			//border:$bright1 solid 0;
 			//border-width:0.5rem 0;
 			height:0.5rem;
 			background:$bright1;
-			width:40%;
+			width:100%;
+			top:0;
 		}
 	}
 	h2 {
