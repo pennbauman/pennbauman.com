@@ -50,15 +50,15 @@ table {
   top: -1px;
   z-index: 5;
   width: 90%;
-  padding: 1rem 5% 1rem;
+  padding: 0.5rem 5% 0.5rem;
   background: #111111;
 }
 #header h1 {
   display: inline;
-  padding: 0 0 0 1.5rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
   color: #00ccff;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: normal;
 }
 #header h1:hover {
@@ -72,9 +72,9 @@ table {
   text-align: right;
 }
 #header #navbar a {
-  padding: 0rem 1rem 0rem;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  padding: 0.5rem 1rem 0.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 #header #navbar a:hover {
   color: #00ccff;
