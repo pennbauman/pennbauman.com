@@ -90,6 +90,13 @@ table {
   width: 80%;
   padding: 2rem 10%;
 }
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  color: #ffffff;
+  font-weight: normal;
+}
+#content p a:hover {
+  color: #00ccff;
+}
 
 /* Footer */
 #footer {
