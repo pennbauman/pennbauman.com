@@ -45,7 +45,7 @@ table {
 /* Header */
 #header {
   grid-area: header;
-  display: inline-block;
+  display: block;
   position: sticky;
   top: -1px;
   z-index: 5;

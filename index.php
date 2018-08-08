@@ -33,6 +33,7 @@
 			<div id="navbar">
 				<a href="/pgm/">Programs</a>
 				<a href="/games/">Games</a>
+				<a href="/games/">Sites</a>
 				<a href="/about/">About</a>
 			</div>
 		</div>
