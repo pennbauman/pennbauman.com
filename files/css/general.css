@@ -45,9 +45,10 @@ table {
 /* Header */
 #header {
   grid-area: header;
-  display: block;
+  display: inline-block;
   position: sticky;
-  top: -1px;
+  position: -webkit-sticky;
+  top: 0;
   z-index: 5;
   width: 90%;
   padding: 0.5rem 5% 0.5rem;
@@ -55,10 +56,10 @@ table {
 }
 #header h1 {
   display: inline;
-  padding: 0.5rem 0 0.5rem 1.5rem;
+  padding: 0 0 0 1.5rem;
   color: #00ccff;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 4rem;
+  line-height: 4rem;
   font-weight: normal;
 }
 #header h1:hover {
@@ -68,13 +69,13 @@ table {
   display: inline-block;
   position: relative;
   float: right;
-  padding: 0rem;
+  padding: 1rem;
   text-align: right;
 }
 #header #navbar a {
-  padding: 0.5rem 1rem 0.5rem;
-  font-size: 3rem;
-  line-height: 3rem;
+  padding: 1rem 1rem 0.5rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 #header #navbar a:hover {
   color: #00ccff;
@@ -97,9 +98,10 @@ table {
   z-index: 2;
   width: 100%;
   height: 2rem;
-  padding: 0.5rem 0 1rem;
+  padding: 0.5rem 0 1.5rem;
   text-align: center;
   font-size: 1.8rem;
+  line-height: 1.8rem;
 }
 
 @media (max-aspect-ratio: 1/1) {
