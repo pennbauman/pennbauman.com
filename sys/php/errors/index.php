@@ -1,7 +1,7 @@
 <?php
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/file_path.php";
+	include "/home/valypfnd/php/login_url.php";
 
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
@@ -22,7 +22,7 @@
 		// Print Body
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
+		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php/errors/' method='post'>";
 		echo "/home/valypfnd/<input type='text' name='folder' value='".$autofill."'>/error_log <br><br/>";
