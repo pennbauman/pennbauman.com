@@ -107,6 +107,7 @@ table {
   border: #00ccff solid;
   border: 0.5rem 0;
   height: 2rem;
+  width: 40%;
 }
 #content h2 {
   font-size: 3.5rem;
