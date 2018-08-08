@@ -104,9 +104,10 @@ table { border-collapse: collapse; }
 		&::before, &::after {
 			content:"";
 			display:inline-block;
-			border:$bright1 solid 0;
-			border-width:0.5rem 0;
-			height:2rem;
+			//border:$bright1 solid 0;
+			//border-width:0.5rem 0;
+			height:0.5rem;
+			background:$bright1;
 			width:40%;
 		}
 	}
