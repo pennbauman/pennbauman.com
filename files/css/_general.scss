@@ -86,6 +86,7 @@ table { border-collapse: collapse; }
 	position:relative;
 	display:block;
 	z-index:1;
+	overflow:hidden;
 
 	width:80%;
 	padding:2rem 10%;	
@@ -103,21 +104,21 @@ table { border-collapse: collapse; }
 		text-align:center;
 		
 
-		&::after {
+		&::after, &::before {
 			content:"";
-			display:block;
+			display:inline-block;
 			//border:$bright1 solid 0;
 			//border-width:0.5rem 0;
 			height:0.5rem;
 			background:$bright1;
 			width:100%;
-			margin-top:-4rem;
+			
 		}
 		&::before {
-			content:"";
-			display:block;
-			background:$background1;
-			margin-bottom:-4rem;
+			float:left;
+		}
+		&::after {
+			float:right;
 		}
 	}
 	h2 {
