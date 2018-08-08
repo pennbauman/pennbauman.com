@@ -105,7 +105,8 @@ table {
   content: "";
   display: inline-block;
   border: #00ccff solid;
-  border: 0.5rem 0;
+  border-top: 0.5rem;
+  border-bottom: 0.5rem;
   height: 2rem;
   width: 40%;
 }
