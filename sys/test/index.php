@@ -18,7 +18,7 @@
 		echo "<h1>Test</h1>";
 
 		echo "<p>";
-		echo "$_SERVER["DOCUMENT_ROOT"] = ".$_SERVER["DOCUMENT_ROOT"].$n;
+		echo '$_SERVER["DOCUMENT_ROOT"] = '.$_SERVER["DOCUMENT_ROOT"].$n;
 		echo "$currentSite = ".$currentSite.$n;
 		echo "$filePath = ".$filePath.$n.$n;
 
