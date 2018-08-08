@@ -101,7 +101,7 @@ table { border-collapse: collapse; }
 	h1 {
 		font-size:4rem;
 		text-align:center;
-		background:$background1;
+		
 
 		&::after {
 			content:"";
@@ -111,7 +111,13 @@ table { border-collapse: collapse; }
 			height:0.5rem;
 			background:$bright1;
 			width:100%;
-			top:-4rem;
+			margin-top:-4rem;
+		}
+		&::before {
+			content:"";
+			display:block;
+			background:$background1;
+			margin-bottom:-4rem;
 		}
 	}
 	h2 {
