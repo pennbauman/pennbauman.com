@@ -50,7 +50,7 @@ table {
   top: 0;
   z-index: 5;
   width: 90%;
-  padding: 0.5rem 5% 0.5rem;
+  padding: 1rem 5% 1rem;
   background: #111111;
 }
 #header h1 {
