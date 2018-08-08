@@ -1,3 +1,3 @@
 <?php 
-	include "/home/valypfnd/php/logout.php";
+	include "/home/valypfnd/php/pennbauman/logout.php";
 ?>
