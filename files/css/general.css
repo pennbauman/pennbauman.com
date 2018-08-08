@@ -59,6 +59,7 @@ table {
   color: #00ccff;
   font-size: 4rem;
   line-height: 4rem;
+  font-weight: normal;
 }
 #header h1:hover {
   color: #ffffff;

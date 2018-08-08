@@ -57,8 +57,10 @@ table { border-collapse: collapse; }
 		color:$bright1;
 		font-size:4rem;
 		line-height:4rem;
+		font-weight:normal;
+
+		&:hover { color:$hl-text; }
 	}
-	h1:hover { color:$hl-text; }
 
 	#navbar {
 		display:inline-block;
@@ -72,10 +74,8 @@ table { border-collapse: collapse; }
 			padding:1rem 1rem 0.5rem;
 			font-size:2.5rem;
 			line-height:2.5rem;
-		}
-		a:hover {
-			color:$bright1;
-		}
+			&:hover { color:$bright1; }
+		}	
 	}
 }
 
