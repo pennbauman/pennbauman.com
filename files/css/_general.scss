@@ -44,11 +44,11 @@ table { border-collapse: collapse; }
 	display:inline-block;
 	position:sticky;
 	position:-webkit-sticky;
-	top:-10rem;
+	top:0rem;
 	z-index:5;
 
 	width:90%;
-	padding:10.5rem 5% 0.5rem;
+	padding:0.5rem 5% 0.5rem;
 	background:$background1;
 
 	h1 {
