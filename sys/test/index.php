@@ -22,8 +22,8 @@
 		echo "$currentSite = ".$currentSite.$n;
 		echo "$filePath = ".$filePath.$n.$n;
 
-		echo "$_SERVER['HTTP_HOST'] = ".string($_SERVER['HTTP_HOST']).$n;
-		echo "$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'];
+		//echo "$_SERVER['HTTP_HOST'] = ".$_SERVER['HTTP_HOST'].$n;
+		//echo "$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'];
 		echo "</p>";
 		
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';

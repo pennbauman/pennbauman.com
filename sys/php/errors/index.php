@@ -4,9 +4,11 @@
 	include "/home/valypfnd/php/file_path.php";
 
 	if (!empty($_POST)) {
+		$autofill = $_POST["folder"];
 		$location = "/home/valypfnd/".$_POST["folder"]."/error_log";
 	} else {
 		$location = "";
+		$autofill = "";
 	}
 
 	if ($auth > 9) {
@@ -23,7 +25,7 @@
 		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php/errors/' method='post'>";
-		echo "/home/valypfnd/<input type='text' name='folder' value='".$location."'>/error_log <br><br/>";
+		echo "/home/valypfnd/<input type='text' name='folder' value='".$autofill."'>/error_log <br><br/>";
 		echo "<input type='submit' value='Enter'>";
 		echo "</form><br/><br/>";
 		if ($location != "") {
