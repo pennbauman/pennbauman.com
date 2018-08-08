@@ -101,6 +101,13 @@ table { border-collapse: collapse; }
 	h1 {
 		font-size:4rem;
 		text-align:center;
+		&::before, &::after {
+			content:"";
+			display:inline-block;
+			border:$bright1 solid;
+			border:0.5rem 0;
+			height:2rem;
+		}
 	}
 	h2 {
 		font-size:3.5rem;
