@@ -39,7 +39,6 @@
 		</div>
 
 		<div id="content">
-			Hello World
 			<!--img src="/files/images/bella_wag.gif"/-->
 			<?php 
 				include "/home/valypfnd/php/lorem_ipsum.php";

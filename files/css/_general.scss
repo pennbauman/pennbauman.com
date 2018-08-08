@@ -114,4 +114,8 @@ table { border-collapse: collapse; }
 	text-align:center;
 	font-size:1.8rem;
 	line-height:1.8rem;
+	
+	a:hover {
+		color:$hl-text;
+	}
 }

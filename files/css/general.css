@@ -110,6 +110,9 @@ table {
   font-size: 1.8rem;
   line-height: 1.8rem;
 }
+#footer a:hover {
+  color: #ffffff;
+}
 
 @media (max-aspect-ratio: 1/1) {
   /* Height > Width */
