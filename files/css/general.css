@@ -104,9 +104,8 @@ table {
 #content h1::before, #content h1::after {
   content: "";
   display: inline-block;
-  border: #00ccff solid;
-  border-top: 0.5rem;
-  border-bottom: 0.5rem;
+  border: #00ccff solid 0;
+  border-width: 0.5rem 0;
   height: 2rem;
   width: 40%;
 }
