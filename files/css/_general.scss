@@ -47,7 +47,7 @@ table { border-collapse: collapse; }
 	z-index:5;
 
 	width:90%;
-	padding:1rem 5% 0;
+	padding:0.5rem 5% 0.5rem;
 	background:$background1;
 
 	h1 {
@@ -55,8 +55,8 @@ table { border-collapse: collapse; }
 		padding:0 0 0 1.5rem;
 
 		color:$bright1;
-		font-size:4rem;
-		line-height:4rem;
+		font-size:2.5rem;
+		line-height:2.5rem;
 		font-weight:normal;
 
 		&:hover { color:$hl-text; }
@@ -101,5 +101,5 @@ table { border-collapse: collapse; }
 	padding:0.5rem 0 1rem;
 
 	text-align:center;
-	font-size:1.5rem;
+	font-size:1.8rem;
 }
