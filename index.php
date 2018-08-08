@@ -28,15 +28,9 @@
 		<?php
 			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
 		?>
-		<div id="header">
-			<a href="/"><h1>Penn Bauman</h1></a>
-			<div id="navbar">
-				<a href="/pgm/">Programs</a>
-				<a href="/games/">Games</a>
-				<a href="/games/">Sites</a>
-				<a href="/about/">About</a>
-			</div>
-		</div>
+		<?php
+			include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
+		?>
 
 		<div id="content">
 			<!--img src="/files/images/bella_wag.gif"/-->
