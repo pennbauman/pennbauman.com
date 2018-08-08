@@ -25,9 +25,8 @@
 
 		//echo "$_SERVER['HTTP_HOST'] = ".$_SERVER['HTTP_HOST'].$n;
 		echo "\$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'].$n;
-		echo "Split[0] = ".explode("_", "_string")[0].$n;
-		echo "Split[1] = ".explode("_", "_string")[1].$n;
-		echo "Split[2] = ".explode("_", "_string")[2].$n;
+		echo "Split[0] = ".explode("_", "string")[0].$n;
+		echo "Split[1] = ".explode("_", "string")[1].$n;
 		echo "</p>";
 		
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
