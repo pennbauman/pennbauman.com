@@ -103,15 +103,15 @@ table { border-collapse: collapse; }
 		text-align:center;
 		background:$background1;
 
-		&::before {
+		&::after {
 			content:"";
-			display:inline-block;
+			display:block;
 			//border:$bright1 solid 0;
 			//border-width:0.5rem 0;
 			height:0.5rem;
 			background:$bright1;
 			width:100%;
-			top:0;
+			top:-4rem;
 		}
 	}
 	h2 {

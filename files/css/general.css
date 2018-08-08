@@ -102,13 +102,13 @@ table {
   text-align: center;
   background: #111111;
 }
-#content h1::before {
+#content h1::after {
   content: "";
-  display: inline-block;
+  display: block;
   height: 0.5rem;
   background: #00ccff;
   width: 100%;
-  top: 0;
+  top: -4rem;
 }
 #content h2 {
   font-size: 3.5rem;
