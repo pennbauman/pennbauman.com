@@ -27,6 +27,7 @@
 		echo "\$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'].$n;
 		echo "Split[0] = ".explode("_", "string")[0].$n;
 		echo "Split[1] = ".explode("_", "string")[1].$n;
+		echo "Count = ".count(explode("_", "string")).$n;
 		echo "</p>";
 		
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
