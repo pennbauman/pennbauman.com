@@ -19,8 +19,8 @@
 
 		echo "<p>";
 		echo '$_SERVER["DOCUMENT_ROOT"] = '.$_SERVER["DOCUMENT_ROOT"].$n;
-		echo "$currentSite = ".$currentSite.$n;
-		echo "$filePath = ".$filePath.$n.$n;
+		echo "\$currentSite = ".$currentSite.$n;
+		echo "\$filePath = ".$filePath.$n.$n;
 
 		//echo "$_SERVER['HTTP_HOST'] = ".$_SERVER['HTTP_HOST'].$n;
 		//echo "$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'];
