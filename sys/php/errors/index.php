@@ -3,7 +3,7 @@
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/login_url.php";
 
-	error_log($loginURL, 0);
+	error_log("loginURL = ".$loginURL, 0);
 
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
