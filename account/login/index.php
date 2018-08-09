@@ -1,7 +1,7 @@
 <?php
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/subsite_path.php";
+	include "/home/valypfnd/php/subsite_return.php";
 
 	if ($auth > 0) {
 		header("Location: ".$subsiteReturn);
