@@ -40,7 +40,7 @@
 				<h1>Login</h1>
 				<?php
 					//echo "<a href='".$returnPath."'>Return</a>";
-					echo "<form action='/account/login/".$URLEnd."' method='post'>";
+					echo "<form action='".$_SERVER['REQUEST_URI']."' method='post'>";
 					echo "<b>Username:</b> <br/> <input type='text' name='username' value='".$prev_username."'><br><br/>";
 					echo "<b>Password:</b> <br/> <input type='password' name='password'> <br/><br/>";
 					echo "<h4>".$error."</h4> <br/><br/>";
