@@ -1,0 +1,143 @@
+// _general.scss
+// Colors
+$background1:#111111;
+$text:#cccccc;
+$hl-text:#ffffff;
+$bright1:#00ccff;
+
+/* Prevent Firefox selected button/link outline */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+/* Prevent iOS input styling */
+input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+:root {
+    font-size:1vh;
+}
+body {
+	margin:0;
+	padding:0;
+	font-family:Roboto Mono, monospace;
+	min-height:100vh;
+
+	background:$background1;
+	color:$text;
+	font-size:2rem;
+
+	display:grid;
+	grid-template-areas:
+				"header"
+				"content"
+				"footer";
+	grid-gap:0;
+	grid-template-columns:100%;
+	grid-template-rows:min-content auto min-content;
+}
+a { color:inherit; text-decoration:none; }
+table { border-collapse: collapse; }
+
+/* Header */
+#header {
+	grid-area:header;
+	display:inline-block;
+	position:sticky;
+	position:-webkit-sticky;
+	top:0rem;
+	z-index:5;
+
+	width:90%;
+	padding:0.5rem 5% 0.5rem;
+	background:$background1;
+
+	h1 {
+		display:inline;
+		padding:0 0 0 1.5rem;
+
+		color:$bright1;
+		font-size:4rem;
+		line-height:4rem;
+		font-weight:normal;
+
+		&:hover { color:$hl-text; }
+	}
+
+	#navbar {
+		display:inline-block;
+		position:relative;
+		float:right;
+
+		padding:1rem;
+		text-align:right;
+
+		a {
+			padding:1rem 1rem 0.5rem;
+			font-size:2.5rem;
+			line-height:2.5rem;
+			&:hover { color:$bright1; }
+		}	
+	}
+}
+
+/* Content */
+#content {
+	grid-area:content;
+	position:relative;
+	display:block;
+	z-index:1;
+	overflow:hidden;
+
+	width:80%;
+	padding:2rem 10%;	
+
+	p, h1, h2, h3, h4, h5, h6 {
+		color:$hl-text;
+		font-weight:normal;
+
+		a:hover {
+			color:$bright1;
+		}
+	}
+	h1 {
+		font-size:4rem;
+		text-align:center;
+	}
+	h2 {
+		font-size:3.5rem;
+		text-align:center;
+	}
+	h3 {
+		font-size:3.5rem;
+	}
+	h4 {
+		font-size:3rem;
+		text-align:center;
+	}
+	h5 {
+		font-size:3rem;
+	}
+	h6 {
+		font-size:2.5rem;
+	}
+
+}
+
+/* Footer */
+#footer {
+	grid-area:footer;
+	display:block;
+	z-index:2;
+
+	width:100%;
+	height:2rem;
+	padding:0.5rem 0 1.5rem;
+
+	text-align:center;
+	font-size:1.8rem;
+	line-height:1.8rem;
+
+	a:hover {
+		color:$hl-text;
+	}
+}

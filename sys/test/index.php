@@ -3,6 +3,7 @@
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/file_path.php";
 	include "/home/valypfnd/php/get_site.php";
+	$n = "<br/>";
 
 	if ($auth > 8) {
 		echo "<!DOCTYPE html><head>";
@@ -17,14 +18,16 @@
 		echo "<h1>Test</h1>";
 
 		echo "<p>";
-		echo $_SERVER["DOCUMENT_ROOT"];
-		echo "<br/>";
-		echo $currentSite;
-		echo "<br/><br/>";
+		echo '$_SERVER["DOCUMENT_ROOT"] = '.$_SERVER["DOCUMENT_ROOT"].$n;
+		echo "\$currentSite = ".$currentSite.$n;
+		echo "\$currentSiteName = ".$currentSiteName.$n;
+		echo "\$filePath = ".$filePath.$n.$n;
 
-		echo $_SERVER['HTTP_HOST'];
-		echo "<br/>";
-		echo $_SERVER['REQUEST_URI'];
+		//echo "$_SERVER['HTTP_HOST'] = ".$_SERVER['HTTP_HOST'].$n;
+		echo "\$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'].$n;
+		echo "Split[0] = ".explode("_", "string")[0].$n;
+		echo "Split[1] = ".explode("_", "string")[1].$n;
+		echo "Count = ".count(explode("_", "string")).$n;
 		echo "</p>";
 		
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';

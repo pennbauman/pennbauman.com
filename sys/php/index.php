@@ -1,6 +1,7 @@
 <?php
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
+	include "/home/valypfnd/php/login_url.php";
 	
 	if ($auth > 9) {
 		// Print Head
@@ -13,7 +14,7 @@
 		// Print Body
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
+		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
 		echo "<h1>/php/</h1>";
 		echo "<p><a href='/sys/php/documentation/'>documentation</a></p>";
 		$files = scandir("/home/valypfnd/php/");
