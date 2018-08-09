@@ -3,6 +3,7 @@
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/file_path.php";
 	include "/home/valypfnd/php/get_site.php";
+	include "/home/valypfnd/php/subsite_return.php";
 	$n = "<br/>";
 
 	if ($auth > 8) {
@@ -14,7 +15,7 @@
 		echo "<script src='/files/js/general.js'></script>";
 		echo "</head>\n<body>";
 		
-		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
+		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
 		echo "<h1>Test</h1>";
 
 		echo "<p>";
@@ -25,9 +26,11 @@
 
 		//echo "$_SERVER['HTTP_HOST'] = ".$_SERVER['HTTP_HOST'].$n;
 		echo "\$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'].$n;
-		echo "Split[0] = ".explode("_", "string")[0].$n;
-		echo "Split[1] = ".explode("_", "string")[1].$n;
-		echo "Count = ".count(explode("_", "string")).$n;
+		$testString = "/yes/no/";
+		$testArray = explode("/", $_SERVER['REQUEST_URI']);
+		for ($i = 0; $i < count($testArray); $i++) {
+			echo "[".$i."] => ".$testArray[$i].$n;
+		}
 		echo "</p>";
 		
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';

@@ -25,10 +25,12 @@
 		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php/errors/' method='post'>";
-		echo "/home/valypfnd/<input type='text' name='folder' value='".$autofill."'>/error_log <br><br/>";
+		echo "/home/valypfnd/<input type='text' name='folder' value='".$autofill."' autofocus>/error_log <br><br/>";
 		echo "<input type='submit' value='Enter'>";
 		echo "</form><br/><br/>";
-		if ($location != "") {
+		if ($autofill == "") {
+			echo "<p><h4 class='error'>Please Enter a Location</h4><br/><br/></p>";
+		} elseif (file_exists($location)) {
 			echo "<p><h4>".$location."</h4><br/>";
 			$errors = file_get_contents($location);
 			$errors = explode("\n", $errors);
@@ -40,6 +42,8 @@
 				$i--;
 			} //*/
 			echo "</p>";
+		} else {
+			echo "<p><h4 class='error'>No Such File Exists</h4><br/><br/></p>";
 		}
 		echo "<a href='/'>Home</a> - <a href='/sys/'>System</a>";
 		echo "</body></html>";

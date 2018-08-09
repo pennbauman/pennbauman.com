@@ -4,6 +4,7 @@
 	include "/home/valypfnd/php/subsite_return.php";
 
 	if ($auth > 0) {
+		error_log("Location: ".$subsiteReturn, 0);
 		header("Location: ".$subsiteReturn);
 	}
 	$prev_username = "";
@@ -15,7 +16,8 @@
 
 		include "/home/valypfnd/php/auth.php";
 		if ($auth > 0) {
-			header("Location: ".$returnPath);
+			error_log("Location: ".$subsiteReturn, 0);
+			header("Location: ".$subsiteReturn);
 		} else {
 			$prev_username = $username; 
 			$error = "Incorrect login.";

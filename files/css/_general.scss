@@ -102,6 +102,24 @@ table { border-collapse: collapse; }
 	h1 {
 		font-size:4rem;
 		text-align:center;
+		
+		/*
+		&::after, &::before {
+			content:"";
+			display:inline-block;
+			//border:$bright1 solid 0;
+			//border-width:0.5rem 0;
+			height:0.5rem;
+			background:$bright1;
+			width:100%;
+			
+		}
+		&::before {
+			float:left;
+		}
+		&::after {
+			float:right;
+		}*/
 	}
 	h2 {
 		font-size:3.5rem;
