@@ -15,7 +15,7 @@
 
 		include "/home/valypfnd/php/auth.php";
 		if ($auth > 0) {
-			header("Location: ".$returnPath);
+			header("Location: ".$subsiteReturn);
 		} else {
 			$prev_username = $username; 
 			$error = "Incorrect login.";
