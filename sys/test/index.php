@@ -26,7 +26,7 @@
 		//echo "$_SERVER['HTTP_HOST'] = ".$_SERVER['HTTP_HOST'].$n;
 		echo "\$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'].$n;
 		$testString = "/yes/no/";
-		$testArray = explode("/", $testString);
+		$testArray = explode("/", $_SERVER['REQUEST_URI']);
 		for ($i = 0; $i < count($testArray); $i++) {
 			echo "[".$i."] => ".$testArray[$i].$n;
 		}
