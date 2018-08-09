@@ -3,8 +3,6 @@
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/login_url.php";
 
-	error_log("loginURL = ".$loginURL, 0);
-
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
 		$location = "/home/valypfnd/".$_POST["folder"]."/error_log";
@@ -31,7 +29,7 @@
 		echo "<input type='submit' value='Enter'>";
 		echo "</form><br/><br/>";
 		if ($autofill == "") {
-			echo "<p><h4 class='error'>Please Enter a Location</h4></p>";
+			echo "<p><h4 class='error'>Please Enter a Location</h4><br/><br/></p>";
 		} elseif (file_exists($location)) {
 			echo "<p><h4>".$location."</h4><br/>";
 			$errors = file_get_contents($location);
@@ -45,7 +43,7 @@
 			} //*/
 			echo "</p>";
 		} else {
-			echo "<p><h4 class='error'>No Such File Exists</h4></p>";
+			echo "<p><h4 class='error'>No Such File Exists</h4><br/><br/></p>";
 		}
 		echo "<a href='/'>Home</a> - <a href='/sys/'>System</a>";
 		echo "</body></html>";

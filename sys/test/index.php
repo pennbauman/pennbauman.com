@@ -3,6 +3,7 @@
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/file_path.php";
 	include "/home/valypfnd/php/get_site.php";
+	include "/home/valypfnd/php/subsite_return.php";
 	$n = "<br/>";
 
 	if ($auth > 8) {
@@ -14,7 +15,7 @@
 		echo "<script src='/files/js/general.js'></script>";
 		echo "</head>\n<body>";
 		
-		echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
+		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
 		echo "<h1>Test</h1>";
 
 		echo "<p>";
