@@ -1,3 +1,6 @@
+
+RewriteEngine on
+
 ErrorDocument 400 /files/errors/400.shtml
 ErrorDocument 401 /files/errors/401.shtml
 ErrorDocument 401 /files/errors/402.shtml
@@ -28,3 +31,8 @@ ErrorDocument 500 /files/errors/505.shtml
 ErrorDocument 500 /files/errors/506.shtml
 ErrorDocument 500 /files/errors/507.shtml
 ErrorDocument 500 /files/errors/510.shtml
+RewriteCond %{HTTP_HOST} ^www\.pennbauman\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ "https\:\/\/pennbauman\.com\/$1" [R=301,L]
+
