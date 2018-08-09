@@ -4,6 +4,7 @@
 	include "/home/valypfnd/php/file_path.php";
 	include "/home/valypfnd/php/get_site.php";
 	include "/home/valypfnd/php/subsite_return.php";
+	include "/home/valypfnd/php/login_url.php";
 	$n = "<br/>";
 
 	if ($auth > 8) {
