@@ -1,10 +1,10 @@
 <?php
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/return_path.php";
+	include "/home/valypfnd/php/subsite_path.php";
 
 	if ($auth > 0) {
-		header("Location: ".$returnPath);
+		header("Location: ".$subsiteReturn);
 	}
 	$prev_username = "";
 	$error = "";
