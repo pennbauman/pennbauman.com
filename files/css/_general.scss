@@ -28,9 +28,9 @@ body {
 
 	display:grid;
 	grid-template-areas:
-				"header"
-				"content"
-				"footer";
+		"header"
+		"content"
+		"footer";
 	grid-gap:0;
 	grid-template-columns:100%;
 	grid-template-rows:min-content auto min-content;
