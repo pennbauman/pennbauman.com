@@ -1,8 +1,21 @@
 body {left:0; top:0; margin:0; padding:0; background:black; color:white; font-size:2vh;}
-th {text-align:center; font-weight:bold; font-size:6vh; line-height:6vh; top:0; margin-top:2vh; margin-bottom:3vh; width:100%; }
 b {font-size:3vh; line-height:3vh;}
 i {font-size:1.75vh; line-height:1.75vh;}
 a {color:inherit; text-decoration:inherit;}
+th {
+	text-align:center;
+	font-weight:bold;
+	font-size:6vh;
+	line-height:6vh;
+	top:0;
+	margin-top:2vh;
+	margin-bottom:3vh;
+	width:100%;
+	padding: 1vh 0;
+}
+td {
+	padding: 2px;
+}
 .hl:hover {text-decoration:underline;}
 .std_block{
 	width:5vw;
