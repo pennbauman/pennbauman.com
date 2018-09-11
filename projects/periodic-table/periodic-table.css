@@ -2,6 +2,9 @@ body {left:0; top:0; margin:0; padding:0; background:black; color:white; font-si
 b {font-size:3vh; line-height:3vh;}
 i {font-size:1.75vh; line-height:1.75vh;}
 a {color:inherit; text-decoration:inherit;}
+table {
+	margin: 0 4px;
+}
 th {
 	text-align:center;
 	font-weight:bold;
@@ -28,7 +31,11 @@ td {
 	margin:auto;
 	border-collapse:collapse;
 }
-.num {
+.num_left {
+	font-size:2.5vh;
+	padding-left:5px;
+}
+.num_right {
 	text-align:center;
 	font-size:2.5vh;
 }
