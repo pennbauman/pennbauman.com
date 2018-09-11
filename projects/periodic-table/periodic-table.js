@@ -230,7 +230,7 @@ function element(symbol) {
 	}
 	fin += ec + "</span><br/>";
 	fin += "</p></div>"
-	htmlPrint("big", fin); 
+	htmlPrint("big", fin);
 	return false;
 }
 // Reset display block to default dumb info
