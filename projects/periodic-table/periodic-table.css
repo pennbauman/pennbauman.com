@@ -12,6 +12,7 @@ th {
 	margin-bottom:3vh;
 	width:100%;
 	padding: 1vh 0;
+	height:24vh;
 }
 td {
 	padding: 2px;
@@ -40,11 +41,11 @@ td {
 #big {
 	background-color:white;
 	color:black;
-	border:2px solid white;
-	border-bottom-width:4px;
 	text-align:center;
-	width:14vw;
-	height:20vh;
+	width:24vh;
+	max-width:calc(100% - 8px);
+	height:calc(24vh - 8px);
+	padding:2px;
 	margin:auto;
 	vertical-align:center;
 }
