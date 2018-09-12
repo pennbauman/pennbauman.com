@@ -9,6 +9,7 @@
 		$i = $numStart;
 		while ($i < $numEnd + 1) {
 			elem($i);
+			$i++;
 		}
 	}
 ?>
@@ -32,6 +33,7 @@
 					$i = 1;
 					while ($i < 19) {
 						echo "<td class='num_top col".$i."_top'>".$i."</td>\n";
+						$i++;
 					}
 				?>
 			</tr>
