@@ -246,6 +246,6 @@ $(document).ready(function () {
 
     $(this).closest('tr').find('td').first().toggleClass('num_hl');
 
-    //$('.days th').eq(i).toggleClass('bg');
+    $('.tops_nums td').eq(i).toggleClass('num_hl');
   });
 });
