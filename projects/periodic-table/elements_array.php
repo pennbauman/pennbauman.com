@@ -6,7 +6,7 @@
 
 		["Li", "Lithium", "6.941", "Alkali Metal", "alkali row2 col1"],
 		["Be", "Beryllium", "9.012", "Alkaline Earth Metal", "alkaline row2 col2"],
-		["B", "Boron", "10.811", "Metaloid", "meraloid row2 col13"],
+		["B", "Boron", "10.811", "Metaloid", "metaloid row2 col13"],
 		["C", "Carbon", "12.011", "Nonmetal", "nonmetal row2 col14"],
 		["N", "Nitrogen", "14.007", "Nonmetal", "nonmetal row2 col15"],
 		["O", "Oxygen", "15.999", "Nonmetal", "nonmetal row2 col16"],
@@ -130,6 +130,6 @@
 		["Uus", "Ununseptium", "unknown", "Halogen", "halogen row7 col17"],
 		["Uuo", "Ununoctium", "unknown", "Noble Gas", "noble row7 col18"],
 	];
-	
+
 	echo "<h1>HI</h1>".$elements[1][1];
 ?>
