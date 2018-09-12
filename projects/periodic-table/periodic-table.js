@@ -230,11 +230,22 @@ function element(symbol) {
 	}
 	fin += ec + "</span><br/>";
 	fin += "</p></div>"
-	htmlPrint("big", fin); 
+	htmlPrint("big", fin);
 	return false;
 }
 // Reset display block to default dumb info
-function reset() {
+/*function reset() {
 	htmlPrint("big", "<div ><p><span id=\"a_num\">Atomic Number</span> | Mass<br/><span id=\"a_sym\">Sym</span> <br/><span id=\"a_name\">Name</span><br/><span id=\"a_m\">Type<br/>Electron Configuration</span></p></div>");
 	return false;
-}
+} //*/
+$(document).ready(function () {
+  $('.elem_row').find('.std_block').not(':first-child').on('mouseenter mouseleave', function () {
+    var i = $(this).index();
+
+    //$(this).toggleClass('bg');
+
+    $(this).closest('tr').find('td').first().toggleClass('num_hl');
+
+    //$('.days th').eq(i).toggleClass('bg');
+  });
+});

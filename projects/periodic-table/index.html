@@ -3,6 +3,7 @@
 		<title> Periodic Table | Penn Bauman</title>
 		<link rel="shortcut icon" href="h_favicon.png">
 		<link rel='stylesheet' type='text/css' href='periodic-table.css'>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='periodic-table.js'></script>
 	</head>
 	<body>
@@ -32,7 +33,7 @@
 				<td class="num_top"> 17 </td>
 				<td class="num_top"> 18 </td>
 			</tr>
-			<tr> <!--1ST ELEMETNS / SPACE-->
+			<tr class="elem_row"> <!--1ST ELEMETNS / SPACE-->
 				<td class="num_left"> 1 </td>
 				<td onclick="element('H');return false;" class="std_block" id="non-metals">1<br/> <b>H</b><br/> <i>1.008</i> </td>
 				<td> </td>
@@ -49,7 +50,7 @@
 				<td colspan="5"> </td>
 				<td onclick="element('He');return false;" class="std_block" id="noble-gas">2<br/> <b>He</b><br/> <i>4.003</i> </td>
 			</tr>
-			<tr> <!--2ND ELEMENTS / SPACE-->
+			<tr class="elem_row"> <!--2ND ELEMENTS / SPACE-->
 				<td class="num_left"> 2 </td>
 				<td onclick="element('Li');return false;" class="std_block" id="alkali">3<br/> <b>Li</b><br/> <i>6.941</i> </td>
 				<td onclick="element('Be');return false;" class="std_block" id="alkaline">4<br/> <b>Be</b><br/> <i>9.012</i> </td>
@@ -63,7 +64,7 @@
 
 
 			</tr>
-			<tr> <!--3RD ELEMENTS / SPACE-->
+			<tr class="elem_row"> <!--3RD ELEMENTS / SPACE-->
 				<td class="num_left"> 3 </td>
 				<td onclick="element('Na');return false;" class="std_block" id="alkali">11<br/> <b>Na</b><br/> <i>22.990</i> </td>
 				<td onclick="element('Mg');return false;" class="std_block" id="alkaline">12<br/> <b>Mg</b><br/> <i>24.305</i> </td>
@@ -76,7 +77,7 @@
 				<td onclick="element('Ar');return false;" class="std_block" id="noble-gas">18<br/> <b>Ar</b><br/> <i>39.948</i> </td>
 
 			</tr>
-			<tr> <!--4TH ELEMENTS-->
+			<tr class="elem_row"> <!--4TH ELEMENTS-->
 				<td class="num_left"> 4 </td>
 				<td onclick="element('K');return false;" class="std_block" id="alkali">19<br/> <b>K</b><br/> <i>39.098</i> </td>
 				<td onclick="element('Ca');return false;" class="std_block" id="alkaline">20<br/> <b>Ca</b><br/> <i>40.078</i> </td>
@@ -97,7 +98,7 @@
 				<td onclick="element('Br');return false;" class="std_block" id="holagens">35<br/> <b>Br</b><br/> <i>79.904</i> </td>
 				<td onclick="element('Kr');return false;" class="std_block" id="noble-gas">36<br/> <b>Kr</b><br/> <i>84.800</i> </td>
 			</tr>
-			<tr> <!--5TH ELEMENTS-->
+			<tr class="elem_row"> <!--5TH ELEMENTS-->
 				<td class="num_left"> 5 </td>
 				<td onclick="element('Rb');return false;" class="std_block" id="alkali">37<br/> <b>Rb</b><br/> <i>84.468</i> </td>
 				<td onclick="element('Sr');return false;" class="std_block" id="alkaline">38<br/> <b>Sr</b><br/> <i>87.620</i> </td>
@@ -119,7 +120,7 @@
 				<td onclick="element('Xe');return false;" class="std_block" id="noble-gas">54<br/> <b>Xe</b><br/> <i>131.290</i> </td>
 
 			</tr>
-			<tr> <!--6TH ELEMENTS-->
+			<tr class="elem_row"> <!--6TH ELEMENTS-->
 				<td class="num_left"> 6 </td>
 				<td onclick="element('Cs');return false;" class="std_block" id="alkali">55<br/> <b>Cs</b><br/> <i>132.905</i> </td>
 				<td onclick="element('Ba');return false;" class="std_block" id="alkaline">56<br/> <b>Ba</b><br/> <i>137.327</i> </td>
@@ -143,7 +144,7 @@
 				<td onclick="element('Rn');return false;" class="std_block" id="noble-gas">86<br/> <b>Rn</b><br/> <i>222.018</i> </td>
 
 			</tr>
-			<tr> <!--7TH ELEMENTS-->
+			<tr class="elem_row"> <!--7TH ELEMENTS-->
 				<td class="num_left"> 7 </td>
 				<td onclick="element('Fr');return false;" class="std_block" id="alkali"> 87 <br/> <b>Fr</b> <br/> <i>223.020</i> </td>
 				<td onclick="element('Ra');return false;" class="std_block" id="alkaline"> 88 <br/> <b>Ra</b> <br/> <i>226.025</i> </td>
@@ -171,7 +172,7 @@
 				<td> </td>
 				<td colspan="17" style="height:5vh;"> </td>
 			</tr>
-			<tr> <!--LANTHANDE SERIES-->
+			<tr class="elem_row"> <!--LANTHANDE SERIES-->
 
 
 				<td onclick="element("");retu'' false;" class="series" colspan="2"> Lanthanide Series <br/> <i> 57 - 71 </i> </td></a>
@@ -193,7 +194,7 @@
 
 				<td rowspan="2"> </td>
 			</tr>
-			<tr> <!--ACTINIDE SERIES-->
+			<tr class="elem_row"> <!--ACTINIDE SERIES-->
 
 
 				<td onclick="element("");return fa''e;" class="series" colspan="2"> Actinide Series <br/> <i> 89 - 103 </i> </td></a>
