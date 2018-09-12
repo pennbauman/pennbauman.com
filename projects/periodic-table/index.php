@@ -1,5 +1,5 @@
 <?php
-	include "./elements_array.php";
+	include ("elements_array.php");
 
 	function elem($num) {
 		echo "<td onclick='element('".$elements[$num][0]."')' class='".$elements[$num][4]."'>".$num."<br/> <b>".$elements[$num][0]."</b><br/> <i>".$elements[$num][2]."</i> </td>\n";
