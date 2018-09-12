@@ -241,9 +241,9 @@ function element(symbol) {
 $(document).ready(function () {
   $('.elem_row').find('.std_block').not(':first-child').on('mouseenter mouseleave', function () {
     var i = $(this).index();
-	if $(this).hasClass("lanthanide") {
+	if ($(this).hasClass("lanthanide")) {
 		//getElementById("row6").toggleClass("num_hl");
-	} else if $(this).hasClass("actinide") {
+	} else if ($(this).hasClass("actinide")) {
 		//getElementById("row7").toggleClass("num_hl");
 	}
 
