@@ -242,9 +242,9 @@ $(document).ready(function () {
   $('.elem_row').find('.std_block').not(':first-child').on('mouseenter mouseleave', function () {
     var i = $(this).index();
 	if ($(this).hasClass("lanthanide")) {
-		$("row6").toggleClass("num_hl");
+		$("row6")[0].toggleClass("num_hl");
 	} else if ($(this).hasClass("actinide")) {
-		$("row7").toggleClass("num_hl");
+		$("row7")[0].toggleClass("num_hl");
 	} else {
 		$(this).closest('tr').find('td').first().toggleClass('num_hl');
 	}
