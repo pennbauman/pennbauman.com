@@ -130,4 +130,5 @@
 		array("Uus", "Ununseptium", "unknown", "Halogen", "halogen row7 col17"),
 		array("Uuo", "Ununoctium", "unknown", "Noble Gas", "noble row7 col18"),
 	);
+	echo "<h1>HI</h1>";
 ?>
