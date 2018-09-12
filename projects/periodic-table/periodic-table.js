@@ -243,9 +243,7 @@ $(document).ready(function () {
     var i = $(this).index();
 
     //$(this).toggleClass('bg');
-
     $(this).closest('tr').find('td').first().toggleClass('num_hl');
-
     $('.tops_nums td').eq(i).toggleClass('num_hl');
   });
 });
