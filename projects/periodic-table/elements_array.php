@@ -130,5 +130,5 @@
 		["Uus", "Ununseptium", "unknown", "Halogen", "halogen row7 col17"],
 		["Uuo", "Ununoctium", "unknown", "Noble Gas", "noble row7 col18"],
 	];
-	echo "<h1>HI</h1>";
+	echo "<h1>HI</h1>".$elements[1][1];
 ?>
