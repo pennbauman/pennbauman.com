@@ -89,12 +89,13 @@
 				<td colspan="17" style="height:5vh;"> </td>
 			</tr>
 			<tr class="elem_row "> <!--LANTHANDE SERIES-->
+				<td class="series" colspan="2"> Lanthanide Series <br/> <i> 57 - 71 </i> </td></a>
 				<?php elems(57, 71); ?>
 				<td rowspan="2"> </td>
 			</tr>
 			<tr class="elem_row"> <!--ACTINIDE SERIES-->
 
-				<td onclick="element("");return fa''e;" class="series" colspan="2"> Actinide Series <br/> <i> 89 - 103 </i> </td></a>
+				<td class="series" colspan="2"> Actinide Series <br/> <i> 89 - 103 </i> </td></a>
 				<?php elems(89, 103); ?>
 			</tr>
 		</table>
