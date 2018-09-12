@@ -130,16 +130,6 @@
 		["Uus", "Ununseptium", "unknown", "Halogen", "halogen row7 col17"],
 		["Uuo", "Ununoctium", "unknown", "Noble Gas", "noble row7 col18"],
 	];
-	function elem($num) {
-		echo "<td onclick='element('".$elements[$num][0]."')' class='std_block ".$elements[$num][4]."'>".$num."<br/> <b>".$elements[$num][0]."</b><br/> <i>".$elements[$num][2]."</i> </td>\n";
-		//<td onclick="element('H');return false;" class="std_block non-metals">1<br/> <b>H</b><br/> <i>1.008</i> </td>
-	}
-	function elems($numStart, $numEnd) {
-		$i = $numStart;
-		while ($i < $numEnd + 1) {
-			elem($i);
-			$i++;
-		}
-	}
+	
 	echo "<h1>HI</h1>".$elements[1][1];
 ?>
