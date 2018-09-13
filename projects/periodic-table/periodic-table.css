@@ -1,19 +1,23 @@
 body {left:0; top:0; margin:0; padding:0; background:black; color:white; font-size:2vh;}
-h1 {text-align:center; font-weight:bold; font-size:6vh; line-height:6vh; top:0; margin-top:2vh; margin-bottom:3vh; }
 b {font-size:3vh; line-height:3vh;}
 i {font-size:1.75vh; line-height:1.75vh;}
 a {color:inherit; text-decoration:inherit;}
-#back {
-    position:fixed;
-    top:1.5vh;
-    left:2vw;
-    font-size:2.25vh;
+table {
+	margin: 0 4px;
 }
-#home {
-    position:fixed;
-    top:1.5vh;
-    right:2vw;
-    font-size:2.25vh;
+th {
+	text-align:center;
+	font-weight:bold;
+	font-size:6vh;
+	line-height:6vh;
+	top:0;
+	margin-top:2vh;
+	margin-bottom:3vh;
+	width:100%;
+	padding: 2vh 0;
+}
+td {
+	padding: 2px;
 }
 .hl:hover {text-decoration:underline;}
 .std_block{
@@ -27,9 +31,21 @@ a {color:inherit; text-decoration:inherit;}
 	margin:auto;
 	border-collapse:collapse;
 }
-.num {
+.num_left {
+	font-size:2.5vh;
+	padding: 0 8px;
+	border:solid white;
+	border-width: 1px 0;
+}
+.num_top {
 	text-align:center;
 	font-size:2.5vh;
+	border:solid white;
+	border-width: 0 1px 1px;
+}
+.num_hl {
+	color:black !important;
+	background:#cccccc !important;
 }
 .series {
 	font-weight:bold;
@@ -39,11 +55,11 @@ a {color:inherit; text-decoration:inherit;}
 #big {
 	background-color:white;
 	color:black;
-	border:2px solid white;
-	border-bottom-width:4px;
 	text-align:center;
-	width:14vw;
-	height:20vh;
+	width:24vh;
+	max-width:calc(100% - 8px);
+	height:calc(24vh - 8px);
+	padding:2px;
 	margin:auto;
 	vertical-align:center;
 }
@@ -64,13 +80,13 @@ a {color:inherit; text-decoration:inherit;}
 	font-size:2vh;
 	line-height:2vh;
 }
-#non-metals {background-color:#002282}
-#noble-gas {background-color:#b09d00}
-#alkali {background-color:#770019}
-#alkaline {background-color:#007768}
-#metaloid {background-color:#414872}
-#holagens {background-color:#026100}
-#metal {background-color:#3a3a3a}
-#trans-metal {background-color:#945b00}
-#lanthanide {background-color:#440098}
-#actinide {background-color:#9500a2}
+.non-metals, .nonmetal {background-color:#002282}
+.noble-gas, .noble {background-color:#b09d00}
+.alkali {background-color:#770019}
+.alkaline {background-color:#007768}
+.metaloid {background-color:#414872}
+.holagens, .halogen {background-color:#026100}
+.metal {background-color:#3a3a3a}
+.trans-metal, .transmetal {background-color:#945b00}
+.lanthanide {background-color:#440098}
+.actinide {background-color:#9500a2}
