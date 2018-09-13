@@ -77,7 +77,7 @@
 		["Er", "Erbium", "167.260", "Lanthanide", "lanthanide row6"],
 		["Tm", "Thulium", "168.934", "Lanthanide", "lanthanide row6"],
 		["Yb", "Ytterbium", "173.040", "Lanthanide", "lanthanide row6"],
-		["Lu", "Lutetium", "174.", "Lanthanide", "lanthanide row6"],
+		["Lu", "Lutetium", "174.967", "Lanthanide", "lanthanide row6"],
 
 		["Hf", "Hafnium", "178.490", "Transition Metal", "transmetal row6 col4"],
 		["Ta", "Tantalum", "180.948", "Transition Metal", "transmetal row6 col5"],
