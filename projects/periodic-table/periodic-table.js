@@ -245,7 +245,7 @@ $(document).ready(function () {
 				$(".row"+i+"_left").toggleClass("num_hl");
 			}
 		}
-		for (var i = 1; i < 18; i++) {
+		for (var i = 1; i < 19; i++) {
 			if ($(this).hasClass("col"+i)) {
 				$(".col"+i+"_top").toggleClass("num_hl");
 			}
