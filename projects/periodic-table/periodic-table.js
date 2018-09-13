@@ -250,7 +250,7 @@ $(document).ready(function () {
 				$(".col"+i+"_top").toggleClass("num_hl");
 			}
 		}
-		element($(this).id);
+		element($(this).attr("id"));
 		/*
 	    var i = $(this).index();
 		if ($(this).hasClass("lanthanide")) {
