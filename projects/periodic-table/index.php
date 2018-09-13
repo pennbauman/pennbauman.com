@@ -3,7 +3,7 @@
 
 	function elem($num) {
 		$elements = $GLOBALS["elements"];
-		echo "<td onclick='element('".$elements[$num][0]."')' class='std_block ".$elements[$num][4]."'>".$num."<br/> <b>".$elements[$num][0]."</b><br/> <i>".$elements[$num][2]."</i> </td>\n";
+		echo "<td onclick='element('".$elements[$num][0]."')' class='std_block ".$elements[$num][4]."' id='".$elements[$num][0]."'>".$num."<br/> <b>".$elements[$num][0]."</b><br/> <i>".$elements[$num][2]."</i> </td>\n";
 		//<td onclick="element('H');return false;" class="std_block non-metals">1<br/> <b>H</b><br/> <i>1.008</i> </td>
 	}
 	function elems($numStart, $numEnd) {
