@@ -39,7 +39,7 @@
 				?>
 			</tr>
 			<tr class="elem_row"> <!--1ST ELEMETNS / SPACE-->
-				<td class="num_left"> 1 </td>
+				<td class="num_left row1_left"> 1 </td>
 				<?php elem(1); ?>
 				<td> </td>
 				<td colspan="2" rowspan="3">
@@ -56,29 +56,29 @@
 				<?php elem(2); ?>
 			</tr>
 			<tr class="elem_row"> <!--2ND ELEMENTS / SPACE-->
-				<td class="num_left"> 2 </td>
+				<td class="num_left row2_left"> 2 </td>
 				<?php elems(3, 10); ?>
 			</tr>
 			<tr class="elem_row"> <!--3RD ELEMENTS / SPACE-->
-				<td class="num_left"> 3 </td>
+				<td class="num_left row3_left"> 3 </td>
 				<?php elems(11, 18); ?>
 			</tr>
 			<tr class="elem_row"> <!--4TH ELEMENTS-->
-				<td class="num_left"> 4 </td>
+				<td class="num_left row4_left"> 4 </td>
 				<?php elems(19, 36); ?>
 			</tr>
 			<tr class="elem_row"> <!--5TH ELEMENTS-->
-				<td class="num_left"> 5 </td>
+				<td class="num_left row5_left"> 5 </td>
 				<?php elems(37, 54); ?>
 			</tr>
 			<tr class="elem_row"> <!--6TH ELEMENTS-->
-				<td class="num_left" id="row6"> 6 </td>
+				<td class="num_left row6_left"> 6 </td>
 				<?php elems(55, 56); ?>
 				<td class="std_block lanthanide"> <span style="font-size:2.5vh"> 57-71 </span> </td>
 				<?php elems(72, 86); ?>
 			</tr>
 			<tr class="elem_row"> <!--7TH ELEMENTS-->
-				<td class="num_left" id="row7"> 7 </td>
+				<td class="num_left row7_left"> 7 </td>
 				<?php elems(87, 88); ?>
 				<td class="std_block actinide"> <span style="font-size:2.5vh"> 89-103 </span> </td>
 				<?php elems(104, 118); ?>

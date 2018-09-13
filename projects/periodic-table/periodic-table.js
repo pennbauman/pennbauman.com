@@ -239,7 +239,18 @@ function element(symbol) {
 	return false;
 } //*/
 $(document).ready(function () {
-  $('.elem_row').find('.std_block').not(':first-child').on('mouseenter mouseleave', function () {
+	$('.elem_row').find('.std_block').not(':first-child').on('mouseenter mouseleave', function () {
+		for (var i = 1; i < 8; i++) {
+			if ($(this).hasClass("row"+i)) {
+				$(".row"+i+"_left").toggleClass("num_hl");
+			}
+		}
+		for (var i = 1; i < 18; i++) {
+			if ($(this).hasClass("col"+i)) {
+				$(".col"+i+"_top").toggleClass("num_hl");
+			}
+		}
+	/*
     var i = $(this).index();
 	if ($(this).hasClass("lanthanide")) {
 		$("#row6").toggleClass("num_hl");
@@ -247,7 +258,7 @@ $(document).ready(function () {
 		$("#row7").toggleClass("num_hl");
 	} else {
 		$(this).closest('tr').find('td').first().toggleClass('num_hl');
-	}
+	} //*/
 
     //$(this).toggleClass('bg');
 
