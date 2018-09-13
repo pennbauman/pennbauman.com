@@ -1,4 +1,3 @@
 dnd5ebooks~https://drive.google.com/drive/folders/1hVgL3hpDhLY2H0Fh4rHtmMPN1TO9Ex81
 dnd4ebooks~https://drive.google.com/open?id=1T2IIg6-knnE1Ny9Aasvf628HZojPHXKc
 dnddrive~https://drive.google.com/open?id=0ByMS1MkBFnXIbm9EQUVJeTlVdWM
-pt~/projects/periodic-table/
