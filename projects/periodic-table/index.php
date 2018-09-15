@@ -40,7 +40,7 @@
 			</tr>
 			<tr class="elem_row"> <!--1ST ELEMETNS / SPACE-->
 				<td class="num_left row1_left"> 1 </td>
-				<?php elem(1); ?>
+				<?php elems(0, 1); ?>
 				<td> </td>
 				<td colspan="2" rowspan="3">
 				<td colspan="7" rowspan="3" > <!--style="border:1px solid red"-->
@@ -97,7 +97,7 @@
 
 				<td class="series" colspan="2"> Actinide Series <br/> <i> 89 - 103 </i> </td></a>
 				<?php elems(89, 103); ?>
-			</tr>
 		</table>
+	</tr>
 	</body>
 </html>
