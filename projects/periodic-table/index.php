@@ -40,7 +40,8 @@
 			</tr>
 			<tr class="elem_row"> <!--1ST ELEMETNS / SPACE-->
 				<td class="num_left row1_left"> 1 </td>
-				<?php elems(0, 1); ?>
+				<?php elem(1); ?>
+				<?php elem(0); ?>
 				<td> </td>
 				<td colspan="2" rowspan="3">
 				<td colspan="7" rowspan="3" > <!--style="border:1px solid red"-->
