@@ -1,6 +1,6 @@
 <?php
 	$elements = [
-		["Sym", "Name", "Mass", "Type", ""],
+		["Sym", "Name", "Mass", "Type", "classes"],
 		["H", "Hydrogen", "1.008", "Nonmetal", "nonmetal row1 col1"],
 		["He", "Helium", "4.003", "Noble Gas", "noble row1 col18"],
 

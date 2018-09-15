@@ -3,7 +3,8 @@
 
 	function elem($num) {
 		$elements = $GLOBALS["elements"];
-		echo "<td onclick='element('".$elements[$num][0]."')' class='std_block ".$elements[$num][4]."' id='".$elements[$num][0]."'>".$num."<br/> <b>".$elements[$num][0]."</b><br/> <i>".$elements[$num][2]."</i> </td>\n";
+		echo "<td class='std_block ".$elements[$num][4]."' id='".$elements[$num][0]."'>".$num."<br/> <b>".$elements[$num][0]."</b><br/> <i>".$elements[$num][2]."</i> </td>\n";
+		// onclick='element('".$elements[$num][0]."')'
 		//<td onclick="element('H');return false;" class="std_block non-metals">1<br/> <b>H</b><br/> <i>1.008</i> </td>
 	}
 	function elems($numStart, $numEnd) {
@@ -41,7 +42,7 @@
 			<tr class="elem_row"> <!--1ST ELEMETNS / SPACE-->
 				<td class="num_left row1_left"> 1 </td>
 				<?php elem(1); ?>
-				<?php elem(0); ?>
+				<td class='std_block'>Number<br/> <b>Sym</b><br/> <i>Mass</i> </td>
 				<td colspan="2" rowspan="3">
 				<td colspan="7" rowspan="3" > <!--style="border:1px solid red"-->
 					<div id="big"><p>
