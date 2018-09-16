@@ -75,13 +75,13 @@
 			<tr class="elem_row"> <!--6TH ELEMENTS-->
 				<td class="num_left row6_left"> 6 </td>
 				<?php elems(55, 56); ?>
-				<td class="std_block lanthanide"> <span style="font-size:2.5vh"> 57-71 </span> </td>
+				<td class="std_block lanthanide row6"> <span style="font-size:2.5vh"> 57-71 </span> </td>
 				<?php elems(72, 86); ?>
 			</tr>
 			<tr class="elem_row"> <!--7TH ELEMENTS-->
 				<td class="num_left row7_left"> 7 </td>
 				<?php elems(87, 88); ?>
-				<td class="std_block actinide"> <span style="font-size:2.5vh"> 89-103 </span> </td>
+				<td class="std_block actinide row7"> <span style="font-size:2.5vh"> 89-103 </span> </td>
 				<?php elems(104, 118); ?>
 			</tr>
 			<tr> <!--GAP-->
