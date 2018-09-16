@@ -251,6 +251,7 @@ $(document).ready(function () {
 			}
 		}
 		element($(this).attr("id"));
+		$(this).toggleClass("outline");
 		/*
 	    var i = $(this).index();
 		if ($(this).hasClass("lanthanide")) {

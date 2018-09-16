@@ -80,13 +80,14 @@ td {
 	font-size:2vh;
 	line-height:2vh;
 }
-.non-metals, .nonmetal {background-color:#002282}
-.noble-gas, .noble {background-color:#b09d00}
+.outline {outline:5px solid white;}
+.nonmetal {background-color:#002282}
+.noble {background-color:#b09d00}
 .alkali {background-color:#770019}
 .alkaline {background-color:#007768}
 .metaloid {background-color:#414872}
-.holagens, .halogen {background-color:#026100}
+.halogen {background-color:#026100}
 .metal {background-color:#3a3a3a}
-.trans-metal, .transmetal {background-color:#945b00}
+.transmetal {background-color:#945b00}
 .lanthanide {background-color:#440098}
 .actinide {background-color:#9500a2}

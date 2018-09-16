@@ -3,7 +3,8 @@
 
 	function elem($num) {
 		$elements = $GLOBALS["elements"];
-		echo "<td onclick='element('".$elements[$num][0]."')' class='std_block ".$elements[$num][4]."' id='".$elements[$num][0]."'>".$num."<br/> <b>".$elements[$num][0]."</b><br/> <i>".$elements[$num][2]."</i> </td>\n";
+		echo "<td class='std_block ".$elements[$num][4]."' id='".$elements[$num][0]."'>".$num."<br/> <b>".$elements[$num][0]."</b><br/> <i>".$elements[$num][2]."</i> </td>\n";
+		// onclick='element('".$elements[$num][0]."')'
 		//<td onclick="element('H');return false;" class="std_block non-metals">1<br/> <b>H</b><br/> <i>1.008</i> </td>
 	}
 	function elems($numStart, $numEnd) {
@@ -41,7 +42,7 @@
 			<tr class="elem_row"> <!--1ST ELEMETNS / SPACE-->
 				<td class="num_left row1_left"> 1 </td>
 				<?php elem(1); ?>
-				<td> </td>
+				<td class='std_block'>Number<br/> <b>Sym</b><br/> <i>Mass</i> </td>
 				<td colspan="2" rowspan="3">
 				<td colspan="7" rowspan="3" > <!--style="border:1px solid red"-->
 					<div id="big"><p>
@@ -74,13 +75,13 @@
 			<tr class="elem_row"> <!--6TH ELEMENTS-->
 				<td class="num_left row6_left"> 6 </td>
 				<?php elems(55, 56); ?>
-				<td class="std_block lanthanide"> <span style="font-size:2.5vh"> 57-71 </span> </td>
+				<td class="std_block lanthanide row6"> <span style="font-size:2.5vh"> 57-71 </span> </td>
 				<?php elems(72, 86); ?>
 			</tr>
 			<tr class="elem_row"> <!--7TH ELEMENTS-->
 				<td class="num_left row7_left"> 7 </td>
 				<?php elems(87, 88); ?>
-				<td class="std_block actinide"> <span style="font-size:2.5vh"> 89-103 </span> </td>
+				<td class="std_block actinide row7"> <span style="font-size:2.5vh"> 89-103 </span> </td>
 				<?php elems(104, 118); ?>
 			</tr>
 			<tr> <!--GAP-->
@@ -97,7 +98,7 @@
 
 				<td class="series" colspan="2"> Actinide Series <br/> <i> 89 - 103 </i> </td></a>
 				<?php elems(89, 103); ?>
-			</tr>
 		</table>
+	</tr>
 	</body>
 </html>
