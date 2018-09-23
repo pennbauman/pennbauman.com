@@ -240,7 +240,7 @@ function reset() {
 } //*/
 $(document).ready(function () {
 	$('.elem_row').find('.std_block').not(':first-child').on('mouseenter mouseleave', function () {
-		if ($(this).attr("id") = "std") {
+		if ($(this).attr("id") == "std") {
 			reset();
 		} else {
 			for (var i = 1; i < 8; i++) {
