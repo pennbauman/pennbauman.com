@@ -1,6 +1,6 @@
 var elements = {
 	//"Sym":[Num, "Name", Mass, "Type", "Electron Configuration (Noble Gas Notation)", "Xval3"],
-	"Sym":["Number", "Name", "Mass", "Type", "", ""],
+	//"Sym":["Number", "Name", "Mass", "Type", "", ""],
 	"H":[1, "Hydrogen", "1.008", "Nonmetal", "Xval2", "Xval3"],
 	"He":[2, "Helium", "4.003", "Noble Gas", "Xval2", "Xval3"],
 
@@ -240,7 +240,7 @@ function reset() {
 } //*/
 $(document).ready(function () {
 	$('.elem_row').find('.std_block').not(':first-child').on('mouseenter mouseleave', function () {
-		if ($(this).attr("id") == "std") {
+		if ($(this).attr("id") == "Sym") {
 			reset();
 		} else {
 			for (var i = 1; i < 8; i++) {
