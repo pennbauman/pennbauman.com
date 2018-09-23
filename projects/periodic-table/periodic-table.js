@@ -1,6 +1,6 @@
 var elements = {
 	//"Sym":[Num, "Name", Mass, "Type", "Electron Configuration (Noble Gas Notation)", "Xval3"],
-	"":["", "", "", "", ""],
+	"Sym":["Number", "Name", "Mass", "Type", "", ""],
 	"H":[1, "Hydrogen", "1.008", "Nonmetal", "Xval2", "Xval3"],
 	"He":[2, "Helium", "4.003", "Noble Gas", "Xval2", "Xval3"],
 
@@ -252,16 +252,5 @@ $(document).ready(function () {
 		}
 		element($(this).attr("id"));
 		$(this).toggleClass("outline");
-		/*
-	    var i = $(this).index();
-		if ($(this).hasClass("lanthanide")) {
-			$("#row6").toggleClass("num_hl");
-		} else if ($(this).hasClass("actinide")) {
-			$("#row7").toggleClass("num_hl");
-		} else {
-			$(this).closest('tr').find('td').first().toggleClass('num_hl');
-		} //*/
-	    //$(this).toggleClass('bg');
-	    //$('.tops_nums td').eq(i).toggleClass('num_hl');
 	});
 });

@@ -42,7 +42,7 @@
 			<tr class="elem_row"> <!--1ST ELEMETNS / SPACE-->
 				<td class="num_left row1_left"> 1 </td>
 				<?php elem(1); ?>
-				<td class='std_block'>Number<br/> <b>Sym</b><br/> <i>Mass</i> </td>
+				<td class='std_block' id="Sym">Number<br/> <b>Sym</b><br/> <i>Mass</i> </td>
 				<td colspan="2" rowspan="3">
 				<td colspan="7" rowspan="3" > <!--style="border:1px solid red"-->
 					<div id="big"><p>
