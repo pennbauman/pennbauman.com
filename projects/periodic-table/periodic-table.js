@@ -235,7 +235,7 @@ function element(symbol) {
 }
 // Reset display block to default dumb info
 function reset() {
-	htmlPrint("big", "<div ><p><span id=\"a_num\">Number</span> | Mass<br/><span id=\"a_sym\">Sym</span> <br/><span id=\"a_name\">Name</span><br/><span id=\"a_m\">Type<br/>Electron Configuration</span></p></div>");
+	htmlPrint("big", "<div><p><span id=\"a_num\">Number</span> | <span id=\"a_m\">Mass</span><br/><span id=\"a_sym\">Sym</span> <br/><span id=\"a_name\">Name</span><br/><span id=\"a_m\">Type<br/>Electron Configuration</span></p></div>");
 	return false;
 } //*/
 $(document).ready(function () {
