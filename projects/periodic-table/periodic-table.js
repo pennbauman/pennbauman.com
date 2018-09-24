@@ -1,4 +1,4 @@
-var elements = {
+/*var elements = {
 	//"Sym":[Num, "Name", Mass, "Type", "Electron Configuration (Noble Gas Notation)", "Xval3"],
 	//"Sym":["Number", "Name", "Mass", "Type", "", ""],
 	"H":[1, "Hydrogen", "1.008", "Nonmetal", "Xval2", "Xval3"],
@@ -129,7 +129,7 @@ var elements = {
 	"Lv":[116, "Livermorium", "[298]", "Basic Metal", "Xval2", "Xval3"],
 	"Uus":[117, "Ununseptium", "unknown", "Halogen", "Xval2", "Xval3"],
 	"Uuo":[118, "Ununoctium", "unknown", "Noble Gas", "Xval2", "Xval3"],
-}
+} //*/
 function htmlPrint(loc, text) {
 	document.getElementById(loc).innerHTML = text;
 	return false;
