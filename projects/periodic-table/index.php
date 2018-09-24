@@ -26,7 +26,7 @@
 			var elements = {
 			<?php
 				for ($i = 1; $i < count($elements); $i++) {
-					echo '\t"'.$elements[$i][0].'":['.$i.', "'.$elements[$i][1].'", "'.$elements[$i][2].'", "'.$elements[$i][3]'"]';
+					echo '\t"'.$elements[$i][0].'":['.$i.', "'.$elements[$i][1].'", "'.$elements[$i][2].'", "'.$elements[$i][3].'"]';
 				}
 			?>
 			}
