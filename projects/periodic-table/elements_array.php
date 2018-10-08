@@ -1,6 +1,13 @@
 <?php
 	$elements = [
 		["Sym", "Name", "Mass", "Type", "classes"],
+		/*
+		0 = Sym
+		1 = Name
+		2 = Mass
+		3 = Type
+		4 = CSS Classes 
+		*/
 		["H", "Hydrogen", "1.008", "Nonmetal", "nonmetal row1 col1"],
 		["He", "Helium", "4.003", "Noble Gas", "noble row1 col18"],
 

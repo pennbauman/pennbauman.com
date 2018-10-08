@@ -22,6 +22,15 @@
 		<link rel='stylesheet' type='text/css' href='periodic-table.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='periodic-table.js'></script>
+		<script type="text/javascript">
+			var elements = {
+			<?php
+				for ($i = 1; $i < count($elements); $i++) {
+					echo '"'.$elements[$i][0].'":['.$i.', "'.$elements[$i][1].'", "'.$elements[$i][2].'", "'.$elements[$i][3].'"], '."\n";
+				}
+			?>
+			}
+		</script>
 	</head>
 	<body>
 		<!--h1>The Periodic Table of Elements</h1-->
@@ -42,7 +51,7 @@
 			<tr class="elem_row"> <!--1ST ELEMETNS / SPACE-->
 				<td class="num_left row1_left"> 1 </td>
 				<?php elem(1); ?>
-				<td class='std_block'>Number<br/> <b>Sym</b><br/> <i>Mass</i> </td>
+				<td class='std_block' id="Sym">Number<br/> <b>Sym</b><br/> <i>Mass</i> </td>
 				<td colspan="2" rowspan="3">
 				<td colspan="7" rowspan="3" > <!--style="border:1px solid red"-->
 					<div id="big"><p>
