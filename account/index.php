@@ -8,7 +8,7 @@
 	<head>
 		<title>Account - Penn Bauman</title>
 		<link rel='icon' href='/files/images/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/hub.css'>
+		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/general.js'></script>
 	</head>
