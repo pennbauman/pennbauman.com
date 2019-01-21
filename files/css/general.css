@@ -91,13 +91,15 @@ table {
   overflow: hidden;
   width: 80%;
   padding: 2rem 10%;
+  background: #eeeeee;
+  color: #222222;
 }
 #content p, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-  color: #ffffff;
+  color: #000000;
   font-weight: normal;
 }
 #content p a:hover, #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover {
-  color: #00ccff;
+  color: #550000;
 }
 #content h1 {
   font-size: 4rem;
@@ -149,9 +151,11 @@ table {
   text-align: center;
   font-size: 1.8rem;
   line-height: 1.8rem;
+  background: #141A1B;
+  color: #EEEEEE;
 }
 #footer a:hover {
-  color: #ffffff;
+  color: #2EB398;
 }
 
 @media (max-aspect-ratio: 1/1) {
