@@ -23,6 +23,7 @@
 		echo "\$HOME = $HOME$n";
 		echo "\$home = $home$n";
 		echo "\$_SERVER['HOME'] = ".$_SERVER['HOME'].$n;
+		echo "\$_ENV['HOME'] = ".$_ENV['HOME'].$n;
 		echo "getenv(\"HOME\") = ".getenv("HOME").$n;
 		echo '$_SERVER["DOCUMENT_ROOT"] = '.$_SERVER["DOCUMENT_ROOT"].$n;
 		echo "\$currentSite = ".$currentSite.$n;
