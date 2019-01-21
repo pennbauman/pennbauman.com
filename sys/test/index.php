@@ -37,7 +37,7 @@
 		for ($i = 0; $i < count($testArray); $i++) {
 			echo "[".$i."] => ".$testArray[$i].$n;
 		}
-		echo $n
+		echo $n;
 		echo "\$_SERVER = ".$_SERVER.$n;
 		//$testString = "/yes/no/";
 		$testArray = $_SERVER;
