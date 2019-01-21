@@ -20,6 +20,8 @@
 		echo "<h1>Test</h1>";
 
 		echo "<p>";
+		echo "\$HOME = $HOME"
+		echo "\$home = $home"
 		echo '$_SERVER["DOCUMENT_ROOT"] = '.$_SERVER["DOCUMENT_ROOT"].$n;
 		echo "\$currentSite = ".$currentSite.$n;
 		echo "\$currentSiteName = ".$currentSiteName.$n;
