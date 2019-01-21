@@ -5,6 +5,19 @@ $text:#cccccc;
 $hl-text:#ffffff;
 $bright1:#00ccff;
 
+$header-back:#141A1B;
+$header-plain:#EEEEEE;
+$header-hl:#2EB398;
+
+$content-back:#eeeeee;
+$content-plain:#222222;
+$content-hl:#550000;
+$content-hl-plain:#000000;
+
+$footer-back:#141A1B;
+$footer-plain:#EEEEEE;
+$footer-hl:#2EB398;
+
 /* Prevent Firefox selected button/link outline */
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
@@ -49,18 +62,19 @@ table { border-collapse: collapse; }
 
 	width:90%;
 	padding:0.5rem 5% 0.5rem;
-	background:$background1;
+	background:$header-back;
+	color:$header-plain;
 
 	h1 {
 		display:inline;
 		padding:0 0 0 1.5rem;
 
-		color:$bright1;
+		color:$header-hl;
 		font-size:4rem;
 		line-height:4rem;
 		font-weight:normal;
 
-		&:hover { color:$hl-text; }
+		&:hover { color:$header-plain; }
 	}
 
 	#navbar {
@@ -75,7 +89,7 @@ table { border-collapse: collapse; }
 			padding:1rem 1rem 0.5rem;
 			font-size:2.5rem;
 			line-height:2.5rem;
-			&:hover { color:$bright1; }
+			&:hover { color:$header-hl; }
 		}	
 	}
 }

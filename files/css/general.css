@@ -52,18 +52,19 @@ table {
   z-index: 5;
   width: 90%;
   padding: 0.5rem 5% 0.5rem;
-  background: #111111;
+  background: #141A1B;
+  color: #EEEEEE;
 }
 #header h1 {
   display: inline;
   padding: 0 0 0 1.5rem;
-  color: #00ccff;
+  color: #2EB398;
   font-size: 4rem;
   line-height: 4rem;
   font-weight: normal;
 }
 #header h1:hover {
-  color: #ffffff;
+  color: #EEEEEE;
 }
 #header #navbar {
   display: inline-block;
@@ -78,7 +79,7 @@ table {
   line-height: 2.5rem;
 }
 #header #navbar a:hover {
-  color: #00ccff;
+  color: #2EB398;
 }
 
 /* Content */
