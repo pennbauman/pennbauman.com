@@ -23,8 +23,7 @@ body {
   padding: 0;
   font-family: Roboto Mono, monospace;
   min-height: 100vh;
-  background: #111111;
-  color: #cccccc;
+  background: #141A1B;
   font-size: 2rem;
   display: grid;
   grid-template-areas: "header" "content" "footer";
