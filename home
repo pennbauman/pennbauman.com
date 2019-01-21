@@ -1,22 +1,22 @@
-<?php 
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/file_path.php";
-
-	$linkCode = URLVar("l");
-	if ($linkCode != NULL) {
-		$links = file_get_contents("links.txt");
-		$links = explode("\n", $links);
-		for ($i = 0; $i < count($links); $i++) {
-			$links[$i] = explode("~", $links[$i]);
-			if ($links[$i][0] == $linkCode) {
-				header("Location: ".$links[$i][1]);
-				break;
-			}
-		}
-	}
-?>
 <!DOCTYPE html>
+    <?php 
+        include "/home/valypfnd/php/std.php";
+        include "/home/valypfnd/php/auth.php";
+        include "/home/valypfnd/php/file_path.php";
+
+        $linkCode = URLVar("l");
+        if ($linkCode != NULL) {
+            $links = file_get_contents("links.txt");
+            $links = explode("\n", $links);
+            for ($i = 0; $i < count($links); $i++) {
+                $links[$i] = explode("~", $links[$i]);
+                if ($links[$i][0] == $linkCode) {
+                    header("Location: ".$links[$i][1]);
+                    break;
+                }
+            }
+        }
+    ?>
 	<head>
 		<title>Penn Bauman</title>
 		<link rel='icon' href='/files/images/favicon.png'>
