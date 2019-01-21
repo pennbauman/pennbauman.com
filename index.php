@@ -9,7 +9,7 @@
 		$links = explode("\n", $links);
 		for ($i = 0; $i < count($links); $i++) {
 			$links[$i] = explode("~", $links[$i]);
-			if ($links[$i][0] == $linkCode) {
+			if ($links[$i][0] == $linkCode) { 
 				header("Location: ".$links[$i][1]);
 				break;
 			}
@@ -26,9 +26,17 @@
 	</head>
 	<body>
 		<?php
-			include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
+			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
 		?>
-
+		<div id='header'>
+			<a href='/'><h1>Penn Bauman</h1></a>
+			<div id='navbar'>
+				<a href='/resume/'>Resume</a>
+				<a href='/story/'>My Story</a>
+				<a href='/project/'>Projects</a>
+				<a href='http://github.com/pennbauman'>GitHub</a>
+			</div>
+		</div>
 		<div id="content">
 			<!--img src="/files/images/bella_wag.gif"/-->
 			<?php 
