@@ -1,7 +1,7 @@
 <?php 
-	include "$HOME/php/std.php";
-	include "$HOME/php/auth.php";
-	include "$HOME/php/file_path.php";
+	include "/home/valypfnd/php/std.php";
+	include "/home/valypfnd/php/auth.php";
+	include "/home/valypfnd/php/file_path.php";
 
 	$linkCode = URLVar("l");
 	if ($linkCode != NULL) {
@@ -26,17 +26,17 @@
 	</head>
 	<body>
 		<?php
-			include "$HOME/php/pennbauman/std_header_navbar.php";
+			include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
 		?>
 
 		<div id="content">
 			<!--img src="/files/images/bella_wag.gif"/-->
 			<?php 
-				include "$HOME/php/lorem_ipsum.php";
+				include "/home/valypfnd/php/lorem_ipsum.php";
 			?>
 		</div>
 		<?php
-			include "$HOME/php/pennbauman/std_footer.php";
+			include "/home/valypfnd/php/pennbauman/std_footer.php";
 		?>
 	</body>
 </html>
