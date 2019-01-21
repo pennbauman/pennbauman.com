@@ -1,10 +1,10 @@
 <?php 
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/file_path.php";
-	include "/home/valypfnd/php/get_site.php";
-	include "/home/valypfnd/php/subsite_return.php";
-	include "/home/valypfnd/php/login_url.php";
+	include "$HOME/php/std.php";
+	include "$HOME/php/auth.php";
+	include "$HOME/php/file_path.php";
+	include "$HOME/php/get_site.php";
+	include "$HOME/php/subsite_return.php";
+	include "$HOME/php/login_url.php";
 	$n = "<br/>";
 
 	if ($auth > 8) {
@@ -37,6 +37,6 @@
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
 	} else {
-		include "/home/valypfnd/php/auth_error.php";
+		include "$HOME/php/auth_error.php";
 	}
 ?>
