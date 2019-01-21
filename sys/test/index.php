@@ -37,6 +37,13 @@
 		for ($i = 0; $i < count($testArray); $i++) {
 			echo "[".$i."] => ".$testArray[$i].$n;
 		}
+		echo $n
+		echo "\$_SERVER = ".$_SERVER.$n;
+		//$testString = "/yes/no/";
+		$testArray = $_SERVER;
+		for ($i = 0; $i < count($testArray); $i++) {
+			echo "[".$i."] => ".$testArray[$i].$n;
+		}
 		echo "</p>";
 		
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
