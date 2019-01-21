@@ -33,7 +33,7 @@
 			<div id='navbar'>
 				<a href='/resume/'>Resume</a>
 				<a href='/story/'>My Story</a>
-				<a href='/project/'>Projects</a>
+				<a href='/projects/'>Projects</a>
 				<a href='http://github.com/pennbauman'>GitHub</a>
 			</div>
 		</div>
