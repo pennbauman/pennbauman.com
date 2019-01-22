@@ -21,6 +21,7 @@ Activities: President of Book Club, Head of Tech Theater Sound Department, Physi
 
 **University of Virginia**
 <span style="float:right">2018 - Present</span>
+
 Majoring in Computer Science Engineering <br/>
 Minoring in Physics <br/>
 First Semester GPA: 3.6 <br/>
@@ -30,6 +31,7 @@ Completed Course Work: Calculus 1-3, Linear Algebra, Physics 1 & 2, Introductory
 ##### Professional Experience
 **Green America [(greenamerica.org)](http://greenamerica.org)**
 <span style="float:right">Summer 2018</span>
+
 Digital Products Associate <br/>
 Worked with the Drupal content management system on website layout and design, database searching, and Google Maps API. 
 
