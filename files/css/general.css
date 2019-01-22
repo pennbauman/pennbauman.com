@@ -153,8 +153,14 @@ table {
 #content h6 {
   font-size: 2.5rem;
 }
-#content .two-columns {
+#content ul {
+  margin: 0.5rem;
+}
+#content table.two-columns {
   width: 100%;
+}
+#content table.two-columns td:nth-child(2) {
+  text-align: right;
 }
 
 /* Footer */

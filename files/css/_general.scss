@@ -162,8 +162,14 @@ table { border-collapse: collapse; }
 	h6 {
 		font-size:2.5rem;
 	}
-	.two-columns {
+	ul {
+		margin:0.5rem;
+	}
+	table.two-columns {
 		width:100%;
+	}
+	table.two-columns td:nth-child(2) {
+		text-align: right;
 	}
 
 }
