@@ -113,6 +113,9 @@ table {
 #content p a:hover, #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover, #content td a:hover {
   color: #00ccff;
 }
+#content p {
+  margin: 0;
+}
 #content h1 {
   font-size: 4rem;
   text-align: center;

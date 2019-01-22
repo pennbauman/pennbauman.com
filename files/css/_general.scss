@@ -121,6 +121,9 @@ table { border-collapse: collapse; }
 			color:$content-hl;
 		}
 	}
+	p {
+		margin:0;
+	}
 	h1 {
 		font-size:4rem;
 		text-align:center;
@@ -168,7 +171,7 @@ table { border-collapse: collapse; }
 	hr {
 		border-width: 0.2rem;
 		border-color:$content-plain;
-	  }
+	}
 	table.two-columns {
 		width:100%;
 	}

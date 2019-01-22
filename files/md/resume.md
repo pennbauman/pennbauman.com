@@ -62,5 +62,4 @@ Resume
 * BASH
 
 <br/>
-------
 [PDF Version](/files/misc/Penn_Bauman_Resume_2018-09-30.pdf)
