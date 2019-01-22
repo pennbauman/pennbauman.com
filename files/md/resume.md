@@ -37,7 +37,7 @@ Resume
 ##### Professional Experience
 <table class="two-columns">
     <tr>
-        <td><a href="(https://greenamerica.org/)">Green America (https://greenamerica.org/)</a></td>
+        <td>Green America (<a href="https://greenamerica.org">greenamerica.org</a>)</td>
         <td>Summer 2018</td>
     </tr>
     <tr>
@@ -61,6 +61,6 @@ Resume
 * PHP
 * BASH
 
-<br/><br/>
+<br/>
 ------
 [PDF Version](/files/misc/Penn_Bauman_Resume_2018-09-30.pdf)
