@@ -63,10 +63,12 @@
 			</table-->
 			<p> 
 				Email: <a mailto='mailto:penn.bauman@gmail.com'>penn.bauman@gmail.com</a> <br/>
-				Phone: <a href='tel:703-963-2729'>703-963-2729</a> <br/>
+				Phone: <a href='tel:703-963-2729'>703-963-2729</a>
+			</p>
+			<p>
 				<span style='font-size:1.4em'>&copy;</span> 2018 Penn Bauman
 			</p>
-		</div>";
+		</div>
 		<?php
 			//include "/home/valypfnd/php/pennbauman/std_footer.php";
 		?>
