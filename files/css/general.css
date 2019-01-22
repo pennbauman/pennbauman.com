@@ -151,6 +151,9 @@ table {
 #content h6 {
   font-size: 2.5rem;
 }
+#content .two-columns {
+  width: 100%;
+}
 
 /* Footer */
 #footer {
