@@ -18,6 +18,7 @@ Resume
 
 GPA: 4.32 <br/>
 Activities: President of Book Club, Head of Tech Theater Sound Department, Physics Club Member <br/>
+<br/>
 
 **University of Virginia**
 <span style="float:right">2018 - Present</span>
