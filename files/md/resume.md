@@ -9,14 +9,17 @@ Resume
 
 ### Penn Bauman
 4905 15th St N, Arlington, VA
+
 [703-963-2729](tel:703-963-2729) 
+
 [penn.bauman@gmail.com](mailto:penn.bauman@gmail.com)
 
 ##### Education
 **Washington-Lee High School**
 <span style="float:right">2014 - 2018</span>
 
-GPA: 4.32 <br/>
+GPA: 4.32 
+
 Activities: President of Book Club, Head of Tech Theater Sound Department, Physics Club Member <br/>
 <br/>
 
