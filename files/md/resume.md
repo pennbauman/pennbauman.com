@@ -26,7 +26,8 @@ Resume
         <td>GPA: 4.32</td>
         <td></td>
     </tr>
-    <hr>
+</table>
+<table class="two-columns">
     <tr>
         <td>University of Virginia</td>
         <td>2018 - Present</td>
