@@ -11,7 +11,7 @@ $header-hl:#2EB398;
 
 $content-back:#eeeeee;
 $content-plain:#222222;
-$content-hl:#550000;
+$content-hl:#ff0000;
 $content-hl-plain:#000000;
 
 $footer-back:#141A1B;
@@ -66,7 +66,7 @@ table { border-collapse: collapse; }
 
 	h1 {
 		display:inline;
-		padding:0 0 0 1.5rem;
+		padding:0.5rem 0rem 0.5rem 1.5rem;
 
 		color:$header-hl;
 		font-size:4rem;
@@ -81,7 +81,7 @@ table { border-collapse: collapse; }
 		position:relative;
 		float:right;
 
-		padding:1rem;
+		padding:1.5rem 1rem;
 		text-align:right;
 
 		a {

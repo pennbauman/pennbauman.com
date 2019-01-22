@@ -56,7 +56,7 @@ table {
 }
 #header h1 {
   display: inline;
-  padding: 0 0 0 1.5rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
   color: #2EB398;
   font-size: 4rem;
   line-height: 4rem;
@@ -69,7 +69,7 @@ table {
   display: inline-block;
   position: relative;
   float: right;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   text-align: right;
 }
 #header #navbar a {
@@ -98,7 +98,7 @@ table {
   font-weight: normal;
 }
 #content p a:hover, #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover {
-  color: #550000;
+  color: #ff0000;
 }
 #content h1 {
   font-size: 4rem;
