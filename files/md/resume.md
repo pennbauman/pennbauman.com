@@ -12,16 +12,11 @@ Resume
 173 Weedon, Charlottesville, VA 22904 | [703-963-2729](tel:703-963-2729) | [penn.bauman@gmail.com](mailto:penn.bauman@gmail.com)
 
 ##### Education
-<table class="two-columns">
-    <tr>
-        <td>Washington-Lee High School</td>
-        <td>2014 - 2018</td>
-    </tr>
-    <tr>
-        <td>GPA: 4.32</td>
-        <td></td>
-    </tr>
-</table>
+*Washington-Lee High School*
+<span style="float:right">2014 - 2018</span>
+
+GPA: 4.32
+
 <br/>
 <table class="two-columns">
     <tr>
