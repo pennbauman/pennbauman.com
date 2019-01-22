@@ -13,7 +13,8 @@ Resume
         <td><a href="/files/misc/Penn_Bauman_Resume_2018-09-30.pdf">PDF</a></td>
     </tr>
 </table>
-<hr>
+### Penn Bauman
+------
 173 Weedon, Charlottesville, VA 22904 | [703-963-2729](tel:703-963-2729) | [penn.bauman@gmail.com](mailto:penn.bauman@gmail.com)
 
 ##### Education
@@ -27,7 +28,7 @@ Resume
         <td></td>
     </tr>
 </table>
-<hr>
+------
 <table class="two-columns">
     <tr>
         <td>University of Virginia</td>
@@ -65,3 +66,6 @@ Resume
 * HTML, CSS, Javascript
 * PHP
 * BASH
+
+------
+[PDF Version](/files/misc/Penn_Bauman_Resume_2018-09-30.pdf)
