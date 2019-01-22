@@ -18,12 +18,48 @@ Resume
 ##### Education
 | Title | Title |
 | :-- | --: |
-| Washington-Lee High School | 2014 - 2018 |
-| GPA: 4.32 |  |
-| | |
-| University of Virginia | 2018 - Present | 
+<table>
+    <tr>
+        <td>Washington-Lee High School</td>
+        <td>2014 - 2018</td>
+    </tr>
+    <tr>
+        <td>GPA: 4.32</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>University of Virginia</td>
+        <td>2018 - Present</td>
+    </tr>
+    <tr>
+        <td>GPA: 3.6</td>
+        <td></td>
+    </tr>
+</table>
 
 ##### Professional Experience
+<table>
+    <tr>
+        <td><a href="(https://greenamerica.org/)">Green America (https://greenamerica.org/)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Worked as a website contractor</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Utilized Drupal content management system</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 | Title | Title |
 | :-- | --: |
 | Green America (https://greenamerica.org/) | 2018 |
