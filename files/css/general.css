@@ -156,6 +156,10 @@ table {
 #content ul {
   margin: 0.5rem;
 }
+#content hr {
+  border-width: 0.2rem;
+  border-color: #222222;
+}
 #content table.two-columns {
   width: 100%;
 }

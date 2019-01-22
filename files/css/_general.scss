@@ -165,6 +165,10 @@ table { border-collapse: collapse; }
 	ul {
 		margin:0.5rem;
 	}
+	hr {
+		border-width: 0.2rem;
+		border-color:$content-plain;
+	  }
 	table.two-columns {
 		width:100%;
 	}

@@ -22,7 +22,7 @@ Resume
         <td></td>
     </tr>
 </table>
-------
+
 <table class="two-columns">
     <tr>
         <td>University of Virginia</td>
