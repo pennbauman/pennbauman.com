@@ -43,7 +43,7 @@ Resume
 <table class="two-columns">
     <tr>
         <td><a href="(https://greenamerica.org/)">Green America (https://greenamerica.org/)</a></td>
-        <td></td>
+        <td>Summer 2018</td>
     </tr>
     <tr>
         <td>Worked as a website contractor</td>
@@ -60,12 +60,8 @@ Resume
 </table>
 
 ##### Languages Known
-Python
-
-Java
-
-HTML, CSS, Javascript
-
-PHP
-
-BASH
+* Python
+* Java
+* HTML, CSS, Javascript
+* PHP
+* BASH
