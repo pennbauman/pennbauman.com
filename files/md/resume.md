@@ -37,7 +37,7 @@ Completed Course Work: Calculus 1-3, Linear Algebra, Physics 1 & 2, Introductory
 
 
 ##### Professional Experience
-**Green America [(greenamerica.org)](http://greenamerica.org)**
+**Green America** ([greenamerica.org](http://greenamerica.org))
 <span style="float:right">Summer 2018</span>
 
 Digital Products Associate 
