@@ -3,15 +3,16 @@ Resume
 
 
 
-
-
-
-
 # Resume
 
 [PDF Resume](/files/misc/Penn_Bauman_Resume_2018-09-30.pdf)
 
-### Penn Bauman
+<table class="two-columns">
+    <tr>
+        <td><h3>Penn Bauman</h3><td>
+        <td><a href="/files/misc/Penn_Bauman_Resume_2018-09-30.pdf">PDF</a></td>
+    </tr>
+</table>
 <hr>
 173 Weedon, Charlottesville, VA 22904 | [703-963-2729](tel:703-963-2729) | [penn.bauman@gmail.com](mailto:penn.bauman@gmail.com)
 
@@ -25,10 +26,7 @@ Resume
         <td>GPA: 4.32</td>
         <td></td>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
+    <hr>
     <tr>
         <td>University of Virginia</td>
         <td>2018 - Present</td>
