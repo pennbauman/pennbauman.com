@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+/*
+$header-back:#141A1B;
+$header-plain:#EEEEEE;
+$header-hl:#2EB398;
+
+$content-back:#eeeeee;
+$content-plain:#222222;
+$content-hl:#ff0000;
+$content-hl-plain:#000000;
+
+$footer-back:#141A1B;
+$footer-plain:#EEEEEE;
+$footer-hl:#2EB398;
+*/
 /* Prevent Firefox selected button/link outline */
 :focus {
   outline: none;
@@ -23,7 +37,7 @@ body {
   padding: 0;
   font-family: Roboto Mono, monospace;
   min-height: 100vh;
-  background: #141A1B;
+  background: #111111;
   font-size: 2rem;
   display: grid;
   grid-template-areas: "header" "content" "footer";
@@ -51,22 +65,21 @@ table {
   z-index: 5;
   width: 90%;
   padding: 0.5rem 5% 0.5rem;
-  background: #141A1B;
-  color: #EEEEEE;
+  background: #111111;
+  color: #cccccc;
 }
 #header h1 {
   display: inline;
   padding: 0.5rem 0rem 0.5rem 1.5rem;
-  color: #2EB398;
+  color: #00ccff;
   font-size: 4rem;
-  line-height: 4rem;
+  line-height: 5rem;
   font-weight: normal;
 }
 #header h1:hover {
-  color: #EEEEEE;
+  color: #cccccc;
 }
 #header #navbar {
-  display: inline-block;
   position: relative;
   float: right;
   padding: 1.5rem 1rem;
@@ -78,7 +91,7 @@ table {
   line-height: 2.5rem;
 }
 #header #navbar a:hover {
-  color: #2EB398;
+  color: #00ccff;
 }
 
 /* Content */
@@ -98,7 +111,7 @@ table {
   font-weight: normal;
 }
 #content p a:hover, #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover {
-  color: #ff0000;
+  color: #00ccff;
 }
 #content h1 {
   font-size: 4rem;
@@ -150,15 +163,16 @@ table {
   text-align: center;
   font-size: 1.8rem;
   line-height: 2.5rem;
-  background: #141A1B;
+  background: #111111;
   color: #EEEEEE;
 }
 #footer p {
   margin: 0;
 }
 #footer a:hover {
-  color: #2EB398;
+  color: #00ccff;
 }
+
 @media (max-aspect-ratio: 1/1) {
   /* Height > Width */
 }

@@ -1,10 +1,18 @@
 // _general.scss
 // Colors
-$background1:#111111;
-$text:#cccccc;
-$hl-text:#ffffff;
-$bright1:#00ccff;
+$header-back:#111111;
+$header-plain:#cccccc;
+$header-hl:#00ccff;
 
+$content-back:#eeeeee;
+$content-plain:#222222;
+$content-hl:#00ccff;
+$content-hl-plain:#000000;
+
+$footer-back:#111111;
+$footer-plain:#EEEEEE;
+$footer-hl:#00ccff;
+/*
 $header-back:#141A1B;
 $header-plain:#EEEEEE;
 $header-hl:#2EB398;
@@ -17,7 +25,7 @@ $content-hl-plain:#000000;
 $footer-back:#141A1B;
 $footer-plain:#EEEEEE;
 $footer-hl:#2EB398;
-
+*/
 /* Prevent Firefox selected button/link outline */
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
@@ -70,14 +78,13 @@ table { border-collapse: collapse; }
 
 		color:$header-hl;
 		font-size:4rem;
-		line-height:4rem;
+		line-height:5rem;
 		font-weight:normal;
 
 		&:hover { color:$header-plain; }
 	}
 
 	#navbar {
-		display:inline-block;
 		position:relative;
 		float:right;
 
@@ -179,9 +186,5 @@ table { border-collapse: collapse; }
 
 	a:hover {
 		color:$footer-hl;
-	}
-
-	table {
-		
 	}
 }
