@@ -168,11 +168,15 @@ table { border-collapse: collapse; }
 
 	text-align:center;
 	font-size:1.8rem;
-	line-height:2rem;
+	line-height:2.5rem;
 
 	background:$footer-back;
 	color:$footer-plain;
 
+	p {
+		margin:0;
+	}
+	
 	a:hover {
 		color:$footer-hl;
 	}
