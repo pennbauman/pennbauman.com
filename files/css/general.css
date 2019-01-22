@@ -1,18 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-/*
-$header-back:#141A1B;
-$header-plain:#EEEEEE;
-$header-hl:#2EB398;
-
-$content-back:#eeeeee;
-$content-plain:#222222;
-$content-hl:#ff0000;
-$content-hl-plain:#000000;
-
-$footer-back:#141A1B;
-$footer-plain:#EEEEEE;
-$footer-hl:#2EB398;
-*/
 /* Prevent Firefox selected button/link outline */
 :focus {
   outline: none;
