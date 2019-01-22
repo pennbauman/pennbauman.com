@@ -16,12 +16,14 @@ Resume
 173 Weedon, Charlottesville, VA 22904 | [703-963-2729](tel:703-963-2729) | [penn.bauman@gmail.com](mailto:penn.bauman@gmail.com)
 
 ##### Education
+| :-- | --: |
 | Washington-Lee High School | 2014 - 2018 |
 | GPA: 4.32 |  |
 | | |
 | University of Virginia | 2018 - Present | 
 
 ##### Professional Experience
+| :-- | --: |
 | Green America (https://greenamerica.org/) | 2018 |
 | Worked as a website contractor | |
 | Utilized Drupal content management system | |
@@ -36,30 +38,3 @@ HTML, CSS, Javascript
 PHP
 
 BASH
-
-
-
-
-2014 - 2018
-
-
-2018 - Present
-
-
-2018
-
-
-
-blah blah blah 
-
-# h1
-
-## h2
-
-### h3
-
-#### h4
-
-##### h5
-
-###### h6
