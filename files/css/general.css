@@ -156,7 +156,6 @@ table {
 #footer a:hover {
   color: #2EB398;
 }
-
 @media (max-aspect-ratio: 1/1) {
   /* Height > Width */
 }

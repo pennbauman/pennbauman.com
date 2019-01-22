@@ -43,8 +43,32 @@
 				include "/home/valypfnd/php/lorem_ipsum.php";
 			?>
 		</div>
+		<div id='footer'>
+			<!--table>
+				<tr>
+					<th>Pages</th>
+					<th>Contact Information</th>
+				</tr>
+				<tr>
+					<td><a href="/resume/">Resume</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/story/">My Story</a></td>
+					<td>Phone: <a href='tel:703-963-2729'>703-963-2729</a></td>
+				<tr>
+				<tr>
+					<td><a href="/projects/">Projects</a></td>
+				<tr>
+			</table-->
+			<p> 
+				Email: <a mailto='mailto:penn.bauman@gmail.com'>penn.bauman@gmail.com</a> <br/>
+				Phone: <a href='tel:703-963-2729'>703-963-2729</a> <br/>
+				<span style='font-size:1.4em'>&copy;</span> 2018 Penn Bauman
+			</p>
+		</div>";
 		<?php
-			include "/home/valypfnd/php/pennbauman/std_footer.php";
+			//include "/home/valypfnd/php/pennbauman/std_footer.php";
 		?>
 	</body>
 </html>
