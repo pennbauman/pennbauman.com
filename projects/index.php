@@ -21,9 +21,11 @@
 				<p>
 					<a href="/projects/monte-carlo/">Monte-Carlo Pi Calculator</a>
 					<br/>
+					<br/>
 				</p>
 				<p>
 					<a href="/projects/morse-code/">Morse Code Typewriter</a>
+					<br/>
 					<br/>
 				</p>
 				<p>
