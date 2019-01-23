@@ -12,8 +12,8 @@ My Story
 ### Home
 age
 
-### Pets
-I currently have a dog, Bella, and two cats, Inky and Shiro. 
+### These are my pets!
+
 <img src="/files/images/bella_wonderwoman.jpg" style="width:80%;margin:0 10%">
 <img src="/files/images/inky_shiro_basket.jpg" style="width:80%;margin:0 10%">
 
