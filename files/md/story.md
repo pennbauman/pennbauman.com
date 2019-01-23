@@ -9,16 +9,12 @@ My Story
 
 # My Story
 
-blah blah blah 
 
-# h1
 
-## h2
+### Early Life
 
-### h3
+### High School
 
-#### h4
+### Linux
 
-##### h5
-
-###### h6
+### Pets
