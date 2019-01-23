@@ -1,4 +1,4 @@
-<!DOCTYPE PHP>
+<!DOCTYPE php>
     <?php 
         include "/home/valypfnd/php/std.php";
         include "/home/valypfnd/php/auth.php";
