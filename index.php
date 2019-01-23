@@ -36,14 +36,17 @@
 
 			<h3>Programs &amp; Projects</h3>
 			<p>
-				Most of my projects can be found on my <a href="http://github.com/pennbauman">GitHub</a>, including serveral simple linux command line tools and the code for this site. I have also done a few web projects which can be found on the <a href="/projects/">projects page</a>
+				Most of my projects can be found on my <a href="http://github.com/pennbauman">GitHub</a>, including serveral simple linux command line tools and the code for this site. I have also done a few simple web projects which can be found on the <a href="/projects/">projects page</a>.
 			</p>
 
 			<h3>About Me</h3>
 			<p>
-
+				I'm originally from Arlington, Virginia but currently attend the University of Virginia. I love hiking and camping, as well as reading and writing code.  
 			</p>
-
+			<h3>These are my pets!>
+			<img src="/files/images/bella_wonderwoman.jpg" style="width:80%;margin:0 10%">
+			<img src="/files/images/inky_shiro_basket.jpg" style="width:80%;margin:0 10%">
+			
 			<?php 
 				//include "/home/valypfnd/php/lorem_ipsum.php";
 			?>
