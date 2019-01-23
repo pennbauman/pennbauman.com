@@ -118,7 +118,7 @@ table { border-collapse: collapse; }
 	background:$content-back;
 	color:$content-plain;
 
-	p, h1, h2, h3, h4, h5, h6, td {
+	h1, h2, h3, h4, h5, h6, td {
 		color:$content-hl-plain;
 		font-weight:normal;
 
@@ -131,6 +131,9 @@ table { border-collapse: collapse; }
 		
 		a {
 			color:$content-hl-plain;
+		}
+		a:hover {
+			color:$content-hl;
 		}
 	}
 	h1 {
