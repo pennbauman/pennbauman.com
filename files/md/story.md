@@ -9,12 +9,12 @@ My Story
 
 # My Story
 
-
-
-### Early Life
-
-### High School
-
-### Linux
+### Home
+age
 
 ### Pets
+I currently have a dog, Bella, and two cats, Inky and Shiro. 
+<img src="/files/images/bella_wonderwoman.jpg" style="width:80%;margin:0 10%">
+<img src="/files/images/inky_shiro_basket.jpg" style="width:80%;margin:0 10%">
+
+### Hobbies
