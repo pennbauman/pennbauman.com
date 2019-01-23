@@ -128,6 +128,10 @@ table { border-collapse: collapse; }
 	}
 	p {
 		margin:0;
+		
+		a {
+			color:$content-hl-plain;
+		}
 	}
 	h1 {
 		font-size:4rem;

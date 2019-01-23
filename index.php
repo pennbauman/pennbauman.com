@@ -29,9 +29,23 @@
 			include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
 		?>
 		<div id="content">
-			<!--img src="/files/images/bella_wag.gif"/-->
+			<h1>Penn Bauman</h1>
+			<p>
+
+			</p>
+
+			<h3>Programs &amp; Projects</h3>
+			<p>
+				Most of my projects can be found on my <a href="http://github.com/pennbauman">GitHub</a>, including serveral simple linux command line tools and the code for this site. I have also done a few web projects which can be found on the <a href="/projects/">projects page</a>
+			</p>
+
+			<h3>About Me</h3>
+			<p>
+
+			</p>
+
 			<?php 
-				include "/home/valypfnd/php/lorem_ipsum.php";
+				//include "/home/valypfnd/php/lorem_ipsum.php";
 			?>
 		</div>
 		<?php
