@@ -20,11 +20,11 @@
 			<span style="text-align:center:font-size:1.5em">
 				<p>
 					<a href="/projects/monte-carlo/">Monte-Carlo Pi Calculator</a>
-				<p>
 				</p>
-					<a href="/projects/morse-code/">Morse Code Tyepwriter</a>
 				<p>
+					<a href="/projects/morse-code/">Morse Code Typewriter</a>
 				</p>
+				<p>
 					<a href="/projects/periodic-table/">Interactive Periodic Table</a>
 				</p>
 			</span>
