@@ -3,3 +3,4 @@ local~/*
 **/error_log
 files/css/*.bin
 home
+.fuse*
