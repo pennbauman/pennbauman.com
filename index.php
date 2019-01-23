@@ -43,10 +43,10 @@
 			<p>
 				I'm originally from Arlington, Virginia but currently attend the University of Virginia. I love hiking and camping, as well as reading and writing code.  
 			</p>
-			<h3>These are my pets!>
+			<h3>These are my pets!</h3>
 			<img src="/files/images/bella_wonderwoman.jpg" style="width:80%;margin:0 10%">
 			<img src="/files/images/inky_shiro_basket.jpg" style="width:80%;margin:0 10%">
-			
+
 			<?php 
 				//include "/home/valypfnd/php/lorem_ipsum.php";
 			?>
