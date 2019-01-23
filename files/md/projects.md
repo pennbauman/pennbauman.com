@@ -8,7 +8,7 @@ Projects
 
 
 # Projects
-<span style="align:center:font-size:1.5em">
+<span style="text-align:center:font-size:1.5em">
 
 [Monte-Carlo Pi Calculator](/projects/monte-carlo/)
 
