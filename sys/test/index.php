@@ -20,6 +20,11 @@
 		echo "<h1>Test</h1>";
 
 		echo "<p>";
+		echo "\$HOME = $HOME$n";
+		echo "\$home = $home$n";
+		echo "\$_SERVER['HOME'] = ".$_SERVER['HOME'].$n;
+		echo "\$_ENV['HOME'] = ".$_ENV['HOME'].$n;
+		echo "getenv(\"HOME\") = ".getenv("HOME").$n;
 		echo '$_SERVER["DOCUMENT_ROOT"] = '.$_SERVER["DOCUMENT_ROOT"].$n;
 		echo "\$currentSite = ".$currentSite.$n;
 		echo "\$currentSiteName = ".$currentSiteName.$n;
@@ -29,6 +34,13 @@
 		echo "\$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'].$n;
 		$testString = "/yes/no/";
 		$testArray = explode("/", $_SERVER['REQUEST_URI']);
+		for ($i = 0; $i < count($testArray); $i++) {
+			echo "[".$i."] => ".$testArray[$i].$n;
+		}
+		echo $n;
+		echo "\$_SERVER = ".$_SERVER.$n;
+		//$testString = "/yes/no/";
+		$testArray = $_SERVER;
 		for ($i = 0; $i < count($testArray); $i++) {
 			echo "[".$i."] => ".$testArray[$i].$n;
 		}

@@ -17,7 +17,7 @@
 ?>
 <!DOCTYPE html>
 	<head>
-		<title> Periodic Table | Penn Bauman</title>
+		<title> Periodic Table - Penn Bauman</title>
 		<link rel="shortcut icon" href="h_favicon.png">
 		<link rel='stylesheet' type='text/css' href='periodic-table.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
