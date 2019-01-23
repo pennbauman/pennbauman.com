@@ -1,4 +1,4 @@
-My Story
+About
 
 
 
@@ -7,7 +7,7 @@ My Story
 
 
 
-# My Story
+# About 
 
 ### Where I'm from
 I'm from Arlington Virginia and I've lived there almost my whole life. 

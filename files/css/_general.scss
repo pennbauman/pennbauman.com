@@ -1,30 +1,30 @@
 // _general.scss
 // Colors
-$header-back:#111111;
-$header-plain:#cccccc;
-$header-hl:#00ccff;
+//$header-back:#111111;
+//$header-plain:#cccccc;
+//$header-hl:#00ccff;
+//
+//$content-back:#eeeeee;
+//$content-plain:#222222;
+//$content-hl:#00ccff;
+//$content-hl-plain:#000000;
+//
+//$footer-back:#111111;
+//$footer-plain:#EEEEEE;
+//$footer-hl:#00ccff
+
+$header-back:#141A1B;
+$header-plain:#EEEEEE;
+$header-hl:#2EB398;
 
 $content-back:#eeeeee;
 $content-plain:#222222;
-$content-hl:#00ccff;
+$content-hl:#2EB398;
 $content-hl-plain:#000000;
 
-$footer-back:#111111;
+$footer-back:#141A1B;
 $footer-plain:#EEEEEE;
-$footer-hl:#00ccff;
-
-//$header-back:#141A1B;
-//$header-plain:#EEEEEE;
-//$header-hl:#2EB398;
-
-//$content-back:#eeeeee;
-//$content-plain:#222222;
-//$content-hl:#ff0000;
-//$content-hl-plain:#000000;
-
-//$footer-back:#141A1B;
-//$footer-plain:#EEEEEE;
-//$footer-hl:#2EB398;
+$footer-hl:#2EB398;
 
 //$black:#111111;
 //$white:#eeeeee;
@@ -97,7 +97,7 @@ table { border-collapse: collapse; }
 		text-align:right;
 
 		a {
-			padding:1rem 1.7rem 0.5rem;
+			padding:1rem 2rem 0.5rem;
 			font-size:2.5rem;
 			line-height:2.5rem;
 			&:hover { color:$header-hl; }
