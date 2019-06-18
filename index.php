@@ -31,7 +31,7 @@
 		<div id="content">
 			<h1>Penn Bauman</h1>
 			<p>
-
+				<a href="/broken/">Broken Link</a>
 			</p>
 
 			<h3>Programs &amp; Projects</h3>
