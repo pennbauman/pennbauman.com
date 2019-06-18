@@ -46,6 +46,9 @@
 		}
 		echo "</p>";
 		
+		echo "<p>";
+		echo "<a href='/break/'>Broken Link</a>";
+		echo "</p>";
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
 	} else {
