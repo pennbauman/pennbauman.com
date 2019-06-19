@@ -31,7 +31,9 @@
 		<div id="content">
 			<h1>Penn Bauman</h1>
 			<p>
-				<a href="/broken/">Broken Link</a>
+				<a href="/broken/">Broken Internal Link</a>
+				<a href="https://github.com/pennjamin">Broken External Link</a>
+				<a href="agjashguhagur.org">Unregistered Domain</a>
 			</p>
 
 			<h3>Programs &amp; Projects</h3>
