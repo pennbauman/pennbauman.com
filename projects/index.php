@@ -17,6 +17,7 @@
 		?>
 		<div id="content">
 			<h1>Projects</h1>
+			<a href="break">Break</a>
 			<span style="text-align:center;font-size:1.2em">
 				<p>
 					<a href="/projects/monte-carlo/">Monte-Carlo Pi Calculator</a>
