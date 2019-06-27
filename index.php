@@ -30,7 +30,7 @@
 		?>
 		<div id="content">
 			<h1>Penn Bauman</h1>
-			<p>
+			<p display="none">
 				<a href="/broken/">Broken Internal Link</a>
 				<a href="https://github.com/pennjamin">Broken External Link</a>
 				<a href="http://agjashguhagur.org">Unregistered Domain</a>
