@@ -6,8 +6,6 @@
 	$linkCode = URLVar("l");
 	if ($linkCode != NULL) {
 		$links = file_get_contents("links.txt");
-		$links = explode("\n", $links);
-		for ($i = 0; $i < count($links); $i++) {
 			$links[$i] = explode("~", $links[$i]);
 			if ($links[$i][0] == $linkCode) { 
 				header("Location: ".$links[$i][1]);
@@ -30,7 +28,7 @@
 		?>
 		<div id="content">
 			<h1>Penn Bauman</h1>
-			<p display="none">
+			<p style="display:none">
 				<a href="/broken/">Broken Internal Link</a>
 				<a href="https://github.com/pennjamin">Broken External Link</a>
 				<a href="http://agjashguhagur.org">Unregistered Domain</a>
