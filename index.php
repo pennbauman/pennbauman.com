@@ -38,7 +38,7 @@
 
 			<h3>Programs &amp; Projects</h3>
 			<p>
-				Most of my projects can be found on my <a href="http://github.com/pennbauman">GitHub</a>, including serveral simple linux command line tools and the code for this site. I have also done a few simple web projects which can be found on the <a href="/projects/">projects page</a>.
+				Most of my projects can be found on my <a href="http://github.com/pennbauman">GitHub</a>, including serveral simple linux command line tools and the code for this site. I have also done a few simple web projects which can be found on the <a href="/projects">projects page</a>.
 			</p>
 
 			<h3>About Me</h3>
