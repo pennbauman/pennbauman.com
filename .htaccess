@@ -33,20 +33,20 @@ ErrorDocument 500 /files/errors/510.shtml
 Options -Indexes
 
 # Hide .files
-#<FilesMatch "^\.">
-#    Require all denied
-#</FilesMatch>
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
 
-#<Files */files/php/*.php>
-#    Order Deny,Allow
-#    Deny from all
-#    Allow from 127.0.0.1
-#</Files>
+<Files */files/php/*.php>
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+</Files>
 
-#<Files */files/php/index.php>
-#    Order Allow,Deny
-#    Allow from all
-#</Files>
+<Files */files/php/index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
