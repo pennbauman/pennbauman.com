@@ -30,7 +30,7 @@ ErrorDocument 500 /files/errors/507.shtml
 ErrorDocument 500 /files/errors/510.shtml
 
 # Stop Indexing
-#Options -Indexes
+Options -Indexes
 
 # Hide .files
 <FilesMatch "^\.">
