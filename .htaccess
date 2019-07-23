@@ -49,6 +49,11 @@ Options -Indexes
 #</Files>
 
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteBase /
+DirectorySlash Off
 
+# remove trailing slash
+RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301,L]
+
+# rewrite /dir/file?query to /dir/file.php?query
+RewriteRule ^([\w\/-]+)(\?.*)?$ $1.php$2 [L,T=application/x-httpd-php]
