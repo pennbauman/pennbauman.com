@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 	<head>
 		<title>Morse Code - Penn Bauman</title>
-		<link rel="shortcut icon" href="morse_favicon.png"> 
-		<link rel='stylesheet' type='text/css' href='morse-code.css'>
+		<link rel="shortcut icon" href="/files/img/morse_favicon.png"> 
+		<link rel='stylesheet' type='text/css' href='/files/css/morse-code.css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src='morse-code.js'></script>
+		<script src='/files/js/morse-code.js'></script>
 	</head>
 
 	<body>

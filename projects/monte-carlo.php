@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 	<head>
 		<title>Monte Carlo PI Generator - Penn Bauman</title>
-		<link rel="shortcut icon" href="/projects/monte-carlo/pi_favicon.png"> 
-		<link rel='stylesheet' type='text/css' href='/projects/monte-carlo/monte-carlo.css'>
-		<script type="text/javascript" src="/projects/monte-carlo/monte-carlo.js"></script>
+		<link rel="shortcut icon" href="/files/img/pi_favicon.png"> 
+		<link rel='stylesheet' type='text/css' href='/files/css/monte-carlo.css'>
+		<script type="text/javascript" src="/files/js/monte-carlo.js"></script>
 	</head>
 	<body onload="setup();return false;">
 		<canvas id="draw"></canvas>
@@ -26,7 +26,7 @@
 				When actually calculated, this proportion is only one fourth of pi (proof below) and because its is a proportion it can be calucated using only a fraction of the circle, such as a quarter, as it is here. 
 				<br/>
 
-				<img id="proof" src="/files/images/monte_carlo_proof.png">
+				<img id="proof" src="/files/img/monte_carlo_proof.png">
 
 				<br/>
 				C = number of points within the circle, S = the number of within the curcumscribed square, r = the radius of the circle

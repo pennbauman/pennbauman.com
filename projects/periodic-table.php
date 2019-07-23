@@ -18,10 +18,10 @@
 <!DOCTYPE html>
 	<head>
 		<title> Periodic Table - Penn Bauman</title>
-		<link rel="shortcut icon" href="h_favicon.png">
-		<link rel='stylesheet' type='text/css' href='periodic-table.css'>
+		<link rel="shortcut icon" href="/files/img/h_favicon.png">
+		<link rel='stylesheet' type='text/css' href='/files/css/periodic-table.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-		<script src='periodic-table.js'></script>
+		<script src='/files/js/periodic-table.js'></script>
 		<script type="text/javascript">
 			var elements = {
 			<?php

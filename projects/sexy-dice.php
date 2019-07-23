@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 	<head>
 		<title>Virtual Sexy Dice</title>
-		<link rel="shortcut icon" href="sexy_dice_favicon.png">
-		<link rel='stylesheet' type='text/css' href='sexy-dice.css'>
-		<script src='sexy-dice.js'></script>
+		<link rel="shortcut icon" href="/files/img/sexy_dice_favicon.png">
+		<link rel='stylesheet' type='text/css' href='/files/css/sexy-dice.css'>
+		<script src='/files/js/sexy-dice.js'></script>
 	</head>
 	<body onload="setup(); return false;">
 		<div id="back">
