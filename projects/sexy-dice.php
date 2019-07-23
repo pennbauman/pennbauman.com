@@ -7,7 +7,7 @@
 	</head>
 	<body onload="setup(); return false;">
 		<div id="back">
-	    	<a class="hl" href="/pgm/">Back</a>
+	    	<a class="hl" href="/projects">Back</a>
 	    </div>
 	    <div id="home">
 	    	<a class="hl" href="/">Home</a>
