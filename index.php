@@ -43,7 +43,7 @@
 
 			<h3>About Me</h3>
 			<p>
-				I'm originally from Arlington, Virginia but currently attend the University of Virginia. I love hiking and camping, as well as reading and writing code.  
+				I'm originally from Arlington, Virginia but currently attend the University of Virginia. I love hiking and camping, as well as writing code and reading.
 			</p>
 			<h3>These are my pets!</h3>
 			<img src="/files/img/bella_wonderwoman.jpg" style="width:80%;margin:0 10%">
