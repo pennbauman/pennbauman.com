@@ -13,19 +13,7 @@
 		<script src='/files/general.js'></script>
 	</head>
 	<body>
-		<?php
-			include "$HOME/php/pennbauman/std_header_navbar.php";
-		?>
-		<div id="header">
-			<h1>Penn Bauman</h1>
-		</div>
-		<div id="navbar">
-			<a href="/pgm/">Programs</a>
-			<a href="/games/">Games</a>
-			<a href="/about/">About</a>
-
-		</div>
-
+		<?php insertHTML("header_navbar") ?>
 		<div id="content">
 			<?php 
 				if ($auth > 0) {
@@ -45,8 +33,6 @@
 			
 			<!--img src="/files/img/bella_wag.gif"/-->
 		</div>
-		<?php
-			include "$HOME/php/pennbauman/std_footer.php";
-		?>
+		<?php insertHTML("footer") ?>
 	</body>
 </html>
