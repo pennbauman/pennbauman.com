@@ -2,7 +2,7 @@
 	if (!empty($_POST)) {
 		$favicon = $_POST["url"];
 	} else {
-		$favicon = "/files/images/sys_favicon.png";
+		$favicon = "/files/img/sys_favicon.png";
 	}
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
 		<h1>Favicon Tester</h1>
 		<form action='/sys/test/favicon/' method='post'>
 			<b>Favicon URL:</b> <br/> 
-			<input type='text' name='url' value='/files/images/'> <br><br/>
+			<input type='text' name='url' value='/files/img/'> <br><br/>
 			<input type='submit' value='Enter'>
 		</form>
 		<br/><a href="/">Home</a> - <a href="/sys/">System</a>

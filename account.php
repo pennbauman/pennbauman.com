@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<title>Account - Penn Bauman</title>
-		<link rel='icon' href='/files/images/favicon.png'>
+		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/general.js'></script>
@@ -43,7 +43,7 @@
 				
 			?>
 			
-			<!--img src="/files/images/bella_wag.gif"/-->
+			<!--img src="/files/img/bella_wag.gif"/-->
 		</div>
 		<?php
 			include "$HOME/php/pennbauman/std_footer.php";
