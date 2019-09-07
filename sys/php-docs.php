@@ -16,7 +16,6 @@
 		//Print Content
 		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
 		echo "<h1>/php/documentation/</h1>";
-		echo "<p><a href='/sys/php/'>php</a></p>";
 		$location = "/home/valypfnd/php/documentation/";
 		$files = [
 			"main.txt",
