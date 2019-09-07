@@ -1,5 +1,5 @@
 /* Written by Penn Bauman with Sass*/
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("/files/font/DejaVu_Font");
 /* Prevent Firefox selected button/link outline */
 :focus {
   outline: none;
@@ -22,7 +22,7 @@ input.text, input[type=text], input[type=button], input[type=submit], .input-che
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto Mono, monospace;
+  font-family: DejaVu Sans Mono, Monospace;
   min-height: 100vh;
   background: #141A1B;
   font-size: 2rem;
