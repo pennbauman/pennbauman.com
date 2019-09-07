@@ -20,6 +20,9 @@
 		echo "<h1>Test</h1>";
 
 		echo "<p>";
+		echo "<p>Normal</br>
+			<b>Bold</b><br/>
+			<i>Italic</i></p>";
 		echo "\$HOME = $HOME$n";
 		echo "\$home = $home$n";
 		echo "\$_SERVER['HOME'] = ".$_SERVER['HOME'].$n;
