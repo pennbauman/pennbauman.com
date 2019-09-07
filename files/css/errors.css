@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 body {
-	background:#111111;
+	background:#141a1b;
 	color:#eeeeee;
 	font-family:Roboto Mono, monospace;
 	font-size:2vh;
@@ -11,7 +11,7 @@ body {
 }
 h1 {
 	font-size:5vh;
-	color:#cc0000;
+	color:#db5b5b;
 	margin-bottom:-1vh;
 }
 h2 {
@@ -19,8 +19,8 @@ h2 {
 }
 h3 {
 	font-size:2vh;
-	color:#ffcc00;
+	color:#2eb398;
 }
 p {font-size:2vh;}
 a {	color:inherit; }
-a:hover { color:#ffcc00; }
+a:hover { color:#2eb398; }

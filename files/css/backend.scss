@@ -1,0 +1,122 @@
+$black:#141a1b;
+$white:#eeeeee;
+$green:#2eb398;
+$red:#db5b5b;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+:root {
+	font-size:1vh;
+}
+/* Prevent Firefox selected button/link outline */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+/* Prevent iOS input styling */
+input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+body {
+	background:$black;
+	color:$white;
+	font-family:Roboto Mono, monospace;
+	font-size:2rem;
+	/*text-align:center;*/
+	max-width:85vw;
+	margin:auto;
+	padding:4vh 0; 
+}
+p {font-size:2rem;}
+a {	color:inherit; }
+a:hover { color:$green; }
+h1 {
+	font-size:5rem;
+	color:$green;
+}
+h2 {
+	font-size:4rem;
+	color:$green;
+}
+h3 {
+	font-size:4rem;
+}
+h4 {
+	font-size:3rem;
+	display:inline;
+}
+h5 {
+	font-size:2.5rem;
+}
+h6 {
+	font-size:2.5rem;
+	display:inline;
+}
+ ul {
+	 margin:0;
+	 list-style-type:none;
+}
+/* Form */
+form {
+	font-size:2rem;
+}
+input[type=text], input[type=password], textarea {
+	display:inline-block;
+	border-radius:0;
+	border:0.2rem $white solid;
+	width:50rem;
+	height:3.5rem;
+	line-height:3.5rem;
+	font-size:2rem !important;
+	font-family:Roboto Mono, monospace;
+	background:$black;
+	color:$white !important;
+}
+input[type=submit] {
+	display:inline-block;
+	border-radius:0;
+	border:0.2em $white solid;
+	width:35rem;
+	height:4rem;
+	line-height:3.5rem;
+	font-size:2rem;
+	font-family:Roboto Mono, monospace;
+	background:$black;
+	color:$white;
+	-moz-appearance:none !important;
+	-webkit-appearance:none !important;
+	appearance:none;
+}
+input[type=submit]:hover {
+	color:$green;
+}
+input[type=submit]:active {
+	background:$green;
+	color:$black;
+}
+/* Table */
+table {
+	text-align:center;
+	margin:auto;
+	border-collapse: collapse;
+	font-size:2rem;
+}
+th {
+	font-weight:bold;
+	background-color:$green;
+	color:$black;
+	border:2px solid $white;
+	padding:0 1em;
+}
+td {
+	border:2px solid $white;
+	padding:0 1em;
+}
+tr:hover {
+	background-color:#555555;
+}
+.error {
+	color:$red;
+}
+.highlight {
+	color:$green;
+}
