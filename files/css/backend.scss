@@ -3,7 +3,8 @@ $white:#eeeeee;
 $green:#2eb398;
 $red:#db5b5b;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('/files/font/dejavu-sans-mono.css');
 :root {
 	font-size:1vh;
 }
@@ -19,7 +20,8 @@ input.text, input[type="text"], input[type="button"], input[type="submit"], .inp
 body {
 	background:$black;
 	color:$white;
-	font-family:Roboto Mono, monospace;
+	//font-family:Roboto Mono, monospace;
+	font-family:DejaVu Sans Mono, Arial;
 	font-size:2rem;
 	/*text-align:center;*/
 	max-width:85vw;
