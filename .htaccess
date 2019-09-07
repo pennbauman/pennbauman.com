@@ -3,6 +3,7 @@ ErrorDocument 401 /files/errors/401.shtml
 ErrorDocument 401 /files/errors/402.shtml
 ErrorDocument 403 /files/errors/403.shtml
 ErrorDocument 404 /files/errors/404.shtml
+ErrorDocument 405 /files/errors/405.shtml
 ErrorDocument 401 /files/errors/405.shtml
 ErrorDocument 401 /files/errors/406.shtml
 ErrorDocument 401 /files/errors/407.shtml

@@ -1,13 +1,39 @@
 <html>
-	<head> 
-		<title>ERROR: 500 Internal Server Error</title>
-		<link rel="shortcut icon" href="/files/images/error_favicon.png"> 
-		<link rel="stylesheet" type="text/css" href="/files/css/errors.css">
+	<head>
+		<title>500 Internal Server Error</title>
+		<link rel="shortcut icon" href="/files/img/error_favicon.png">
 	</head>
+	<style type="text/css">
+		@import url('/files/font/DejaVu_Font');
+		body {
+			background:#141a1b;
+			color:#eeeeee;
+			font-family:Roboto Mono, monospace;
+			font-size:2vh;
+			max-width:85vw;
+			margin:auto;
+			padding:4vh 0; 
+		}
+		h1 {
+			font-size:5vh;
+			color:#db5b5b;
+			margin-bottom:-1vh;
+		}
+		h2 {
+			font-size:3vh;
+		}
+		h3 {
+			font-size:2vh;
+			color:#2eb398;
+		}
+		p {font-size:2vh;}
+		a {	color:inherit; }
+		a:hover { color:#2eb398; }
+	</style>
 	<body>
 		<h1>ERROR: 500 Internal Server Error</h1>
-		<h2> <!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --> </h2>
-		<h3>The server has encountered an interal error. </h3>
-		<p><a href="/">Home</a> - <a href="mailto:penn.bauman@gmail.com">Contact</a></p>
+		<h2><!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --></h2>
+		<h3>The server has encountered an unknown error.</h3>
+		<p><a href="/">Home</a> - <a href="mailto:pennbauman@protonmail.com">Contact</a></p>
 	</body>
 </html>
