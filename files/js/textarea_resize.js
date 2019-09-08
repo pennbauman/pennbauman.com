@@ -1,2 +1,2 @@
-import * from "/files/js/autoresize_jquery.js";
+includeJs("/files/js/autoresize_jquery.js");
 $('textarea').autoResize();
