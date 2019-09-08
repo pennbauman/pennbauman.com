@@ -83,8 +83,9 @@ form {
 	}
 
 	.wide {
+		text-align: center;
 		input[type=text], input[type=password], textarea {
-			width:50rem;
+			width:100%;
 		}
 	}
 
