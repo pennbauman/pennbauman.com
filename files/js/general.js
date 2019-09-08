@@ -10,7 +10,7 @@ $(document).ready(function() {
     //}
 //});
 //$('#textMeetingAgenda').css('overflow', 'hidden').autogrow();
-textarea.oninput = function() {
-  textarea.style.height = ""; /* Reset the height*/
-  textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
+$('textarea').oninput = function() {
+	$('textarea').style.height = ""; /* Reset the height*/
+	$('textarea').style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
 };
