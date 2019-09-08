@@ -10,8 +10,9 @@ $(document).ready(function() {
     //}
 //});
 //$('#textMeetingAgenda').css('overflow', 'hidden').autogrow();
-var textarea = document.getElementById("textarea");
-textarea.oninput = function() {
-  textarea.style.height = ""; /* Reset the height*/
-  textarea.style.height = textarea.scrollHeight + "px";
-};
+//var textarea = document.getElementById("textarea");
+//textarea.oninput = function() {
+  //textarea.style.height = ""; [> Reset the height<]
+  //textarea.style.height = textarea.scrollHeight + "px";
+//};
+$('textarea').autoResize();
