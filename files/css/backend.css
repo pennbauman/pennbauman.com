@@ -24,9 +24,9 @@ body {
   font-family: DejaVu Sans Mono, Monospace;
   font-size: 2rem;
   /*text-align:center;*/
-  max-width: 85vw;
+  max-width: 85%;
   margin: auto;
-  padding: 4vh 0;
+  padding: 4rem 0;
 }
 
 p {
@@ -78,21 +78,28 @@ ul {
 form {
   font-size: 2rem;
 }
-
-input[type=text], input[type=password], textarea {
+form input[type=text], form input[type=password], form textarea {
   display: inline-block;
   border-radius: 0;
   border: 0.2rem #eeeeee solid;
   width: 50rem;
-  height: 3.5rem;
+  max-width: 100%;
   line-height: 3.5rem;
   font-size: 2rem !important;
   font-family: Roboto Mono, monospace;
   background: #141a1b;
   color: #eeeeee !important;
 }
-
-input[type=submit] {
+form input[type=text], form input[type=password] {
+  height: 3.5rem;
+}
+form textarea {
+  min-height: 7rem;
+}
+form .wide input[type=text], form .wide input[type=password], form .wide textarea {
+  width: 50rem;
+}
+form input[type=submit] {
   display: inline-block;
   border-radius: 0;
   border: 0.2em #eeeeee solid;
@@ -107,12 +114,10 @@ input[type=submit] {
   -webkit-appearance: none !important;
   appearance: none;
 }
-
-input[type=submit]:hover {
+form input[type=submit]:hover {
   color: #2eb398;
 }
-
-input[type=submit]:active {
+form input[type=submit]:active {
   background: #2eb398;
   color: #141a1b;
 }

@@ -24,9 +24,9 @@ body {
 	font-family:DejaVu Sans Mono, Monospace;
 	font-size:2rem;
 	/*text-align:center;*/
-	max-width:85vw;
+	max-width:85%;
 	margin:auto;
-	padding:4vh 0; 
+	padding:4rem 0;
 }
 p {font-size:2rem;}
 a {	color:inherit; }
@@ -53,47 +53,63 @@ h6 {
 	font-size:2.5rem;
 	display:inline;
 }
- ul {
-	 margin:0;
-	 list-style-type:none;
+ul {
+	margin:0;
+	list-style-type:none;
 }
 /* Form */
 form {
 	font-size:2rem;
-}
-input[type=text], input[type=password], textarea {
-	display:inline-block;
-	border-radius:0;
-	border:0.2rem $white solid;
-	width:50rem;
-	height:3.5rem;
-	line-height:3.5rem;
-	font-size:2rem !important;
-	font-family:Roboto Mono, monospace;
-	background:$black;
-	color:$white !important;
-}
-input[type=submit] {
-	display:inline-block;
-	border-radius:0;
-	border:0.2em $white solid;
-	width:35rem;
-	height:4rem;
-	line-height:3.5rem;
-	font-size:2rem;
-	font-family:Roboto Mono, monospace;
-	background:$black;
-	color:$white;
-	-moz-appearance:none !important;
-	-webkit-appearance:none !important;
-	appearance:none;
-}
-input[type=submit]:hover {
-	color:$green;
-}
-input[type=submit]:active {
-	background:$green;
-	color:$black;
+	
+	input[type=text], input[type=password], textarea {
+		display:inline-block;
+		border-radius:0;
+		border:0.2rem $white solid;
+		width:50rem;
+		max-width:100%;
+		line-height:3.5rem;
+		font-size:2rem !important;
+		font-family:Roboto Mono, monospace;
+		background:$black;
+		color:$white !important;
+	}
+	
+	input[type=text], input[type=password] {
+		height:3.5rem;
+	}
+
+	textarea {
+		min-height:7rem;
+	}
+
+	.wide {
+		input[type=text], input[type=password], textarea {
+			width:50rem;
+		}
+	}
+
+	input[type=submit] {
+		display:inline-block;
+		border-radius:0;
+		border:0.2em $white solid;
+		width:35rem;
+		height:4rem;
+		line-height:3.5rem;
+		font-size:2rem;
+		font-family:Roboto Mono, monospace;
+		background:$black;
+		color:$white;
+		-moz-appearance:none !important;
+		-webkit-appearance:none !important;
+		appearance:none;
+	}
+	input[type=submit]:hover {
+		color:$green;
+	}
+	input[type=submit]:active {
+		background:$green;
+		color:$black;
+	}
 }
 /* Table */
 table {
