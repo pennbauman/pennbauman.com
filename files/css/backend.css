@@ -95,7 +95,7 @@ form input[type=text], form input[type=password] {
   height: 3.5rem;
 }
 form textarea {
-  min-height: 7rem;
+  min-height: 49rem;
 }
 form input[type=submit] {
   display: inline-block;
