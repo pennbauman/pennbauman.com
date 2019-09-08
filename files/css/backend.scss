@@ -82,13 +82,6 @@ form {
 		min-height:7rem;
 	}
 
-	.wide {
-		text-align: center;
-		input[type=text], input[type=password], textarea {
-			width:100%;
-		}
-	}
-
 	input[type=submit] {
 		display:inline-block;
 		border-radius:0;
@@ -110,6 +103,13 @@ form {
 	input[type=submit]:active {
 		background:$green;
 		color:$black;
+	}
+}
+
+.wide {
+	text-align: center;
+	input[type=text], input[type=password], textarea {
+		width:100%;
 	}
 }
 /* Table */
