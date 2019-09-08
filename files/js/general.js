@@ -9,4 +9,9 @@ $(document).ready(function() {
         //$(this).height($(this).height() + 1)
     //}
 //});
-$('#textMeetingAgenda').css('overflow', 'hidden').autogrow();
+//$('#textMeetingAgenda').css('overflow', 'hidden').autogrow();
+$("textarea").keyup(function(e) {
+    while($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))) {
+        $(this).height($(this).height()+1);
+    };
+});
