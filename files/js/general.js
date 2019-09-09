@@ -11,3 +11,8 @@ function includeJs(jsFilePath) {
 $(document).ready(function() { 
 	$(':root').css("font-size", Math.max(screen.height, window.innerHeight)*0.01);
 });
+function textareaSize() {
+	$("textarea").each(function(){
+		$(this).style.height = $(this).scrollHeight;
+	});
+}
