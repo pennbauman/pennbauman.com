@@ -85,7 +85,6 @@ form input[type=text], form input[type=password], form textarea {
   border: 0.2rem #eeeeee solid;
   width: 50rem;
   max-width: 100%;
-  padding: 0.5rem 1rem 1rem;
   line-height: 3.5rem;
   font-size: 2rem !important;
   font-family: Roboto Mono, monospace;
@@ -97,6 +96,9 @@ form input[type=text], form input[type=password] {
 }
 form textarea {
   min-height: 49rem;
+  padding: 0.5rem 1rem 1rem;
+  overflow-y: hidden;
+  transition: all 1s ease-in-out 0s;
 }
 form input[type=submit] {
   display: inline-block;
