@@ -13,7 +13,7 @@ $(document).ready(function() {
 });
 function textareaSize() {
 	$("textarea").each(function(){
-		this.style.height = this.scrollHeight + "px";
+		this.style.height = this.scrollHeight + 10 + "px";
 		console.log(this.scrollHeight);
 	});
 	console.log("resize");
