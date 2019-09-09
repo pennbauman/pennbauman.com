@@ -13,7 +13,8 @@ $(document).ready(function() {
 });
 function textareaSize() {
 	$("textarea").each(function(){
-		this.style.maxHeight = "calc(0.5rem + " + this.scrollHeight + "px)";
+		this.style.height = "0";
+		this.style.height = "calc(0.5rem + " + this.scrollHeight + "px)";
 		console.log(this.scrollHeight);
 	});
 	console.log("resize");
