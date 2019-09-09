@@ -126,7 +126,7 @@ form input[type=submit]:active {
 .wide {
   text-align: center;
 }
-.wide input[type=text], .wide input[type=password], .wide textarea {
+.wide textarea {
   width: 100%;
 }
 
