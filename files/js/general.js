@@ -14,6 +14,7 @@ $(document).ready(function() {
 function textareaSize() {
 	$("textarea").each(function(){
 		this.style.height = this.scrollHeight + "px";
+		console.log(this.scrollHeight);
 	});
 	console.log("resize");
 }
