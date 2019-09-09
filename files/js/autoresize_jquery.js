@@ -10,7 +10,6 @@
         
         // Just some abstracted details,
         // to make plugin users happy:
-		console.log("run");
         var settings = $.extend({
             onResize : function(){},
             animate : true,
