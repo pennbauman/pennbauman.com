@@ -82,6 +82,7 @@ form {
 	textarea {
 		min-height:49rem;
 		padding:0.5rem 1rem 1rem;
+		overflow-y:hidden;
 	}
 
 	input[type=submit] {
