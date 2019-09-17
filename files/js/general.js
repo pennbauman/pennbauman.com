@@ -18,4 +18,5 @@ function textareaSize() {
 		console.log(this.scrollHeight);
 	});
 	console.log("resize");
+	return false;
 }
