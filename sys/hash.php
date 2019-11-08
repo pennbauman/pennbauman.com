@@ -14,7 +14,7 @@
 				echo "<h6 class='error'>".hash("md5", $_POST["text"])."</h6><br/><br/>";
 			}
 		?> 
-		<form action='/sys/hash/' method='post'>
+		<form action='/sys/hash' method='post'>
 			Text: <br/> 
 			<input type='text' name='text'><br><br/>
 			<input type='submit' value='Hash'>
