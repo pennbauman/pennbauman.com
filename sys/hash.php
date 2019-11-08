@@ -10,10 +10,10 @@
 		<h1>Hash</h1>
 		<?php
 			if (!empty($_POST)) {
-				echo "<b>".$_POST["text"]."</b> <br/>";
-				echo "<h6>MD5: <span class='error'>".hash("md5", $_POST["text"])."</span></h6><br/><br/>";
-				echo "<h6>SHA-256: <span class='error'>".hash("sha256", $_POST["text"])."</span></h6><br/><br/>";
-				echo "<h6>SHA-512: <span class='error'>".hash("sha512", $_POST["text"])."</span></h6><br/><br/>";
+				echo "<h4>".$_POST["text"]."</h4> <br/>";
+				echo "<b>MD5:</b><br/> <b class='error'>".hash("md5", $_POST["text"])."</b><br/>";
+				echo "<b>SHA-256:</b><br/> <b class='error'>".hash("sha256", $_POST["text"])."</b><br/>";
+				echo "<b>SHA-512:</b><br/> <b class='error'>".hash("sha512", $_POST["text"])."</b><br/>";
 			}
 		?> 
 		<form action='/sys/hash' method='post'>
