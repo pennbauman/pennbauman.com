@@ -17,7 +17,7 @@
 				echo "<b>SHA-512:</b><br/> <b class='error'>".hash("sha512", $_POST["text"])."</b><br/>";
 				echo "</span><br/>";
 			}
-		?> 
+		?>
 		<form action='/sys/hash' method='post'>
 			Text: <br/> 
 			<input type='text' name='text'><br><br/>

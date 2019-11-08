@@ -11,7 +11,7 @@
 	if (!empty($_POST)) {
 		$username = $_POST["username"];
 		$password = $_POST["password"];
-		$password = hash("md5", $password);
+		$password = hash("sha512", $password);
 
 		include "/home/valypfnd/php/auth.php";
 		if ($auth > 0) {
