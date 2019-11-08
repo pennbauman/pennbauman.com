@@ -16,6 +16,7 @@
 		<?php insertHTML("header_navbar") ?>
 		<div id="content">
 			<?php 
+	echo "$authFile[0] $authFile[1] $authFile[2]";
 				if ($auth > 0) {
 					echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 					echo "<h2>Account</h2>";
