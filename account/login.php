@@ -17,7 +17,7 @@
 		if ($auth > 0) {
 			header("Location: ".$subsiteReturn);
 		} else {
-			$prev_username = $username; 
+			$prev_username = $username;
 			$error = "Incorrect login.";
 		}
 	}
@@ -43,7 +43,7 @@
 					echo "<form action='".$_SERVER['REQUEST_URI']."' method='post'>";
 					echo "<b>Username:</b> <br/> <input type='text' name='username' value='".$prev_username."'><br><br/>";
 					echo "<b>Password:</b> <br/> <input type='password' name='password'> <br/><br/>";
-					echo "<h4>".$error."</h4> <br/><br/>";
+					echo "<h4 class='error'>".$error."</h4> <br/><br/>";
 					echo "<input type='submit' value='Login'>";
 					echo "</form>";
 				?>
