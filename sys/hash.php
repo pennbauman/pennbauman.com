@@ -11,7 +11,9 @@
 		<?php
 			if (!empty($_POST)) {
 				echo "<b>".$_POST["text"]."</b> <br/>";
-				echo "<h6 class='error'>".hash("md5", $_POST["text"])."</h6><br/><br/>";
+				echo "<h6>MD5: <span class='error'>".hash("md5", $_POST["text"])."</span></h6><br/><br/>";
+				echo "<h6>SHA-256: <span class='error'>".hash("sha-256", $_POST["text"])."</span></h6><br/><br/>";
+				echo "<h6>SHA-512: <span class='error'>".hash("sha-512", $_POST["text"])."</span></h6><br/><br/>";
 			}
 		?> 
 		<form action='/sys/hash' method='post'>
