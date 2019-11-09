@@ -44,10 +44,10 @@
 	<body>
 		<?php
 			echo "<h1>$txtFile</h1>";
-			if ($result == false) {
-				echo "doesn't exist";
-			} else {
+			if ($txtAuth) {
 				echo $result["body"];
+			} else {
+				echo "doesn't exist";
 			}
 		?>
 	</body>
