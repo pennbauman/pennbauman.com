@@ -72,7 +72,7 @@
 				$query = $pdo->prepare("SELECT auth_level, code FROM text_files");
 				$query->execute();
 				foreach ($query as $row) {
-					if ($row["auth_level"] < $auth) {
+					if ($row["auth_level"] <= $auth) {
 						echo "<p><a href='/txt?f=".$row["code"]."'>".$row["code"].".txt</a></p><br/>";
 					}
 					echo $row["code"];
