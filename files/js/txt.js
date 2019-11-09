@@ -7,10 +7,12 @@ function txtReady(file, pass) {
 	txtPass = pass;
 	console.log("f: " + file + " p: " + pass);
 	setInterval(function(){ txtUpdate(false); }, 3000);
+	document.getElementById("textarea").addEventListener("click", function(){ changed = true });
 }
 
 
 function txtUpdate(forced) {
+	console.log("f: " + forced + " c: " + changed);
 	if (forced || changed) {
 		var body = document.getElementById("textarea").value;
 		//console.log(body);
