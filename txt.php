@@ -8,6 +8,7 @@
 	if (isset($_GET["f"])) {
 		$txtFile = $_GET["f"];
 		$txtFound = true;
+		$txtAuth = false;
 
 		$query = $pdo->prepare("SELECT auth_level, password, body FROM text_files WHERE code=:code");
 		$query->execute(["code" => $txtFile]);
@@ -17,7 +18,6 @@
 				header("Location: /txt");
 				exit();
 			}
-			$txtAuth = false;
 			if ($result["password"] == "") {
 				$txtAuth = true;
 			} else {
@@ -27,6 +27,9 @@
 				}
 				if (isset($_POST["pass_hash"])) {
 					$txtPass = $_POST["pass_hash"];
+				}
+				if (isset($_GET["pass"])) {
+					$txtPass = $_GET["pass"];
 				}
 				if ($txtPass == $result["password"]) {
 					$txtAuth = true;
@@ -41,8 +44,12 @@
 			exit();
 		}
 
-		if (isset($_GET["js"])) {
+		if (isset($_GET["js"]) && $txtAuth) {
 			if ($_GET["js"] == "set") {
+				$txtBody = $_POST["body"];
+				$write = $pdo->prepare("UPDATE text_files SET body=:body WHERE code=:code");
+				$write->execute(["code" => $txtFile, "body" => $txtBody]);
+
 				echo "js.set";
 				exit();
 			}
@@ -68,6 +75,7 @@
 		<link rel='stylesheet' type='text/css' href='files/css/backend.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
+		<script src='/files/js/txt.js'></script>
 		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
 	</head>
 	<body>
@@ -79,6 +87,8 @@
 					echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>$txtBody</textarea><br/><br/>";
 					echo "<input type='hidden' name='pass_hash' value='$txtPass'>";
 					echo "<input type='submit' value='Save and Enter'></form>";
+
+					echo "<button onclick='txtUpdate($txtFile, $txtPass);'>UPDATE</button>";
 				} else {
 					echo "<form class='wide' action='".$_SERVER['REQUEST_URI']."' method='post'>";
 					echo "<h4>Password:</h4><br/> <input type='password' name='password'> <br/>";
