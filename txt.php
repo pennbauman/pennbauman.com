@@ -21,14 +21,18 @@
 			if ($result["password"] == "") {
 				$txtAuth = true;
 			} else {
+				$txtPass = "";
 				if (isset($_POST["password"])) {
 					$txtPass = hash("sha512", $_POST["password"]);
-					if ($txtPass == $result["password"]) {
-						$txtAuth = true;
-					} else {
-						//echo $_POST["password"]." '$txtPass' '".$result["password"]."'";
-						$passError = "Invalid password.";
-					}
+				}
+				if (isset($_POST["pass_hash"])) {
+					$txtPass = $_POST["password"];
+				}
+				if ($txtPass == $result["password"]) {
+					$txtAuth = true;
+				} else {
+					//echo $_POST["password"]." '$txtPass' '".$result["password"]."'";
+					$passError = "Invalid password.";
 				}
 			}
 		} else {
@@ -59,12 +63,11 @@
 	<body>
 		<?php
 			if ($txtFound) {
-				echo $_POST["password"];
 				echo "<h1>$txtFile.txt</h1>";
 				if ($txtAuth) {
 					echo "<form class='wide' id='txt' action='".$_SERVER['REQUEST_URI']."' method='post'>";
 					echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>".$result["body"]."</textarea><br/><br/>";
-					echo "<input type='hidden' name='password' value='".$_POST["password"]."'>";
+					echo "<input type='hidden' name='pass_hash' value='$txtPass'>";
 					echo "<input type='submit' value='Save and Enter'></form>";
 				} else {
 					echo "<form class='wide' action='".$_SERVER['REQUEST_URI']."' method='post'>";
