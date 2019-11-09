@@ -26,6 +26,7 @@
 					if ($txtPass == $result["password"]) {
 						$txtAuth = true;
 					} else {
+						echo "$txtPass".$result["password"];
 						$passError = "Invalid password.";
 					}
 				}
