@@ -5,18 +5,18 @@ var txtPass = "";
 function txtReady(file, pass) {
 	txtFile = file;
 	txtPass = pass;
-	console.log("f: " + file + " p: " + pass);
-	setInterval(function(){ txtUpdate(false); }, 5000);
+	//console.log("f: " + file + " p: " + pass);
+	setInterval(function(){ txtUpdate(false); }, 2000);
 	document.getElementById("textarea").addEventListener("click", function(){ changed = true });
 }
 
 
 function txtUpdate(forced) {
-	console.log("f: " + forced + " c: " + changed);
+	//console.log("f: " + forced + " c: " + changed);
 	if (forced || changed) {
 		var body = document.getElementById("textarea").value.replace(/\n/g, "%0A");
 		var url = "/txt?f=" + txtFile + "&pass=" + txtPass + "&body=" + body + "&js=set";
-		console.log(url);
+		//console.log(url);
 		xmlhttp=new XMLHttpRequest();
 		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
