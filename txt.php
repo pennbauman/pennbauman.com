@@ -39,7 +39,11 @@
 <DOCTYPE!html><html>
 	<head>
 		<?php
-			echo "<title>$txtFile.txt</title>";
+			if ($txtFound) {
+				echo "<title>$txtFile.txt - Penn Bauman</title>";
+			} else {
+				echo "<title>TXT - Penn Bauman</title>";
+			}
 		?>
 		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='files/css/backend.css'>
@@ -64,7 +68,14 @@
 					echo "</form>";
 				}
 			} else {
-				echo "not file";
+				echo "<h1>TXT</h1>";
+				$query = $pdo->prepare("SELECT auth_level, code FROM text_files");
+				$query->execute();
+				foreach ($query as $row) {
+					if ($row["auth_level"] < $auth) {
+						echo "<p><a href='/txt?f=".$row["code"]."'>".$row["code"].".txt</a></p><br/>";
+					}
+				}
 			}
 		?>
 	</body>
