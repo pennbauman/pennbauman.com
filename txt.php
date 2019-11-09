@@ -25,12 +25,10 @@
 					$txtPass = hash("sha512", $_POST["password"]);
 					if ($txtPass = $result["password"]) {
 						$txtAuth = true;
+					} else {
+						$passError = "Invalid password.";
 					}
 				}
-			}
-			if ($txtAuth == false) {
-				header("Location: /txt");
-				exit();
 			}
 		} else {
 			header("Location: /txt");
