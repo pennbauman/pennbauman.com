@@ -43,9 +43,8 @@
 	</head>
 	<body>
 		<?php
-			echo "<h1>$txtFile</h1>";
+			echo "<h1>$txtFile.txt</h1>";
 			if ($txtAuth) {
-				echo $result["body"];
 				echo "<form class='wide' id='txt' action='".$_SERVER['REQUEST_URI']."' method='post'>";
 				echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>".$result["body"]."</textarea><br/><br/>";
 				echo "<input type='hidden' name='password' value='$password'>";
