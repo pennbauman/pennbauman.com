@@ -4,6 +4,7 @@
 	include "/home/valypfnd/php/account.php";
 	include "/home/valypfnd/php/file_path.php";
 
+	$txtFound = false;
 	if (isset($_GET["f"])) {
 		$txtFile = $_GET["f"];
 		$txtFound = true;
@@ -35,9 +36,6 @@
 			header("Location: /txt");
 			exit();
 		}
-	} else {
-		header("Location: /txt");
-		exit();
 	}
 ?>
 <DOCTYPE!html><html>
@@ -53,18 +51,22 @@
 	</head>
 	<body>
 		<?php
-			echo "<h1>$txtFile.txt</h1>";
-			if ($txtAuth) {
-				echo "<form class='wide' id='txt' action='".$_SERVER['REQUEST_URI']."' method='post'>";
-				echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>".$result["body"]."</textarea><br/><br/>";
-				echo "<input type='hidden' name='password' value='$password'>";
-				echo "<input type='submit' value='Save and Enter'></form>";
+			if ($txtFound) {
+				echo "<h1>$txtFile.txt</h1>";
+				if ($txtAuth) {
+					echo "<form class='wide' id='txt' action='".$_SERVER['REQUEST_URI']."' method='post'>";
+					echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>".$result["body"]."</textarea><br/><br/>";
+					echo "<input type='hidden' name='password' value='$password'>";
+					echo "<input type='submit' value='Save and Enter'></form>";
+				} else {
+					echo "<form class='wide' action='".$_SERVER['REQUEST_URI']."' method='post'>";
+					echo "<h4>Password:</h4><br/> <input type='password' name='password'> <br/>";
+					echo "<h6 class='error'>".$passError."</h6> <br/><br/>";
+					echo "<input type='submit' value='Login'>";
+					echo "</form>";
+				}
 			} else {
-				echo "<form class='wide' action='".$_SERVER['REQUEST_URI']."' method='post'>";
-				echo "<h4>Password:</h4><br/> <input type='password' name='password'> <br/>";
-				echo "<h6 class='error'>".$passError."</h6> <br/><br/>";
-				echo "<input type='submit' value='Login'>";
-				echo "</form>";
+				echo "not file";
 			}
 		?>
 	</body>
