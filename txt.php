@@ -9,6 +9,7 @@
 		$txtFile = $_GET["f"];
 		$txtFound = true;
 		$txtAuth = false;
+		$txtPass = "";
 
 		$query = $pdo->prepare("SELECT auth_level, password, body FROM text_files WHERE code=:code");
 		$query->execute(["code" => $txtFile]);
@@ -21,7 +22,6 @@
 			if ($result["password"] == "") {
 				$txtAuth = true;
 			} else {
-				$txtPass = "";
 				if (isset($_POST["password"])) {
 					$txtPass = hash("sha512", $_POST["password"]);
 				}
