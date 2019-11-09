@@ -35,7 +35,7 @@
 					$passError = "Invalid password.";
 				}
 			}
-			$txtBody = $result["body"]
+			$txtBody = $result["body"];
 		} else {
 			header("Location: /txt");
 			exit();
