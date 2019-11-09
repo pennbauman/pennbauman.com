@@ -49,6 +49,7 @@
 				$txtBody = $_POST["body"];
 				$write = $pdo->prepare("UPDATE text_files SET body=:body WHERE code=:code");
 				$write->execute(["code" => $txtFile, "body" => $txtBody]);
+				error_log("js.set: $txtBody");
 
 				echo "js.set";
 				exit();
