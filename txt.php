@@ -41,6 +41,13 @@
 			exit();
 		}
 
+		if (isset($_GET["js"])) {
+			if ($_GET["js"] == "set") {
+				echo "js.set";
+				exit();
+			}
+		}
+
 		if ($txtAuth && isset($_POST["body"])) {
 			$txtBody = $_POST["body"];
 			$write = $pdo->prepare("UPDATE text_files SET body=:body WHERE code=:code");
