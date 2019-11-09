@@ -1,6 +1,7 @@
 function txtUpdate(file, pass) {
-	var body = document.getElementById("textarea").innerHTML;
-	console.log("/txt?f=" + file + "&pass=" + pass + "&body=" + body + "&js=set");
+	//var body = document.getElementById("textarea").innerHTML;
+	//console.log("/txt?f=" + file + "&pass=" + pass + "&body=" + body + "&js=set");
+	console.log("x");
 
 	return false;
 }
