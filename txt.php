@@ -35,7 +35,9 @@
 					$txtAuth = true;
 				} else {
 					//echo $_POST["password"]." '$txtPass' '".$result["password"]."'";
-					$passError = "Invalid password.";
+					if ($txtPass != "") {
+						$passError = "Invalid password.";
+					}
 				}
 			}
 			$txtBody = $result["body"];
@@ -91,7 +93,7 @@
 					echo "<input type='hidden' name='pass_hash' value='$txtPass'>";
 					echo "<input type='submit' value='Save and Enter'></form>";
 
-					echo "<button onClick=\"txtUpdate(true);\">UPDATE</button>";
+					//echo "<button onClick=\"txtUpdate(true);\">UPDATE</button>";
 				} else {
 					echo "<form class='wide' action='".$_SERVER['REQUEST_URI']."' method='post'>";
 					echo "<h4>Password:</h4><br/> <input type='password' name='password'> <br/>";
