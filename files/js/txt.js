@@ -1,11 +1,24 @@
-function txtUpdate(file, pass) {
-	var body = document.getElementById("textarea").value;
-	console.log(body);
-	var url = "/txt?f=" + file + "&pass=" + pass + "&body=" + body + "&js=set";
-	xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("GET", url, true);
-	xmlhttp.send();
-	console.log("response: " + xmlhttp.responseText);
+var changed = false;
+var txtFile = "";
+var txtPass = "";
+
+function txtReady(file, pass) {
+	txtFile = file;
+	txtPass = pass;
+	console.log("f: " + file + " p: " + pass);
+	setInterval(function(){ txtUpdate(false); }, 3000);
+}
+
+
+function txtUpdate(forced) {
+	if (forced || changed) {
+		var body = document.getElementById("textarea").value;
+		//console.log(body);
+		var url = "/txt?f=" + txtFile + "&pass=" + txtPass + "&body=" + body + "&js=set";
+		xmlhttp=new XMLHttpRequest();
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+	}
 	return false;
 }
 
