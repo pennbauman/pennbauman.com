@@ -1,5 +1,6 @@
 function txtUpdate(file, pass) {
 	var body = document.getElementById("textarea").innerHTML;
+	console.log(body);
 	var url = "/txt?f=" + file + "&pass=" + pass + "&body=" + body + "&js=set";
 	xmlhttp=new XMLHttpRequest();
 	xmlhttp.open("GET", url, true);
