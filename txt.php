@@ -88,7 +88,7 @@
 					echo "<input type='hidden' name='pass_hash' value='$txtPass'>";
 					echo "<input type='submit' value='Save and Enter'></form>";
 
-					echo "<button onClick='txtUpdate($txtFile, $txtPass);'>UPDATE</button>";
+					echo "<button onClick='txtUpdate('$txtFile', '$txtPass');'>UPDATE</button>";
 				} else {
 					echo "<form class='wide' action='".$_SERVER['REQUEST_URI']."' method='post'>";
 					echo "<h4>Password:</h4><br/> <input type='password' name='password'> <br/>";
