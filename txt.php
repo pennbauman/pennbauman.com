@@ -26,7 +26,7 @@
 					if ($txtPass == $result["password"]) {
 						$txtAuth = true;
 					} else {
-						echo $_POST["password"]." '$txtPass' '".$result["password"]."'";
+						//echo $_POST["password"]." '$txtPass' '".$result["password"]."'";
 						$passError = "Invalid password.";
 					}
 				}
@@ -34,6 +34,10 @@
 		} else {
 			header("Location: /txt");
 			exit();
+		}
+
+		if ($txtAuth) {
+		
 		}
 	}
 ?>
@@ -55,11 +59,12 @@
 	<body>
 		<?php
 			if ($txtFound) {
+				echo $_POST["password"];
 				echo "<h1>$txtFile.txt</h1>";
 				if ($txtAuth) {
 					echo "<form class='wide' id='txt' action='".$_SERVER['REQUEST_URI']."' method='post'>";
 					echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>".$result["body"]."</textarea><br/><br/>";
-					echo "<input type='hidden' name='password' value='$password'>";
+					echo "<input type='hidden' name='password' value='".$_POST["password"]."'>";
 					echo "<input type='submit' value='Save and Enter'></form>";
 				} else {
 					echo "<form class='wide' action='".$_SERVER['REQUEST_URI']."' method='post'>";
