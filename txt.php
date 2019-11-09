@@ -44,7 +44,6 @@
 		if (isset($_GET["js"])) {
 			if ($_GET["js"] == "set") {
 				echo "js.set";
-				die();
 			}
 		}
 
