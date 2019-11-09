@@ -26,7 +26,7 @@
 					$txtPass = hash("sha512", $_POST["password"]);
 				}
 				if (isset($_POST["pass_hash"])) {
-					$txtPass = $_POST["password"];
+					$txtPass = $_POST["pass_hash"];
 				}
 				if ($txtPass == $result["password"]) {
 					$txtAuth = true;
