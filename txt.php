@@ -46,8 +46,12 @@
 			echo "<h1>$txtFile</h1>";
 			if ($txtAuth) {
 				echo $result["body"];
+				echo "<form class='wide' id='txt' action='".$_SERVER['REQUEST_URI']."' method='post'>";
+				echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>".$result["body"]."</textarea><br/><br/>";
+				echo "<input type='hidden' name='password' value='$password'>";
+				echo "<input type='submit' value='Save and Enter'></form>";
 			} else {
-				echo "doesn't exist";
+				echo "unauthorized";
 			}
 		?>
 	</body>
