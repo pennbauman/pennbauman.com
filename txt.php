@@ -60,6 +60,8 @@
 			$txtBody = $_POST["body"];
 			$write = $pdo->prepare("UPDATE text_files SET body=:body WHERE code=:code");
 			$write->execute(["code" => $txtFile, "body" => $txtBody]);
+
+			file_put_contents("/home/valypfnd/data/$txtFile_".date("YmdHis").".txt", $bodyTxt);
 		}
 	}
 ?>

@@ -16,7 +16,7 @@ function txtUpdate(forced) {
 	if (forced || changed) {
 		var body = document.getElementById("textarea").value.replace(/\n/g, "%0A");
 		var url = "/txt?f=" + txtFile + "&pass=" + txtPass + "&body=" + body + "&js=set";
-		console.log(url);
+		//console.log(url);
 		xmlhttp=new XMLHttpRequest();
 		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
