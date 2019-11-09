@@ -36,7 +36,7 @@
 		}
 	}
 ?>
-<DOCTYPE!html>
+<!DOCTYPE html><html>
 	<head>
 		<?php
 			if ($txtFound) {
