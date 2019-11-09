@@ -4,39 +4,36 @@
 	include "/home/valypfnd/php/account.php";
 	include "/home/valypfnd/php/file_path.php";
 
-	if (isset($_GET["t"])) {
-		$txtFile = $_GET["t"];
-		$setFile = true;
-
-		$query = "SELECT auth_level, password, body FROM text_files WHERE code='$txtFile'";
-		$result = mysqli_query($conn, $query);
-		if (mysqli_num_rows($result) > 0) {
-			foreach ($result as $f) {
-				if ($f["password"] == $password) {
-					$auth = $user["auth_level"];
-				}
-			}
-		}
+	if (isset($_GET["f"])) {
+		$txtFile = $_GET["f"];
+		$txtFound = true;
 
 		$query = $pdo->prepare("SELECT auth_level, password, body FROM text_files WHERE code=:code");
 		$query->execute(["code" => $txtFile]);
 		if ($query->rowCount() > 0) {
 			$result = $query->fetch();
+			if ($auth < $result["auth_level"]) {
+				header("Location: /txt");
+				exit();
+			}
+			if ($result["password"] == "") {
+				$txtAuth = true;
+			} else {
+				$txtAuth = false;
+			}
 		} else {
-			$result = false;
+			header("Location: /txt");
+			exit();
 		}
 	} else {
-		$setFile = false;
+		header("Location: /txt");
+		exit();
 	}
 ?>
 <DOCTYPE!html><html>
 	<head>
 		<?php
-			if ($setFile) {
-				echo "<title>$txtFile.txt</title>";
-			} else {
-				echo "<title>Text</title>";
-			}
+			echo "<title>$txtFile.txt</title>";
 		?>
 		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='files/css/backend.css'>
@@ -46,15 +43,11 @@
 	</head>
 	<body>
 		<?php
-			if ($setFile) {
-				echo "<h1>$txtFile</h1>";
-				if ($result == false) {
-					echo "doesn't exist";
-				} else {
-					echo $result["body"];
-				}
+			echo "<h1>$txtFile</h1>";
+			if ($result == false) {
+				echo "doesn't exist";
 			} else {
-				echo "<h1>Unset File</h1>";
+				echo $result["body"];
 			}
 		?>
 	</body>
