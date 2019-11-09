@@ -3,7 +3,8 @@ function txtUpdate(file, pass) {
 	var url = "/txt?f=" + file + "&pass=" + pass + "&body=" + body + "&js=set";
 	xmlhttp=new XMLHttpRequest();
 	xmlhttp.open("GET", url, true);
-
+	xmlhttp.send();
+	console.log("response: " + xmlhttp.responseText);
 	return false;
 }
 
