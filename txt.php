@@ -26,7 +26,7 @@
 					if ($txtPass == $result["password"]) {
 						$txtAuth = true;
 					} else {
-						echo $_POST["password"]." $txtPass ".$result["password"];
+						echo $_POST["password"]." '$txtPass' '".$result["password"]."'";
 						$passError = "Invalid password.";
 					}
 				}
