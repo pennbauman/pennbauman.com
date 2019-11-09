@@ -35,13 +35,16 @@
 					$passError = "Invalid password.";
 				}
 			}
+			$txtBody = $result["body"]
 		} else {
 			header("Location: /txt");
 			exit();
 		}
 
-		if ($txtAuth) {
-		
+		if ($txtAuth && isset($_POST["body"])) {
+			$txtBody = $_POST["body"];
+			$write = $pdo->prepare("UPDATE text_files SET body=:body WHERE code=:code");
+			$write->execute(["code" => $txtFile, "body" => $txtBody]);
 		}
 	}
 ?>
@@ -66,7 +69,7 @@
 				echo "<h1>$txtFile.txt</h1>";
 				if ($txtAuth) {
 					echo "<form class='wide' id='txt' action='".$_SERVER['REQUEST_URI']."' method='post'>";
-					echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>".$result["body"]."</textarea><br/><br/>";
+					echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>$txtBody</textarea><br/><br/>";
 					echo "<input type='hidden' name='pass_hash' value='$txtPass'>";
 					echo "<input type='submit' value='Save and Enter'></form>";
 				} else {
