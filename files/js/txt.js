@@ -6,7 +6,7 @@ function txtReady(file, pass) {
 	txtFile = file;
 	txtPass = pass;
 	//console.log("f: " + file + " p: " + pass);
-	setInterval(function(){ txtUpdate(false); }, 500);
+	setInterval(function(){ txtUpdate(false); }, 1000);
 	document.getElementById("textarea").addEventListener("click", function(){ changed = true });
 }
 
