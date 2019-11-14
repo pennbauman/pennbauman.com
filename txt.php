@@ -96,7 +96,7 @@
 					//echo "<button onClick=\"txtUpdate(true);\">UPDATE</button>";
 				} else {
 					echo "<form class='wide' action='".$_SERVER['REQUEST_URI']."' method='post'>";
-					echo "<h4>Password:</h4><br/> <input type='password' name='password'> <br/>";
+					echo "<h4>Password:</h4><br/> <input autofocus type='password' name='password'> <br/>";
 					echo "<h6 class='error'>".$passError."</h6> <br/><br/>";
 					echo "<input type='submit' value='Login'>";
 					echo "</form>";
