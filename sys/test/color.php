@@ -36,7 +36,7 @@
 			<h1>Color Tester</h1>
 			<form>
 				Hex Color: <br/>
-				<input type="text" name="color" value="#"> 
+				<input autofocus type="text" name="color" value="#"> 
 				<br/><br/>
 				<input type="submit" value="Enter">
 			</form>

@@ -21,7 +21,7 @@
 		<h1>Favicon Tester</h1>
 		<form action='/sys/test/favicon/' method='post'>
 			<b>Favicon URL:</b> <br/> 
-			<input type='text' name='url' value='/files/img/'> <br><br/>
+			<input autofocus type='text' name='url' value='/files/img/'> <br><br/>
 			<input type='submit' value='Enter'>
 		</form>
 		<br/><a href="/">Home</a> - <a href="/sys/">System</a>

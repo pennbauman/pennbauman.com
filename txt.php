@@ -89,7 +89,7 @@
 				echo "<h1>$txtFile.txt</h1>";
 				if ($txtAuth) {
 					echo "<form class='wide' id='txt' action='".$_SERVER['REQUEST_URI']."' method='post'>";
-					echo "<textarea onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>$txtBody</textarea><br/><br/>";
+					echo "<textarea autofocus onkeyup='textareaSize(); return false;' onChange='textareaSize(); return false;' id='textarea' name='body' class='autoExpand' form='txt'>$txtBody</textarea><br/><br/>";
 					echo "<input type='hidden' name='pass_hash' value='$txtPass'>";
 					echo "<input type='submit' value='Save and Enter'></form>";
 

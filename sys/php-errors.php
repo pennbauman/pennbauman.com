@@ -25,7 +25,7 @@
 		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php/errors/' method='post'>";
-		echo "/home/valypfnd/<input type='text' name='folder' value='".$autofill."' autofocus>/error_log <br><br/>";
+		echo "/home/valypfnd/<input autofocus type='text' name='folder' value='".$autofill."' autofocus>/error_log <br><br/>";
 		echo "<input type='submit' value='Enter'>";
 		echo "</form><br/><br/>";
 		if ($autofill == "") {
