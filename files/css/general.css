@@ -1,5 +1,5 @@
 /* Written by Penn Bauman with Sass*/
-@import url("/files/font/DejaVu_Font");
+@import url("/files/font/DejaVu_Font.css");
 /* Prevent Firefox selected button/link outline */
 :focus {
   outline: none;

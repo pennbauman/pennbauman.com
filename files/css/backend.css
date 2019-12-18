@@ -1,4 +1,4 @@
-@import url("/files/font/DejaVu_Font");
+@import url("/files/font/DejaVu_Font.css");
 :root {
   font-size: 1vh;
 }
@@ -163,5 +163,3 @@ tr:hover {
 .highlight {
   color: #2eb398;
 }
-
-/*# sourceMappingURL=backend.css.map */
