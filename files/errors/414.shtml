@@ -4,11 +4,11 @@
 		<link rel="shortcut icon" href="/files/img/error_favicon.png">
 	</head>
 	<style type="text/css">
-		@import url('/files/font/DejaVu_Font');
+		@import url('/files/font/DejaVu_Font.css');
 		body {
 			background:#141a1b;
 			color:#eeeeee;
-			font-family:Roboto Mono, monospace;
+			font-family:DejaVu_Sans_Mono, monospace;
 			font-size:2vh;
 			max-width:85vw;
 			margin:auto;
