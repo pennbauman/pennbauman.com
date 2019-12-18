@@ -1,19 +1,19 @@
 @font-face {
-	font-family:'DejaVu Sans';
+	font-family:'DejaVu_Sans';
 	src: url('/files/font/DejaVu_Sans.woff') format('woff');
 	font-weight:normal;
 	font-style:normal;
 }
 
 @font-face {
-	font-family:'DejaVu Sans Mono';
+	font-family:'DejaVu_Sans_Mono';
 	src: url('/files/font/DejaVu_Sans_Mono.woff') format('woff');
 	font-weight:normal;
 	font-style:normal;
 }
 
 @font-face {
-	font-family:'DejaVu Serif';
+	font-family:'DejaVu_Serif';
 	src: url('/files/font/DejaVu_Serif.woff') format('woff');
 	font-weight:normal;
 	font-style:normal;
