@@ -17,7 +17,7 @@
 	while ($i < count($page)) {
 		if (($i == 0) && preg_match("/^[-]+$/", $page[$i])) {
 			$inMeta = true;
-		} else if ($inMeta && preg_match("(-)+", $page[$i])) {
+		} else if ($inMeta && preg_match("/^[-]+$/", $page[$i])) {
 			$inMeta = false;
 		} else if ($inMeta) {
 			$line_split = explode($page[$i], ":");
