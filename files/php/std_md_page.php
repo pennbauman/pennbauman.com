@@ -9,7 +9,7 @@
 	$Parsedown = new Parsedown();
 
 	// Prepare page.md
-	$page = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$pathCode.".md");
+	$page = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$sys['path_code'].".md");
 	$page = explode("\n", $page);
 	$page_text = "";
 	$page_meta = array();
@@ -26,7 +26,7 @@
 			$page_text = $page_text.$page[$i]."\n";
 		}
 	} //*/
-	$mdFileLoc = $_SERVER["DOCUMENT_ROOT"]."/files/md/$pathCode.md";
+	//$mdFileLoc = $_SERVER["DOCUMENT_ROOT"]."/files/md/$pathCode.md";
 
 	// Print Head
 	echo "<!DOCTYPE html><head>";
