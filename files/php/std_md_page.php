@@ -1,11 +1,6 @@
 <?php
-	//include "/home/valypfnd/php/std.php";
-	//include "/home/valypfnd/php/file_path.php";
-	//include "/home/valypfnd/php/get_site.php";
-
 	include $_SERVER['DOCUMENT_ROOT']."/files/php/std.php";
 	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
-	//include $_SERVER['DOCUMENT_ROOT']."/files/php/Parsedown.php";
 	$Parsedown = new Parsedown();
 
 	// Prepare page.md
@@ -26,7 +21,6 @@
 			$page_text = $page_text.$page[$i]."\n";
 		}
 	} //*/
-	//$mdFileLoc = $_SERVER["DOCUMENT_ROOT"]."/files/md/$pathCode.md";
 
 	// Print Head
 	echo "<!DOCTYPE html><head>";
@@ -38,7 +32,6 @@
 	echo "</head>\n<body>";
 	insertHTML("header_navbar");
 	echo "\n<div id='content'>";
-	//Print Content
 	echo $Parsedown->text($page_text);
 	echo "</div>\n";
 	insertHTML("footer");
