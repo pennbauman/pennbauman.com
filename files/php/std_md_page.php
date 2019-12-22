@@ -15,12 +15,12 @@
 	$inMeta = false;
 	$i = 0;
 	while ($i < count($page)) {
-		if (($i == 0) && ereg("[-]+", $page[$i])) {
+		if (($i == 0) && preg_match("[-]+", $page[$i])) {
 			$inMeta = true;
 		} else if ($inMeta) {
 			$line_split = explode($page[$i], ":");
 			$page_meta[$line_split[0]] = $line_split[1];
-		} else if ($inMeta && ereg("[-]+", $page[$i])) {
+		} else if ($inMeta && preg_match("[-]+", $page[$i])) {
 			$inMeta = false;
 		} else {
 			$page_text = $page_text.$page[$i]."\n";
