@@ -1,6 +1,6 @@
 <?php
 	include $_SERVER['DOCUMENT_ROOT']."/files/php/std.php";
-	include $_SERVER['DOCUMENT_ROOT']."/files/php/std.php";
+	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
 	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
 	$Parsedown = new Parsedown();
 
