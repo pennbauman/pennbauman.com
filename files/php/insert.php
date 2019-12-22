@@ -1,5 +1,6 @@
 <?php
 	include "./Parsedown.php";
+	include "./ParsedownFilter.php";
 
 	$Parsedown = new ParsedownFilter();
 	
