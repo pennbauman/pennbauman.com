@@ -15,7 +15,7 @@
 	$inMeta = false;
 	$i = 0;
 	while ($i < count($page)) {
-		if (($i == 0) && preg_match("^[-]{1,}$", $page[$i])) {
+		if (($i == 0) && preg_match("/^[-]+$/", $page[$i])) {
 			$inMeta = true;
 		} else if ($inMeta && preg_match("(-)+", $page[$i])) {
 			$inMeta = false;
