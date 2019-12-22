@@ -1,12 +1,12 @@
 <?php
-	// LOAD: include "/home/valypfnd/php/std_md_page.php";
-	// Page for /php/std_md_index.php
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/file_path.php";
-	include "/home/valypfnd/php/get_site.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/file_path.php";
+	//include "/home/valypfnd/php/get_site.php";
 
-	//include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
-	include "./insert.php";
+	include $_SERVER['DOCUMENT_ROOT']."/files/php/std.php";
+	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
+	//include $_SERVER['DOCUMENT_ROOT']."/files/php/Parsedown.php";
+	$Parsedown = new Parsedown();
 
 	// Prepare page.md
 	$page = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$pathCode.".md");
@@ -14,8 +14,7 @@
 	$page_text = "";
 	$page_meta = array();
 	$inMeta = false;
-	$i = 0;
-	while ($i < count($page)) {
+	for ($i = 0; $i < count($page); $i++) {
 		if (($i == 0) && preg_match("/^[-]+$/", $page[$i])) {
 			$inMeta = true;
 		} else if ($inMeta && preg_match("/^[-]+$/", $page[$i])) {
@@ -26,25 +25,21 @@
 		} else {
 			$page_text = $page_text.$page[$i]."\n";
 		}
-		$i++;
 	} //*/
-	// Print Head
 	$mdFileLoc = $_SERVER["DOCUMENT_ROOT"]."/files/md/$pathCode.md";
+
+	// Print Head
 	echo "<!DOCTYPE html><head>";
-	echo "<title>".$page_meta['title']." - ".$currentSiteName."</title>";
+	echo "<title>".$page_meta['title']." - Penn Bauman</title>";
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
 	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
 	echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
 	echo "<script src='/files/js/general.js'></script>";
-	// Print Body
 	echo "</head>\n<body>";
 	insertHTML("header_navbar");
 	echo "\n<div id='content'>";
-	//Print COntent
-	//echo "pathCode: $pathCode";
-	insertMD($page_text);
-	echo $page_text;
-
+	//Print Content
+	echo $Parsedown->text($file);
 	echo "</div>\n";
 	insertHTML("footer");
 	echo "</body></html>";
