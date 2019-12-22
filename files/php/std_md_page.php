@@ -42,6 +42,7 @@
 	//Print COntent
 	//echo "pathCode: $pathCode";
 	insertMD($page_text);
+	echo $page_text;
 
 	echo "</div>\n";
 	insertHTML("footer");
