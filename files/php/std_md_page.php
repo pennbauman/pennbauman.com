@@ -15,7 +15,7 @@
 	$inMeta = false;
 	$i = 0;
 	while ($i < count($page)) {
-		if (($i == 0) && preg_match("[-]+", $page[$i])) {
+		if (($i == 0) && preg_match("(-)+", $page[$i])) {
 			$inMeta = true;
 		} else if ($inMeta) {
 			$line_split = explode($page[$i], ":");
@@ -41,7 +41,7 @@
 	echo "\n<div id='content'>";
 	//Print COntent
 	//echo "pathCode: $pathCode";
-	insertMD($mdFileLoc);
+	insertMD($page_text);
 
 	echo "</div>\n";
 	insertHTML("footer");
