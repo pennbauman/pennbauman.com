@@ -19,7 +19,7 @@
 			$inMeta = true;
 		} else if ($inMeta) {
 			$line_split = explode($page[$i], ":");
-			$page_meta[$line_split[1]] = $line_split[1];
+			$page_meta[$line_split[0]] = $line_split[1];
 		} else if ($inMeta && preg_match("[-]+", $page[$i])) {
 			$inMeta = false;
 		} else {
@@ -30,7 +30,7 @@
 	// Print Head
 	$mdFileLoc = $_SERVER["DOCUMENT_ROOT"]."/files/md/$pathCode.md";
 	echo "<!DOCTYPE html><head>";
-	echo "<title>".insertMDmeta($mdFileLoc, 'title')." - ".$currentSiteName."</title>";
+	echo "<title>".$page_meta['title']." - ".$currentSiteName."</title>";
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
 	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
 	echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
