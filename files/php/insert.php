@@ -1,13 +1,19 @@
 <?php
 	include "./Parsedown.php";
-	include "./ParsedownFilter.php";
+	include "./MetaParsedown.php";
 
-	$Parsedown = new ParsedownFilter('parse_filter');
+	$Parsedown = new MetaParsedown();
 	
 	function insertMD($file) {
-		$text = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md");
-		echo $Parsedown->text($text);
+		//$text = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md");
+		echo $Parsedown->text(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
 	} //*/
+
+	function insertMD($file, $tag) {
+		//$text = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md");
+		$insertMD_meta = $Parsedown->meta(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
+		return $insertMD_meta[$tag];
+	}
 
 	/*
 	function insertHTML($file) {

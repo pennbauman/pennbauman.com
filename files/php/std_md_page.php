@@ -18,8 +18,9 @@
 		$i++;
 	} //*/
 	// Print Head
+	$mdFileLoc = $_SERVER["DOCUMENT_ROOT"]."/files/md/$pathCode.md";
 	echo "<!DOCTYPE html><head>";
-	echo "<title>".$Parsedown['title']." - ".$currentSiteName."</title>";
+	echo "<title>".insertMD($mdFileLoc, 'title')." - ".$currentSiteName."</title>";
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
 	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
 	echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
@@ -30,7 +31,7 @@
 	echo "\n<div id='content'>";
 	//Print COntent
 	//echo "pathCode: $pathCode";
-	insertMD($_SERVER["DOCUMENT_ROOT"]."/files/md/$pathCode.md");
+	insertMD($mdFileLoc);
 
 	echo "</div>\n";
 	insertHTML("footer");
