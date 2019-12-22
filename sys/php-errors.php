@@ -7,8 +7,8 @@
 		$autofill = $_POST["folder"];
 		$location = "/home/valypfnd/".$_POST["folder"]."/error_log";
 	} else {
-		$location = "~";
-		$autofill = "~";
+		$location = "";
+		$autofill = "";
 	}
 
 	if ($auth > 9) {
@@ -43,7 +43,7 @@
 			} //*/
 			echo "</p>";
 		} else {
-			echo "<p><h4 class='error'>No Such File Exists</h4><br/><br/></p>";
+			echo "<p><h4 class='error'>No Such File Exists ($location)</h4><br/><br/></p>";
 		}
 		echo "<a href='/'>Home</a> - <a href='/sys/'>System</a>";
 		echo "</body></html>";
