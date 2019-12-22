@@ -20,6 +20,7 @@
 		echo "<h1>Test</h1>";
 	
 		include "../files/php/test.php";
+		include "/files/php/test.php";
 
 		echo "<p>";
 		echo "<p>Normal</br>
