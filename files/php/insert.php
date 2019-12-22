@@ -11,7 +11,7 @@
 		$Parsedown = new Parsedown();
 		//$text = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md");
 		//echo $Parsedown->text(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
-		echo $Parsedown->test($file);
+		echo $Parsedown->text($file);
 	} //*/
 
 	//function insertMDmeta($file, $tag) {
