@@ -18,7 +18,8 @@
 		if (($i == 0) && ereg("[-]+", $page[$i])) {
 			$inMeta = true;
 		} else if ($inMeta) {
-			$page_meta[explode($page[$i], ":")[0]] = explode($page[$i], ":")[1];
+			$line_split = explode($page[$i], ":");
+			$page_meta[$line_split[0]] = $line_split[1];
 		} else if ($inMeta && ereg("[-]+", $page[$i])) {
 			$inMeta = false;
 		} else {
