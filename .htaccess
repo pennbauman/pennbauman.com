@@ -29,6 +29,8 @@ ErrorDocument 500 /files/errors/506.shtml
 ErrorDocument 500 /files/errors/507.shtml
 ErrorDocument 500 /files/errors/510.shtml
 
+RedirectMatch 403 ^/files/php/?$
+
 # Stop Indexing
 Options -Indexes
 
@@ -37,7 +39,6 @@ Options -Indexes
     Require all denied
 </FilesMatch>
 
-RedirectMatch 403 ^/files/php/?$
 
 #<Files */files/php/*>
     #Order Deny,Allow
