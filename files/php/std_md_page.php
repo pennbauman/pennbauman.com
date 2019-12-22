@@ -39,7 +39,7 @@
 	insertHTML("header_navbar");
 	echo "\n<div id='content'>";
 	//Print Content
-	echo $Parsedown->text($file);
+	echo $Parsedown->text($page_text);
 	echo "</div>\n";
 	insertHTML("footer");
 	echo "</body></html>";
