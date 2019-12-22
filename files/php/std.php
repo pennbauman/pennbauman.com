@@ -13,7 +13,7 @@
 			PDO::ATTR_EMULATE_PREPARES   => false,
 		];
 		try {
-			$pdo = new PDO("mysql:host=localhost;dbname=".$sys['auth_file'][2]."pennbauman;charset=utf8mb4", $sys['auth_file'][0], $sys['auth_file'][1], $options);
+			$pdo = new PDO("mysql:host=localhost;dbname=".$sys['auth_file'][2]."pennbauman;charset=utf8mb4", $sys['auth_file'][0], $sys['auth_file'][1], $pdo_options);
 		} catch (\PDOException $e) {
 			throw new \PDOException($e->getMessage(), (int)$e->getCode());
 			error_log("pdo failed");
