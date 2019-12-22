@@ -1,5 +1,6 @@
 <?php
-	include "./Parsedown.php";
+	//include "./Parsedown.php";
+	include $_SERVER['DOCUMENT_ROOT']."/files/php/Parsedown.php";
 	//include $_SERVER['DOCUMENT_ROOT']."/files/php/MetaParsedown.php";
 	//use Pagerange\Markdown\MetaParsedown;
 
