@@ -5,7 +5,8 @@
 	include "/home/valypfnd/php/file_path.php";
 	include "/home/valypfnd/php/get_site.php";
 
-	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
+	//include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
+	include "./insert.php";
 
 	// Prepare page.md
 	$page = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$pathCode.".md");
