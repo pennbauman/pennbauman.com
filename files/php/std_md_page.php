@@ -20,7 +20,7 @@
 		} else if ($inMeta && preg_match("/^[-]+$/", $page[$i])) {
 			$inMeta = false;
 		} else if ($inMeta) {
-			$line_split = explode($page[$i], ":");
+			$line_split = explode(":", $page[$i]);
 			$page_meta[$line_split[0]] = $line_split[1];
 		} else {
 			$page_text = $page_text.$page[$i]."\n";
