@@ -6,7 +6,7 @@
 	if ($auth > 9) {
 		// Print Head
 		echo "<!DOCTYPE html><head>";
-		echo "<title>/php/</title>";
+		/echo "<title>PHP List</title>";
 		echo "<link rel='icon' href='/files/img/files_favicon.png'>";
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
