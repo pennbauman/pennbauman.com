@@ -7,7 +7,6 @@
 		$sys['include'] = array();
 		$sys['include']['insert'] = false;
 
-
 		$sys['auth_file'] = explode("\n", file_get_contents("/home/valypfnd/php/.auth"));
 		//echo "Database: $authFile[0] $authFile[1] $authFile[2]";
 		$pdo_options = [
