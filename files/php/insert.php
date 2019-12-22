@@ -1,20 +1,21 @@
 <?php
-	//include "./Parsedown.php";
-	include $_SERVER['DOCUMENT_ROOT']."/files/php/MetaParsedown.php";
+	include "./Parsedown.php";
+	//include $_SERVER['DOCUMENT_ROOT']."/files/php/MetaParsedown.php";
 	//use Pagerange\Markdown\MetaParsedown;
 
-	$Parsedown = new MetaParsedown();
+	//$Parsedown = new MetaParsedown();
+	$Parsedown = new Parsedown();
 	
 	function insertMD($file) {
 		//$text = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md");
 		echo $Parsedown->text(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
 	} //*/
 
-	function insertMDmeta($file, $tag) {
+	//function insertMDmeta($file, $tag) {
 		//$text = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md");
-		$insertMD_meta = $Parsedown->meta(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
-		return $insertMD_meta[$tag];
-	}
+		//$insertMD_meta = $Parsedown->meta(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
+		//return $insertMD_meta[$tag];
+	//}
 
 	/*
 	function insertHTML($file) {
