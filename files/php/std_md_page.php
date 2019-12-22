@@ -8,13 +8,24 @@
 	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
 
 	// Prepare page.md
-	/*
 	$page = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$pathCode.".md");
 	$page = explode("\n", $page);
-	$i = 9;
 	$page_text = "";
+	$page_meta = array();
+	$inMeta = false;
+	$i = 0;
 	while ($i < count($page)) {
-		$page_text = $page_text.$page[$i]."\n";
+		if (($i == 0) && ereg("[-]+", $page[$i])) {
+			$inMeta = true;
+		} else if ($inMeta) {
+			$page_meta[split($page[$i][0], ":")] = split($page[$i][1])
+
+		
+		} else if ($inMeta && ereg("[-]+", $page[$i])) {
+			$inMeta = false;
+		} else {
+			$page_text = $page_text.$page[$i]."\n";
+		}
 		$i++;
 	} //*/
 	// Print Head
