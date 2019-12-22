@@ -6,6 +6,7 @@
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
 		$location = "/home/valypfnd/".$_POST["folder"]."/error_log";
+		echo "post";
 	} else {
 		$location = "";
 		$autofill = "";
@@ -24,7 +25,7 @@
 		//Print Content
 		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
 		echo "<h1>PHP Errors</h1>";
-		echo "<form action='/sys/php-errors/' method='get'>";
+		echo "<form action='/sys/php-errors/' method='post'>";
 		echo "/home/valypfnd/<input autofocus type='text' name='folder' value='".$autofill."' autofocus>/error_log <br><br/>";
 		echo "<input type='submit' value='Enter'>";
 		echo "</form><br/><br/>";
