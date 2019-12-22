@@ -18,9 +18,7 @@
 		if (($i == 0) && ereg("[-]+", $page[$i])) {
 			$inMeta = true;
 		} else if ($inMeta) {
-			$page_meta[split($page[$i][0], ":")] = split($page[$i][1])
-
-		
+			$page_meta[split($page[$i][0], ":")] = split($page[$i][1]);
 		} else if ($inMeta && ereg("[-]+", $page[$i])) {
 			$inMeta = false;
 		} else {
