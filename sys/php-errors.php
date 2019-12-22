@@ -6,7 +6,6 @@
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
 		$location = "/home/valypfnd/".$_POST["folder"]."/error_log";
-		echo "post";
 	} else {
 		$location = "";
 		$autofill = "";
@@ -27,6 +26,11 @@
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php-errors' method='post'>";
 		echo "/home/valypfnd/<input autofocus type='text' name='folder' value='".$autofill."' autofocus>/error_log <br><br/>";
+		echo "<p>pennbauman.com -> public_html<br/>";
+		echo "dev.pennbauman.com -> pennbauman-dev<br/>";
+		echo "dnd.pennbauman.com -> dnd-site<br/>";
+		echo "dev-dnd.pennbauman.com -> dnd-dev<br/>";
+		echo "</p>";
 		echo "<input type='submit' value='Enter'>";
 		echo "</form><br/><br/>";
 		if ($autofill == "") {
