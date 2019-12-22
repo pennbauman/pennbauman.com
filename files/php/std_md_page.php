@@ -8,6 +8,7 @@
 	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php"
 
 	// Prepare page.md
+	/*
 	$page = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$pathCode.".md");
 	$page = explode("\n", $page);
 	$i = 9;
@@ -15,10 +16,10 @@
 	while ($i < count($page)) {
 		$page_text = $page_text.$page[$i]."\n";
 		$i++;
-	}
+	} //*/
 	// Print Head
 	echo "<!DOCTYPE html><head>";
-	echo "<title>".$page[0]." - ".$currentSiteName."</title>";
+	echo "<title>".$Parsedown['title']." - ".$currentSiteName."</title>";
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
 	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
 	echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";

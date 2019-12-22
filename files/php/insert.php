@@ -1,9 +1,10 @@
 <?php
 	include "./Parsedown.php";
+
+	$Parsedown = new ParsedownFilter();
 	
 	function insertMD($file) {
 		$text = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md");
-		$Parsedown = new Parsedown();
 		echo $Parsedown->text($text);
 	} //*/
 
