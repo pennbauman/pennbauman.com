@@ -37,6 +37,11 @@ Options -Indexes
     Require all denied
 </FilesMatch>
 
+php_value auto_prepend_file ./files/php/std.php
+
+<Files */.*>
+	Deny from all
+</Files>
 
 #<Files */files/php/*>
     #Order Deny,Allow
