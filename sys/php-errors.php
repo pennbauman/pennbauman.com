@@ -7,8 +7,8 @@
 		$autofill = $_POST["folder"];
 		$location = "/home/valypfnd/".$_POST["folder"]."/error_log";
 	} else {
-		$location = "";
-		$autofill = "";
+		$location = "~";
+		$autofill = "~";
 	}
 
 	if ($auth > 9) {
@@ -29,7 +29,7 @@
 		echo "<input type='submit' value='Enter'>";
 		echo "</form><br/><br/>";
 		if ($autofill == "") {
-			echo "<p><h4 class='error'>Please Enter a Location</h4><br/><br/></p>";
+			echo "<p><h4 class='error'>No Location Entered</h4><br/><br/></p>";
 		} elseif (file_exists($location)) {
 			echo "<p><h4>".$location."</h4><br/>";
 			$errors = file_get_contents($location);
