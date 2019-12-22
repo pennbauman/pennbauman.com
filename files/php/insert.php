@@ -9,7 +9,7 @@
 		echo $Parsedown->text(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
 	} //*/
 
-	function insertMD($file, $tag) {
+	function insertMDmeta($file, $tag) {
 		//$text = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md");
 		$insertMD_meta = $Parsedown->meta(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
 		return $insertMD_meta[$tag];
