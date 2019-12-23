@@ -5,7 +5,7 @@
 	
 	if ($sys['user']['auth_level'] > 9) {
 		echo "<!DOCTYPE html><head>";
-		/echo "<title>PHP List</title>";
+		echo "<title>PHP List</title>";
 		echo "<link rel='icon' href='/files/img/files_favicon.png'>";
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
