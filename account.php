@@ -21,7 +21,7 @@
 					echo "<b>Name: </b>".$sys['user']['display_name']."<br/>";
 					echo "<b>Email: </b>".$sys['user']['email']."<br/>";
 				} else {
-					echo "<a href='/account/login".$sys['return_link']."'>login</a>";
+					echo "<a href='".$sys['login_url']."'>login</a>";
 					echo "<h2>Account</h2>";
 					echo "<p>Not logged in</p>";
 				}
