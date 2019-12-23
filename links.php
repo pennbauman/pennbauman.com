@@ -4,6 +4,7 @@
 	//include "/home/valypfnd/php/login_url.php";
 	include_once "auth.php";
 
+	/*
 	$file = file_get_contents("links.txt");
 	if (!empty($_POST)) {
 		$code = $_POST["code"];
@@ -11,8 +12,14 @@
 		//echo $code.", ".$link;
 		$file .= "\n".$code."~".$link;
 		file_put_contents("links.txt", $file);
-	}
+	} //*/
 	if ($sys['user']['auth_level'] > 8) {
+		if (!empty($_POST)) {
+			$code = $_POST["code"];
+			$link = $_POST["link"];
+			$query = $pdo->prepare("INSERT INTO shortcut_links (code, url) VALUES (:code, :url)");
+			$query->execute(["code" => $code, "link" => $link]);
+		}
 		echo "<!DOCTYPE html><head>";
 		echo "<title>Links</title>";
 		echo "<link rel='icon' href='/files/img/sys_favicon.png'>";
@@ -36,7 +43,7 @@
 		}
 		echo "</p>";
 
-		echo "<form action='/links.php' method='post'>";
+		echo "<form action='/links' method='post'>";
 		echo "<b>Code:</b> <br/> <input type='text' name='code'><br/><br/>";
 		echo "<b>Link:</b> <br/> <input type='text' name='link'><br/><br/>";
 		echo "<input type='submit' value='Enter'></form>";
@@ -44,6 +51,6 @@
 		echo '<br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
 	} else {
-		include "/home/valypfnd/php/auth_error.php";
+		include "auth_error.php";
 	}
 ?>
