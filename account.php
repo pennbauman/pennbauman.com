@@ -1,8 +1,4 @@
 <?php
-	//include "/home/valypfnd/php/std.php";
-	//include "/home/valypfnd/php/auth.php";
-	//include "/home/valypfnd/php/account.php";
-	//include "/home/valypfnd/php/file_path.php";
 	include_once "insert.php";
 	include_once "auth.php";
 ?>
@@ -31,8 +27,6 @@
 				}
 				
 			?>
-			
-			<!--img src="/files/img/bella_wag.gif"/-->
 		</div>
 		<?php insertHTML("footer") ?>
 	</body>

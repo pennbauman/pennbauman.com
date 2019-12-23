@@ -36,6 +36,20 @@
 		} else {
 			$sys['return_link'] = "";
 		}
+
+		if (explode("/", $filePath)[3] == "public_html") {
+			$sys['login_url'] = "/account/login?rpath=".$sys['path_code'];
+			$sys['logout_url'] = "/account/logout.php?rpath=".$sys['path_code'];
+		}
+		if ($currentSubsite == "main") {
+			$loginURL = "/account/login?rpath=".$pathCode;
+			$logoutURL = "/account/logout.php?rpath=".$pathCode;
+		} else {
+			$site = explode(".", $_SERVER['HTTP_HOST'])[0];
+			error_log($site);
+			$loginURL = "https://pennbauman.com/account/login?rsite=".$currentSubsite."&rpath=".$sys['path_code'];
+			$logoutURL = "https://pennbauman.com/account/logout.php?rsite=".$currentSubsite."&rpath=".$sys['path_code'];
+		}
 		
 		// Get Site Data
 		/*

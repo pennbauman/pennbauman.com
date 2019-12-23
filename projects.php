@@ -10,9 +10,7 @@
 		<script src='/files/js/general.js'></script>
 	</head>
 	<body>
-		<?php
-			insertHTML("header_navbar");
-		?>
+		<?php insertHTML("header_navbar"); ?>
 		<div id="content">
 			<h1>Projects</h1>
 			<span style="text-align:center;font-size:1.2em">
@@ -27,8 +25,6 @@
 				</p>
 			</span>
 		</div>
-		<?php
-			insertHTML("footer");
-		?>
+		<?php insertHTML("footer"); ?>
 	</body>
 </html>

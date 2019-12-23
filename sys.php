@@ -1,9 +1,11 @@
 <?php
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/login_url.php";
+	include_once "insert.php";
+	include_once "auth.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/auth.php";
+	//include "/home/valypfnd/php/login_url.php";
 
-	if ($auth > 8) {
+	if ($sys['auth'] > 8) {
 		echo "<!DOCTYPE html><head>";
 		echo "<title>System</title>";
 		echo "<link rel='icon' href='/files/img/sys_favicon.png'>";
@@ -13,7 +15,7 @@
 		// Print Body
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
+		echo "user: ".$sys['username']." (<a href='".$sys['logoutURL']."'>logout</a>)";
 		echo "<h1>System</h1>";
 		echo "<p>";
 		echo "<a href='/sys/hash'>Hash</a> <br/>";
