@@ -4,7 +4,7 @@
 	include "/home/valypfnd/php/file_path.php";
 
 	//$linkCode = URLVar("l");
-	if (isset $_GET['l']) {
+	if (isset($_GET['l'])) {
 		$query = $pdo->prepare("SELECT url FROM shortcut_links WHERE code=:code");
 		$query->execute(["code" => $_GET['l']]);
 		if ($query->rowCount() > 0) {
