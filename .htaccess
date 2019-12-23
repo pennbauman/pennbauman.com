@@ -37,7 +37,7 @@ Options -Indexes
     Require all denied
 </FilesMatch>
 
-php_value auto_prepend_file /home/valypfnd/files/php/std.php
+php_value auto_prepend_file $_SERVER['DOCUMENT_ROOT']/files/php/std.php
 
 <Files */.*>
 	Deny from all
