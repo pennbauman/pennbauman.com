@@ -101,7 +101,7 @@
 		}
 		if (isset($_GET['rpath'])) {
 			$pathArray = explode("_", $_GET['rpath']);
-			$sys['link']['return_url'] .= $pathArray[$i];
+			$sys['link']['return_url'] .= $pathArray[0];
 			for ($i = 1; $i < count($pathArray); $i++) {
 				$sys['link']['return_url'] .= "/".$pathArray[$i];
 			}
