@@ -3,7 +3,7 @@
 	include "/home/valypfnd/php/auth.php";
 	//include "/home/valypfnd/php/login_url.php";
 	
-	if ($sys['user']['auth_level'] > 9) {
+	if ($sys['user']['auth_level'] > 8) {
 		echo "<!DOCTYPE html><head>";
 		echo "<title>PHP List</title>";
 		echo "<link rel='icon' href='/files/img/files_favicon.png'>";
