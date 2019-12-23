@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<h1>Favicon Tester</h1>
-		<form action='/sys/test/favicon/' method='post'>
+		<form action='/sys/test/favicon/' method='get'>
 			<b>Favicon URL:</b> <br/> 
 			<input autofocus type='text' name='url' value='/files/img/'> <br><br/>
 			<input type='submit' value='Enter'>
