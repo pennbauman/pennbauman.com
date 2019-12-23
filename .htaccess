@@ -37,7 +37,7 @@ Options -Indexes
     Require all denied
 </FilesMatch>
 
-include_path = ".:${USER}/files/php/"
+include_path ".:${USER}/files/php/"
 php_value auto_prepend_file std.php
 
 <Files */.*>
