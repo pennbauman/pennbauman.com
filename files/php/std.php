@@ -1,5 +1,4 @@
 <?php
-	//include $_SERVER['DOCUMENT_ROOT']."/files/php/std.php";
 	if (array_key_exists('sys', get_defined_vars())) {
 		error_log("std.php double included");
 	} else {

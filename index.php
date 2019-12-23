@@ -16,7 +16,7 @@
 		}
 	}
 ?>
-<html>
+<!DOCTYPE html><html>
 	<head>
 		<title>Penn Bauman</title>
 		<link rel='icon' href='/files/img/favicon.png'>

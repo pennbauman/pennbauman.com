@@ -1,10 +1,11 @@
 <?php
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/account.php";
-	include "/home/valypfnd/php/file_path.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/auth.php";
+	//include "/home/valypfnd/php/account.php";
+	//include "/home/valypfnd/php/file_path.php";
+	include_once "auth.php";
 ?>
-<html>
+<!DOCTYPE html><html>
 	<head>
 		<title>Account - Penn Bauman</title>
 		<link rel='icon' href='/files/img/favicon.png'>
@@ -16,13 +17,12 @@
 		<?php insertHTML("header_navbar") ?>
 		<div id="content">
 			<?php 
-				if ($auth > 0) {
-					echo "user: ".$username." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
+				if ($sys['user']['auth_level'] > 0) {
+					echo "user: ".$sys['user']['username']." (<a href='/account/logout.php".$returnLink."'>logout</a>)";
 					echo "<h2>Account</h2>";
-					echo "<p><b>Username: </b>".$username."<br/>";
-					echo "<b>Name: </b>".$userDisplayName."<br/>";
-					echo "<b>Email: </b>".$userEmail."<br/>";
-					echo "<b>Phone Number: </b>".$userPhoneNum."</p>";
+					echo "<p><b>Username: </b>".$sys['user']['username']."<br/>";
+					echo "<b>Name: </b>".$sys['user']['display_name']."<br/>";
+					echo "<b>Email: </b>".$sys['user']['email']."<br/>";
 				} else {
 					echo "<a href='/account/login".$returnLink."'>login</a>";
 					echo "<h2>Account</h2>";

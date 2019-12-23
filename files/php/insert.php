@@ -1,5 +1,4 @@
 <?php
-	//include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
 	if ($sys['include']['insert']) {
 		error_log("insert.php double included");
 	} else {

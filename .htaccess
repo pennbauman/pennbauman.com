@@ -37,7 +37,6 @@ Options -Indexes
     Require all denied
 </FilesMatch>
 
-#php_value include_path ".:${HOME}/files/php/"
 php_value auto_prepend_file /home/valypfnd/pennbauman-dev/files/php/includer.php
 
 <Files */.*>
