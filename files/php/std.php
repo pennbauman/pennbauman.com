@@ -42,7 +42,7 @@
 			$sys['logout_url'] = "/account/logout.php?rpath=".$sys['path_code'];
 		} else {
 			$site = explode(".", $_SERVER['HTTP_HOST'])[0];
-			error_log($site);
+			//error_log($site);
 			$sys['login_url'] = "https://pennbauman.com/account/login?rsite=".$site."&rpath=".$sys['path_code'];
 			$sys['logout_url'] = "https://pennbauman.com/account/logout.php?rsite=".$site."&rpath=".$sys['path_code'];
 		}
