@@ -17,8 +17,8 @@
 		if (!empty($_POST)) {
 			$code = $_POST["code"];
 			$link = $_POST["link"];
-			$query = $pdo->prepare("INSERT INTO shortcut_links (code, url) VALUES (:code, :url)");
-			$query->execute(["code" => $code, "link" => $link]);
+			$query = $pdo->prepare("INSERT INTO shortcut_links (code, url) VALUES (?, ?)");
+			$query->execute([$code, $link]);
 		}
 		echo "<!DOCTYPE html><head>";
 		echo "<title>Links</title>";
