@@ -1,7 +1,4 @@
 <?php 
-	//include "/home/valypfnd/php/std.php";
-	//include "/home/valypfnd/php/auth.php";
-	//include "/home/valypfnd/php/file_path.php";
 	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
 ?>
 <!DOCTYPE html><html>
@@ -14,7 +11,6 @@
 	</head>
 	<body>
 		<?php
-			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
 			insertHTML("header_navbar");
 		?>
 		<div id="content">
@@ -32,7 +28,6 @@
 			</span>
 		</div>
 		<?php
-			//include "/home/valypfnd/php/pennbauman/std_footer.php";
 			insertHTML("footer");
 		?>
 	</body>
