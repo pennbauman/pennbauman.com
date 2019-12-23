@@ -95,7 +95,7 @@
 		} //*/
 
 		if (isset($_GET['rsite'])) {
-			$sys['link']['return_url'] = "http://".$_GET['rsite']."pennbauman.com/";
+			$sys['link']['return_url'] = "http://".$_GET['rsite'].".pennbauman.com/";
 		} else {
 			$sys['link']['return_url'] = "/";
 		}
