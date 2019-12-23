@@ -1,11 +1,12 @@
 <?php 
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/file_path.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/auth.php";
+	//include "/home/valypfnd/php/file_path.php";
+	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
 ?>
 <html>
 	<head>
-		<title>Projects Penn Bauman</title>
+		<title>Projects - Penn Bauman</title>
 		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -13,7 +14,8 @@
 	</head>
 	<body>
 		<?php
-			include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
+			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
+			insertHTML("header");
 		?>
 		<div id="content">
 			<h1>Projects</h1>
@@ -30,7 +32,8 @@
 			</span>
 		</div>
 		<?php
-			include "/home/valypfnd/php/pennbauman/std_footer.php";
+			//include "/home/valypfnd/php/pennbauman/std_footer.php";
+			insertHTML("footer");
 		?>
 	</body>
 </html>
