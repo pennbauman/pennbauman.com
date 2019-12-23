@@ -24,8 +24,6 @@
 		echo "<a href='/sys/php-docs'>PHP Docs</a> <br/>";
 		echo "<a href='/sys/php-list'>PHP List</a> <br/>";
 		
-		//echo "<a href='/sys/php'>PHP</a> <br/>";
-		//echo "<a href='/sys/php/errors'>PHP Errors</a> <br/>";
 		echo "</p>";
 		echo '<br/><a href="/">Home</a>';
 		echo "</body></html>";

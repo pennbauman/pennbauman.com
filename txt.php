@@ -1,8 +1,9 @@
 <?php
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/account.php";
-	include "/home/valypfnd/php/file_path.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/auth.php";
+	//include "/home/valypfnd/php/account.php";
+	//include "/home/valypfnd/php/file_path.php";
+	include_once "auth.php";
 
 	$txtFound = false;
 	if (isset($_GET["f"])) {
@@ -106,7 +107,7 @@
 				$query = $pdo->prepare("SELECT auth_level, code FROM text_files");
 				$query->execute();
 				foreach ($query as $row) {
-					if ($row["auth_level"] <= $auth) {
+					if ($row["auth_level"] <= $sys['user']['auth_level']) {
 						echo "<h4><a href='/txt?f=".$row["code"]."'>".$row["code"].".txt</a></h4><br/>";
 					}
 				}

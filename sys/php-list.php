@@ -1,8 +1,5 @@
 <?php
-	//include "/home/valypfnd/php/std.php";
-	//include "/home/valypfnd/php/auth.php";
 	include_once "auth.php";
-	//include "/home/valypfnd/php/login_url.php";
 	
 	if ($sys['user']['auth_level'] > 9) {
 		echo "<!DOCTYPE html><head>";
