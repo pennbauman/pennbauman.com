@@ -5,7 +5,7 @@
 	//include "/home/valypfnd/php/auth.php";
 	//include "/home/valypfnd/php/login_url.php";
 
-	if ($sys['auth_level'] > 8) {
+	if ($sys['user']['auth_level'] > 8) {
 		echo "<!DOCTYPE html><head>";
 		echo "<title>System</title>";
 		echo "<link rel='icon' href='/files/img/sys_favicon.png'>";
