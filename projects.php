@@ -15,7 +15,7 @@
 	<body>
 		<?php
 			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
-			insertHTML("header");
+			insertHTML("header_navbar");
 		?>
 		<div id="content">
 			<h1>Projects</h1>
