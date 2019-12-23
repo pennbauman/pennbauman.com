@@ -43,7 +43,6 @@
 			$result = $query->fetch();
 			$sys['user']['display_name'] = $result['display_name'];
 			$sys['user']['email'] = $result['email'];
-			$sys['user']['phone_num'] = $result['phone_num'];
 		}
 	}
 ?>
