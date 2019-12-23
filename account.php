@@ -27,7 +27,7 @@
 				} else {
 					echo "<a href='/account/login".$sys['return_link']."'>login</a>";
 					echo "<h2>Account</h2>";
-					echo "<p>Not logged in</div>p>";
+					echo "<p>Not logged in</p>";
 				}
 				
 			?>
