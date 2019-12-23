@@ -25,16 +25,16 @@
 		echo "user: ".$sys['user']['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
 		echo "<h1>Links</h1>";
 
+		echo "<p>";
 		$query = $pdo->prepare("SELECT * FROM shortcut_links");
 		$query->execute();
 		if ($query->rowCount() > 0) {
 			//$result = $query->fetch();
 			foreach ($query as $result) {
-				echo $result['code'];
-				echo "~";
-				echo $result['url'];
+				echo $result['code']."~".$result['url']."<br/>";
 			}
 		}
+		echo "</p>";
 
 		echo "<form action='/links.php' method='post'>";
 		echo "<b>Code:</b> <br/> <input type='text' name='code'><br/><br/>";
