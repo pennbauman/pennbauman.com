@@ -30,9 +30,9 @@
 		if ($query->rowCount() > 0) {
 			//$result = $query->fetch();
 			foreach ($query as $result) {
-				echo $results['code'];
+				echo $result['code'];
 				echo "~";
-				echo $results['url'];
+				echo $result['url'];
 			}
 		}
 
