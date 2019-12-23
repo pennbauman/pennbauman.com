@@ -34,6 +34,6 @@
 		echo '<br/><a href="/">Home</a>';
 		echo "</body></html>";
 	} else {
-		include "/home/valypfnd/php/auth_error.php";
+		include "auth_error.php";
 	}
 ?>
