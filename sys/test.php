@@ -1,10 +1,14 @@
-<?php 
+<?php
+	/*
 	include "/home/valypfnd/php/std.php";
 	include "/home/valypfnd/php/auth.php";
 	include "/home/valypfnd/php/file_path.php";
 	include "/home/valypfnd/php/get_site.php";
 	include "/home/valypfnd/php/subsite_return.php";
 	include "/home/valypfnd/php/login_url.php";
+	//*/
+	include_once "auth.php";
+	include_once "insert.php";
 	$n = "<br/>";
 
 	if ($auth > 8) {
@@ -16,11 +20,11 @@
 		echo "<script src='/files/js/general.js'></script>";
 		echo "</head>\n<body>";
 		
-		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
+		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>Test</h1>";
 	
-		include "../files/php/test.php";
-		include "/files/php/test.php";
+		//include "../files/php/test.php";
+		//include "/files/php/test.php";
 
 		echo "<p>";
 		echo "<p>Normal</br>
@@ -58,6 +62,6 @@
 		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
 		echo "</body></html>";
 	} else {
-		include "/home/valypfnd/php/auth_error.php";
+		include "auth_error.php";
 	}
 ?>

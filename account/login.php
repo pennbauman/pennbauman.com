@@ -1,8 +1,4 @@
 <?php
-	//include "/home/valypfnd/php/std.php";
-	//include "/home/valypfnd/php/auth.php";
-	//include "/home/valypfnd/php/subsite_return.php";
-
 	$prev_username = "";
 	$error = "";
 	if (!empty($_POST)) {
@@ -34,7 +30,6 @@
 			<div class = "tabpage" id = "home">
 				<h1>Login</h1>
 				<?php
-					//echo "<a href='".$returnPath."'>Return</a>";
 					echo "<form action='".$_SERVER['REQUEST_URI']."' method='post'>";
 					echo "<b>Username:</b> <br/> <input autofocus type='text' name='username' value='".$prev_username."'><br><br/>";
 					echo "<b>Password:</b> <br/> <input type='password' name='password'> <br/><br/>";
