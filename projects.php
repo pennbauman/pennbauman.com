@@ -4,7 +4,7 @@
 	//include "/home/valypfnd/php/file_path.php";
 	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
 ?>
-<html>
+<!DOCTYPE html><html>
 	<head>
 		<title>Projects - Penn Bauman</title>
 		<link rel='icon' href='/files/img/favicon.png'>
