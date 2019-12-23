@@ -31,21 +31,82 @@
 				$sys['path_code'] .= "_";
 			}
 		}
+		$sys['links'] = array();
+		/*
 		if ($sys['path_code'] != "") {
-			$sys['return_link'] = "?r=".$sys['path_code'];
+			$sys['link']['return_link'] = "?r=".$sys['path_code'];
 		} else {
-			$sys['return_link'] = "";
-		}
+			$sys['link']['return_link'] = "";
+		} //*/
 
 		if (explode("/", getcwd())[3] == "public_html") {
-			$sys['login_url'] = "/account/login?rpath=".$sys['path_code'];
-			$sys['logout_url'] = "/account/logout.php?rpath=".$sys['path_code'];
+			$sys['link']['login_url'] = "/account/login?rpath=".$sys['path_code'];
+			$sys['link']['logout_url'] = "/account/logout.php?rpath=".$sys['path_code'];
 		} else {
 			$site = explode(".", $_SERVER['HTTP_HOST'])[0];
 			//error_log($site);
-			$sys['login_url'] = "https://pennbauman.com/account/login?rsite=".$site."&rpath=".$sys['path_code'];
-			$sys['logout_url'] = "https://pennbauman.com/account/logout.php?rsite=".$site."&rpath=".$sys['path_code'];
+			$sys['link']['login_url'] = "https://pennbauman.com/account/login?rsite=".$site."&rpath=".$sys['path_code'];
+			$sys['link']['logout_url'] = "https://pennbauman.com/account/logout.php?rsite=".$site."&rpath=".$sys['path_code'];
 		}
+
+		/*
+		$URLVarR = URLVar("r");
+		if ($URLVarR == NULL) {
+			$URLEnd = "";
+		} else {
+			$URLEnd = "?r=".$URLVarR;
+		}
+		$returnPath = "/";
+		if ($URLEnd != "") {
+			$URLVarR = explode("_", $URLVarR);
+			$i = 0;
+			while ($i < count($URLVarR)) {
+				$returnPath = $returnPath.$URLVarR[$i]."/";
+				$i++;
+			}
+		} //*/
+
+		/*
+		$returnPathVar = URLVar("rpath");
+		$returnSiteVar = URLVar("rsite");
+
+		$subsitesR = [
+			"main" => "pennbauman.com",
+			"dev" => "dev.pennbauman.com",
+			"dnd" => "dnd.pennbauman.com",
+			"dev-dnd" => "dev-dnd.pennbauman.com",
+		];
+		if (($returnPathVar == NULL) && ($returnSiteVar == NULL)) {
+			$subsiteReturn = "/";
+		} elseif ($returnSiteVar == NULL) {
+			$subsiteReturn = "";
+			$returnPathVar = explode("_", $returnPathVar);
+			for ($i = 0; $i < count($returnPathVar); $i++) {
+				$subsiteReturn .= "/".$returnPathVar[$i];
+			}
+		} elseif ($returnPathVar == NULL) {
+			$subsiteReturn = "http://".$subsitesR[$returnSiteVar]."/";
+		} else {
+			$subsiteReturn = "http://".$subsitesR[$returnSiteVar];
+			$returnPathVar = explode("_", $returnPathVar);
+			for ($i = 0; $i < count($returnPathVar); $i++) {
+				$subsiteReturn .= "/".$returnPathVar[$i];
+			}
+		} //*/
+
+		if (isset($_GET['rsite'])) {
+			$sys['link']['return_url'] = "http://".$_GET['rsite']."pennbauman.com/";
+		} else {
+			$sys['link']['return_url'] = "/";
+		}
+		if (isset($_GET['rpath'])) {
+			$pathArray = explode("_", $_GET['rpath']);
+			$sys['link']['return_url'] .= $pathArray[$i];
+			for ($i = 1; $i < count($pathArray); $i++) {
+				$sys['link']['return_url'] .= "/".$pathArray[$i];
+			}
+		}
+
 		
 		// Get Site Data
 		/*

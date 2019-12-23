@@ -1,38 +1,33 @@
 <?php
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/subsite_return.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/auth.php";
+	//include "/home/valypfnd/php/subsite_return.php";
 
-	if ($auth > 0) {
-		header("Location: ".$subsiteReturn);
-	}
 	$prev_username = "";
 	$error = "";
 	if (!empty($_POST)) {
-		$username = $_POST["username"];
-		$password = $_POST["password"];
-		$password = hash("sha512", $password);
+		$sys['user']['username'] = $_POST["username"];
+		$sys['user']['password'] = hash("sha512", $_POST["password"]);
+		//$password = hash("sha512", $password);
+		$prev_username = $sys['user']['username'];
+		$error = "Incorrect login.";
+	}
+	include_once "auth.php";
 
-		include "/home/valypfnd/php/auth.php";
-		if ($auth > 0) {
-			header("Location: ".$subsiteReturn);
-		} else {
-			$prev_username = $username;
-			$error = "Incorrect login.";
-		}
+	if ($sys['user']['auth'] > 0) {
+		header("Location: ".$sys['link']['return_url']);
 	}
 ?>
 <html>
 	<head>
 		<title>Login</title>
-		<!--link rel='icon' href='/files/img/sys_favicon.png'-->
+		<link rel='icon' href='/files/img/sys_favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 	</head>
 	<body onload="format()">
 		<?php
-			//$urlEnd = "";
 			//include $_SERVER["DOCUMENT_ROOT"]."/files/header.php";
 		?>
 		<div class = "bottomHalf">
