@@ -3,6 +3,7 @@
 	//include "/home/valypfnd/php/auth.php";
 	//include "/home/valypfnd/php/account.php";
 	//include "/home/valypfnd/php/file_path.php";
+	include_once "insert.php";
 	include_once "auth.php";
 ?>
 <!DOCTYPE html><html>
