@@ -1,5 +1,5 @@
 <?php
-	include "../files/phpelements_array.php";
+	include "elements_array.php";
 
 	function elem($num) {
 		$elements = $GLOBALS["elements"];
