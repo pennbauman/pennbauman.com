@@ -1,7 +1,8 @@
 <?php
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/login_url.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/auth.php";
+	//include "/home/valypfnd/php/login_url.php";
+	include_once "auth.php";
 
 	$file = file_get_contents("links.txt");
 	if (!empty($_POST)) {
@@ -11,7 +12,7 @@
 		$file .= "\n".$code."~".$link;
 		file_put_contents("links.txt", $file);
 	}
-	if ($auth > 8) {
+	if ($sys['user']['auth_level'] > 8) {
 		echo "<!DOCTYPE html><head>";
 		echo "<title>Links</title>";
 		echo "<link rel='icon' href='/files/img/sys_favicon.png'>";
@@ -21,11 +22,19 @@
 		// Print Body
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
+		echo "user: ".$sys['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
 		echo "<h1>Links</h1>";
 
-		echo "<h6>Links.txt</h6> <br/>";
-		echo "<pre>".$file."</pre>";
+		$query = $pdo->prepare("SELECT * FROM shortcut_links");
+		$query->execute();
+		if ($query->rowCount() > 0) {
+			//$result = $query->fetch();
+			foreach ($query as $result) {
+				echo $results['code'];
+				echo "~";
+				echo $results['url'];
+			}
+		}
 
 		echo "<form action='/links.php' method='post'>";
 		echo "<b>Code:</b> <br/> <input type='text' name='code'><br/><br/>";

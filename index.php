@@ -1,7 +1,4 @@
-<?php 
-	//include "/home/valypfnd/php/std.php";
-	//include "/home/valypfnd/php/auth.php";
-	//include "/home/valypfnd/php/file_path.php";
+<?php
 	include_once "insert.php";
 
 	if (isset($_GET['l'])) {
