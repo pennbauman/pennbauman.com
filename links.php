@@ -28,11 +28,11 @@
 		$query = $pdo->prepare("SELECT * FROM shortcut_links");
 		$query->execute();
 		if ($query->rowCount() > 0) {
-			//$result = $query->fetch();
-			foreach ($query as $result) {
-				echo $results['code'];
+			$result = $query->fetch();
+			foreach ($result as $r) {
+				echo $r['code'];
 				echo "~";
-				echo $results['url'];
+				echo $r['url'];
 			}
 		}
 
