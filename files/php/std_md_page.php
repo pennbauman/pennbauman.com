@@ -1,5 +1,5 @@
 <?php
-	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
+	include_once $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
 	$Parsedown = new Parsedown();
 
 	// Prepare page.md

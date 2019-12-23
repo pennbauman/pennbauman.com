@@ -37,7 +37,8 @@ Options -Indexes
     Require all denied
 </FilesMatch>
 
-php_value auto_prepend_file $_SERVER['DOCUMENT_ROOT']/files/php/std.php
+include_path = ".:${USER}/files/php/"
+php_value auto_prepend_file std.php
 
 <Files */.*>
 	Deny from all
