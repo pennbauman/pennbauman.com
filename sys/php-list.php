@@ -3,7 +3,7 @@
 	include "/home/valypfnd/php/auth.php";
 	//include "/home/valypfnd/php/login_url.php";
 	
-	if ($auth > 9) {
+	if ($sys['user']['auth_level'] > 9) {
 		echo "<!DOCTYPE html><head>";
 		/echo "<title>PHP List</title>";
 		echo "<link rel='icon' href='/files/img/files_favicon.png'>";
@@ -12,7 +12,7 @@
 		echo "<script src='/files/js/general.js'></script>";
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
+		echo "user: ".$sys['user']['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
 		echo "<h1>PHP List</h1>";
 		$files = scandir("/home/valypfnd/php/");
 		$i = 0;
