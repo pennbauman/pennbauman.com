@@ -1,9 +1,9 @@
 <?php 
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/file_path.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/auth.php";
+	//include "/home/valypfnd/php/file_path.php";
+	include_once "insert.php";
 
-	//$linkCode = URLVar("l");
 	if (isset($_GET['l'])) {
 		$query = $pdo->prepare("SELECT url FROM shortcut_links WHERE code=:code");
 		$query->execute(["code" => $_GET['l']]);
@@ -12,19 +12,6 @@
 			header("Location: ".$result['url']);
 		}
 	}
-
-	/*
-	if ($linkCode != NULL) {
-		$links = file_get_contents("links.txt");
-		$links = explode("\n", $links);
-		for ($i = 0; $i < count($links); $i++) {
-			$links[$i] = explode("~", $links[$i]);
-			if ($links[$i][0] == $linkCode) { 
-				header("Location: ".$links[$i][1]);
-				break;
-			}
-		}
-	} //*/
 ?>
 <!DOCTYPE html><html>
 	<head>
@@ -35,9 +22,6 @@
 		<script src='/files/js/general.js'></script>
 	</head>
 	<body>
-		<?php
-			//include "/home/valypfnd/php/pennbauman/std_header_navbar.php";
-		?>
 		<?php insertHTML("header_navbar") ?>
 		<div id="content">
 			<h1>Penn Bauman</h1>
@@ -60,14 +44,7 @@
 			<img src="/files/img/bella_wonderwoman.jpg" style="width:80%;margin:0 10%">
 			<br/>
 			<img src="/files/img/inky_shiro_basket.jpg" style="width:80%;margin:0 10%">
-
-			<?php 
-				//include "/home/valypfnd/php/lorem_ipsum.php";
-			?>
 		</div>
-		<?php
-			//include "/home/valypfnd/php/pennbauman/std_footer.php";
-		?>
 		<?php insertHTML("footer") ?>
 	</body>
 </html>
