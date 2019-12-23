@@ -1,5 +1,5 @@
 <?php 
-	include $_SERVER['DOCUMENT_ROOT']."/files/php/insert.php";
+	include_once "insert.php";
 ?>
 <!DOCTYPE html><html>
 	<head>
