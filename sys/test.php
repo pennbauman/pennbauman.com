@@ -11,7 +11,7 @@
 	include_once "insert.php";
 	$n = "<br/>";
 
-	if ($auth > 8) {
+	if ($sys['user']['auth_level'] > 8) {
 		echo "<!DOCTYPE html><head>";
 		echo "<title>Test</title>";
 		echo "<link rel='icon' href='/files/img/sys_favicon.png'>";

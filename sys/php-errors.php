@@ -1,7 +1,8 @@
 <?php
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/login_url.php";
+	//include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/auth.php";
+	//include "/home/valypfnd/php/login_url.php";
+	include_once "auth.php";
 
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
@@ -11,7 +12,7 @@
 		$autofill = "";
 	}
 
-	if ($auth > 9) {
+	if ($sys['user']['auth_level'] > 9) {
 		// Print Head
 		echo "<!DOCTYPE html><head>";
 		echo "<title>PHP Errors</title>";
@@ -19,10 +20,9 @@
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
 		echo "<script src='/files/js/general.js'></script>";
-		// Print Body
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$username." (<a href='".$logoutURL."'>logout</a>)";
+		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php-errors' method='post'>";
 		echo "/home/valypfnd/<input autofocus type='text' name='folder' value='".$autofill."' autofocus>/error_log <br><br/>";
