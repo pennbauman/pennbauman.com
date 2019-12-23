@@ -15,7 +15,7 @@
 		<div id="content">
 			<?php 
 				if ($sys['user']['auth_level'] > 0) {
-					echo "user: ".$sys['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
+					echo "user: ".$sys['user']['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
 					echo "<h2>Account</h2>";
 					echo "<p><b>Username: </b>".$sys['user']['username']."<br/>";
 					echo "<b>Name: </b>".$sys['user']['display_name']."<br/>";

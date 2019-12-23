@@ -22,7 +22,7 @@
 		// Print Body
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$sys['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
+		echo "user: ".$sys['user']['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
 		echo "<h1>Links</h1>";
 
 		$query = $pdo->prepare("SELECT * FROM shortcut_links");
@@ -30,7 +30,6 @@
 		if ($query->rowCount() > 0) {
 			//$result = $query->fetch();
 			foreach ($query as $result) {
-				$result = $result->fetch();
 				echo $results['code'];
 				echo "~";
 				echo $results['url'];
