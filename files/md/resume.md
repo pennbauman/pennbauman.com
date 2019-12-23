@@ -1,5 +1,5 @@
 ---
-Resume
+title:Resume
 ---
 
 ### Penn Bauman

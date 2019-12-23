@@ -1,5 +1,5 @@
 ---
-Projects
+title:Projects
 ---
 
 # Projects
