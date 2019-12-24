@@ -31,6 +31,8 @@ ErrorDocument 500 /files/errors/510.shtml
 
 # Stop Indexing
 Options -Indexes
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
 
 # Hide .files
 <FilesMatch "^\.">
