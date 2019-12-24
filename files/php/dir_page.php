@@ -16,7 +16,7 @@
 		echo "</head>\n<body>";
 		//Print Content
 		echo "user: ".$sys['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
-		echo "<h1>".$sys['file_path_short']."/"."</h1>";
+		echo "<h1>".substr($sys['file_path_short'], 0, -3)."</h1>";
 
 		echo "<p><a href='";
 		$filePathArray = explode("/", $sys['file_path_short']);
