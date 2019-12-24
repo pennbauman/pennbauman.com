@@ -35,6 +35,7 @@ AddDefaultCharset UTF-8
 DefaultLanguage en-US
 
 # Hide .files
+RedirectMatch 403 /\..*$
 <FilesMatch "^\.">
     #Require all denied
 	#Allow from 127.0.0.1
