@@ -24,7 +24,7 @@
 		for ($i = 0; $i < count($files); $i++) {
 			if ($files[$i] != "."
 				&& $files[$i] != ".."
-				&& !preg_match("^\..$", $files[$i])
+				&& substr($files[$i], 0, 1) != "."
 				&& $files[$i] != "dir.php"
 				&& $files[$i] != "error_log") {
 
