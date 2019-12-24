@@ -30,10 +30,11 @@
 				&& $files[$i] != ".."
 				&& $files[$i] != "dir.php"
 				&& $files[$i] != "error_log") {
+				echo "<a href='".substr($_SERVER['PHP_SELF'], 0, -7)."/".$filePathShort."/".$files[$i];
 				if (is_dir($files[$i])) {
-					echo "<a href='".getcwd()."/".$filePathShort."/".$files[$i]."/dir'>".$files[$i]."/</a><br/>\n";
+					echo "/dir'>".$files[$i]."/</a><br/>\n";
 				} else {
-					echo "<a href='".getcwd()."/".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
+					echo "'>".$files[$i]."</a><br/>\n";
 				}
 			}
 		}
