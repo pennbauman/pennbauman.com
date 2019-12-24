@@ -1,10 +1,11 @@
-<?php 
+<?php
 	if (isset($_POST['url'])) {
 		$favicon = $_POST["url"];
 	} else {
 		$favicon = "/files/img/sys_favicon.png";
 	}
 	echo $favicon;
+	echo $_POST['url'];
 ?>
 <!DOCTYPE html>
 	<head>
@@ -27,7 +28,7 @@
 	</head>
 	<body>
 		<h1>Favicon Tester</h1>
-		<form action='/sys/test/favicon/' method='post' onsubmiti="setFavicon();">
+		<form action='/sys/test/favicon' method='post' onsubmiti="setFavicon();">
 			<b>Favicon URL:</b> <br/> 
 			<input autofocus type='text' name='url' id='url' value='/files/img/'> <br><br/>
 			<input type='submit' value='Enter'>
