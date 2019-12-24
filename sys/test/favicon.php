@@ -1,5 +1,5 @@
 <?php 
-	if (!empty($_POST)) {
+	if (isset(empty($_POST))) {
 		$favicon = $_POST["url"];
 	} else {
 		$favicon = "/files/img/sys_favicon.png";
