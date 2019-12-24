@@ -24,7 +24,7 @@
 			echo $favicon;
 			echo "</b></p>"
 		?>
-		<form action='/sys/test/favicon' method='post'>
+		<form action='/sys/test-favicon' method='post'>
 			<b>Favicon URL:</b> <br/> 
 			<input autofocus type='text' name='url' id='url' value='/files/img/'> <br><br/>
 			<input type='submit' value='Enter'>
