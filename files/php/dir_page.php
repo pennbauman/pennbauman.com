@@ -1,7 +1,4 @@
 <?php
-	//include "/home/valypfnd/php/std.php";
-	//include "/home/valypfnd/php/auth.php";
-	//include "/home/valypfnd/php/login_url.php";
 	include_once "auth.php";
 	
 	if ($sys['user']['auth_level'] > 8) {
@@ -14,7 +11,6 @@
 		echo "<script src='/files/js/general.js'></script>";
 		// Print Body
 		echo "</head>\n<body>";
-		//Print Content
 		echo "user: ".$sys['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
 		echo "<h1>".substr($sys['file_path_short'], 0, -3)."</h1>";
 
@@ -30,6 +26,7 @@
 				&& $files[$i] != ".."
 				&& $files[$i] != "dir.php"
 				&& $files[$i] != "error_log") {
+
 				echo "<a href='".substr($_SERVER['PHP_SELF'], 0, -8).$filePathShort."/".$files[$i];
 				if (is_dir($files[$i])) {
 					echo "/dir'>".$files[$i]."/</a><br/>\n";
