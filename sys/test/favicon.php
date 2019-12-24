@@ -16,13 +16,6 @@
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
-		<script>
-			function setFavicon() {
-				$("#favicon").attr("href", document.getElementById("url").value);
-				return false;
-			}
-
-		</script>
 	</head>
 	<body>
 		<h1>Favicon Tester</h1>
@@ -31,7 +24,7 @@
 			echo $favicon;
 			echo "</b></p>"
 		?>
-		<form action='/sys/test/favicon' method='post' onsubmiti="setFavicon();">
+		<form action='/sys/test/favicon' method='post'>
 			<b>Favicon URL:</b> <br/> 
 			<input autofocus type='text' name='url' id='url' value='/files/img/'> <br><br/>
 			<input type='submit' value='Enter'>
