@@ -23,7 +23,7 @@
 		for ($i = 0; $i < count($path) - 1; $i++) {
 			echo $filePathArray[$i]."/";
 		}
-		echo "'>parent directory</a></p><p><h4>content</h4></br>";
+		echo "dir'>parent directory</a></p><p><h4>content</h4></br>";
 		$files = scandir(getcwd());
 		for ($i = 0; $i < count($files); $i++) {
 			if ($files[$i] != "."
