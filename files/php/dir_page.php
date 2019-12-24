@@ -27,7 +27,11 @@
 		$files = scandir($sys['file_path']);
 		for ($i = 0; $i < count($files); $i++) {
 			if ($files[$i] != "." && $files[$i] != "..") {
-				echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
+				if ( -d $files[$i]) {
+					echo "<a href='".$filePathShort."/".$files[$i]."/dir'>".$files[$i]."/</a><br/>\n";
+				} else {
+					echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
+				}
 			}
 		}
 		echo "</p>";
