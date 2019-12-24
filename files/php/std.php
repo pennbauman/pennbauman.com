@@ -21,7 +21,7 @@
 		}
 
 		// File Path Data
-		$sys['file_path'] = getcwd();
+		//$sys['file_path'] = getcwd();
 		$sys['file_path_short'] = substr($_SERVER['PHP_SELF'], 0, -4);
 		$filePathArray = explode("/", $sys['file_path_short']);
 		$sys['path_code'] = "";

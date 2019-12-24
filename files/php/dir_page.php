@@ -24,13 +24,16 @@
 			echo $filePathArray[$i]."/";
 		}
 		echo "'>parent directory</a></p><p><h4>content</h4></br>";
-		$files = scandir($sys['file_path']);
+		$files = scandir(getcwd());
 		for ($i = 0; $i < count($files); $i++) {
-			if ($files[$i] != "." && $files[$i] != ".." && $files[$i] != "dir.php") {
+			if ($files[$i] != "."
+				&& $files[$i] != ".."
+				&& $files[$i] != "dir.php"
+				&& $files[$i] != "error_log") {
 				if (is_dir($files[$i])) {
-					echo "<a href='".$filePathShort."/".$files[$i]."/dir'>".$files[$i]."/</a><br/>\n";
+					echo "<a href='".getcwd()."/".$filePathShort."/".$files[$i]."/dir'>".$files[$i]."/</a><br/>\n";
 				} else {
-					echo "<a href='".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
+					echo "<a href='".getcwd()."/".$filePathShort."/".$files[$i]."'>".$files[$i]."</a><br/>\n";
 				}
 			}
 		}
