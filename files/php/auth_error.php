@@ -18,7 +18,7 @@
 		echo '<h3>The client is not authorized to access this content. </h3> ';
 	} else {
 		echo '<h3>The client must be authenticated to access this content.</h3> ';
-		echo "<p><a href='".$sys['login_url']."'>Login</a></p>";
+		echo "<p><a href='".$sys['link']['login_url']."'>Login</a></p>";
 	}
 	echo '<p><a href="/">Home</a> - <a href="mailto:penn.bauman@gmail.com">Contact</a></p> </body> </html>';
 ?>
