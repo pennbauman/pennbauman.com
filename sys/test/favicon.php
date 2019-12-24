@@ -4,6 +4,7 @@
 	} else {
 		$favicon = "/files/img/sys_favicon.png";
 	}
+	echo $favicon;
 ?>
 <!DOCTYPE html>
 	<head>
