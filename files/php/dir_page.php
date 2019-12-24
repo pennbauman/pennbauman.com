@@ -19,8 +19,8 @@
 		echo "<h1>".substr($sys['file_path_short'], 0, -3)."</h1>";
 
 		echo "<p><a href='";
-		$filePathArray = explode("/", $sys['file_path_short']);
-		for ($i = 0; $i < count($filePathArray) - 1; $i++) {
+		$path = explode("/", substr($_SERVER['PHP_SELF'], 0, -8));
+		for ($i = 0; $i < count($path) - 1; $i++) {
 			echo $filePathArray[$i]."/";
 		}
 		echo "'>parent directory</a></p><p><h4>content</h4></br>";
