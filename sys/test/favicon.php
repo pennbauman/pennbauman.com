@@ -5,7 +5,7 @@
 		$favicon = "/files/img/sys_favicon.png";
 	}
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html><html>
 	<head>
 		<title>Favicon Tester</title>
 		<?php
