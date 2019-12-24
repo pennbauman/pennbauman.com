@@ -1,6 +1,8 @@
-Allow from 127.0.0.1
-Deny from all
+#Allow from 127.0.0.1
+#Deny from all
 
-<FilesMatch "dir.php">
+<FilesMatch "(?!dir.php)">
 	Allow from ALL
+	#Allow from 127.0.0.1
+	#Deny from all
 </FilesMatch>
