@@ -1,5 +1,5 @@
 <?php 
-	include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/std.php";
 ?>
 <!DOCTYPE html>
 	<head>

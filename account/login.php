@@ -23,9 +23,6 @@
 		<script src='/files/js/general.js'></script>
 	</head>
 	<body onload="format()">
-		<?php
-			//include $_SERVER["DOCUMENT_ROOT"]."/files/header.php";
-		?>
 		<div class = "bottomHalf">
 			<div class = "tabpage" id = "home">
 				<h1>Login</h1>
