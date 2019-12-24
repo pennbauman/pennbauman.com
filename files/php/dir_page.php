@@ -26,7 +26,7 @@
 		echo "'>parent directory</a></p><p><h4>content</h4></br>";
 		$files = scandir($sys['file_path']);
 		for ($i = 0; $i < count($files); $i++) {
-			if ($files[$i] != "." && $files[$i] != "..") {
+			if ($files[$i] != "." && $files[$i] != ".." && $files[$i] != "dir.php") {
 				if (is_dir($files[$i])) {
 					echo "<a href='".$filePathShort."/".$files[$i]."/dir'>".$files[$i]."/</a><br/>\n";
 				} else {
