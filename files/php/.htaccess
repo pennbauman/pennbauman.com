@@ -2,7 +2,7 @@
 #Deny from all
 
 #Order Deny, Allow
-<FilesMatch "^(?!dir\.php$)i.+\.php$">
+<FilesMatch "^(?!dir\.php$).+\.php$">
 #<Files "^(?!dir.php">
 	#Allow from ALL
 	Allow from 127.0.0.1
