@@ -17,8 +17,8 @@
 		echo "<a href='/sys/hash'>Hash</a> <br/>";
 		echo "<a href='/sys/page-size'>Page Size</a> <br/>";
 		echo "<a href='/sys/test'>Test</a> <br/>";
-		echo "<a href='/sys/test/favicon'>Favicon Tester</a> <br/>";
-		echo "<a href='/sys/test/color'>Color Tester</a> <br/>";
+		echo "<a href='/sys/test-favicon'>Favicon Tester</a> <br/>";
+		//echo "<a href='/sys/test/color'>Color Tester</a> <br/>";
 		
 		echo "<a href='/sys/php-errors'>PHP Errors</a> <br/>";
 		echo "<a href='/sys/php-docs'>PHP Docs</a> <br/>";
