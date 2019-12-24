@@ -34,7 +34,8 @@ Options -Indexes
 
 # Hide .files
 <FilesMatch "^\.">
-    Require all denied
+    #Require all denied
+	Deny from all
 </FilesMatch>
 
 php_value auto_prepend_file /home/valypfnd/pennbauman-dev/files/php/includer.php
