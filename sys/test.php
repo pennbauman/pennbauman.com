@@ -1,12 +1,4 @@
 <?php
-	/*
-	include "/home/valypfnd/php/std.php";
-	include "/home/valypfnd/php/auth.php";
-	include "/home/valypfnd/php/file_path.php";
-	include "/home/valypfnd/php/get_site.php";
-	include "/home/valypfnd/php/subsite_return.php";
-	include "/home/valypfnd/php/login_url.php";
-	//*/
 	include_once "auth.php";
 	include_once "insert.php";
 	$n = "<br/>";
@@ -23,9 +15,6 @@
 		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>Test</h1>";
 	
-		//include "../files/php/test.php";
-		//include "/files/php/test.php";
-
 		echo "<p>";
 		echo "<p>Normal</br>
 			<b>Bold</b><br/>
@@ -40,7 +29,7 @@
 		echo "\$currentSiteName = ".$currentSiteName.$n;
 		echo "\$filePath = ".$filePath.$n.$n;
 
-		//echo "$_SERVER['HTTP_HOST'] = ".$_SERVER['HTTP_HOST'].$n;
+		echo "\$_SERVER['HTTP_HOST'] = ".$_SERVER['HTTP_HOST'].$n;
 		echo "\$_SERVER['REQUEST_URI'] = ".$_SERVER['REQUEST_URI'].$n;
 		$testString = "/yes/no/";
 		$testArray = explode("/", $_SERVER['REQUEST_URI']);
