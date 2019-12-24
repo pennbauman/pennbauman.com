@@ -35,8 +35,8 @@ Options -Indexes
 # Hide .files
 <FilesMatch "^\.">
     #Require all denied
-	Allow from 127.0.0.1
-	Deny from all
+	#Allow from 127.0.0.1
+	#Deny from all
 </FilesMatch>
 
 php_value auto_prepend_file /home/valypfnd/pennbauman-dev/files/php/includer.php
