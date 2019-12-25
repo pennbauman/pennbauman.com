@@ -1,6 +1,6 @@
 <?php
-	include_once "insert.php";
 	include_once "auth.php";
+	include_once "insert.php";
 ?>
 <!DOCTYPE html><html>
 	<head>

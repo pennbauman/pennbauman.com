@@ -14,7 +14,7 @@
 		if ($sys['user']['auth_level'] > 0) {
 			echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		} else {
-			echo "user<a href='".$sys['link']['login_url']."'>login</a>";
+			echo "user: <a href='".$sys['link']['login_url']."'>login</a>";
 		}
 	}
 ?>
