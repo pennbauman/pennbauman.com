@@ -184,9 +184,103 @@ table {
   color: #2EB398;
 }
 
+/* D&D Header */
+#dnd-header {
+  grid-area: header;
+  font-size: 1.5vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--content);
+  color: var(--background);
+  text-align: center;
+  height: 8em;
+  z-index: 4;
+}
+#dnd-header #header_title {
+  position: relative;
+  display: inline-block;
+  height: 4em;
+  width: 8em;
+  top: 0;
+  padding: 2em 1em;
+  top: -1.8em;
+}
+#dnd-header #header_title .header_text1 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+#dnd-header #header_title .header_text2 {
+  font-size: 4em;
+  line-height: 1em;
+}
+#dnd-header .header_img {
+  position: relative;
+  display: inline-block;
+  height: 6em;
+  width: 6em;
+  padding: 1em 2em;
+}
+
+/* D&D Navbar */
+#dnd-navbar {
+  grid-area: navbar;
+  font-size: 1.2vh;
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  height: 4em;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  margin-top: -1px;
+  border-top: 1px solid var(--content);
+  text-align: center;
+  background: var(--content);
+  color: var(--background);
+  z-index: 5;
+}
+#dnd-navbar .navbar_link {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  line-height: 2.5em;
+  height: 3em;
+  padding: 0.5em 1em 0.5em;
+  width: 15em;
+  margin: 0 1em;
+  left: 0;
+  text-align: center;
+  background: var(--content);
+  color: var(--background);
+}
+#dnd-navbar .navbar_link:hover {
+  background: var(--background);
+  color: var(--content);
+}
+#dnd-navbar .navbar_text {
+  font-size: 2.5em;
+}
+
 @media (max-aspect-ratio: 1/1) {
   /* Height > Width */
+  #dnd-navbar .navbar_link {
+    padding: 0.5em 0em 0.5em;
+    margin: 0;
+  }
 }
 @media (min-aspect-ratio: 1/1) {
   /* Height < Width */
+}
+@media (max-aspect-ratio: 10/9) {
+  #dnd-header {
+    font-size: 1.35vw;
+  }
+}
+@media (max-aspect-ratio: 100/130) {
+  #dnd-navbar {
+    font-size: 1.5625vw;
+  }
 }
