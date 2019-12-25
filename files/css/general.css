@@ -25,6 +25,7 @@ body {
   font-family: DejaVu_Sans_Mono, Monospace;
   min-height: 100vh;
   background: #141A1B;
+  color: #EEEEEE;
   font-size: 2rem;
   display: grid;
   grid-template-areas: "header" "content" "footer";
