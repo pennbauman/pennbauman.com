@@ -38,7 +38,7 @@
 			}
 		}
 		echo "</p>";
-		insertHTML('backend_footer');
+		insertHTML('sys_footer)');
 		echo "</body></html>";
 	} else {
 		include "auth_error.php";
