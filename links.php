@@ -34,7 +34,8 @@
 		echo "<b>Link:</b> <br/> <input type='text' name='link'><br/><br/>";
 		echo "<input type='submit' value='Enter'></form>";
 
-		echo '<br/><a href="/">Home</a> - <a href="/sys/">System</a>';
+		//echo '<br/><a href="/">Home</a> - <a href="/sys/">System</a>';
+		insertHTML("sys_footer");
 		echo "</body></html>";
 	} else {
 		include "auth_error.php";

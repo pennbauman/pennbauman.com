@@ -25,7 +25,6 @@
 		echo "<a href='/sys/php-list'>PHP List</a> <br/>";
 		
 		echo "</p>";
-		echo '<br/><a href="/">Home</a>';
 		insertHTML("sys_footer");
 		echo "</body></html>";
 	} else {
