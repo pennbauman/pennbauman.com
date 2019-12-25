@@ -25,7 +25,7 @@
 		$query->execute();
 		if ($query->rowCount() > 0) {
 			foreach ($query as $result) {
-				echo $result['code']."~".$result['url']."<br/>";
+				echo $result['code']." -> ".$result['url']."<br/>";
 			}
 		}
 		echo "</p>";
