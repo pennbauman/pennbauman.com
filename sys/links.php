@@ -10,7 +10,7 @@
 			$query->execute([$code, $link]);
 		}
 		echo "<!DOCTYPE html><head>";
-		echo "<title>Links</title>";
+		echo "<title>Shortcut Links</title>";
 		echo "<link rel='icon' href='/files/img/sys_favicon.png'>";
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
@@ -18,7 +18,7 @@
 		echo "</head>\n<body>";
 		//Print Content
 		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
-		echo "<h1>Links</h1>";
+		echo "<h1>Shortcut Links</h1>";
 
 		echo "<p>";
 		$query = $pdo->prepare("SELECT * FROM shortcut_links");

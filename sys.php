@@ -14,16 +14,17 @@
 		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>System</h1>";
 		echo "<p>";
+		echo "<a href='/sys/links'>Shortcut Links</a> <br/>";
+		echo "<br/>";
+		echo "<a href='/sys/php-errors'>PHP Errors</a> <br/>";
+		echo "<a href='/sys/php-docs'>PHP Docs</a> <br/>";
+		echo "<a href='/sys/php-list'>PHP List</a> <br/>";
+		echo "<br/>";
 		echo "<a href='/sys/hash'>Hash</a> <br/>";
 		echo "<a href='/sys/page-size'>Page Size</a> <br/>";
 		echo "<a href='/sys/test'>Test</a> <br/>";
 		echo "<a href='/sys/test-favicon'>Favicon Tester</a> <br/>";
 		//echo "<a href='/sys/test/color'>Color Tester</a> <br/>";
-		
-		echo "<a href='/sys/php-errors'>PHP Errors</a> <br/>";
-		echo "<a href='/sys/php-docs'>PHP Docs</a> <br/>";
-		echo "<a href='/sys/php-list'>PHP List</a> <br/>";
-		
 		echo "</p>";
 		insertHTML("sys_footer");
 		echo "</body></html>";
