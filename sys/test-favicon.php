@@ -1,6 +1,4 @@
 <?php
-	include_once "insert.php";
-
 	if (isset($_POST['url'])) {
 		$favicon = $_POST["url"];
 	} else {

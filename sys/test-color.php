@@ -1,6 +1,3 @@
-<?php
-	include_once "insert.php";
-?>
 <!DOCTYPE html>
 	<head>
 		<title>Color Tester</title>

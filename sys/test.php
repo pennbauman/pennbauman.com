@@ -1,6 +1,6 @@
 <?php
 	include_once "auth.php";
-	include_once "insert.php";
+
 	$n = "<br/>";
 
 	if ($sys['user']['auth_level'] > 8) {

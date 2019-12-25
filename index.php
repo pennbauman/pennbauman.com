@@ -1,6 +1,4 @@
 <?php
-	include_once "insert.php";
-
 	if (isset($_GET['l'])) {
 		$query = $pdo->prepare("SELECT url FROM shortcut_links WHERE code=:code");
 		$query->execute(["code" => $_GET['l']]);

@@ -1,8 +1,8 @@
 <?php
+	// System Info Variable Decleration
 	$sys = array();
-	$sys['include'] = array();
-	$sys['include']['insert'] = false;
 
+	// Database query setup
 	$sys['auth_file'] = explode("\n", file_get_contents("/home/valypfnd/php/.auth"));
 	//echo "Database: $authFile[0] $authFile[1] $authFile[2]";
 	$pdo_options = [
@@ -18,7 +18,6 @@
 	}
 
 	// File Path Data
-	//$sys['file_path'] = getcwd();
 	$sys['file_path_short'] = substr($_SERVER['PHP_SELF'], 0, -4);
 	$filePathArray = explode("/", $sys['file_path_short']);
 	$sys['path_code'] = "";
@@ -53,22 +52,16 @@
 		}
 	}
 
-	/*
-	$URLVarR = URLVar("r");
-	if ($URLVarR == NULL) {
-		$URLEnd = "";
-	} else {
-		$URLEnd = "?r=".$URLVarR;
+	// Insert functions
+	include $_SERVER['DOCUMENT_ROOT']."/files/php/Parsedown.php";
+
+	function insertMD($file) {
+		$Parsedown = new Parsedown();
+		echo $Parsedown->text(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$file.".md"));
 	}
-	$returnPath = "/";
-	if ($URLEnd != "") {
-		$URLVarR = explode("_", $URLVarR);
-		$i = 0;
-		while ($i < count($URLVarR)) {
-			$returnPath = $returnPath.$URLVarR[$i]."/";
-			$i++;
-		}
-	} //*/
+	function insertHTML($file) {
+		echo file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/html/".$file.".html");
+	}
 
 	// Get Site Data
 	/*

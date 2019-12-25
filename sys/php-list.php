@@ -1,5 +1,4 @@
 <?php
-	include_once "insert.php";
 	include_once "auth.php";
 	
 	if ($sys['user']['auth_level'] > 9) {

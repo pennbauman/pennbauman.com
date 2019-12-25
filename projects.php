@@ -1,6 +1,3 @@
-<?php 
-	include_once "insert.php";
-?>
 <!DOCTYPE html><html>
 	<head>
 		<title>Projects - Penn Bauman</title>

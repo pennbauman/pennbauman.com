@@ -1,5 +1,4 @@
 <?php
-	include_once "insert.php";
 	$Parsedown = new Parsedown();
 
 	// Prepare page.md
