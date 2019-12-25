@@ -1,5 +1,6 @@
 <?php
 	include_once "auth.php";
+	include_once "insert.php";
 
 	echo '<!DOCTYPE html><html><head> ';
 	if ($sys['user']['auth_level'] > 0) {
