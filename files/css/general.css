@@ -67,18 +67,18 @@ table {
 .std-header h1:hover {
   color: #EEEEEE;
 }
-.std-header #navbar {
+.std-header .navlinks {
   position: relative;
   float: right;
   padding: 1.5rem 1rem;
   text-align: right;
 }
-.std-header #navbar a {
+.std-header .navlinks a {
   padding: 1rem 2rem 0.5rem;
   font-size: 2.5rem;
   line-height: 2.5rem;
 }
-.std-header #navbar a:hover {
+.std-header .navlinks a:hover {
   color: #2EB398;
 }
 
@@ -263,7 +263,7 @@ table {
 
 @media (max-aspect-ratio: 1/1) {
   /* Height > Width */
-  #dnd-navbar .navbar_link {
+  .dnd-navbar .navbar_link {
     padding: 0.5em 0em 0.5em;
     margin: 0;
   }
@@ -272,12 +272,12 @@ table {
   /* Height < Width */
 }
 @media (max-aspect-ratio: 10/9) {
-  #dnd-header {
+  .dnd-header {
     font-size: 1.35vw;
   }
 }
 @media (max-aspect-ratio: 100/130) {
-  #dnd-navbar {
+  .dnd-navbar {
     font-size: 1.5625vw;
   }
 }
