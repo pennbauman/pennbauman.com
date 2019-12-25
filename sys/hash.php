@@ -1,3 +1,6 @@
+<?php
+	include_once "insert.php";
+?>
 <html>
 	<head> 
 		<title>Hash</title>

@@ -1,3 +1,6 @@
+<?php
+	include_once "insert.php";
+?>
 <!DOCTYPE html>
 	<head>
 		<title>Page Size</title>
