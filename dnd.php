@@ -16,7 +16,29 @@
 			<p>Quick D&amp;D statistic generator. Instantly generate a full set of statistics. Standard array, 1d20, best 3 of 4d6, and point buy avaiable. </p>
 			<h3><a href="https://docs.google.com/document/d/1Wy6KbhP3kRMCamv3M3PwnYH5qybheTDGk86MhuU_uyk/edit?usp=sharing">Character Sheet Template</a></h3>
 			<p>Basic Google Document template for a on line character sheet. Simple text document format allows for use of mobile and plenty of space for character details.</p>
-		</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
 		</div>
 		<?php insertHTML("footer") ?>
 	</body>
