@@ -1,5 +1,6 @@
 <?php
 	include_once "auth.php";
+	include_once "insert.php";
 
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
