@@ -14,14 +14,13 @@
 		<?php insertHTML("header_navbar") ?>
 		<div id="content">
 			<?php 
+				insertUser();
 				if ($sys['user']['auth_level'] > 0) {
-					echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 					echo "<h2>Account</h2>";
 					echo "<p><b>Username: </b>".$sys['user']['username']."<br/>";
 					echo "<b>Name: </b>".$sys['user']['display_name']."<br/>";
 					echo "<b>Email: </b>".$sys['user']['email']."<br/>";
 				} else {
-					echo "<a href='".$sys['login_url']."'>login</a>";
 					echo "<h2>Account</h2>";
 					echo "<p>Not logged in</p>";
 				}

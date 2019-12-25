@@ -11,7 +11,7 @@
 		echo "<script src='/files/js/general.js'></script>";
 		// Print Body
 		echo "</head>\n<body>";
-		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
+		insertUser();
 		echo "<h1>".substr($sys['file_path_short'], 0, -3)."</h1>";
 
 		echo "<p><a href='";
@@ -37,7 +37,7 @@
 			}
 		}
 		echo "</p>";
-		
+		insertHTML('backend_footer');
 		echo "</body></html>";
 	} else {
 		include "auth_error.php";
