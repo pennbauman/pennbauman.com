@@ -29,7 +29,7 @@
 				&& $files[$i] != "dir.php"
 				&& $files[$i] != "error_log") {
 			//*/
-			if (!preg_match("^\..*$", $files[$i])) {
+			if (!preg_match("/^\..*$/i", $files[$i])) {
 
 				echo "<a href='".substr($_SERVER['PHP_SELF'], 0, -8).$filePathShort."/".$files[$i];
 				if (is_dir($files[$i])) {
