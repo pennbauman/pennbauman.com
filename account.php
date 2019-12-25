@@ -13,8 +13,7 @@
 	<body>
 		<?php insertHTML("header_navbar") ?>
 		<div id="content">
-			<?php 
-				insertUser();
+			<?php
 				if ($sys['user']['auth_level'] > 0) {
 					echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 					echo "<h2>Account</h2>";

@@ -16,7 +16,7 @@
 		echo "<script src='/files/js/general.js'></script>";
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$sys['user']['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
+		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>Links</h1>";
 
 		echo "<p>";

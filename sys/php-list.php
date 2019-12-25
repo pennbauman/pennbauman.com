@@ -10,7 +10,7 @@
 		echo "<script src='/files/js/general.js'></script>";
 		echo "</head>\n<body>";
 		//Print Content
-		echo "user: ".$sys['user']['username']." (<a href='".$sys['logout_url']."'>logout</a>)";
+		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>PHP List</h1>";
 		$files = scandir("/home/valypfnd/php/");
 		$i = 0;
@@ -33,7 +33,8 @@
 			$i++;
 		}
 		echo "</p>";
-		echo "<br/><a href='/'>Home</a> - <a href='/sys/'>System</a>";
+		//echo "<br/><a href='/'>Home</a> - <a href='/sys/'>System</a>";
+		insertHTML("sys_footer");
 		echo "</body></html>";
 	} else {
 		include "auth_error.php";

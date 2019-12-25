@@ -12,7 +12,7 @@
 		echo "<script src='/files/js/general.js'></script>";
 		// Print Body
 		echo "</head>\n<body>";
-		insertUser();
+		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>".substr($sys['file_path_short'], 0, -3)."</h1>";
 
 		echo "<p><a href='";
