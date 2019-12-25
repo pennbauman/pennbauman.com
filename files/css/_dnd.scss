@@ -5,8 +5,8 @@
 	width:100%;
 	top:0;
 	left:0;
-	background:var(--content);
-	color:var(--background);
+	background:$header-back;
+	color:$header-plain;
 	text-align:center;
 	height:8em;
 	z-index:4;
@@ -53,10 +53,10 @@
 	left:0;
 	top:0;
 	margin-top:-1px;
-	border-top:1px solid var(--content);
+	border-top:1px solid $header-back;
 	text-align:center;
-	background:var(--content);
-	color:var(--background);
+	background:$header-back;
+	color:$header-plain;
 	z-index:5;
 
 	.navbar_link {
@@ -71,12 +71,10 @@
 		margin:0 1em;
 		left:0;
 		text-align:center;
-		background:var(--content);
-		color:var(--background);
 
 		&:hover {
-			background:var(--background);
-			color:var(--content);
+			background:$header-plain;
+			color:$header-back;
 		}
 	}
 
