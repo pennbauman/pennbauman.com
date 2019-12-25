@@ -28,10 +28,10 @@ body {
   color: #EEEEEE;
   font-size: 2rem;
   display: grid;
-  grid-template-areas: "header" "content" "footer";
+  grid-template-areas: "header" "dnd-header" "content" "footer";
   grid-gap: 0;
   grid-template-columns: 100%;
-  grid-template-rows: min-content auto min-content;
+  grid-template-rows: min-content min-content auto min-content;
 }
 
 a {
