@@ -22,15 +22,7 @@
 		echo "dir'>parent directory</a></p><p><h4>content</h4></br>";
 		$files = scandir(getcwd());
 		for ($i = 0; $i < count($files); $i++) {
-			/*
-			if ($files[$i] != "."
-				&& $files[$i] != ".."
-				&& substr($files[$i], 0, 1) != "."
-				&& $files[$i] != "dir.php"
-				&& $files[$i] != "error_log") {
-			//*/
 			if (!preg_match("/^(\..*|dir.php|error_log)$/i", $files[$i])) {
-
 				echo "<a href='".substr($_SERVER['PHP_SELF'], 0, -8).$filePathShort."/".$files[$i];
 				if (is_dir($files[$i])) {
 					echo "/dir'>".$files[$i]."/</a><br/>\n";
