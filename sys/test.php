@@ -48,7 +48,7 @@
 		echo "<p>";
 		echo "<a href='/break/'>Broken Link</a>";
 		echo "</p>";
-		echo '<br/><br/><br/><a href="/">Home</a> - <a href="/sys/">System</a>';
+		insertHTML("sys_footer");
 		echo "</body></html>";
 	} else {
 		include "auth_error.php";

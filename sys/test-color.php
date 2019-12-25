@@ -40,7 +40,7 @@
 				<br/><br/>
 				<input type="submit" value="Enter">
 			</form>
-			<br/><a href="/">Home</a> - <a href="/sys/">System</a>
+			<?php insertHTML("sys_footer"); ?>
 		</div>
 	</body>
 </html>

@@ -18,7 +18,7 @@
 		<h1>Page Size</h1>
 		<h3>Width: <span id="w"></span>px</h3>
 		<h3>Height: <span id="h"></span>px</h3>
-		<br/><a href="/">Home</a> - <a href="/sys/">System</a>
+		<?php insertHTML("sys_footer"); ?>
 		<!--button onclick="pageSize();return false;">Recheck</button-->
 	</body>
 </html>

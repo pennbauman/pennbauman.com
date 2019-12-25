@@ -23,6 +23,6 @@
 			<input autofocus type='text' name='text'><br><br/>
 			<input type='submit' value='Hash'>
 		</form>
-		<br/><a href="/">Home</a> - <a href="/sys/">System</a>
+		<?php insertHTML("sys_footer"); ?>
 	</body>
 </html>

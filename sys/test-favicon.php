@@ -29,6 +29,6 @@
 			<input autofocus type='text' name='url' id='url' value='/files/img/'> <br><br/>
 			<input type='submit' value='Enter'>
 		</form>
-		<br/><a href="/">Home</a> - <a href="/sys/">System</a>
+		<?php insertHTML("sys_footer"); ?>
 	</body>
 </html>
