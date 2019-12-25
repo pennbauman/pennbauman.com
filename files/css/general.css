@@ -44,7 +44,7 @@ table {
 }
 
 /* Header */
-#std-header {
+.std-header {
   grid-area: header;
   display: inline-block;
   position: sticky;
@@ -56,7 +56,7 @@ table {
   background: #141A1B;
   color: #EEEEEE;
 }
-#std-header h1 {
+.std-header h1 {
   display: inline;
   padding: 0.5rem 0rem 0.5rem 1.5rem;
   color: #2EB398;
@@ -64,21 +64,21 @@ table {
   line-height: 5rem;
   font-weight: normal;
 }
-#std-header h1:hover {
+.std-header h1:hover {
   color: #EEEEEE;
 }
-#std-header #navbar {
+.std-header #navbar {
   position: relative;
   float: right;
   padding: 1.5rem 1rem;
   text-align: right;
 }
-#std-header #navbar a {
+.std-header #navbar a {
   padding: 1rem 2rem 0.5rem;
   font-size: 2.5rem;
   line-height: 2.5rem;
 }
-#std-header #navbar a:hover {
+.std-header #navbar a:hover {
   color: #2EB398;
 }
 
@@ -185,7 +185,7 @@ table {
 }
 
 /* D&D Header */
-#dnd-header {
+.dnd-header {
   grid-area: header;
   font-size: 1.5vh;
   width: 100%;
@@ -197,7 +197,7 @@ table {
   height: 8em;
   z-index: 4;
 }
-#dnd-header #header_title {
+.dnd-header #header_title {
   position: relative;
   display: inline-block;
   height: 4em;
@@ -206,15 +206,15 @@ table {
   padding: 2em 1em;
   top: -1.8em;
 }
-#dnd-header #header_title .header_text1 {
+.dnd-header #header_title .header_text1 {
   font-size: 1.5em;
   line-height: 1em;
 }
-#dnd-header #header_title .header_text2 {
+.dnd-header #header_title .header_text2 {
   font-size: 4em;
   line-height: 1em;
 }
-#dnd-header .header_img {
+.dnd-header .header_img {
   position: relative;
   display: inline-block;
   height: 6em;
@@ -223,7 +223,7 @@ table {
 }
 
 /* D&D Navbar */
-#dnd-navbar {
+.dnd-navbar {
   grid-area: navbar;
   font-size: 1.2vh;
   position: -webkit-sticky;
@@ -242,7 +242,7 @@ table {
   color: #EEEEEE;
   z-index: 5;
 }
-#dnd-navbar .navbar_link {
+.dnd-navbar .navbar_link {
   display: inline-block;
   position: relative;
   top: 0;
@@ -254,10 +254,10 @@ table {
   left: 0;
   text-align: center;
 }
-#dnd-navbar .navbar_link:hover {
+.dnd-navbar .navbar_link:hover {
   color: #2EB398;
 }
-#dnd-navbar .navbar_text {
+.dnd-navbar .navbar_text {
   font-size: 2.5em;
 }
 
