@@ -9,7 +9,7 @@
 	<body>
 		<?php insertHTML("header_navbar"); ?>
 		<div id="content">
-			<h1>Projects</h1>
+			<h1>Web Projects</h1>
 			<span style="text-align:center;font-size:1.2em">
 				<p>
 					<a href="/projects/monte-carlo">Monte-Carlo Pi Calculator</a>

@@ -70,13 +70,13 @@ table { border-collapse: collapse; }
 .std-header {
 	grid-area:header;
 	display:inline-block;
-	position:sticky;
-	position:-webkit-sticky;
+	position:fixed;
+	//position:-webkit-sticky;
 	top:0rem;
 	z-index:5;
 
 	width:90%;
-	padding:0.5rem 5% 0.5rem;
+	padding:0.8rem 5% 0.4rem;
 	background:$header-back;
 	color:$header-plain;
 
