@@ -92,10 +92,10 @@ table {
   width: 80%;
   padding: 2rem 10%;
   background: #eeeeee;
-  color: #444444;
+  color: #141A1B;
 }
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content td {
-  color: #000000;
+  color: #141A1B;
 }
 #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover, #content td a:hover {
   color: #2EB398;
@@ -104,7 +104,8 @@ table {
   margin: 0;
 }
 #content p a {
-  color: #000000;
+  color: #141A1B;
+  text-decoration: underline;
 }
 #content p a:hover {
   color: #2EB398;
@@ -158,7 +159,7 @@ table {
 }
 #content hr {
   border-width: 0.2rem;
-  border-color: #444444;
+  border-color: #141A1B;
 }
 #content table.two-columns {
   width: 100%;

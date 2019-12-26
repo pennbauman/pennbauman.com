@@ -18,9 +18,10 @@ $header-plain:#EEEEEE;
 $header-hl:#2EB398;
 
 $content-back:#eeeeee;
-$content-plain:#444444;
+//$content-plain:#444444;
+$content-plain:#141A1B;
 $content-hl:#2EB398;
-$content-hl-plain:#000000;
+//$content-hl-plain:#000000;
 
 $footer-back:#141A1B;
 $footer-plain:#EEEEEE;
@@ -121,7 +122,7 @@ table { border-collapse: collapse; }
 	color:$content-plain;
 
 	h1, h2, h3, h4, h5, h6, td {
-		color:$content-hl-plain;
+		color:$content-plain;
 		//font-weight:normal;
 
 		a:hover {
@@ -132,7 +133,9 @@ table { border-collapse: collapse; }
 		margin:0;
 		
 		a {
-			color:$content-hl-plain;
+			color:$content-plain;
+			text-decoration:underline;
+			//$content-hl-plain;
 
 			&:hover {
 				color:$content-hl;
