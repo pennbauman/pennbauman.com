@@ -1,0 +1,165 @@
+$back:#EEEEEE;
+$plain:#141A1B;
+$hl:#2EB398;
+
+#content h1 {
+	text-align:center;
+}
+table {
+	outline: 0.5rem solid $plain;
+	width:100%;
+}
+td {
+	/*height:calc(58vh - 2rem);*/
+	height:58vh;
+	padding:1rem 5%;
+}
+th {
+	width:50%;
+	padding:0.5rem 0;
+}
+#text_mode_button {
+	background:$back;
+	color:$plain;
+}
+#calc_mode_button {
+	background:$back;
+	color:$plain;
+	outline: 0.5rem solid $plain;
+}
+#text_mode_box {
+	display:inline-block;
+	width:90%;
+}
+#calc_mode_box {
+	display:none;
+	width:190%;
+}
+
+#text_mode_input {
+	position:relative;
+	display: inline-block;
+	text-align:center;
+}
+#text_mode_output {
+	position:relative;
+	display: inline-block;
+	text-align:center;
+}
+#form_top {
+	display:inline-block;
+	margin: 0 5%;
+	width:90%;
+	margin:0;
+	height:10em;
+}
+#form_directions {
+	display:inline;
+	font-size:2.5rem;
+}
+#text_input_box {
+	display:inline-block;
+	padding:calc((20em - 5rem)/2) 0;
+	margin:0;
+	height:4rem;
+}
+#text_input {
+	width:90%;
+	height:4rem;
+	padding:0 2%;
+	font-size:2.5rem;
+	text-align:center;
+	border:0.5rem solid $plain;
+	background:$back;
+	color:$plain;
+}
+#text_submit_box {
+	display:inline-block;
+	padding: 8em 0 0;
+	width:100%;
+}
+#submit_button {
+	display:inline-block;
+	width:35%;
+	height:4rem;
+	padding:1rem 0;
+	font-size:3rem;
+	border:0.5rem solid $plain;
+	background:$plain;
+	color:$back;
+}
+#submit_button:hover {
+	background:$back;
+	color:$plain;
+}
+#submit_button:hover {
+	background:$plain;
+	color:$back;
+}
+#result_top {
+	display:inline-block;
+	margin:0 5%;
+	width:90%;
+	height:10em;
+	border-bottom:1rem $plain solid;
+}
+#rolled {
+	font-size:5rem;
+}
+#result_bottom {
+	display:inline-block;
+	padding:5em 0;
+	height:40em;
+}
+#result {
+	font-size:4rem;
+}
+#calc_mode_message {
+	width:100%;
+	text-align:center;
+	font-size:5rem;
+	padding:20vh 0 0;
+
+}
+/* Height >= Width */
+@media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
+	#text_mode_input {
+		width:100%;
+		height:calc(27.5vh - 1rem);
+		font-size:calc((27.5vh - 1rem)/100);
+		float:bottom;
+	}
+	#text_mode_output {
+		width:100%;
+		height:calc(27.5vh - 1rem);
+		font-size:calc((27.5vh - 1rem)/100);
+	}
+	#result_top {
+		padding:18em 0 calc(22em - 1rem);
+	}
+	#form_top {
+		padding:10em 0 10em;
+	}
+}
+/* Height < Width */
+@media (min-aspect-ratio: 1/1) {
+	#text_mode_input {
+		width:45%;
+		height:calc(55vh - 2rem);
+		padding:0 2%;
+		font-size:calc((55vh - 2rem)/100);
+	}
+	#text_mode_output {
+		width:45%;
+		height:calc(55vh - 2rem);
+		float:right;
+		padding:0 2%;
+		font-size:calc((55vh - 2rem)/100);
+	}
+	#result_top {
+		padding:28em 0 calc(12em - 1rem);
+	}
+	#form_top {
+		padding:25.5em 0 0;
+	}
+}
