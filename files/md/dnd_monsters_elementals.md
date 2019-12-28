@@ -47,5 +47,6 @@ title:Elementals
 22 Zaratan\*\*<br/>
 23 Elder Tempest\*\*<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.<br/>
 \*\*Monsters from Mordenkainen's Tome of Foes. 

@@ -76,5 +76,6 @@ title:Monstrosities
 23 Kraken<br/>
 30 Tarrasque<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.<br/>
 \*\*Monsters from Mordenkainen's Tome of Foes.

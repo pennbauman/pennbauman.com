@@ -37,4 +37,5 @@ Cantrip *True Strike*<br/>
 6th *True Seeing*<br/> 
 9th *Foresight*<br/> 
 
+<br/>
 \*Spells from Xanathar's Guide to Everything. 

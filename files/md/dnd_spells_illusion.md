@@ -35,4 +35,5 @@ Cantrip  *Minor Illusion*<br/>
 8th *Illusory Dragon*\*<br/>
 8th *Weird*<br/>
 
-*\*pells from Xanathar's Guide to Everything. 
+<br/>
+\*Spells from Xanathar's Guide to Everything. 

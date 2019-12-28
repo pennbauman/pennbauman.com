@@ -15,4 +15,5 @@ title:Celestials
 21 Solar (Angel)<br/>
 23 Empyrean<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters. 

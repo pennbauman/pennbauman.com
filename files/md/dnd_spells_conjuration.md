@@ -85,4 +85,5 @@ Cantrip *Produce Flame*<br/>
 9th *Storm of Vengeance*<br/> 
 9th *Wish*<br/> 
 
+<br/>
 \*Spells from Xanathar's Guide to Everything. 

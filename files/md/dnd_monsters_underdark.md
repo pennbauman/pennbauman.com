@@ -41,7 +41,9 @@ title:Underdark
 3 Basilisk<br/>
 6 Medusa<br/><br/>
 
+<br/>
 See <a href="/dnd/monsters/aboleths">Aboleths</a>, <a href="/dnd/monsters/duergar">Duergar</a>, <a href="/dnd/monsters/drow">Drow</a>, and <a href="/dnd/monsters/mind-flayers">Mind Flayers</a><br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.<br/>
 \*\*Monsters from Mordenkainen's Tome of Foes.

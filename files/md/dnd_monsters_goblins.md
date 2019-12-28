@@ -19,4 +19,5 @@ title:Goblinoids
 4 Hobgoblin Devastator\*<br/>
 6 Hobgoblin Warlord<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.

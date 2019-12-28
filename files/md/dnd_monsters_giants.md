@@ -32,5 +32,6 @@ title:Giants
 14 Fire Giant Dreadnought\*<br/>
 16 Storm Giant Quintessent\*<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.<br/>
 \*\*Monsters from Mordenkainen's Tome of Foes. 

@@ -48,5 +48,6 @@ title:Undead
 20 Nightwalker\*\*<br/>
 21 Lich (22 in lair)<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.<br/>
 \*\*Monsters from Mordenkainen's Tome of Foes.

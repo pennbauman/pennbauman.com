@@ -37,4 +37,5 @@ Cantrip *Toll the Dead*\*<br/>
 9th *Astral Projection*<br/>
 9th *True Resurrection*<br/>
 
+<br/>
 \*Spells from Xanathar's Guide to Everything. 

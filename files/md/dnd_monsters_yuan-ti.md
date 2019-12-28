@@ -19,4 +19,5 @@ title:Yuan-Ti
 8 Hydra<br/>
 12 Yuan-Ti Anathema\*<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.

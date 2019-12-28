@@ -45,4 +45,5 @@ Cantrip *Vicious Mockery *<br/>
 9th *Power Word Kill*<br/> 
 9th *Psychic Scream*\*<br/>
 
+<br/>
 \*Spells from Xanathar's Guide to Everything. 

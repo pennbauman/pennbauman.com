@@ -19,4 +19,5 @@ title:Minds Flayers
 13 Neothelid\*<br/>
 14 Elder Brain\*<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.

@@ -100,4 +100,5 @@ Cantrip *Word of Radiance*\*<br/>
 9th *Meteor Swarm*<br/> 
 9th *Power Word Heal*<br/> 
 
+<br/>
 \*Spells from Xanathar's Guide to Everything. 

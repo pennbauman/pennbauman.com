@@ -54,4 +54,5 @@ Cantrip *Resistance *<br/>
 9th *Invulnerability*\*<br/>
 9th *Prismatic Wall*<br/> 
 
+<br/>
 \*Spells from Xanathar's Guide to Everything. 

@@ -100,4 +100,5 @@ Cantrip *Mold Earth*\*<br/>
 9th *Time Stop*<br/> 
 9th *True Polymorph*<br/> 
 
+<br/>
 \*Spells from Xanathar's Guide to Everything. 

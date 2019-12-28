@@ -49,4 +49,5 @@ title:Non-Player Characters
 12 Archmage<br/>
 12 Warlord\*<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.

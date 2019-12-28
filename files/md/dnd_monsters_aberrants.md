@@ -44,8 +44,9 @@ title:Aberrants
 13 Star Spawn Seer\*\*<br/>
 16 Star Spawn Larva Mage\*\*<br/>
 
-
+<br/>
 See <a href="/dnd/monsters/aboleths">Aboleths</a>, and <a href="/dnd/monsters/mind-flayers">Mind Flayers</a>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters. <br/>
 \*\*Monsters from Mordenkainen's Tome of Foes. 

@@ -21,4 +21,5 @@ title:Gnolls
 8 Shoosuva (Demon)\*<br/>
 9 Flind\*<br/>
 
+<br/>
 \*Monsters from Volo's Guide to Monsters.
