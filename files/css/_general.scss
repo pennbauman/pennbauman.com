@@ -70,8 +70,8 @@ table { border-collapse: collapse; }
 .std-header {
 	grid-area:header;
 	display:inline-block;
-	position:fixed;
-	//position:-webkit-sticky;
+	position:sticky;
+	position:-webkit-sticky;
 	top:0rem;
 	z-index:5;
 

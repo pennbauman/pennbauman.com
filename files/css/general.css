@@ -47,7 +47,8 @@ table {
 .std-header {
   grid-area: header;
   display: inline-block;
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   top: 0rem;
   z-index: 5;
   width: 90%;
