@@ -1,6 +1,3 @@
-<?php
-	//include "/home/valypfnd/php/std.php";
-?>
 <!DOCTYPE html><html>
 	<head>
 		<title>Dice Roller - Penn's D&amp;D</title>
@@ -8,7 +5,7 @@
 		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
 		<link rel='stylesheet' type='text/css' href='/files/css/dice.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-		<!--script src='/files/js/general.js'></script-->
+		<script src='/files/js/general.js'></script>
 		<script src='/files/js/dice.js'></script>
 	</head>
 	<body onload="return false;">
