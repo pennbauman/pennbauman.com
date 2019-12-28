@@ -22,7 +22,7 @@ input.text, input[type=text], input[type=button], input[type=submit], .input-che
 body {
   margin: 0;
   padding: 0;
-  font-family: DejaVu_Sans_Mono, Monospace;
+  font-family: DejaVu_Sans_Mono, Arial;
   min-height: 100vh;
   background: #141A1B;
   color: #EEEEEE;
