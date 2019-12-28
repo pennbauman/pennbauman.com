@@ -21,7 +21,7 @@ input.text, input[type=text], input[type=button], input[type=submit], .input-che
 body {
   background: #141a1b;
   color: #eeeeee;
-  font-family: DejaVu_Sans_Mono, Monospace;
+  font-family: DejaVu_Sans_Mono, Arial;
   font-size: 2rem;
   /*text-align:center;*/
   max-width: 85%;
