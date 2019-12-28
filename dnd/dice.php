@@ -1,5 +1,5 @@
 <?php
-	include "/home/valypfnd/php/std.php";
+	//include "/home/valypfnd/php/std.php";
 ?>
 <!DOCTYPE html><html>
 	<head>
@@ -12,7 +12,7 @@
 		<script src='/files/js/dice.js'></script>
 	</head>
 	<body onload="return false;">
-		<?php insertHTML("header_navbar"); ?>
+		<?php insertHTML("dnd_header"); ?>
 		<div id="content">
 			<h1>D&amp;D Dice Roller</h1>
 			<table><tbody>

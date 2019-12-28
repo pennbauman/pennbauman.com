@@ -1,6 +1,9 @@
 <?php
-	include "/home/valypfnd/php/std.php";
-	$url = URLVar("s");
+	//include "/home/valypfnd/php/std.php";
+	//$url = URLVar("s");
+	if (isset($_GET['s']])) {
+		$url = $_GET['s'];
+	}
 ?>
 <!DOCTYPE html><html>
 	<head>
@@ -24,7 +27,7 @@
 			} else {
 				echo "<body onload='return false;'>";
 			}
-			insertHTML("header_navbar");
+			insertHTML("dnd_header");
 		?>
 		<div id="content">
 			<h1>D&amp;D Statistics Generator</h1>
