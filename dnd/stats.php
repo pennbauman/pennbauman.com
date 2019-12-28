@@ -67,7 +67,7 @@
 					<?php
 						if ($url == "point") {
 							echo "<a href='/dnd/stats?s=d20' id='d20_button' class='type_button'> 1d20 </a>";
-							echo "<a href='/dnd/stats?s=4d6' id='4d6_button' class='type_button'> Top 3 of 4d6 </a>";
+							echo "<a href='/dnd/stats?s=4d6' id='d6_button' class='type_button'> Top 3 of 4d6 </a>";
 							echo "<a href='/dnd/stats?s=std' id='std_button' class='type_button'> Standard Set </a>";
 							echo "<div onclick='pointReset();return false;' id='point_button' class='type_button'> Reset Points </div>";
 						} else {
