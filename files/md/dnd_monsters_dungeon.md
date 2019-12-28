@@ -35,6 +35,6 @@ title:Dungeon
 16 Iron Golem<br/>
 17 Androsphinx<br/>
 
-See <a href="/monsters/undead/">Undead</a>
+See <a href="/dnd/monsters/undead">Undead</a>
 
 \*\*Monsters from Mordenkainen's Tome of Foes.

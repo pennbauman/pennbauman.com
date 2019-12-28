@@ -101,6 +101,6 @@ title:Beasts
 6 Mammoth<br/>
 7 Giant Ape<br/>
 
-See <a href="/monsters/dinosaurs/">Dinosaurs</a>
+See <a href="/dnd/monsters/dinosaurs">Dinosaurs</a>
 
 \*Monsters from Volo's Guide to Monsters. 
