@@ -17,7 +17,7 @@
 		<script src='/files/js/general.js'></script>
 	</head>
 	<body>
-		<?php insertHTML("header_navbar") ?>
+		<?php insertHTML("header") ?>
 		<div id="content">
 			<h1>Penn Bauman</h1>
 			<p style="display:none">

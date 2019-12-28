@@ -28,7 +28,7 @@
 	echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
 	echo "<script src='/files/js/general.js'></script>";
 	echo "</head>\n<body>";
-	insertHTML("header_navbar");
+	insertHTML("header");
 	echo "\n<div id='content'>";
 	echo $Parsedown->text($page_text);
 	echo "</div>\n";

@@ -10,7 +10,7 @@
 		<script src='/files/general.js'></script>
 	</head>
 	<body>
-		<?php insertHTML("header_navbar") ?>
+		<?php insertHTML("header") ?>
 		<div id="content">
 			<?php
 				if ($sys['user']['auth_level'] > 0) {
