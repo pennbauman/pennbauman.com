@@ -1,15 +1,15 @@
-$header-back:#141A1B;
-$header-plain:#EEEEEE;
-$header-hl:#2EB398;
+$back:#EEEEEE;
+$plain:#141A1B;
+$hl:#2EB398;
 
 #generator_box {
-	outline: 0.5rem solid var(--content);
+	outline: 0.5rem solid $plain;
 	width:90%;
 	height:58vh;
 	padding:1rem 5%;
 }
 #stat_box {
-	border-bottom:0.5vh solid var(--content);
+	border-bottom:0.5vh solid $plain;
 	text-align:center;
 }
 .stat {
@@ -26,21 +26,21 @@ $header-hl:#2EB398;
 .type_button {
 	display:inline-block;
 	font-size:2vh;
-	outline:0.5vh solid var(--content);
+	outline:0.5vh solid $plain;
 	margin:2vh 5%;
 	text-align:center;
-	background:var(--content);
-	color:var(--background);
+	background:$plain;
+	color:$back;
 }
 .type_button:hover {
-	background:var(--background);
-	color:var(--content);
+	background:$back;
+	color:$plain;
 }
 .type_button:hover {
-	background:var(--content);
-	color:var(--background);
+	background:$plain;
+	color:$back;
 }
-#4d6_button, #point_button {
+#d6_button, #point_button {
 	float:right;
 }
 #points_display {
@@ -50,9 +50,9 @@ $header-hl:#2EB398;
 	font-size:2vh;
 }
 select {
-	/*outline:0.5rem solid var(--content);*/
-	background:var(--background);
-	color:var(--content);
+	/*outline:0.5rem solid $plain;*/
+	background:$back;
+	color:$plain;
 	height:3vh;
 	font-size:2vh;
 }
@@ -88,7 +88,7 @@ select {
 		width:38%;
 		height:3vh;
 		padding:1.5vh 0;
-		outline:0.5vh solid var(--content);
+		outline:0.5vh solid $plain;
 		margin:2vh 5%;
 	}
 	.pstat {
@@ -121,7 +121,7 @@ select {
 		width:28%;
 		height:3vh;
 		padding:1.5vh 0;
-		outline:0.5vh solid var(--content);
+		outline:0.5vh solid $plain;
 		margin:3vh 10%;
 	}
 	.pstat {

@@ -72,7 +72,7 @@
 							echo "<div onclick='pointReset();return false;' id='point_button' class='type_button'> Reset Points </div>";
 						} else {
 							echo "<div onclick='d20();return false;' class='type_button'> 1d20 </div>";
-							echo "<div onclick='fourDice();return false;' id='4d6_button' class='type_button'> Top 3 of 4d6 </div>";
+							echo "<div onclick='fourDice();return false;' id='d6_button' class='type_button'> Top 3 of 4d6 </div>";
 							echo "<div onclick='standard();return false;' id='std_button' class='type_button'> Standard Set </div>";
 							//echo "<div onclick='reset();return false;' id='point_button' class='type_button'> Reset </div>";
 							echo "<a href='/stats?s=point' id='point_button' class='type_button'> Point Buy </a>";
