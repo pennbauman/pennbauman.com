@@ -1,7 +1,7 @@
 <?php
 	//include "/home/valypfnd/php/std.php";
 	//$url = URLVar("s");
-	if (isset($_GET['s']])) {
+	if (isset($_GET['s'])) {
 		$url = $_GET['s'];
 	}
 ?>
