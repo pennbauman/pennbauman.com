@@ -1,4 +1,6 @@
 <?php
+/* Page Displaying an Appropraite Authorization Error
+*/
 	include_once "auth.php";
 
 	echo '<!DOCTYPE html><html><head> ';

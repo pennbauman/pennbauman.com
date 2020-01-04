@@ -1,15 +1,17 @@
 <?php
+/* Page to Display Directory Contents
+*/
 	include_once "auth.php";
 	
 	if ($sys['user']['auth_level'] > 8) {
-		// Print Head
+		// Head
 		echo "<!DOCTYPE html><head>";
 		echo "<title>".substr($sys['file_path_short'], 0, -3)."</title>";
 		echo "<link rel='icon' href='/files/img/files_favicon.png'>";
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
 		echo "<script src='/files/js/general.js'></script>";
-		// Print Body
+		// Body
 		echo "</head>\n<body>";
 		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>".substr($sys['file_path_short'], 0, -3)."</h1>";

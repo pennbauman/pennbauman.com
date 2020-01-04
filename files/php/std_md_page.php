@@ -1,4 +1,7 @@
 <?php
+/* Markdown Based Page for General Site
+	markdown file is determined by page code
+*/
 	$Parsedown = new Parsedown();
 
 	// Prepare page.md
@@ -20,13 +23,14 @@
 		}
 	} //*/
 
-	// Print Head
+	// Head
 	echo "<!DOCTYPE html><head>";
 	echo "<title>".$page_meta['title']." - Penn Bauman</title>";
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
 	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
 	echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
 	echo "<script src='/files/js/general.js'></script>";
+	// Body
 	echo "</head>\n<body>";
 	insertHTML("header");
 	echo "\n<div id='content'>";

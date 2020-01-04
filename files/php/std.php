@@ -1,4 +1,21 @@
 <?php
+/* General Code and Variable Setup for All Pages
+
+Variables:
+	$sys
+		auth_file = file to get passwords for MySQL database
+		file_path_short = path to page without .php
+		path_code = code to indicate page, with '_' repalacing '/'
+		links
+			login_url = url for login page
+			logout_url = url for logout page
+			return_url = url to get back to previous pages (used by login and logout)
+
+Fucntions:
+	insertMD(file) = insert markdown from /files/md/file.md
+	insertHTML(file) = insert html from /files/html/file.html
+
+*/
 	// System Info Variable Decleration
 	$sys = array();
 
@@ -62,57 +79,4 @@
 	function insertHTML($file) {
 		echo file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/html/".$file.".html");
 	}
-
-	// Get Site Data
-	/*
-	$siteFolders = [
-		"dnd-site" => "dnd",
-		"dnd-dev" => "dnd",
-		"public_html" => "pennbauman",
-		"pennbauman-dev" => "pennbauman",
-	];
-	$siteNames = [
-		"dnd-site" => "Penn's D&amp;D",
-		"dnd-dev" => "Penn's D&amp;D",
-		"public_html" => "Penn Bauman",
-		"pennbauman-dev" => "Penn Bauman",
-	];
-	$sys['current_site'] = explode("/", $sys['file_path'])[3];
-	$sys['current_site_name'] = $siteNames[$sys['current_site']];
-	$sys['current_site'] = $siteFolders[$sys['current_site']];
-	//*/
-
-	/*
-	function boolToStr($bool) {
-		if ($bool == true) {
-			return "true";
-		} else if ($bool == false) {
-			return "false";
-		} else {
-			return "other";
-		}
-	}
-
-	/*
-	function URLVar($varName) {
-		if (isset($_GET[$varName])) {
-			$fin = $_GET[$varName];
-		} else {
-			$fin = NULL;
-		}
-		return $fin;
-	}
-	$url = URLVar("a");
-	//*/
-	
-	/*
-	function teleNumFormat($number) {
-		for ($q = 0; $q < strlen($number); $q++) {
-			if (substr($number, $q, 1) == "-" || substr($number, $q, 1) == " ") {
-				$number = substr($number, 0, $q).substr($number, $q+1, strlen($number)-$q-1);
-				$q--;
-			}
-		}
-		return $number;
-	} //*/
 ?>

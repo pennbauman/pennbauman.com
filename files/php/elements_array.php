@@ -1,4 +1,6 @@
 <?php
+/* Element Information for /projects/periodic-table
+*/
 	$elements = [
 		["Sym", "Name", "Mass", "Type", "classes"],
 		/*
