@@ -34,7 +34,7 @@ Options -Indexes
 AddDefaultCharset UTF-8
 DefaultLanguage en-US
 
-php_value auto_prepend_file /home/valypfnd/pennbauman-dev/files/php/includer.php
+php_value auto_prepend_file /home/valypfnd/php/includer.php
 
 RewriteEngine On
 RewriteBase /
