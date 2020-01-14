@@ -29,7 +29,7 @@
 		}
 		echo "</p>";
 
-		echo "<form action='/links' method='post'>";
+		echo "<form action='/sys/links' method='post'>";
 		echo "<b>Code:</b> <br/> <input type='text' name='code'><br/><br/>";
 		echo "<b>Link:</b> <br/> <input type='text' name='link'><br/><br/>";
 		echo "<input type='submit' value='Enter'></form>";
