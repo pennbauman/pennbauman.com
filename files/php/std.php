@@ -19,8 +19,8 @@ Fucntions:
 */
 	// System Info Variable Decleration
 	$sys = array();
-	$homePathArray=explode("/", $_SERVER["DOCUMENT_ROOT"]);
-	$sys['home_path'] = "/".$homePathArray[0]."/"$homePathArray[1];
+	//$homePathArray = explode("/", $_SERVER["DOCUMENT_ROOT"]);
+	//$sys['home_path'] = "/".$homePathArray[0]."/"$homePathArray[1];
 
 	// Database query setup
 	$sys['auth_file'] = explode("\n", file_get_contents("/home/valypfnd/php/.auth"));
