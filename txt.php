@@ -60,7 +60,7 @@
 			$write = $pdo->prepare("UPDATE text_files SET body=:body WHERE code=:code");
 			$write->execute(["code" => $txtFile, "body" => $txtBody]);
 
-			file_put_contents("/home/valypfnd/data/".$txtFile."_".date("YmdHis").".txt", $txtBody);
+			file_put_contents($sys['home_path']."/data/".$txtFile."_".date("YmdHis").".txt", $txtBody);
 		}
 	}
 ?>
