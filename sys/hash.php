@@ -7,7 +7,8 @@
 		<script src='/files/js/general.js'></script>
 		<script>
 			function hashText() {
-				console.log(await crypto.subtle.digest("sha1", document.getElementById.("hash_text").value));
+				//console.log(await crypto.subtle.digest("sha1", document.getElementById.("hash_text").value));
+				console.log(document.getElementById.("hash_text").value);
 				return false;
 			}
 		</script>
@@ -16,12 +17,12 @@
 		<h1>Hash</h1>
 		<?php
 			if (!empty($_POST)) {
-				echo "<span style='overflow-wrap: break-word;'>";
-				echo "<h4>Text: '".$_POST["text"]."'</h4> <br/>";
-				echo "<b>MD5:</b><br/> <b class='error'>".hash("md5", $_POST["text"])."</b><br/>";
-				echo "<b>SHA-256:</b><br/> <b class='error'>".hash("sha256", $_POST["text"])."</b><br/>";
-				echo "<b>SHA-512:</b><br/> <b class='error'>".hash("sha512", $_POST["text"])."</b><br/>";
-				echo "</span><br/>";
+				//echo "<span style='overflow-wrap: break-word;'>";
+				//echo "<h4>Text: '".$_POST["text"]."'</h4> <br/>";
+				//echo "<b>MD5:</b><br/> <b class='error'>".hash("md5", $_POST["text"])."</b><br/>";
+				//echo "<b>SHA-256:</b><br/> <b class='error'>".hash("sha256", $_POST["text"])."</b><br/>";
+				//echo "<b>SHA-512:</b><br/> <b class='error'>".hash("sha512", $_POST["text"])."</b><br/>";
+				//echo "</span><br/>";
 			}
 		?>
 		<form action='#' onsubmit="hashText(); return false">
