@@ -26,11 +26,17 @@
 				padding:2rem;
 			}
 		</style>
+		<script>
+			function color() {
+				console.log("colored");
+				return false;
+			}
+		</script>
 	</head>
 	<body>
 		<div id="content_box">
 			<h1>Color Tester</h1>
-			<form>
+			<form onsumbit="color();">
 				Hex Color: <br/>
 				<input autofocus type="text" name="color" value="#"> 
 				<br/><br/>
