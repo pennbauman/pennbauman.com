@@ -19,11 +19,11 @@ Fucntions:
 */
 	// System Info Variable Decleration
 	$sys = array();
-	$sys['home_path'] = explode("/", $_SERVER["DOCUMENT_ROOT"]);
-	$sys['home_path'] = "/".$sys['home_path'][0]."/"$sys['home_path'][1];
 
 	// Database query setup
 	$sys['auth_file'] = explode("\n", file_get_contents("/home/valypfnd/php/.auth"));
+	$sys['home_path'] = explode("/", $_SERVER["DOCUMENT_ROOT"]);
+	$sys['home_path'] = "/".$sys['home_path'][0]."/"$sys['home_path'][1];
 	//echo "Database: $authFile[0] $authFile[1] $authFile[2]";
 	$pdo_options = [
 		PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
