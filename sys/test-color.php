@@ -28,8 +28,9 @@
 		</style>
 		<script>
 			function colorPage() {
-				console.log(document.body.style.background);
-				console.log(document.getElementById("color-code").value);
+				document.getElementById("content_box").style.backgroundColor = window.getComputedStyle(document.body).backgroundColor;
+				console.log(document.getElementById("color_code").value);
+				document.body.style.backgroundColor = document.getElementById("color_code");
 				return false;
 			}
 		</script>
@@ -39,7 +40,7 @@
 			<h1>Color Tester</h1>
 			<form action="#" onsubmit="colorPage();return false">
 				Hex Color: <br/>
-				#<input autofocus id="color-code" type="text" name="color" value="">
+				<input autofocus id="color_code" type="text" name="color" value="#">
 				<br/><br/>
 				<input type="submit" value="Enter">
 			</form>
