@@ -36,7 +36,7 @@
 	<body>
 		<div id="content_box">
 			<h1>Color Tester</h1>
-			<form onsumbit="color();">
+			<form action="" onsumbit="color();">
 				Hex Color: <br/>
 				<input autofocus type="text" name="color" value="#"> 
 				<br/><br/>
