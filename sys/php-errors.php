@@ -3,7 +3,7 @@
 
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
-		$location = $sys['home_path'].$_POST["folder"]."/error_log";
+		$location = $sys['home_path']."/".$_POST["folder"]."/error_log";
 	} else {
 		$location = "";
 		$autofill = "";
