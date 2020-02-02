@@ -23,7 +23,7 @@ Fucntions:
 	$sys['home_path'] = "/".$sys['home_path'][1]."/".$sys['home_path'][2];
 
 	// Database query setup
-	$sys['auth_file'] = explode("\n", file_get_contents("/home/valypfnd/php/.auth"));
+	$sys['auth_file'] = explode("\n", file_get_contents($sys['home_path']."/php/.auth"));
 	//echo "Database: $authFile[0] $authFile[1] $authFile[2]";
 	$pdo_options = [
 		PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,

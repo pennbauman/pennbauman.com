@@ -3,7 +3,7 @@
 
 	if (!empty($_POST)) {
 		$autofill = $_POST["folder"];
-		$location = $_SERVER['HOME'].$_POST["folder"]."/error_log";
+		$location = $sys['home_path'].$_POST["folder"]."/error_log";
 	} else {
 		$location = "";
 		$autofill = "";
@@ -22,7 +22,7 @@
 		echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
 		echo "<h1>PHP Errors</h1>";
 		echo "<form action='/sys/php-errors' method='post'>";
-		echo $_SERVER["HOME"]."/<input autofocus type='text' name='folder' value='".$autofill."' autofocus>/error_log <br><br/>";
+		echo $sys['home_path']."/<input autofocus type='text' name='folder' value='".$autofill."' autofocus>/error_log <br><br/>";
 		echo "<p>pennbauman.com -> public_html<br/>";
 		echo "dev.pennbauman.com -> pennbauman-dev<br/>";
 		//echo "dnd.pennbauman.com -> dnd-site<br/>";
