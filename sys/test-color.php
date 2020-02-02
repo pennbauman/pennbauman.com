@@ -30,7 +30,7 @@
 			function colorPage() {
 				document.getElementById("content_box").style.backgroundColor = window.getComputedStyle(document.body).backgroundColor;
 				console.log(document.getElementById("color_code").value);
-				document.body.style.backgroundColor = document.getElementById("color_code");
+				document.body.style.backgroundColor = document.getElementById("color_code").value;
 				return false;
 			}
 		</script>
