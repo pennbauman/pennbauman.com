@@ -3,6 +3,7 @@
 
 Variables:
 	$sys
+		home_path = server home directory
 		auth_file = file to get passwords for MySQL database
 		file_path_short = path to page without .php
 		path_code = code to indicate page, with '_' repalacing '/'
