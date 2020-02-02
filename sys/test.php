@@ -49,7 +49,7 @@
 		echo "<br/>";
 		print_r($_ENV);
 		echo "<br/>";
-		echo getenv("HOME");
+		echo exec(echo "$HOME");
 		echo "</p>";
 
 		
