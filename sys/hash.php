@@ -7,7 +7,7 @@
 		<script src='/files/js/general.js'></script>
 		<script>
 			function hashText() {
-				console.log(crypto.subtle.digest("sha1", document.getElementById.("hash_text").value));
+				console.log(await crypto.subtle.digest("sha1", document.getElementById.("hash_text").value));
 				return false;
 			}
 		</script>
