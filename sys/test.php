@@ -45,6 +45,7 @@
 		}
 		echo "<br/>";
 		print_r($_SERVER);
+		echo "<br/>";
 		echo getenv("HOME");
 		echo "</p>";
 
