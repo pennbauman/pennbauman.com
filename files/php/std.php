@@ -20,7 +20,7 @@ Fucntions:
 	// System Info Variable Decleration
 	$sys = array();
 	$sys['home_path'] = explode("/", $_SERVER["DOCUMENT_ROOT"]);
-	$sys['home_path'] = "/".$sys['home_path'][1]."/"$sys['home_path'][2];
+	$sys['home_path'] = "/".$sys['home_path'][1]."/".$sys['home_path'][2];
 
 	// Database query setup
 	$sys['auth_file'] = explode("\n", file_get_contents("/home/valypfnd/php/.auth"));
