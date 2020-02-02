@@ -16,6 +16,7 @@
 				const myString = 'Hello';
 				const myBitArray = sjcl.hash.sha256.hash(myString);
 				const myHash = sjcl.codec.hex.fromBits(myBitArray);
+				console.log(myHash);
 				return false;
 			}
 		</script>
