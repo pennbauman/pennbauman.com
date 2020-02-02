@@ -27,7 +27,7 @@
 		?>
 		<form action='#' onsubmit="hashText(); return false">
 			Text: <br/> 
-			<input autofocus type='text' name='text'><br><br/>
+			<input autofocus type='text' name='text' id="hash_text"><br><br/>
 			<input type='submit' value='Hash'>
 		</form>
 		<?php insertHTML("sys_footer"); ?>
