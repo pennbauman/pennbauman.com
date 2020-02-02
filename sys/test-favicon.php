@@ -22,6 +22,7 @@
 				console.log(document.getElementById("url").value);
 				console.log(document.getElementById("favicon").href);
 				document.getElementById("favicon").href = document.getElementById("url").value;
+				document.getElementById("url_display").innerText = document.getElementById("url").value;
 				return false;
 			}
 
@@ -34,7 +35,7 @@
 			//echo $favicon;
 			//echo "</b></p>"
 		?>
-		<p><b>/files/img/sys_favicon.png</b></p>
+		<p><b id="url_display">/files/img/sys_favicon.png</b></p>
 		<form action='#' onsubmit="setFavicon(); return false">
 			<b>Favicon URL:</b> <br/> 
 			<input autofocus type='text' name='url' id='url' value='/files/img/'> <br><br/>
