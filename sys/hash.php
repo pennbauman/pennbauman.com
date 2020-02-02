@@ -3,10 +3,13 @@
 		<title>Hash</title>
 		<link rel="shortcut icon" href="/files/img/sys_favicon.png"> 
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
+		<script>
+			import sjcl from 'sjcl'
+		</script>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 		<script>
-			import sjcl from 'sjcl'
+			//import sjcl from 'sjcl'
 
 			function hashText() {
 				console.log(document.getElementById("hash_text").value);
