@@ -6,7 +6,7 @@
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 		<script>
-			function hashText() {
+			async function hashText() {
 				console.log(document.getElementById("hash_text").value);
 				var crypt = await crypto.subtle.digest("sha1", document.getElementById("hash_text").(value);
 				console.log(crypt);
