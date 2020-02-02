@@ -44,6 +44,10 @@
 			echo "[".$i."] => ".$testArray[$i].$n;
 		}
 		echo "</p>";
+
+		echo "<code>";
+		print_r($_SERVER);
+		echo "</code>";
 		
 		echo "<p>";
 		echo "<a href='/break/'>Broken Link</a>";
