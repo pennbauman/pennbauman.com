@@ -27,7 +27,7 @@
 			}
 		</style>
 		<script>
-			function color() {
+			function colorPage() {
 				console.log("colored");
 				return false;
 			}
@@ -36,7 +36,7 @@
 	<body>
 		<div id="content_box">
 			<h1>Color Tester</h1>
-			<form action="#" onsubmit="color();">
+			<form action="#" onsubmit="colorPage();">
 				Hex Color: <br/>
 				<input autofocus type="text" name="color" value="#"> 
 				<br/><br/>
