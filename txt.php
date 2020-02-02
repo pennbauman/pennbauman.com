@@ -1,12 +1,13 @@
 <?php
 	include_once "auth.php";
 
+	$txtFile = "";
 	$txtFound = false;
+	$txtAuth = false;
+	$txtPass = "";
+	$passError = "";
 	if (isset($_GET["f"])) {
 		$txtFile = $_GET["f"];
-		$txtFound = true;
-		$txtAuth = false;
-		$txtPass = "";
 
 		$query = $pdo->prepare("SELECT auth_level, password, body FROM text_files WHERE code=:code");
 		$query->execute(["code" => $txtFile]);

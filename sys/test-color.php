@@ -23,7 +23,6 @@
 				top:0;
 				left:0;
 				width:100%;
-				background:var(--black);
 				padding:2rem;
 			}
 		</style>
