@@ -5,6 +5,12 @@
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
+		<script>
+			function hashText() {
+				console.log(crypto.subtle.digest(sha1, document.getElementById.("hash_text").value));
+				return false;
+			}
+		</script>
 	</head>
 	<body onload="document.body.style.fontSize = window.innerHeight*0.02; return false;">
 		<h1>Hash</h1>
@@ -18,7 +24,7 @@
 				echo "</span><br/>";
 			}
 		?>
-		<form action='/sys/hash' method='post'>
+		<form action='#' onsubmit="hashText(); return false">
 			Text: <br/> 
 			<input autofocus type='text' name='text'><br><br/>
 			<input type='submit' value='Hash'>

@@ -19,8 +19,8 @@
 		<script src='/files/js/general.js'></script>
 		<script>
 			function setFavicon() {
-				console.log(document.getElementById("url").value);
-				console.log(document.getElementById("favicon").href);
+				//console.log(document.getElementById("favicon").href);
+				//console.log(document.getElementById("url").value);
 				document.getElementById("favicon").href = document.getElementById("url").value;
 				document.getElementById("url_display").innerText = document.getElementById("url").value;
 				return false;
