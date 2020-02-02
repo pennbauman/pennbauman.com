@@ -19,6 +19,7 @@ Fucntions:
 */
 	// System Info Variable Decleration
 	$sys = array();
+	// test
 	$homePathArray = explode("/", $_SERVER["DOCUMENT_ROOT"]);
 	$sys['home_path'] = "/".$homePathArray[0]."/"$homePathArray[1];
 
