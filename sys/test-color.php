@@ -29,6 +29,8 @@
 		<script>
 			function colorPage() {
 				console.log("colored");
+				console.log(document.getElementById("color-code").value);
+				console.log(document.body.background);
 				return false;
 			}
 		</script>
@@ -38,7 +40,7 @@
 			<h1>Color Tester</h1>
 			<form action="#" onsubmit="colorPage();return false">
 				Hex Color: <br/>
-				<input autofocus type="text" name="color" value="#"> 
+				#<input autofocus id="color-code" type="text" name="color" value="">
 				<br/><br/>
 				<input type="submit" value="Enter">
 			</form>
