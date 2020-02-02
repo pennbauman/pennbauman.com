@@ -6,10 +6,16 @@
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 		<script>
-			async function hashText() {
+			import sjcl from 'sjcl'
+
+			function hashText() {
 				console.log(document.getElementById("hash_text").value);
-				var crypt = await crypto.subtle.digest("sha1", document.getElementById("hash_text").(value);
-				console.log(crypt);
+				//var crypt = await crypto.subtle.digest("sha1", document.getElementById("hash_text").(value);
+				//console.log(crypt);
+
+				const myString = 'Hello';
+				const myBitArray = sjcl.hash.sha256.hash(myString);
+				const myHash = sjcl.codec.hex.fromBits(myBitArray);
 				return false;
 			}
 		</script>
