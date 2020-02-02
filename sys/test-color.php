@@ -7,16 +7,16 @@
 		<script src='/files/js/general.js'></script>
 		<style type='text/css'>
 			<?php
-				$color = URLVar("color");
-				if ($color != NULL) {
-					if (substr($color, 0, 1) != "#") {
+				//$color = $_GET("color");
+				//if ($color != NULL) {
+					//if (substr($color, 0, 1) != "#") {
 						//echo "[[".substr($color, 0, 1)."]]";
-						$color = "#".$color;
-					}
-					echo "body { background:";
-					echo $color;
-					echo "} ";
-				}
+						//$color = "#".$color;
+					//}
+					//echo "body { background:";
+					//echo $color;
+					//echo "} ";
+				//}
 			?>
 			#content_box {
 				position:fixed;
