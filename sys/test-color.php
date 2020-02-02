@@ -30,7 +30,7 @@
 			function colorPage() {
 				console.log("colored");
 				console.log(document.getElementById("color-code").value);
-				console.log(document.body.background);
+				console.log(document.body.style.backgroundColor);
 				return false;
 			}
 		</script>
