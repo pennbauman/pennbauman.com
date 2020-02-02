@@ -45,6 +45,9 @@
 		}
 		echo "<br/>";
 		print_r($_SERVER);
+		echo "<br/>";
+		echo "<br/>";
+		echo $sys['home_path'];
 		echo "</p>";
 
 		
