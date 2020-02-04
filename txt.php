@@ -39,6 +39,7 @@
 				}
 			}
 			$txtBody = $result["body"];
+			$txtFound = true;
 		} else {
 			header("Location: /txt");
 			exit();
