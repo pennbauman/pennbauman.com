@@ -2,3 +2,4 @@
 **/error_log
 files/css/*.bin
 .fuse*
+sys/test/*
