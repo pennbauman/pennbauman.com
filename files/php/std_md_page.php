@@ -26,6 +26,7 @@
 	// Head
 	echo "<!DOCTYPE html><head>";
 	echo "<title>".$page_meta['title']." - Penn Bauman</title>";
+	echo '<meta charset="UTF-8">';
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
 	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
 	echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>";
