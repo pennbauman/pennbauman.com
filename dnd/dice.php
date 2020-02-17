@@ -24,6 +24,9 @@
 						Calculator
 					</th>
 				</tr-->
+				<?php
+					echo "test"
+				?>
 				<tr>
 					<td id="text_mode_box" colspan="2">
 						
