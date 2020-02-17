@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<?php insertHTML("dnd_header") ?>
-		<div id="content">
+		<div id="content" class="dnd-content">
 			<h1>Penn Bauman's Dungeons &amp; Dragons</h1>
 			<h3><a href="/dice/">Dice</a></h3>
 			<p>Simple digital dice roller. Just enter the dice to be rolled in standard D&amp;D format and it will calculate their total for you.</p>

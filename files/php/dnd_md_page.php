@@ -34,7 +34,7 @@
 	// Body
 	echo "</head>\n<body>";
 	insertHTML("dnd_header");
-	echo "\n<div id='content' class='dnd-header'>";
+	echo "\n<div id='content' class='dnd-content'>";
 	echo $Parsedown->text($page_text);
 	echo "</div>\n";
 	insertHTML("footer");

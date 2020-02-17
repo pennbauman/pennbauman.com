@@ -9,8 +9,7 @@
 	$page = explode("\n", $page);
 	$page_text = "";
 	$page_meta = array();
-	$inMeta = false;
-	for ($i = 0; $i < count($page); $i++) {
+	$inMeta = false;	for ($i = 0; $i < count($page); $i++) {
 		if (($i == 0) && preg_match("/^[-]+$/", $page[$i])) {
 			$inMeta = true;
 		} else if ($inMeta && preg_match("/^[-]+$/", $page[$i])) {
@@ -34,7 +33,7 @@
 	// Body
 	echo "</head>\n<body>";
 	insertHTML("header");
-	echo "\n<div id='content' class='std-header'>";
+	echo "\n<div id='content' class='std-content'>";
 	echo $Parsedown->text($page_text);
 	echo "</div>\n";
 	insertHTML("footer");
