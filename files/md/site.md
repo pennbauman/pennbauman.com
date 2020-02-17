@@ -11,4 +11,4 @@ Penn Bauman can be contacted at [pennbauman@protonmail.com](pennbauman@protonmai
 
 
 ### Photo Credit
-The [background photograph](/files/img/background.jpg) was taken by Sam Goodkind. All other images were taken by Penn Bauman.
+The [background photograph](/files/img/background.jpg) was taken by Sam Goodkind. All other images were taken or created by Penn Bauman.
