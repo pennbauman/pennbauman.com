@@ -95,20 +95,9 @@
 
 			<p>UVA CS Class of 2022</p>
 
-			<!--<h3><a href="http://pennbauman.com/about">About</a></h3>-->
-			<h3><a href="about.html">About</a></h3>
+			<h3><a href="/about">About</a></h3>
 			<h3><a href="http://github.com/pennbauman">GitHub</a></h3>
-			<!--<h3><a href="http://pennbauman.com/resume">Resume</a></h3>-->
-			<h3><a href="resume.html">Resume</a></h3>
-
-			<!--
-			<p>UVA CS Class of 2022<br/>
-				<a href="http://pennbauman.com/resume">Resume</a></p>
-			<h2>Projects</h2>
-			<p><a href="http://github.com/pennbauman">GitHub</a><br/>
-				<a href="http://pennbauman.com/projects">Web Based</a><br/>
-			</p>
-			-->
+			<h3><a href="/resume">Resume</a></h3>
 		</div>
 	</body>
 </html>
