@@ -1,3 +1,6 @@
+<?php
+	
+?>
 <!DOCTYPE html><html>
 	<head>
 		<title>Dice Roller - Penn's D&amp;D</title>
