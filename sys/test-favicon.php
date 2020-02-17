@@ -31,11 +31,6 @@
 	</head>
 	<body>
 		<h1>Favicon Tester</h1>
-		<?php
-			//echo "<p><b>";
-			//echo $favicon;
-			//echo "</b></p>"
-		?>
 		<p><b id="url_display">/files/img/sys_favicon.png</b></p>
 		<form action='#' onsubmit="setFavicon(); return false">
 			<b>Favicon URL:</b> <br/> 

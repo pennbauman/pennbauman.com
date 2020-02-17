@@ -75,7 +75,6 @@
 		text-align:center;
 
 		&:hover {
-			//background:$header-plain;
 			color:$color-high;
 		}
 	}
@@ -98,4 +97,8 @@
 	font-size:1.8rem;
 	line-height:2.5rem;
 	background:$color-dark;
+
+	a:hover {
+		color:$color-high;
+	}
 }
