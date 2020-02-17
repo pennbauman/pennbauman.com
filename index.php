@@ -89,7 +89,7 @@
 	</head>
 	<body>
 		<div id="content">
-			<img src="https://pennbauman.com/files/img/jellyboi_outline_x16.png">
+			<img src="https://pennbauman.com/files/img/jellyboi_outline_x512.png">
 			<h1>Penn Bauman</h1>
 			<i><a href="mailto:pennbauman@protonmail.com">pennbauman@protonmail.com</a></i>
 
