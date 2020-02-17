@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<?php insertHTML("header") ?>
-		<div id="content">
+		<div id="content" class="std-content">
 			<?php
 				if ($sys['user']['auth_level'] > 0) {
 					echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
