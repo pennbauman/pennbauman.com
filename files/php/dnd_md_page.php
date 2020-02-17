@@ -37,6 +37,6 @@
 	echo "\n<div id='content' class='dnd-content'>";
 	echo $Parsedown->text($page_text);
 	echo "</div>\n";
-	insertHTML("footer");
+	insertHTML("dnd_footer");
 	echo "</body></html>";
 ?>
