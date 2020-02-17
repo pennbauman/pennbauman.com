@@ -127,7 +127,7 @@ table { border-collapse: collapse; }
 			font-size:2.5rem;
 			line-height:2.5rem;
 			&:hover { color:$color-high; }
-		}	
+		}
 	}
 }
 
@@ -235,13 +235,6 @@ table { border-collapse: collapse; }
 	background:$color-dark;
 	color:$color-light;
 }
-.dnd-content {
-	width:80%;
-	padding:2rem 10%;
-
-	background:$color-light;
-	color:$color-dark;
-}
 
 /* Footer */
 #footer {
@@ -273,9 +266,4 @@ table { border-collapse: collapse; }
 }
 .std-footer {
 	font-size:1.5rem;
-}
-.dnd-footer {
-	font-size:1.8rem;
-	line-height:2.5rem;
-	background:$color-dark;
 }
