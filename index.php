@@ -13,7 +13,7 @@
 		<title>Penn Bauman</title>
 		<meta charset="UTF-8">
 		<link rel='icon' href='/files/img/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
+		<!--link rel='stylesheet' type='text/css' href='/files/css/general.css'-->
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 		<style>
@@ -30,7 +30,7 @@
 				margin:0;
 				padding:0;
 			}
-			#text {
+			#content {
 				position:fixed;
 				top:15rem;
 				left:5%;
@@ -40,7 +40,7 @@
 				color:#EEEEEE;
 				font-family:Monospace;
 			}
-			#text img {
+			#content img {
 				width:20rem;
 				image-rendering: crisp-edges;
 				image-rendering: -moz-crisp-edges;
@@ -48,20 +48,20 @@
 				image-rendering: -webkit-optimize-contrast;
 				-ms-interpolation-mode: nearest-neighbor;
 			}
-			#text h1 {
+			#content h1 {
 				font-size:5.4rem;
 				margin-bottom:0;
 			}
-			#text h2 {
+			#content h2 {
 				font-size:4.0rem;
 				margin-bottom:0;
 			}
-			#text h3 {
+			#content h3 {
 				font-size:2.5rem;
 				font-weight:normal;
 				text-decoration:underline;
 			}
-			#text p {
+			#content p {
 				font-size:2.6rem;
 				line-height:3.0rem;
 			}
@@ -76,8 +76,7 @@
 		</style>
 	</head>
 	<body>
-		<div id="header"></div>
-		<div id="navbar text">
+		<div id="content">
 			<img src="https://pennbauman.com/files/img/jellyboi_outline_x16.png">
 			<h1>Penn Bauman</h1>
 			<i><a href="mailto:pennbauman@protonmail.com">pennbauman@protonmail.com</a></i>
@@ -99,7 +98,6 @@
 			</p>
 			-->
 		</div>
-		<div id="content"></div>
 		<?php insertHTML("footer") ?>
 	</body>
 </html>
