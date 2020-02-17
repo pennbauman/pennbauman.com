@@ -9,7 +9,7 @@ title:About
 
 
 ### College
-I current attend The University of Virginia. I am majoring Computer Science in the Enginering School, and minoring in Physics.
+I current attend The University of Virginia. I am majoring Computer Science in the Engineering School, and minoring in Physics.
 
 ### Pets
 

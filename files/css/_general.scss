@@ -222,6 +222,11 @@ table { border-collapse: collapse; }
 	table.two-columns td:nth-child(2) {
 		text-align: right;
 	}
+	img {
+		width:80%;
+		margin:0 10%
+		border-radius:2rem;
+	}
 }
 .std-content {
 	width:calc(100% - 12rem);
