@@ -16,30 +16,89 @@
 		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
+		<style>
+			:root {
+				font-size:1vh;
+			}
+			body {
+				background-color:#141a1b;
+				background-image:url("background.jpg");
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				margin:0;
+				padding:0;
+			}
+			#text {
+				position:fixed;
+				top:15rem;
+				left:5%;
+				width:90%;
+				text-align:center;
+				color:#141a1b;
+				color:#EEEEEE;
+				font-family:Monospace;
+			}
+			#text img {
+				width:20rem;
+				image-rendering: crisp-edges;
+				image-rendering: -moz-crisp-edges;
+				image-rendering: -o-crisp-edges;
+				image-rendering: -webkit-optimize-contrast;
+				-ms-interpolation-mode: nearest-neighbor;
+			}
+			#text h1 {
+				font-size:5.4rem;
+				margin-bottom:0;
+			}
+			#text h2 {
+				font-size:4.0rem;
+				margin-bottom:0;
+			}
+			#text h3 {
+				font-size:2.5rem;
+				font-weight:normal;
+				text-decoration:underline;
+			}
+			#text p {
+				font-size:2.6rem;
+				line-height:3.0rem;
+			}
+			a {
+				color:inherit;
+				text-decoration:none;
+			}
+			i {
+				font-size:2.0rem;
+				font-style:italic;
+			}
+		</style>
 	</head>
 	<body>
-		<?php insertHTML("header") ?>
-		<div id="content">
+		<div id="header"></div>
+		<div id="navbar"></div>
+		<div id="content text">
+			<img src="https://pennbauman.com/files/img/jellyboi_outline_x16.png">
 			<h1>Penn Bauman</h1>
-			<p style="display:none">
-				<a href="/broken/">Broken Internal Link</a>
-				<a href="https://github.com/pennjamin">Broken External Link</a>
-				<a href="http://agjashguhagur.org">Unregistered Domain</a>
-			</p>
+			<i><a href="mailto:pennbauman@protonmail.com">pennbauman@protonmail.com</a></i>
 
-			<h3>Programs &amp; Projects</h3>
-			<p>
-				Most of my projects can be found on my <a href="http://github.com/pennbauman">GitHub</a>, including serveral simple linux command line tools and the code for this site. I have also done a few simple web projects which can be found on the <a href="/projects">projects page</a>.
-			</p>
+			<p>UVA CS Class of 2022</p>
 
-			<h3>About Me</h3>
-			<p>
-				I'm originally from Arlington, Virginia but currently attend the University of Virginia. I love hiking and camping, as well as writing code and reading.
+			<!--<h3><a href="http://pennbauman.com/about">About</a></h3>-->
+			<h3><a href="about.html">About</a></h3>
+			<h3><a href="http://github.com/pennbauman">GitHub</a></h3>
+			<!--<h3><a href="http://pennbauman.com/resume">Resume</a></h3>-->
+			<h3><a href="resume.html">Resume</a></h3>
+
+			<!--
+			<p>UVA CS Class of 2022<br/>
+				<a href="http://pennbauman.com/resume">Resume</a></p>
+			<h2>Projects</h2>
+			<p><a href="http://github.com/pennbauman">GitHub</a><br/>
+				<a href="http://pennbauman.com/projects">Web Based</a><br/>
 			</p>
-			<h3>These are my pets!</h3>
-			<img src="/files/img/bella_wonderwoman.jpg" style="width:80%;margin:0 10%">
-			<br/>
-			<img src="/files/img/inky_shiro_basket.jpg" style="width:80%;margin:0 10%">
+			-->
 		</div>
 		<?php insertHTML("footer") ?>
 	</body>
