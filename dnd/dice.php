@@ -46,6 +46,6 @@
 				</tr>
 			</tbody></table>
 		</div>
-		<?php insertHTML("dnd_footer") ?>
+		<?php insertHTML("footer") ?>
 	</body>
 </html>
