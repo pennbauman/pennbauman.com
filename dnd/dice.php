@@ -50,6 +50,8 @@
 		</div>
 		<?php
 			echo "footer";
+		?>
+		<?php
 			insertHTML("dnd_footer");
 		?>
 	</body>
