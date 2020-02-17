@@ -1,6 +1,3 @@
-<?php
-	
-?>
 <!DOCTYPE html><html>
 	<head>
 		<title>Dice Roller - Penn's D&amp;D</title>
@@ -24,9 +21,6 @@
 						Calculator
 					</th>
 				</tr-->
-				<?php
-					echo "test"
-				?>
 				<tr>
 					<td id="text_mode_box" colspan="2">
 						
@@ -52,6 +46,9 @@
 				</tr>
 			</tbody></table>
 		</div>
-		<?php insertHTML("footer") ?>
+		<?php
+			insertHTML("dnd_footer");
+			echo "footer"
+		?>
 	</body>
 </html>
