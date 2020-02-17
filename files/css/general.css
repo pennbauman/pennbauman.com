@@ -68,7 +68,7 @@ table {
 .std-header h1 {
   display: inline;
   padding: 0.5rem 0rem 0.5rem 1.5rem;
-  color: #2EB398;
+  color: #DB5B5B;
   font-weight: bold;
   font-size: 4rem;
   line-height: 5rem;
@@ -89,7 +89,7 @@ table {
   line-height: 2.5rem;
 }
 .std-header .navlinks a:hover {
-  color: #2EB398;
+  color: #DB5B5B;
 }
 
 /* Content */
@@ -101,7 +101,7 @@ table {
   overflow: hidden;
 }
 #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover, #content td a:hover {
-  color: #2EB398;
+  color: #DB5B5B;
 }
 #content p {
   margin: 0;
@@ -110,13 +110,13 @@ table {
   text-decoration: underline;
 }
 #content p a:hover {
-  color: #2EB398;
+  color: #DB5B5B;
 }
 #content h1 {
   font-size: 4rem;
   text-align: center;
   margin: 0 0 1rem;
-  color: #2EB398;
+  color: #DB5B5B;
   /*
   &::after, &::before {
   	content:"";
@@ -282,7 +282,7 @@ table {
   text-align: center;
 }
 .dnd-navbar .navbar_link:hover {
-  color: #2EB398;
+  color: #DB5B5B;
 }
 .dnd-navbar .navbar_text {
   font-size: 2.5em;
@@ -302,7 +302,7 @@ table {
   background: #141A1B;
 }
 .dnd-footer a:hover {
-  color: #2EB398;
+  color: #DB5B5B;
 }
 
 @media (max-aspect-ratio: 1/1) {
