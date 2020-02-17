@@ -54,7 +54,7 @@ table {
 }
 
 /* Header */
-.std-header {
+#std-header {
   grid-area: header;
   display: inline-block;
   position: relative;
@@ -65,7 +65,7 @@ table {
   background: #141A1B;
   color: #EEEEEE;
 }
-.std-header h1 {
+#std-header h1 {
   display: inline;
   padding: 0.5rem 0rem 0.5rem 1.5rem;
   font-weight: bold;
@@ -73,21 +73,21 @@ table {
   line-height: 5rem;
   font-weight: normal;
 }
-.std-header h1:hover {
+#std-header h1:hover {
   color: #2EB398;
 }
-.std-header .navlinks {
+#std-header .navlinks {
   position: relative;
   float: right;
   padding: 1.5rem 1rem;
   text-align: right;
 }
-.std-header .navlinks a {
+#std-header .navlinks a {
   padding: 1rem 2rem 0.5rem;
   font-size: 2.5rem;
   line-height: 2.5rem;
 }
-.std-header .navlinks a:hover {
+#std-header .navlinks a:hover {
   color: #2EB398;
 }
 
@@ -98,18 +98,6 @@ table {
   display: block;
   z-index: 1;
   overflow: hidden;
-  background: #141A1B;
-  color: #EEEEEE;
-  width: calc(100% - 12rem);
-  max-width: 80rem;
-  padding: 1rem 4rem 4rem;
-  margin: auto;
-  margin-top: 2.2rem;
-  margin-bottom: 1rem;
-  border-radius: 2rem;
-}
-#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content td {
-  color: #EEEEEE;
 }
 #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover, #content td a:hover {
   color: #2EB398;
@@ -118,7 +106,6 @@ table {
   margin: 0;
 }
 #content p a {
-  color: #EEEEEE;
   text-decoration: underline;
 }
 #content p a:hover {
@@ -127,7 +114,7 @@ table {
 #content h1 {
   font-size: 4rem;
   text-align: center;
-  margin: 1em 0 1rem;
+  margin: 1rem 0 1rem;
   /*
   &::after, &::before {
   	content:"";
@@ -180,6 +167,25 @@ table {
 }
 #content table.two-columns td:nth-child(2) {
   text-align: right;
+}
+
+.std-content {
+  width: calc(100% - 12rem);
+  max-width: 80rem;
+  padding: 1rem 4rem 4rem;
+  margin: auto;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  background: #141A1B;
+  color: #EEEEEE;
+}
+
+.dnd-content {
+  width: 80%;
+  padding: 2rem 10%;
+  background: #EEEEEE;
+  color: #141A1B;
 }
 
 /* Footer */

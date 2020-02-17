@@ -34,7 +34,7 @@
 	// Body
 	echo "</head>\n<body>";
 	insertHTML("header");
-	echo "\n<div id='content'>";
+	echo "\n<div id='content' class='std-header'>";
 	echo $Parsedown->text($page_text);
 	echo "</div>\n";
 	insertHTML("footer");
