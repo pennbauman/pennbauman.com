@@ -107,7 +107,8 @@ table { border-collapse: collapse; }
 		line-height:5rem;
 		font-weight:normal;
 
-		&:hover { color:$header-plain; }
+		&:hover { color:$header-hl; }
+		//&:hover { color:$header-plain; }
 	}
 
 	.navlinks {
