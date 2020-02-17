@@ -49,8 +49,8 @@
 			</tbody></table>
 		</div>
 		<?php
-			insertHTML("dnd_footer");
 			echo "footer";
+			insertHTML("dnd_footer");
 		?>
 	</body>
 </html>
