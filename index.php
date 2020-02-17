@@ -17,6 +17,14 @@
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 		<style>
+			/* Prevent Firefox selected button/link outline */
+			:focus {outline:none;}
+			::-moz-focus-inner {border:0;}
+			/* Prevent iOS input styling */
+			input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
+				-webkit-appearance: none;
+				border-radius: 0;
+			}
 			:root {
 				font-size:1vh;
 			}
@@ -29,6 +37,14 @@
 				background-attachment: fixed;
 				margin:0;
 				padding:0;
+
+				display:grid;
+				grid-template-areas:
+					"content"
+					"footer";
+				grid-gap:0;
+				grid-template-columns:100%;
+				grid-template-rows:auto min-content;
 			}
 			#content {
 				position:fixed;
