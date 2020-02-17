@@ -48,6 +48,7 @@
 		</div>
 		<?php
 			echo "footer";
+			aguubue;
 		?>
 		<?php insertHTML("dnd_footer") ?>
 	</body>
