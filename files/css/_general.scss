@@ -229,7 +229,7 @@ table { border-collapse: collapse; }
 	padding:1rem 4rem 4rem;
 	margin:auto;
 	margin-top:2.2rem;
-	margin-bottom:1rem;
+	margin-bottom:2rem;
 	border-radius:2rem;
 
 	background:$color-dark;
@@ -247,7 +247,6 @@ table { border-collapse: collapse; }
 	padding:1rem 0 1.5rem;
 
 	text-align:center;
-	line-height:1.5rem;
 
 	//height:1.0rem;
 	//font-size:1.5rem;
@@ -265,5 +264,8 @@ table { border-collapse: collapse; }
 	}
 }
 .std-footer {
+	padding:1rem 0 1rem;
+	line-height:1.5rem;
 	font-size:1.5rem;
+	padding:1rem 0 1.5rem;
 }
