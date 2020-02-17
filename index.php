@@ -22,7 +22,7 @@
 			}
 			body {
 				background-color:#141a1b;
-				background-image:url("background.jpg");
+				background-image:url("/files/img/background.jpg");
 				background-position: center;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -77,8 +77,7 @@
 	</head>
 	<body>
 		<div id="header"></div>
-		<div id="navbar"></div>
-		<div id="content text">
+		<div id="navbar text">
 			<img src="https://pennbauman.com/files/img/jellyboi_outline_x16.png">
 			<h1>Penn Bauman</h1>
 			<i><a href="mailto:pennbauman@protonmail.com">pennbauman@protonmail.com</a></i>
@@ -100,6 +99,7 @@
 			</p>
 			-->
 		</div>
+		<div id="content"></div>
 		<?php insertHTML("footer") ?>
 	</body>
 </html>
