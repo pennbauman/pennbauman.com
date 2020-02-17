@@ -204,6 +204,12 @@ table {
 #footer p {
   margin: 0;
 }
+.dnd-footer {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  background: #141A1B;
+}
+
 /* D&D Header */
 .dnd-header {
   grid-area: header;
