@@ -33,7 +33,6 @@
 			body {
 				margin:0;
 				padding:0;
-				min-height:100vh;
 
 				background-color:#141a1b;
 				background-image:url("/files/img/background.jpg");
@@ -41,14 +40,6 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-attachment: fixed;
-
-				display:grid;
-				grid-template-areas:
-					"content"
-					"footer";
-				grid-gap:0;
-				grid-template-columns:100%;
-				grid-template-rows:auto min-content;
 
 				text-align:center;
 				font-family:DejaVu_Sans_Mono, Monospace;
@@ -61,7 +52,7 @@
 				width:90%;
 				font-family:Monospace;
 			}
-			#content img {
+			img {
 				width:20rem;
 				image-rendering: crisp-edges;
 				image-rendering: -moz-crisp-edges;
@@ -69,20 +60,20 @@
 				image-rendering: -webkit-optimize-contrast;
 				-ms-interpolation-mode: nearest-neighbor;
 			}
-			#content h1 {
+			h1 {
 				font-size:5.4rem;
 				margin-bottom:0;
 			}
-			#content h2 {
+			h2 {
 				font-size:4.0rem;
 				margin-bottom:0;
 			}
-			#content h3 {
+			h3 {
 				font-size:2.5rem;
 				font-weight:normal;
 				text-decoration:underline;
 			}
-			#content p {
+			p {
 				font-size:2.6rem;
 				line-height:3.0rem;
 			}
@@ -93,29 +84,6 @@
 			i {
 				font-size:2.0rem;
 				font-style:italic;
-			}
-
-			#footer {
-				grid-area:footer;
-				display:block;
-				z-index:2;
-
-				width:100%;
-				height:2rem;
-				padding:1rem 0 1.5rem;
-
-				text-align:center;
-
-				color:$color-light;
-
-				p {
-					margin:0;
-				}
-
-				padding:1rem 0 1rem;
-				line-height:1.5rem;
-				font-size:1.5rem;
-				padding:1rem 0 1.5rem;
 			}
 		</style>
 	</head>
@@ -142,6 +110,5 @@
 			</p>
 			-->
 		</div>
-		<?php insertHTML("footer") ?>
 	</body>
 </html>
