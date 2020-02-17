@@ -17,9 +17,14 @@ $header-back:#141A1B;
 $header-plain:#EEEEEE;
 $header-hl:#2EB398;
 
-$content-back:#eeeeee;
+//$content-back:#eeeeee;
 //$content-plain:#444444;
-$content-plain:#141A1B;
+//$content-plain:#141A1B;
+//$content-hl:#2EB398;
+//$content-hl-plain:#000000;
+
+$content-back:#141A1B;
+$content-plain:#EEEEEE;
 $content-hl:#2EB398;
 //$content-hl-plain:#000000;
 
@@ -49,7 +54,7 @@ body {
 	font-family:DejaVu_Sans_Mono, Monospace;
 	min-height:100vh;
 
-	background:$header-back;
+	background-color:$header-back;
 	color:$header-plain;
 	font-size:2rem;
 
@@ -62,6 +67,17 @@ body {
 	grid-gap:0;
 	grid-template-columns:100%;
 	grid-template-rows:min-content min-content auto min-content;
+
+	background-image:url("2019_sam_goodkind_blur.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	-ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+	display: none;
 }
 a { color:inherit; text-decoration:none; }
 table { border-collapse: collapse; }
@@ -70,8 +86,9 @@ table { border-collapse: collapse; }
 .std-header {
 	grid-area:header;
 	display:inline-block;
-	position:sticky;
-	position:-webkit-sticky;
+	//position:sticky;
+	//position:-webkit-sticky;
+	position:relative;
 	top:0rem;
 	z-index:5;
 
@@ -84,7 +101,8 @@ table { border-collapse: collapse; }
 		display:inline;
 		padding:0.5rem 0rem 0.5rem 1.5rem;
 
-		color:$header-hl;
+		//color:$header-hl;
+		font-weight:bold;
 		font-size:4rem;
 		line-height:5rem;
 		font-weight:normal;
@@ -116,10 +134,18 @@ table { border-collapse: collapse; }
 	z-index:1;
 	overflow:hidden;
 
-	width:80%;
-	padding:2rem 10%;
+	//width:80%;
+	//padding:2rem 10%;
 	background:$content-back;
 	color:$content-plain;
+
+	width:calc(100% - 12rem);
+	max-width:80rem;
+	padding:1rem 4rem 4rem;
+	margin:auto;
+	margin-top:2.2rem;
+	margin-bottom:1rem;
+	border-radius:2rem;
 
 	h1, h2, h3, h4, h5, h6, td {
 		color:$content-plain;
@@ -214,10 +240,14 @@ table { border-collapse: collapse; }
 	padding:1rem 0 1.5rem;
 
 	text-align:center;
-	font-size:1.8rem;
-	line-height:2.5rem;
+	font-size:1.5rem;
+	line-height:1.5rem;
 
-	background:$footer-back;
+	//height:1.0rem;
+	//font-size:1.5rem;
+	//line-height:1rem;
+
+	//background:$footer-back;
 	color:$footer-plain;
 
 	p {
@@ -225,6 +255,6 @@ table { border-collapse: collapse; }
 	}
 
 	a:hover {
-		color:$footer-hl;
+		//color:$footer-hl;
 	}
 }

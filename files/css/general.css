@@ -24,7 +24,7 @@ body {
   padding: 0;
   font-family: DejaVu_Sans_Mono, Monospace;
   min-height: 100vh;
-  background: #141A1B;
+  background-color: #141A1B;
   color: #EEEEEE;
   font-size: 2rem;
   display: grid;
@@ -32,6 +32,16 @@ body {
   grid-gap: 0;
   grid-template-columns: 100%;
   grid-template-rows: min-content min-content auto min-content;
+  background-image: url("2019_sam_goodkind_blur.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -47,8 +57,7 @@ table {
 .std-header {
   grid-area: header;
   display: inline-block;
-  position: sticky;
-  position: -webkit-sticky;
+  position: relative;
   top: 0rem;
   z-index: 5;
   width: 90%;
@@ -59,7 +68,7 @@ table {
 .std-header h1 {
   display: inline;
   padding: 0.5rem 0rem 0.5rem 1.5rem;
-  color: #2EB398;
+  font-weight: bold;
   font-size: 4rem;
   line-height: 5rem;
   font-weight: normal;
@@ -89,13 +98,18 @@ table {
   display: block;
   z-index: 1;
   overflow: hidden;
-  width: 80%;
-  padding: 2rem 10%;
-  background: #eeeeee;
-  color: #141A1B;
+  background: #141A1B;
+  color: #EEEEEE;
+  width: calc(100% - 12rem);
+  max-width: 80rem;
+  padding: 1rem 4rem 4rem;
+  margin: auto;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
 }
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content td {
-  color: #141A1B;
+  color: #EEEEEE;
 }
 #content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover, #content td a:hover {
   color: #2EB398;
@@ -104,7 +118,7 @@ table {
   margin: 0;
 }
 #content p a {
-  color: #141A1B;
+  color: #EEEEEE;
   text-decoration: underline;
 }
 #content p a:hover {
@@ -159,7 +173,7 @@ table {
 }
 #content hr {
   border-width: 0.2rem;
-  border-color: #141A1B;
+  border-color: #EEEEEE;
 }
 #content table.two-columns {
   width: 100%;
@@ -177,18 +191,13 @@ table {
   height: 2rem;
   padding: 1rem 0 1.5rem;
   text-align: center;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  background: #141A1B;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   color: #EEEEEE;
 }
 #footer p {
   margin: 0;
 }
-#footer a:hover {
-  color: #2EB398;
-}
-
 /* D&D Header */
 .dnd-header {
   grid-area: header;
