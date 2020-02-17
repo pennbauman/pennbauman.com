@@ -10,7 +10,7 @@
 	</head>
 	<body onload="return false;">
 		<?php insertHTML("dnd_header"); ?>
-		<div id="content">
+		<div id="content" class='dnd-content'>
 			<h1>D&amp;D Dice Roller</h1>
 			<table><tbody>
 				<!--tr>
@@ -46,6 +46,6 @@
 				</tr>
 			</tbody></table>
 		</div>
-		<?php insertHTML("footer"); ?>
+		<?php insertHTML("dnd_footer"); ?>
 	</body>
 </html>

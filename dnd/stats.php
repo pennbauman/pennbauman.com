@@ -28,7 +28,7 @@
 			}
 			insertHTML("dnd_header");
 		?>
-		<div id="content">
+		<div id="content" class='dnd-content'>
 			<h1>D&amp;D Statistics Generator</h1>
 			<div id="generator_box">
 				<div id="stat_box">
@@ -80,6 +80,6 @@
 				 </div>
 			</div>
 		</div>
-		<?php insertHTML("footer") ?>
+		<?php insertHTML("dnd_footer") ?>
 	</body>
 </html>
