@@ -9,7 +9,7 @@
 		<script src='/files/js/dice.js'></script>
 	</head>
 	<body onload="return false;">
-		<?php insertHTML("dnd_header"); ?>
+		<?php insertHTML("dnd_header") ?>
 		<div id="content" class='dnd-content'>
 			<h1>D&amp;D Dice Roller</h1>
 			<table><tbody>
