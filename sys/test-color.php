@@ -11,8 +11,8 @@
 				position:fixed;
 				top:0;
 				left:0;
-				width:100%;
-				padding:2rem;
+				width:85%;
+				padding:2rem 7.5%;
 			}
 		</style>
 		<script>
