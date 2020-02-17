@@ -167,7 +167,7 @@ table { border-collapse: collapse; }
 	h1 {
 		font-size:4rem;
 		text-align:center;
-		margin:1rem 0 1rem;
+		margin:0 0 1rem;
 		
 		/*
 		&::after, &::before {
@@ -226,7 +226,7 @@ table { border-collapse: collapse; }
 .std-content {
 	width:calc(100% - 12rem);
 	max-width:80rem;
-	padding:1rem 4rem 4rem;
+	padding:3rem 4rem 4rem;
 	margin:auto;
 	margin-top:2.2rem;
 	margin-bottom:2rem;
