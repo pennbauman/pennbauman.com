@@ -131,34 +131,142 @@ form input[type=submit]:active {
 }
 
 /* Table */
+/*
 table {
-  text-align: center;
-  margin: auto;
-  border-collapse: collapse;
-  font-size: 2rem;
+	text-align:center;
+	margin:auto;
+	border-collapse: collapse;
+	font-size:2rem;
 }
-
 th {
-  font-weight: bold;
-  background-color: #2eb398;
-  color: #141a1b;
-  border: 2px solid #eeeeee;
-  padding: 0 1em;
+	font-weight:bold;
+	background-color:$green;
+	color:$black;
+	border:2px solid $white;
+	padding:0 1em;
 }
-
 td {
-  border: 2px solid #eeeeee;
-  padding: 0 1em;
+	border:2px solid $white;
+	padding:0 1em;
 }
-
 tr:hover {
-  background-color: #555555;
+	background-color:#555555;
 }
-
+*/
 .error {
   color: #db5b5b;
 }
 
 .highlight {
   color: #2eb398;
+}
+
+table.fin {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-left: calc(50% - 50vw);
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.8rem;
+  /*
+  .bold td {
+  	border-bottom-width:4px;
+  	border-top-width:4px;
+  } // */
+}
+table.fin col {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+table.fin tbody {
+  display: block;
+  margin: auto;
+  width: 121rem;
+  max-width: 99.5vw;
+  padding: 0;
+  border: 0;
+}
+table.fin tr {
+  background: #eeeeee;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+table.fin th {
+  border-color: #141a1b;
+  background: #141a1b;
+  color: #eeeeee;
+  padding: 0 0.35rem;
+  margin: 0;
+  border: 0;
+}
+table.fin td {
+  border-color: #141a1b;
+  color: #141a1b;
+  width: 15rem;
+  padding: 0 0.35rem;
+  margin: 0;
+  border: 0.15rem solid #141a1b;
+}
+table.fin td.pos {
+  background: #2eb398;
+  background-color: rgba(46, 179, 152, 0.5);
+}
+table.fin td.neg {
+  background: #db5b5b;
+  background-color: rgba(219, 91, 91, 0.5);
+}
+table.fin td a {
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
+}
+table.fin td a:hover {
+  color: inherit;
+}
+table.fin .bold {
+  font-weight: bold;
+  background: #bcbcbc;
+}
+table.fin .thick-left {
+  border-left: 0.4rem solid #141a1b;
+}
+table.fin .thick-right {
+  border-right: 0.4rem solid #141a1b;
+}
+table.fin tr.thick-top td {
+  border-top: 0.4rem solid #141a1b;
+}
+table.fin tr.thick-bottom td {
+  border-bottom: 0.4rem solid #141a1b;
+}
+table.fin .main_col {
+  width: 15rem;
+}
+table.fin .wide_col {
+  width: 51rem;
+}
+table.fin .showable {
+  display: none;
+}
+table.fin .left-align {
+  text-align: left;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* Height > Width */
+  table.fin tbody {
+    width: 68rem;
+  }
+  table.fin .hideable {
+    display: none;
+  }
+  table.fin .showable {
+    display: table-cell;
+  }
 }

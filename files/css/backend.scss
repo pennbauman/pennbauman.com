@@ -117,6 +117,7 @@ form {
 	}
 }
 /* Table */
+/*
 table {
 	text-align:center;
 	margin:auto;
@@ -137,9 +138,139 @@ td {
 tr:hover {
 	background-color:#555555;
 }
+*/
+
 .error {
 	color:$red;
 }
 .highlight {
 	color:$green;
+}
+
+table.fin {
+	//background:$white;
+	width:100vw;
+	padding:0;
+	margin:0;
+	border:0;
+	margin-left:calc(50% - 50vw);
+	border-collapse: collapse;
+	text-align:center;
+	font-size:1.8rem;
+	
+	col {
+		padding:0;
+		margin:0;
+		border:0;
+	}
+
+	tbody {
+		display:block;
+		margin:auto;
+		//width:calc(4rem + 7*12rem);
+		width:121rem;
+		max-width:99.5vw;
+		padding:0;
+		border:0;
+	}
+
+	tr {
+		background:$white;
+		padding:0;
+		margin:0;
+		border:0;
+	}
+	th {
+		border-color:$black;
+		background:$black;
+		color:$white;
+		//width:4rem;
+		padding:0 0.35rem;
+		margin:0;
+		border:0;
+	}
+	td {
+		border-color:$black;
+		color:$black;
+		width:15rem;
+		//max-width:4rem;
+		//width:0;
+		padding:0 0.35rem;
+		margin:0;
+		border:0.15rem solid $black;
+	}
+	td.pos {
+		background:$green;
+		background-color:rgba(46, 179, 152, 0.5);
+	}
+	td.neg {
+		background:$red;
+		background-color:rgba(219, 91, 91, 0.5);
+	}
+	//tr:hover {
+		//background-color:#bcbcbc;
+	//}
+	td a {
+		display:inline-block;
+		//width:calc(100% - 2rem);
+		padding:0;
+		//1rem;
+		width:100%;
+		margin:0;
+		text-decoration:none;
+	}
+	td a:hover {
+		color:inherit;
+	}
+
+	.bold {
+		font-weight:bold;
+		background:#bcbcbc;
+	}
+	/*
+	.bold td {
+		border-bottom-width:4px;
+		border-top-width:4px;
+	} // */
+	.thick-left {
+		border-left:0.4rem solid $black;
+		//padding-left:0.35rem;
+	}
+	.thick-right {
+		//border-right-width:4px;
+		border-right:0.4rem solid $black;
+		//padding-right:0.35rem;
+	}
+	tr.thick-top td {
+		border-top:0.4rem solid $black;
+	}
+	tr.thick-bottom td {
+		border-bottom:0.4rem solid $black;
+	}
+	.main_col {
+		width:15rem;
+	}
+	.wide_col {
+		width:51rem;
+	}
+	.showable {
+		display:none;
+	}
+	.left-align {
+		text-align:left;
+	}
+}
+
+@media (max-aspect-ratio: 1/1) { /* Height > Width */
+	table.fin {
+		tbody {
+			width:68rem;
+		}
+		.hideable {
+			display:none;
+		}
+		.showable {
+			display:table-cell;
+		}
+	}
 }
