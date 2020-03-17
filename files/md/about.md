@@ -4,23 +4,18 @@ title:About
 
 # About
 
-<!-- ### Where I'm from-->
-<!--I'm from Arlington Virginia and I've lived there almost my whole life.-->
-
-
 ### College
 I current attend The University of Virginia. I am majoring Computer Science in the Engineering School, and minoring in Physics.
+
+### Linux
+I have been using Linux for 3 years and I'm currently using [Manjaro Linux](https://manjaro.org). During this time, I have tinkering with the linux operating system and gained a lot of knowledge of how it works. I've written numerous scripts to automate my workflow in and serveral simple command line tools as personal pojects.
+
+<!-- ### Spaaace-->
+
+<!-- ### D&D-->
 
 ### Pets
 
 <img src="/files/img/bella_wonderwoman.jpg">
 
 <img src="/files/img/inky_shiro_basket.jpg">
-
-<!-- ### Hobbies-->
-<!--I've been traveling, hiking, and camping my whole life. My favorite places to camp and hike are in the desert in Nevada and Utah, and in the Sierra Mountains. -->
-
-
-<!--Coding-->
-<!--D&D-->
-<!--Reading-->
