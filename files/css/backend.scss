@@ -61,7 +61,7 @@ ul {
 form {
 	font-size:2rem;
 	
-	input[type=text], input[type=password], textarea {
+	input[type=text], input[type=password], input[type=number], textarea {
 		display:inline-block;
 		border-radius:0;
 		border:0.2rem $white solid;
@@ -72,10 +72,18 @@ form {
 		font-family:Roboto Mono, monospace;
 		background:$black;
 		color:$white !important;
+		padding:0.4rem;
 	}
 	
-	input[type=text], input[type=password] {
-		height:3.5rem;
+	input[type=text], input[type=password], input[type=number]  {
+		height:1.1em;
+	}
+	input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	input[type=number] {
+		-moz-appearance:textfield;
 	}
 
 	textarea {
@@ -107,6 +115,19 @@ form {
 		background:$green;
 		color:$black;
 	}
+}
+select {
+	display:inline-block;
+	border-radius:0;
+	border:0.2rem $white solid;
+	width:25rem;
+	max-width:100%;
+	line-height:3.5rem;
+	font-size:2rem !important;
+	font-family:Roboto Mono, monospace;
+	padding:0.3rem;
+	background:$black;
+	color:$white !important;
 }
 
 .wide {
@@ -141,10 +162,13 @@ tr:hover {
 */
 
 .error {
-	color:$red;
+	color:$red !important;
 }
 .highlight {
 	color:$green;
+}
+.centered {
+	text-align:center;
 }
 
 table.fin {
@@ -167,8 +191,7 @@ table.fin {
 	tbody {
 		display:block;
 		margin:auto;
-		//width:calc(4rem + 7*12rem);
-		width:121rem;
+		width:119rem;
 		max-width:99.5vw;
 		padding:0;
 		border:0;
@@ -272,5 +295,13 @@ table.fin {
 		.showable {
 			display:table-cell;
 		}
+	}
+	.hideable {
+		display:none;
+	}
+}
+@media (min-aspect-ratio: 1/1) { /* Height < Width */
+	.showable {
+		display:none;
 	}
 }

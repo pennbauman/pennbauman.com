@@ -79,7 +79,7 @@ ul {
 form {
   font-size: 2rem;
 }
-form input[type=text], form input[type=password], form textarea {
+form input[type=text], form input[type=password], form input[type=number], form textarea {
   display: inline-block;
   border-radius: 0;
   border: 0.2rem #eeeeee solid;
@@ -90,9 +90,17 @@ form input[type=text], form input[type=password], form textarea {
   font-family: Roboto Mono, monospace;
   background: #141a1b;
   color: #eeeeee !important;
+  padding: 0.4rem;
 }
-form input[type=text], form input[type=password] {
-  height: 3.5rem;
+form input[type=text], form input[type=password], form input[type=number] {
+  height: 1.1em;
+}
+form input::-webkit-outer-spin-button, form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form input[type=number] {
+  -moz-appearance: textfield;
 }
 form textarea {
   min-height: 35rem;
@@ -121,6 +129,20 @@ form input[type=submit]:hover {
 form input[type=submit]:active {
   background: #2eb398;
   color: #141a1b;
+}
+
+select {
+  display: inline-block;
+  border-radius: 0;
+  border: 0.2rem #eeeeee solid;
+  width: 25rem;
+  max-width: 100%;
+  line-height: 3.5rem;
+  font-size: 2rem !important;
+  font-family: Roboto Mono, monospace;
+  padding: 0.3rem;
+  background: #141a1b;
+  color: #eeeeee !important;
 }
 
 .wide {
@@ -154,11 +176,15 @@ tr:hover {
 }
 */
 .error {
-  color: #db5b5b;
+  color: #db5b5b !important;
 }
 
 .highlight {
   color: #2eb398;
+}
+
+.centered {
+  text-align: center;
 }
 
 table.fin {
@@ -184,7 +210,7 @@ table.fin col {
 table.fin tbody {
   display: block;
   margin: auto;
-  width: 121rem;
+  width: 119rem;
   max-width: 99.5vw;
   padding: 0;
   border: 0;
@@ -268,5 +294,15 @@ table.fin .left-align {
   }
   table.fin .showable {
     display: table-cell;
+  }
+
+  .hideable {
+    display: none;
+  }
+}
+@media (min-aspect-ratio: 1/1) {
+  /* Height < Width */
+  .showable {
+    display: none;
   }
 }
