@@ -1,12 +1,73 @@
 <?php
 	include_once "auth.php";
+	/*
+	Database Formats
+		fin_monthy
+			id = int(11)
+			year = int(4)
+			month = int(2)
+			day = int(2)
+			cash = int(11)
+			credit = int(11)
+			checking = int(11)
+			type = varchar(15)
+			desc = varchar(255)
+		fin_yearly
+			year = int(4)
+			month = int(2)
+			cash = int(11)
+			credit = int(11)
+			checking = int(11)
+			savings = int(11)
+			stocks = int(11)
+	*/
 
+	// Export databases
+	if (isset($_GET['ex'])) {
+		if ($_GET['ex'] == "y") {
+			// Export fin_yearly database
+			$query = $pdo->prepare("SELECT * FROM fin_yearly ORDER BY year, month");
+			$query->execute();
+			foreach ($query as $row) {
+				echo '"'.$row['year'].'",';
+				echo '"'.$row['month'].'",';
+				echo '"'.$row['cash'].'",';
+				echo '"'.$row['credit'].'",';
+				echo '"'.$row['checking'].'",';
+				echo '"'.$row['savings'].'",';
+				echo '"'.$row['stocks'].'"';
+				echo "\n";
+			}
+			exit;
+		} elseif ($_GET['ex'] == "m") {
+			// Export fin_monthly database
+			$query = $pdo->prepare("SELECT * FROM fin_monthly ORDER BY year, month, day, id");
+			$query->execute();
+			foreach ($query as $row) {
+				echo '"'.$row['id'].'",';
+				echo '"'.$row['year'].'",';
+				echo '"'.$row['month'].'",';
+				echo '"'.$row['day'].'",';
+				echo '"'.$row['cash'].'",';
+				echo '"'.$row['credit'].'",';
+				echo '"'.$row['checking'].'",';
+				echo '"'.$row['type'].'",';
+				echo '"'.$row['description'].'"';
+				echo "\n";
+			}
+			exit;
+		}
+	}
+
+	// Check user authorization
 	if ($sys['user']['auth_level'] < 9) {
 		//include "auth_error.php";
 		//exit;
 	}
 
+	// Update monthly totals starting with given month
 	function monthCost($y, $m, $pdo) {
+		// Get previous month as basis
 		$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=:m");
 		if ($m == 1) {
 			$query->execute(["y" => $y - 1, "m" => 12]);
@@ -19,7 +80,9 @@
 			'credit' => $row['credit'],
 			'checking' => $row['checking']
 		];
+		// Interate over month until the end of the current year
 		while ($y <= (int)date("Y")) {
+			// Get months transaction and sum them
 			$query = $pdo->prepare("SELECT * FROM fin_monthly WHERE year=:y AND month=:m");
 			$query->execute(["y" => $y, "m" => $m]);
 			foreach ($query as $row) {
@@ -27,6 +90,7 @@
 				$sum['credit'] += $row['credit'];
 				$sum['checking'] += $row['checking'];
 			}
+			// Write final monthly sums (either modify or write new)
 			$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=:m");
 			$query->execute(["y" => $y, "m" => $m]);
 			if ($query->rowCount() > 0) {
@@ -57,6 +121,7 @@
 					"m" => $m
 				]);
 			}
+			// Increment to new month
 			if ($m == 12) {
 				$y++;
 				$m = 1;
@@ -66,6 +131,7 @@
 		}
 	}
 
+	// Delete transaction and updated monthly sums
 	if (isset($_GET['del'])) {
 		$query = $pdo->prepare("SELECT * FROM fin_monthly WHERE id=:id");
 		$query->execute(["id" => $_GET['id']]);
@@ -77,6 +143,7 @@
 	}
 
 	if (isset($_POST)) {
+		// Edit transaction data
 		if (isset($_POST['id'])) {
 			$query = $pdo->prepare("UPDATE fin_monthly SET year=:y, month=:m, day=:d, cash=:cash, credit=:credit, checking=:checking, type=:type, description=:desc WHERE id=:id");
 			$query->execute([
@@ -90,6 +157,8 @@
 				"desc" => $_POST['desc'],
 				"id" => $_POST['id']
 			]);
+			// Update monthly sums
+			//   (starting at new or old transaction data whichever is earlier)
 			if ($_POST['year'] == $_POST['old_year']) {
 				if ($_POST['month'] == $_POST['old_month']) {
 					monthCost($_POST['year'], $_POST['month'], $pdo);
@@ -105,6 +174,7 @@
 			}
 		} else if (isset($_POST['year']) && isset($_POST['month'])) {
 			if (isset($_POST['day'])) {
+				// Create new transaction
 				$query = $pdo->prepare("INSERT INTO fin_monthly (id, year, month, day, cash, credit, checking, type, description) VALUES (:id, :y, :m, :d, :cash, :credit, :checking, :type, :desc)");
 				$query->execute([
 					"id" => time(),
@@ -120,6 +190,7 @@
 				]);
 				monthCost($_POST['year'], $_POST['month'], $pdo);
 			} else {
+				// Update monthly totals for savings and stocks
 				$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=:m");
 				$query->execute(["y" => $_POST['year'], "m" => $_POST['month']]);
 				if ($query->rowCount() > 0) {
@@ -143,26 +214,7 @@
 		}
 	}
 
-	/*
-	fin_yearly
-		year (int)
-		month (int)
-		cash (int)
-		credit (int)
-		checking (int)
-		savings (int)
-		stocks (int)
-	fin_monthy
-		id (int)
-		year (int)
-		month (int)
-		day (int)
-		cash (int)
-		credit (int)
-		checking (int)
-		type (int)
-		desc (str)
-	*/
+	// Compute badly named month and year variables for use thoughout page
 	$y_max = (int)date("Y");
 	$y_min = 2018;
 	if (isset($_GET['y']) && is_numeric($_GET['y'])) {
@@ -182,6 +234,12 @@
 		$m = 0;
 	}
 
+	// Print cell with given money value
+	//   $col    determines some border classes
+	//   $i      value to put in call
+	//   $format determines if cell is colored based on value
+	//   $link   link to set for cell
+	//   $class  customs class to include
 	function printCell($col, $i, $format, $link="", $class="") {
 		echo "<td class='$class";
 		if ($col == 1) {
@@ -216,39 +274,6 @@
 			echo "</a></td>";
 		}
 	}
-	if (isset($_GET['ex'])) {
-		if ($_GET['ex'] == "y") {
-			$query = $pdo->prepare("SELECT * FROM fin_yearly ORDER BY year, month");
-			$query->execute();
-			foreach ($query as $row) {
-				echo '"'.$row['year'].'",';
-				echo '"'.$row['month'].'",';
-				echo '"'.$row['cash'].'",';
-				echo '"'.$row['credit'].'",';
-				echo '"'.$row['checking'].'",';
-				echo '"'.$row['savings'].'",';
-				echo '"'.$row['stocks'].'"';
-				echo "\n";
-			}
-			exit;
-		} elseif ($_GET['ex'] == "m") {
-			$query = $pdo->prepare("SELECT * FROM fin_monthly ORDER BY year, month, day, id");
-			$query->execute();
-			foreach ($query as $row) {
-				echo '"'.$row['id'].'",';
-				echo '"'.$row['year'].'",';
-				echo '"'.$row['month'].'",';
-				echo '"'.$row['day'].'",';
-				echo '"'.$row['cash'].'",';
-				echo '"'.$row['credit'].'",';
-				echo '"'.$row['checking'].'",';
-				echo '"'.$row['type'].'",';
-				echo '"'.$row['description'].'"';
-				echo "\n";
-			}
-			exit;
-		}
-	}
 ?>
 <!DOCTYPE html><html>
 	<head>
@@ -274,9 +299,9 @@
 	</head>
 		<?php
 			echo "<body onload='document.getElementById(\"$y\").scrollIntoView()'>";
-			//echo "<p>m $m<br/>y $y</p>";
 			if (isset($_GET['edit'])) {
 				if (isset($_GET['y']) && isset($_GET['m'])) {
+					// Create monthly sums editor
 					echo "<h1>Edit ".date("F", mktime(0, 0, 0, $m, 1, 0))." $y</h1>";
 					$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=:m");
 					$query->execute(["y" => $y, "m" => $m ]);
@@ -289,8 +314,8 @@
 					echo "<b>Stocks:</b> <br/> $<input type='number' name='stocks' value='".($row['stocks']/100)."' step='0.01'><br/><br/>";
 					echo "<input type='submit' value='Enter'></form>";
 					echo "</form>";
-				
 				} else if (isset($_GET['id'])) {
+					// Create transaction editor
 					echo "<h1>Edit Transaction: ".$_GET['id']."</h1>";
 					$query = $pdo->prepare("SELECT * FROM fin_monthly WHERE id=:id");
 					$query->execute(["id" => $_GET['id']]);
@@ -308,7 +333,6 @@
 					echo "<b>Cash:</b> <br/> $<input type='number' name='cash' step='0.01' value='".($row['cash']/100)."'><br/>";
 					echo "<b>Credit:</b> <br/> $<input type='number' name='credit' step='0.01' value='".($row['credit']/100)."'><br/>";
 					echo "<b>Checking:</b> <br/> $<input type='number' name='checking' step='0.01' value='".($row['checking']/100)."'><br/><br/>";
-					//echo "<b>Type:</b> <br/> <select name='type' form='new_transaction'>";
 					echo "<b>Type:</b> <br/> <select name='type'>";
 					$types = ["Personal", "Debt", "Transfer", "Pay", "Education", "Other"];
 					foreach ($types as $t) {
@@ -332,6 +356,7 @@
 					echo "<p><a href='/fin'>Return</a></p>";
 				}
 			} else if (isset($_GET['new'])) {
+				// Create new transaction form
 				echo "<h1>New Transaction</h1>";
 				if (isset($_GET['y']) && isset($_GET['m'])) {
 					echo "<form action='/fin?y=$y&m=$m' method='post' id='new_transaction'>";
@@ -350,7 +375,6 @@
 				echo "<b>Cash:</b> <br/> $<input type='number' name='cash' step='0.01' value='0'><br/>";
 				echo "<b>Credit:</b> <br/> $<input type='number' name='credit' step='0.01' value='0'><br/>";
 				echo "<b>Checking:</b> <br/> $<input type='number' name='checking' step='0.01' value='0'><br/><br/>";
-				//echo "<b>Type:</b> <br/> <select name='type' form='new_transaction'>";
 				echo "<b>Type:</b> <br/> <select name='type'>";
 				echo "<option value='Personal' selected>Personal</option>";
 				echo "<option value='Debt'>Debt</option>";
@@ -358,17 +382,16 @@
 				echo "<option value='Pay'>Pay</option>";
 				echo "<option value='Education'>Education</option>";
 				echo "<option value='Other'>Other</option>";
-				//echo "<option value='Allowance'>Allowance</option>";
-				//echo "<option value='Gift'>Gift</option>";
 				echo "</select><br><br/>";
 				echo "<b>Description:</b> <br/> <input type='text' name='desc'><br/><br/>";
 				echo "<input type='submit' value='Enter'></form>";
 				echo "</form>";
 			} else if ($m == 0) {
+				// Create yearly view page
 				echo "<h1>Finances</h1>";
 				for ($y_current = $y_max; $y_current >= $y_min; $y_current--) {
 					echo "<h3 id='$y_current'>Finances $y_current</h3>";
-
+					// Get years initial value (from previous december)
 					$money = array();
 					$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=12");
 					$query->execute(["y" => $y_current - 1]);
@@ -380,7 +403,7 @@
 					$money[0][5] = $row['savings'];
 					$money[0][6] = $row['stocks'];
 					$money[0][7] = $money[0][4] + $row['savings'] + $row['stocks'];
-
+					// Generate monthly differences from monthly sums
 					$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y");
 					$query->execute(["y" => $y_current]);
 					foreach ($query as $row) {
@@ -392,6 +415,7 @@
 						$money[$row['month']][6] = $row['stocks'];
 						$money[$row['month']][7] = $money[$row['month']][4] + $row['savings'] + $row['stocks'];
 					}
+					// Check for empty months and generate years final total
 					for ($m = 1; $m < 12; $m++) {
 						$empty = true;
 						for ($i = 1; $i < 8; $i++) {
@@ -408,7 +432,7 @@
 					for ($i = 1; $i < 8; $i++) {
 						$money[13][$i] = $money[$m][$i];
 					}
-
+					// Print table header
 					echo "<table class='fin'>";
 					echo "<tbody> <tr>";
 					echo "<th style='width:7rem'>Date</th>";
@@ -420,20 +444,21 @@
 					echo "<th class='hideable'>Stocks</th>";
 					echo "<th>Total</th>";
 					echo "</tr><tr class='bold'>";
-
+					// Print year start and end sums
 					echo "<td style='width:7rem'>Start</td>";
 					for ($i = 1; $i < 8; $i++) {
 						printCell($i, $money[0][$i], false);
 					}
 					echo "</tr><tr class='bold thick-bottom'>";
-
 					echo "<td style='width:7rem'>End</td>";
 					for ($i = 1; $i < 8; $i++) {
 						printCell($i, $money[13][$i], false);
 					}
+					// Print monthly difference rows
 					for ($m = 1; $m < 13; $m++) {
 						echo "</tr><tr>";
 						echo "<td style='width:7rem'><b><a href='/fin?y=$y_current&m=$m'>".date("M", mktime(0,0,0,$m,1,0))."</b></td>";
+						// Check if month isn't populated with data
 						$empty = true;
 						for ($i = 1; $i < 8; $i++) {
 							if ($money[$m][$i] != 0) {
@@ -455,6 +480,7 @@
 							printCell($i, $val, true, $link);
 						}
 					}
+					// Print yearly difference row
 					echo "</tr><tr class='bold thick-top'>";
 					echo "<td style='width:7rem'>Total</td>";
 					for ($i = 1; $i < 8; $i++) {
@@ -465,10 +491,12 @@
 					echo "<p></br></p>";
 				}
 			} else {
+				// Create monthly view page
 				echo "<a href='/fin?y=$y'>";
 				echo "<h1 class='hideable'>Finances ".date("F", mktime(0, 0, 0, $m, 1, 0))." $y</h1>";
 				echo "<h1 class='showable'>".date("F", mktime(0, 0, 0, $m, 1, 0))." $y</h1>";
 				echo "</a>";
+				// Print navigation links (to next/prev month)
 				echo "<p class='centered'>";
 				if ($m == 1) {
 					echo "<a href='/fin?y=".($y-1)."&m=12'>prev</a>";
@@ -484,6 +512,7 @@
 					echo "<a href='/fin?y=$y&m=".($m+1)."'>next</a>";
 				}
 				echo "</p>";
+				// Print table header
 				echo "<table class='fin'>";
 				echo "<tbody> <tr>";
 				echo "<th style='width:7rem'>Date</th>";
@@ -493,6 +522,7 @@
 				echo "<th style='width:11rem'>Type</th>";
 				echo "<th class='hideable' style='text-align:left'>Description</th>";
 				echo "</tr><tr class='bold'>";
+				// Print month's start value
 				$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=:m");
 				if ($m == 1) {
 					$query->execute(["y" => $y - 1, "m" => 12]);
@@ -510,6 +540,7 @@
 				printCell(3, ($row['cash'] + $row['credit'] + $row['checking'])."</td>", false, "", "showable");
 
 				echo "</tr><tr class='bold thick-bottom'>";
+				// Print month's end value
 				$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=:m");
 				$query->execute(["y" => $y, "m" => $m]);
 				$row = $query->fetch();
@@ -520,6 +551,7 @@
 				echo "<td class='hideable' style='width:11rem'>Total</td>";
 				printCell(3, ($row['cash'] + $row['credit'] + $row['checking'])."</td>", false, "", "left-align hideable");
 				printCell(3, ($row['cash'] + $row['credit'] + $row['checking'])."</td>", false, "", "showable");
+				// Print the month's transactions
 				$query = $pdo->prepare("SELECT * FROM fin_monthly WHERE year=:y AND month=:m ORDER BY day, id");
 				$query->execute(["y" => $y, "m" => $m]);
 				foreach ($query as $row) {
@@ -536,6 +568,7 @@
 				}
 
 				echo "</tbody></table>";
+				// Print navigation links (to next/prev month)
 				echo "<p class='centered'>";
 				if ($m == 1) {
 					echo "<a href='/fin?y=".($y-1)."&m=12'>prev</a>";
@@ -550,6 +583,7 @@
 					echo " - ";
 					echo "<a href='/fin?y=$y&m=".($m+1)."'>next</a>";
 				}
+				// Print link to new transaction form
 				echo "<form class='centered' action='/fin?y=$y&m=$m&new' method='post'>";
 				echo "<input type='submit' value='New Transaction'>";
 				echo "</form>";
