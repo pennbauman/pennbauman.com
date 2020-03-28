@@ -24,6 +24,22 @@
 
 	// Export databases
 	if (isset($_GET['ex'])) {
+		if (isset($_POST['pass'])) {
+			$query = $pdo->prepare("SELECT password FROM users WHERE username='fin_ex'");
+			$query->execute();
+			$row = $query->fetch();
+			if ($query->rowCount() == 0) {
+				echo "no 'fin_ex' found\n";
+			}
+			$pass = hash("sha512", $_POST["pass"]);
+			if ($pass != $row['password']) {
+				echo "incorrect password\n";
+				exit;
+			}
+		} else {
+			echo "no password given\n";
+			exit;
+		}
 		if ($_GET['ex'] == "y") {
 			// Export fin_yearly database
 			$query = $pdo->prepare("SELECT * FROM fin_yearly ORDER BY year, month");
@@ -61,8 +77,8 @@
 
 	// Check user authorization
 	if ($sys['user']['auth_level'] < 9) {
-		//include "auth_error.php";
-		//exit;
+		include "auth_error.php";
+		exit;
 	}
 
 	// Update monthly totals starting with given month
