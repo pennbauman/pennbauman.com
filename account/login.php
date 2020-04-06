@@ -24,8 +24,8 @@
 		<title>Login</title>
 		<link rel='icon' href='/files/img/sys_favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
-		<!--
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<!--
 		<script src='/files/js/general.js'></script>
 		-->
 	</head>
@@ -44,7 +44,7 @@
 			</div>
 		</div>
 	<script>
-		//$(':root').css("font-size", Math.max(screen.height, window.innerHeight)*0.01);
+		$(':root').css("font-size", Math.max(screen.height, window.innerHeight)*0.01);
 		document.documentElement.style.setProperty("font-size", Math.max(screen.height, window.innerHeight)*0.01);
 		console.log("x");
 	</script>
