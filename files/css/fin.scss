@@ -2,8 +2,10 @@ $black:#141a1b;
 $white:#eeeeee;
 $green:#2eb398;
 $red:#db5b5b;
+$green-trans:rgba(46, 179, 152, 0.5);
+$re-trans:rgba(219, 91, 91, 0.5);
 
-/* Backend CSS */
+/* Finance Spreadsheet CSS */
 @import url('/files/font/DejaVu_Font.css');
 :root {
 	font-size:1vh;
@@ -53,10 +55,17 @@ h6 {
 	font-size:2.5rem;
 	display:inline;
 }
-ul {
-	margin:0;
-	list-style-type:none;
+
+.error {
+	color:$red !important;
 }
+.highlight {
+	color:$green;
+}
+.centered {
+	text-align:center;
+}
+
 /* Form */
 form {
 	font-size:2rem;
@@ -130,19 +139,129 @@ select {
 	color:$white !important;
 }
 
-.wide {
-	text-align: center;
+/* Table */
+table {
+	width:100vw;
+	padding:0;
+	margin:0;
+	border:0;
+	margin-left:calc(50% - 50vw);
+	border-collapse: collapse;
+	text-align:center;
+	font-size:1.8rem;
+	
+	col {
+		padding:0;
+		margin:0;
+		border:0;
+	}
 
-	textarea {
+	tbody {
+		display:block;
+		margin:auto;
+		width:119rem;
+		max-width:99.5vw;
+		padding:0;
+		border:0;
+	}
+
+	tr {
+		background:$white;
+		padding:0;
+		margin:0;
+		border:0;
+	}
+	th {
+		border-color:$black;
+		background:$black;
+		color:$white;
+		padding:0 0.35rem;
+		margin:0;
+		border:0;
+	}
+	td {
+		border-color:$black;
+		color:$black;
+		width:15rem;
+		padding:0 0.35rem;
+		margin:0;
+		border:0.15rem solid $black;
+	}
+	td.pos {
+		background:$green;
+		background-color:rgba(46, 179, 152, 0.5);
+	}
+	td.neg {
+		background:$red;
+		background-color:rgba(219, 91, 91, 0.5);
+	}
+	//tr:hover {
+		//background-color:#bcbcbc;
+	//}
+	td a {
+		display:inline-block;
+		padding:0;
 		width:100%;
+		margin:0;
+		text-decoration:none;
+	}
+	td a:hover {
+		color:inherit;
+	}
+
+	.bold {
+		font-weight:bold;
+		background:#bcbcbc;
+	}
+	.bold td {
+		border-bottom-width:4px;
+		border-top-width:4px;
+	}
+	.thick-left {
+		border-left:0.4rem solid $black;
+	}
+	.thick-right {
+		border-right:0.4rem solid $black;
+	}
+	tr.thick-top td {
+		border-top:0.4rem solid $black;
+	}
+	tr.thick-bottom td {
+		border-bottom:0.4rem solid $black;
+	}
+	.main_col {
+		width:15rem;
+	}
+	.wide_col {
+		width:51rem;
+	}
+	.showable {
+		display:none;
+	}
+	.left-align {
+		text-align:left;
 	}
 }
-.error {
-	color:$red !important;
+
+/* Conditional */
+@media (max-aspect-ratio: 1/1) { /* Height > Width */
+	table {
+		tbody {
+			width:68rem;
+		}
+		.hideable {
+			display:none;
+		}
+		.showable {
+			display:table-cell;
+		}
+	}
+	.hideable {
+		display:none;
+	}
 }
-.highlight {
-	color:$green;
-}
-.centered {
-	text-align:center;
+@media (min-aspect-ratio: 1/1) { /* Height < Width */
+	.showable {
+		display:none;
+	}
 }

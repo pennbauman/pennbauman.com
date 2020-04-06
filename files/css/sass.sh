@@ -3,6 +3,9 @@
 if [[ $1 == back ]]; then
 	echo "backend.css"
 	sass backend.scss backend.css --no-source-map --watch
+elif [[ $1 == "fin" ]]; then
+	echo "fin.css"
+	sass fin.scss fin.css --no-source-map --watch
 elif [[ $1 == "dice" ]]; then
 	echo "dice.css"
 	sass dice.scss dice.css --no-source-map --watch

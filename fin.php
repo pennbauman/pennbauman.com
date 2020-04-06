@@ -308,8 +308,7 @@
 		<meta charset="UTF-8">
 		<link rel='icon' href='/files/img/favicon.png'>
 		<!--link rel='stylesheet' type='text/css' href='/files/css/general.css'-->
-		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
-		<link rel='stylesheet' type='text/css' href='/files/font/DejaVu_Font.css'>
+		<link rel='stylesheet' type='text/css' href='/files/css/fin.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 	</head>
@@ -456,7 +455,7 @@
 						$money[13][$i] = $money[$m][$i];
 					}
 					// Print table header
-					echo "<table class='fin'>";
+					echo "<table>";
 					echo "<tbody> <tr>";
 					echo "<th style='width:7rem'>Date</th>";
 					echo "<th>Cash</th>";
@@ -539,7 +538,7 @@
 				}
 				echo "</p>";
 				// Print table header
-				echo "<table class='fin'>";
+				echo "<table>";
 				echo "<tbody> <tr>";
 				echo "<th style='width:7rem'>Date</th>";
 				echo "<th>Cash</th>";

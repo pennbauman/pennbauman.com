@@ -1,4 +1,4 @@
-/* Backend CSS */
+/* Finance Spreadsheet CSS */
 @import url("/files/font/DejaVu_Font.css");
 :root {
   font-size: 1vh;
@@ -71,9 +71,16 @@ h6 {
   display: inline;
 }
 
-ul {
-  margin: 0;
-  list-style-type: none;
+.error {
+  color: #db5b5b !important;
+}
+
+.highlight {
+  color: #2eb398;
+}
+
+.centered {
+  text-align: center;
 }
 
 /* Form */
@@ -146,21 +153,123 @@ select {
   color: #eeeeee !important;
 }
 
-.wide {
+/* Table */
+table {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-left: calc(50% - 50vw);
+  border-collapse: collapse;
   text-align: center;
+  font-size: 1.8rem;
 }
-.wide textarea {
+table col {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+table tbody {
+  display: block;
+  margin: auto;
+  width: 119rem;
+  max-width: 99.5vw;
+  padding: 0;
+  border: 0;
+}
+table tr {
+  background: #eeeeee;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+table th {
+  border-color: #141a1b;
+  background: #141a1b;
+  color: #eeeeee;
+  padding: 0 0.35rem;
+  margin: 0;
+  border: 0;
+}
+table td {
+  border-color: #141a1b;
+  color: #141a1b;
+  width: 15rem;
+  padding: 0 0.35rem;
+  margin: 0;
+  border: 0.15rem solid #141a1b;
+}
+table td.pos {
+  background: #2eb398;
+  background-color: rgba(46, 179, 152, 0.5);
+}
+table td.neg {
+  background: #db5b5b;
+  background-color: rgba(219, 91, 91, 0.5);
+}
+table td a {
+  display: inline-block;
+  padding: 0;
   width: 100%;
+  margin: 0;
+  text-decoration: none;
+}
+table td a:hover {
+  color: inherit;
+}
+table .bold {
+  font-weight: bold;
+  background: #bcbcbc;
+}
+table .bold td {
+  border-bottom-width: 4px;
+  border-top-width: 4px;
+}
+table .thick-left {
+  border-left: 0.4rem solid #141a1b;
+}
+table .thick-right {
+  border-right: 0.4rem solid #141a1b;
+}
+table tr.thick-top td {
+  border-top: 0.4rem solid #141a1b;
+}
+table tr.thick-bottom td {
+  border-bottom: 0.4rem solid #141a1b;
+}
+table .main_col {
+  width: 15rem;
+}
+table .wide_col {
+  width: 51rem;
+}
+table .showable {
+  display: none;
+}
+table .left-align {
+  text-align: left;
 }
 
-.error {
-  color: #db5b5b !important;
-}
+/* Conditional */
+@media (max-aspect-ratio: 1/1) {
+  /* Height > Width */
+  table tbody {
+    width: 68rem;
+  }
+  table .hideable {
+    display: none;
+  }
+  table .showable {
+    display: table-cell;
+  }
 
-.highlight {
-  color: #2eb398;
+  .hideable {
+    display: none;
+  }
 }
-
-.centered {
-  text-align: center;
+@media (min-aspect-ratio: 1/1) {
+  /* Height < Width */
+  .showable {
+    display: none;
+  }
 }
