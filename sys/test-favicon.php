@@ -8,11 +8,6 @@
 <!DOCTYPE html><html>
 	<head>
 		<title>Favicon Tester</title>
-		<?php
-			//echo "<link rel='icon' href='";
-			//echo $favicon;
-			//echo "'>\n";
-		?>
 		<meta charset="UTF-8">
 		<link rel='icon' href='/files/img/sys_favicon.png' id='favicon'>
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>

@@ -19,7 +19,7 @@
 		exit;
 	}
 ?>
-<html>
+<!DOCTYPE html><html>
 	<head>
 		<title>Login</title>
 		<link rel='icon' href='/files/img/sys_favicon.png'>

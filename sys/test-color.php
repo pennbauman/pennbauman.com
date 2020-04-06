@@ -26,15 +26,13 @@
 		</script>
 	</head>
 	<body>
-		<div id="content_box">
-			<h1>Color Tester</h1>
-			<form action="#" onsubmit="colorPage();return false">
-				Hex Color: <br/>
-				<input autofocus id="color_code" type="text" name="color" value="#">
-				<br/><br/>
-				<input type="submit" value="Enter">
-			</form>
-			<?php insertHTML("sys_footer"); ?>
-		</div>
+		<h1>Color Tester</h1>
+		<form action="#" onsubmit="colorPage();return false">
+			Hex Color: <br/>
+			<input autofocus id="color_code" type="text" name="color" value="#">
+			<br/><br/>
+			<input type="submit" value="Enter">
+		</form>
+		<?php insertHTML("sys_footer"); ?>
 	</body>
 </html>

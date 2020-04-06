@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html><html>
 	<head> 
 		<title>Hash</title>
 		<meta charset="UTF-8">
@@ -7,24 +7,31 @@
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 	</head>
-	<body onload="document.body.style.fontSize = window.innerHeight*0.02; return false;">
+	<body>
 		<h1>Hash</h1>
 		<?php
 			if (!empty($_POST)) {
-				echo "<span style='overflow-wrap: break-word;'>";
-				echo "<h4>Text: '".$_POST["text"]."'</h4> <br/>";
+				echo "<p style='overflow-wrap: break-word;'>";
+				echo "<h4>Input: '".$_POST["text"]."'</h4> <br/>";
 				sleep(2);
 				echo "<b>MD5:</b><br/> <b class='error'>".hash("md5", $_POST["text"])."</b><br/>";
 				sleep(2);
 				echo "<b>SHA-256:</b><br/> <b class='error'>".hash("sha256", $_POST["text"])."</b><br/>";
 				sleep(2);
 				echo "<b>SHA-512:</b><br/> <b class='error'>".hash("sha512", $_POST["text"])."</b><br/>";
-				echo "</span><br/>";
+				echo "<br/></p>";
+			} else {
+				echo "<p>";
+				echo "<h4>Input: ''</h4> <br/>";
+				echo "<b>MD5:</b><br/>";
+				echo "<b>SHA-256:</b><br/>";
+				echo "<b>SHA-512:</b><br/>";
+				echo "<br/></p>";
 			}
 		?>
 		<form action='/sys/hash' method='post'>
-			Text: <br/> 
-			<input autofocus type='text' name='text'><br><br/>
+			<b>Input: </b><br/>
+			<input autofocus type='text' name='text'> <br><br/>
 			<input type='submit' value='Hash'>
 		</form>
 		<?php insertHTML("sys_footer"); ?>
