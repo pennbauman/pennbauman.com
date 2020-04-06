@@ -43,9 +43,9 @@
 				?>
 			</div>
 		</div>
-	</body>
 	<script>
 		//$(':root').css("font-size", Math.max(screen.height, window.innerHeight)*0.01);
 		document.documentElement.style.setProperty("font-size", Math.max(screen.height, window.innerHeight)*0.01);
 	</script>
+	</body>
 </html>
