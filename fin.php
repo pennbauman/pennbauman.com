@@ -381,16 +381,16 @@
 				}
 				echo "<b>Date:</b> <br/>";
 				if (isset($_GET['y']) && isset($_GET['m'])) {
-					echo "<input style='width:3em' type='number' name='year' value='$y' class='centered'> - ";
-					echo "<input style='width:1.5em' type='number' name='month' value='$m' class='centered'> - ";
+					echo "<input style='width:3em' type='number' name='year' value='$y' class='centered' required> - ";
+					echo "<input style='width:1.5em' type='number' name='month' value='$m' class='centered' required> - ";
 				} else {
-					echo "<input style='width:3em' type='number' name='year' class='centered'> - ";
-					echo "<input style='width:1.5em' type='number' name='month' class='centered'> - ";
+					echo "<input style='width:3em' type='number' name='year' class='centered' required> - ";
+					echo "<input style='width:1.5em' type='number' name='month' class='centered' required> - ";
 				}
-				echo "<input style='width:1.5em' type='number' name='day' class='centered'><br/><br/>";
-				echo "<b>Cash:</b> <br/> $<input type='number' name='cash' step='0.01' value='0'><br/>";
-				echo "<b>Credit:</b> <br/> $<input type='number' name='credit' step='0.01' value='0'><br/>";
-				echo "<b>Checking:</b> <br/> $<input type='number' name='checking' step='0.01' value='0'><br/><br/>";
+				echo "<input style='width:1.5em' type='number' name='day' class='centered' required><br/><br/>";
+				echo "<b>Cash:</b> <br/> $<input type='number' name='cash' step='0.01' value='0' required><br/>";
+				echo "<b>Credit:</b> <br/> $<input type='number' name='credit' step='0.01' value='0' required><br/>";
+				echo "<b>Checking:</b> <br/> $<input type='number' name='checking' step='0.01' value='0' required><br/><br/>";
 				echo "<b>Type:</b> <br/> <select name='type'>";
 				echo "<option value='Personal' selected>Personal</option>";
 				echo "<option value='Debt'>Debt</option>";
@@ -432,6 +432,7 @@
 						$money[$row['month']][7] = $money[$row['month']][4] + $row['savings'] + $row['stocks'];
 					}
 					// Check for empty months and generate years final total
+					/*
 					for ($m = 1; $m < 12; $m++) {
 						$empty = true;
 						for ($i = 1; $i < 8; $i++) {
@@ -445,6 +446,12 @@
 						}
 					}
 					$m--;
+					// */
+					if ($y_current == $y_max) {
+						$m = (int)date("n");
+					} else {
+						$m = 12;
+					}
 					for ($i = 1; $i < 8; $i++) {
 						$money[13][$i] = $money[$m][$i];
 					}
@@ -492,6 +499,9 @@
 								$link = "/fin?y=$y_current&m=$m";
 							} else {
 								$link = "/fin?y=$y_current&m=$m&edit";
+								if (($m > (int)date("n")) && ($y_current == $y_max)) {
+									$val = 0;
+								}
 							}
 							printCell($i, $val, true, $link);
 						}

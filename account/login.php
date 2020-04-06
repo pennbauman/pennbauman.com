@@ -11,7 +11,12 @@
 	include_once "auth.php";
 
 	if ($sys['user']['auth_level'] > 0) {
-		header("Location: ".$sys['link']['return_url']);
+		if ($sys['link']['return_url'] == "/") {
+			header("Location: /account");
+		} else {
+			header("Location: ".$sys['link']['return_url']);
+		}
+		exit;
 	}
 ?>
 <html>

@@ -1,8 +1,9 @@
 <?php
 	include_once "auth.php";
 	
-	if ($sys['user']['auth'] == 0) {
+	if ($sys['user']['auth_level'] == 0) {
 		header("Location: ".$sys['link']['login_url']);
+		exit;
 	}
 ?>
 <!DOCTYPE html><html>
@@ -23,8 +24,8 @@
 				echo "<h1>Hello, ".$sys['user']['display_name']."</h1>";
 				echo "<p><b>Username: </b>".$sys['user']['username']."<br/>";
 				echo "<b>Email: </b>".$sys['user']['email']."<br/>";
-				echo "</p><p>";
-				echo "<a href='".$sys['link']['logout_url']."'>logout</a>";
+				echo "<br/></p><p style='text-align:center'>";
+				echo "<a href='".$sys['link']['logout_url']."'>logout</a><br/>";
 				echo "</p>";
 			?>
 		</div>
