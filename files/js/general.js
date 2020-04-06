@@ -6,18 +6,21 @@ function includeJs(jsFilePath) {
 
     document.body.appendChild(js);
 }
-//includeJs("https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js");
-$(document).ready(function() { 
-	$(':root').css("font-size", Math.max(screen.height, window.innerHeight)*0.01);
-	textareaSize();
-});
 
-function textareaSize() {
-	$("textarea").each(function(){
-		this.style.height = "0";
-		this.style.height = "calc(2rem + " + this.scrollHeight + "px)";
-		//console.log(this.scrollHeight);
-	});
-	//console.log("resize");
-	return false;
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
 }
+
+docReady(function() {
+	var s = Math.max(screen.height, window.innerHeight)*0.01;
+	document.documentElement.style.fontSize = s + "px";
+	if (typeof textareaSize == "function")
+		textareaSize();
+	console.log(s);
+})

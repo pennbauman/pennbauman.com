@@ -25,9 +25,7 @@
 		<link rel='icon' href='/files/img/sys_favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-		<!--
 		<script src='/files/js/general.js'></script>
-		-->
 	</head>
 	<body>
 		<div class = "bottomHalf">
@@ -44,9 +42,16 @@
 			</div>
 		</div>
 	<script>
-		$(':root').css("font-size", Math.max(screen.height, window.innerHeight)*0.01);
-		document.querySelector(":root").style.setProperty("font-size", Math.max(screen.height, window.innerHeight)*0.01);
-		console.log("x");
+		//$(':root').css("font-size", Math.max(screen.height, window.innerHeight)*0.01);
+		//console.log(screen.height);
+		//console.log(window.innerHeight);
+		//var s = Math.max(screen.height, window.innerHeight)*0.01;
+		//console.log(s);
+		//s = String(s)
+		//document.documentElement.style.setProperty("font-size", s);
+		//document.documentElement.style.fontSize = s + "px";
+		//document.documentElement.style.setProperty("font-size", "10px");
+		//console.log("x");
 	</script>
 	</body>
 </html>
