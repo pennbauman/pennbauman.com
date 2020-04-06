@@ -18,6 +18,7 @@
 	echo '<h2> <!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --> </h2> ';
 	if ($sys['user']['auth_level'] > 0) {
 		echo '<h3>The client is not authorized to access this content. </h3> ';
+		echo "<p><a href='".$sys['link']['logout_url']."'>Logout</a></p>";
 	} else {
 		echo '<h3>The client must be authenticated to access this content.</h3> ';
 		echo "<p><a href='".$sys['link']['login_url']."'>Login</a></p>";
