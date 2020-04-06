@@ -24,10 +24,12 @@
 		<title>Login</title>
 		<link rel='icon' href='/files/img/sys_favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
+		<!--
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
+		-->
 	</head>
-	<body onload="format()">
+	<body>
 		<div class = "bottomHalf">
 			<div class = "tabpage" id = "home">
 				<h1>Login</h1>
