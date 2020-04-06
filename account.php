@@ -18,11 +18,10 @@
 		<?php insertHTML("header") ?>
 		<div id="content" class="std-content">
 			<?php
-				//echo "user: ".$sys['user']['username']." (<a href='".$sys['link']['logout_url']."'>logout</a>)";
-				//echo "<h2>Account</h2>";
 				echo "<h1>Hello, ".$sys['user']['display_name']."</h1>";
 				echo "<p><b>Username: </b>".$sys['user']['username']."<br/>";
 				echo "<b>Email: </b>".$sys['user']['email']."<br/>";
+				echo "<b>Authorization Level: </b>".$sys['user']['auth_level']."<br/>";
 				echo "<br/></p><p class='u-centered'>";
 				echo "<a href='".$sys['link']['logout_url']."'>logout</a><br/>";
 				echo "</p>";
