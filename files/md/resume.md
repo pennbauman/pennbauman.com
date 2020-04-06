@@ -62,5 +62,5 @@ Activities: President of Book Club, Head of Tech Theater Sound Department, Physi
 
 <br/>
 <span style="text-align:center; display:inline-block; width:100%">
-[PDF Version](/files/misc/Penn_Bauman_Resume.pdf) (Updated Jan, 2019)
+[PDF Version](/files/Penn_Bauman_Resume.pdf) (Updated Jan, 2019)
 </span>
