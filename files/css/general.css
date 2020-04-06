@@ -293,6 +293,9 @@ table {
   background: #EEEEEE;
   color: #141A1B;
 }
+.dnd-content h1, .dnd-content h2, .dnd-content h3, .dnd-content h4, .dnd-content h5, .dnd-content h6 {
+  color: #141A1B !important;
+}
 
 .dnd-footer {
   padding: 1rem 0 1.5rem;
