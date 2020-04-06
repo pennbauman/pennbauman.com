@@ -4,16 +4,13 @@
 		<meta charset="UTF-8">
 		<link rel='icon' href='/files/img/sys_favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
-		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 		<script type="text/javascript">
 			function pageSize() {
 				document.getElementById("w").innerHTML = window.innerWidth;
 				document.getElementById("h").innerHTML = window.innerHeight;
 			}
-			$(window).resize(function() {
-				pageSize();
-			});
+			window.onresize = pageSize;
 		</script>
 	</head>
 	<body onload="pageSize()">

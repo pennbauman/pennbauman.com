@@ -1,20 +1,3 @@
-function modeSwitch(type) {
-	if (type == "text") {
-		$("#text_mode_button").css("outline", "none");
-		$("#calc_mode_button").css("outline", "0.5rem solid black");
-		$("#text_mode_box").css("display", "inline-block");
-		$("#calc_mode_box").css("display", "none");
-	} else if (type == "calc") {
-		$("#text_mode_button").css("outline", "0.5rem solid black");
-		$("#calc_mode_button").css("outline", "none");
-		$("#text_mode_box").css("display", "none");
-		$("#calc_mode_box").css("display", "inline-block");
-	}
-}
-$(document).ready(function() { 
-	//modeSwitch("calc");
-});
-
 function rollDice() {
 	var text = document.getElementById("input_form");
 	text = text.elements[0].value;

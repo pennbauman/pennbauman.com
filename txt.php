@@ -78,7 +78,6 @@
 		<meta charset="UTF-8">
 		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='files/css/backend.css'>
-		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 		<script src='/files/js/general.js'></script>
 		<script src='/files/js/txt.js'></script>
 		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
