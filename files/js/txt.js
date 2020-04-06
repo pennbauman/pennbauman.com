@@ -31,20 +31,10 @@ function textareaSize() {
 	area.style.height = 0;
 	area.style.height = "calc(2rem + " + area.scrollHeight + "px)";
 	//console.log(area.value);
+	//for (var a in areas) {
+		//a.style.height = 0;
+		//a.style.height = "calc(2rem + " + a.scrollHeight + "px)";
+		//console.log(a.value);
+	//}
 	return false
-	//.getElementById("textarea")
-	console.log(areas.length);
-	for (var a in areas) {
-		a.style.height = 0;
-		a.style.height = "calc(2rem + " + a.scrollHeight + "px)";
-		console.log(a.value);
-	}
-	//console.log("x");
-	//$("textarea").each(function(){
-		//this.style.height = "0";
-		//this.style.height = "calc(2rem + " + this.scrollHeight + "px)";
-		//console.log(this.scrollHeight);
-	//});
-	//console.log("resize");
-	return false;
 }
