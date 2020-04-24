@@ -14,7 +14,7 @@
 		if ($query->rowCount() > 0) {
 			$result = $query->fetch();
 			if ($sys['user']['auth_level'] < $result["auth_level"]) {
-				header("Location: /txt");
+				include "auth_error.php";
 				exit();
 			}
 			if ($result["password"] == "") {
