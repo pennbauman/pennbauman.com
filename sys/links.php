@@ -10,7 +10,10 @@
 		}
 		echo "<!DOCTYPE html><head>";
 		echo "<title>Shortcut Links</title>";
-		echo '<meta charset="UTF-8">';
+		echo "<meta charset='UTF-8'>";
+		echo "<meta name='description' content='Links editor.'/>";
+		echo "<meta name='author' content='Penn Bauman'>";
+		echo "<meta name='robots' content='noindex, nofollow'/>";
 		echo "<link rel='icon' href='/files/img/sys_favicon.png'>";
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='/files/js/general.js'></script>";

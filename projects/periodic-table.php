@@ -18,6 +18,10 @@
 <!DOCTYPE html>
 	<head>
 		<title> Periodic Table - Penn Bauman</title>
+		<meta charset='UTF-8'>
+		<meta name='description' content="Interactive Periodic Table of Elements."/>
+		<meta name='author' content='Penn Bauman'>
+		<meta name='robots' content='noindex, nofollow'/>
 		<link rel="shortcut icon" href="/files/img/h_favicon.png">
 		<link rel='stylesheet' type='text/css' href='/files/css/periodic-table.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>

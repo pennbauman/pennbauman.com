@@ -1,7 +1,10 @@
 <!DOCTYPE html><html>
 	<head>
 		<title>Color Tester</title>
-		<meta charset="UTF-8">
+		<meta charset='UTF-8'>
+		<meta name='description' content="Color tester."/>
+		<meta name='author' content='Penn Bauman'>
+		<meta name='robots' content='noindex, nofollow'/>
 		<link rel='icon' href='/files/img/sys_favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
 		<script src='/files/js/general.js'></script>

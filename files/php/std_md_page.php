@@ -26,6 +26,15 @@
 	echo "<!DOCTYPE html><head>";
 	echo "<title>".$page_meta['title']." - Penn Bauman</title>";
 	echo '<meta charset="UTF-8">';
+	if (isset($page_meta['description'])) {
+		echo "<meta name='description' content=\"".$page_meta['description']."\"/>";
+	}
+	echo "<meta name='author' content='Penn Bauman'>";
+	if (isset($page_meta['robots'])) {
+		echo "<meta name='robots' content='".$page_meta['robots']."'/>";
+	} else {
+		echo "<meta name='robots' content='noindex'/>";
+	}
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
 	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
 	echo "<script src='/files/js/general.js'></script>";

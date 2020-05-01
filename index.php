@@ -11,7 +11,10 @@
 <!DOCTYPE html><html>
 	<head>
 		<title>Penn Bauman</title>
-		<meta charset="UTF-8">
+		<meta charset='UTF-8'>
+		<meta name='description' content='Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering.'/>
+		<meta name="author" content="Penn Bauman">
+		<meta name='robots' content='index, follow'/>
 		<link rel='icon' href='/files/img/favicon.png'>
 		<!--link rel='stylesheet' type='text/css' href='/files/css/general.css'-->
 		<link rel='stylesheet' type='text/css' href='/files/font/DejaVu_Font.css'>

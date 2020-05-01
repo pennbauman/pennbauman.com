@@ -9,6 +9,8 @@
 	} else {
 		echo '<title>ERROR: 401 Authorization Required</title> ';
 	}
+	echo "<meta charset='UTF-8'>";
+	echo "<meta name='robots' content='noindex, nofollow'/>";
 	echo '<link rel="shortcut icon" href="/files/img/error_favicon.png"> <link rel="stylesheet" type="text/css" href="/files/css/errors.css"> </head> <body>';
 	if ($sys['user']['auth_level'] > 0) {
 		echo '<h1>ERROR: 403 Forbidden</h1> ';

@@ -1,5 +1,6 @@
 ---
 title:Site Information
+robots:noindex,nofollow
 ---
 
 # Site Information

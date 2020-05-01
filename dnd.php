@@ -1,7 +1,10 @@
 <!DOCTYPE html><html>
 	<head>
 		<title>Penn's D&amp;D</title>
-		<meta charset="UTF-8">
+		<meta charset='UTF-8'>
+		<meta name='description' content=''/>
+		<meta name='author' content='Penn Bauman'>
+		<meta name='robots' content='noindex, nofollow'/>
 		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
 		<script src='/files/general.js'></script>

@@ -7,6 +7,10 @@
 <!DOCTYPE html><html>
 	<head>
 		<title>Statistics Generator - Penn's D&amp;D</title>
+		<meta charset='UTF-8'>
+		<meta name='description' content='D&D digital statistics generator with multiple methods: standard array, point buy, top 3 of 4d6, d20.'/>
+		<meta name='author' content='Penn Bauman'>
+		<meta name='robots' content='noindex, nofollow'/>
 		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
 		<link rel='stylesheet' type='text/css' href='/files/css/stats.css'>

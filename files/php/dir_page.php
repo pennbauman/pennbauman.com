@@ -7,7 +7,8 @@
 		// Head
 		echo "<!DOCTYPE html><head>";
 		echo "<title>".substr($sys['file_path_short'], 0, -3)."</title>";
-		echo '<meta charset="UTF-8">';
+		echo "<meta charset='UTF-8'>";
+		echo "<meta name='robots' content='noindex, nofollow'/>";
 		echo "<link rel='icon' href='/files/img/files_favicon.png'>";
 		echo "<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>";
 		echo "<script src='/files/js/general.js'></script>";

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 	<head>
 		<title>Monte Carlo PI Generator - Penn Bauman</title>
+		<meta charset='UTF-8'>
+		<meta name='description' content="Javascript Monte Carlo simulation of pi."/>
+		<meta name='author' content='Penn Bauman'>
+		<meta name='robots' content='noindex, nofollow'/>
 		<link rel="shortcut icon" href="/files/img/pi_favicon.png"> 
 		<link rel='stylesheet' type='text/css' href='/files/css/monte-carlo.css'>
 		<script type="text/javascript" src="/files/js/monte-carlo.js"></script>
