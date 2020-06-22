@@ -77,8 +77,7 @@
 
 	// Check user authorization
 	if ($sys['user']['auth_level'] < 9) {
-		include "auth_error.php";
-		exit;
+		header("Location: ".$sys['link']['login_url']);
 	}
 
 	// Update monthly totals starting with given month
