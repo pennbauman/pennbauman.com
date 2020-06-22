@@ -44,7 +44,7 @@
 				background-attachment: fixed;
 
 				text-align:center;
-				font-family:DejaVu_Sans_Mono, Monospace;
+				font-family:DejaVu_Sans_Mono, Courier, Monospace;
 				color:#EEEEEE;
 			}
 			#content {
@@ -52,7 +52,6 @@
 				top:15rem;
 				left:5%;
 				width:90%;
-				font-family:Monospace;
 			}
 			img {
 				width:20rem;

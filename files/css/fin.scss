@@ -22,7 +22,7 @@ input.text, input[type="text"], input[type="button"], input[type="submit"], .inp
 body {
 	background:$black;
 	color:$white;
-	font-family:DejaVu_Sans_Mono, Courier New, monospace;
+	font-family:DejaVu_Sans_Mono, Courier, monospace;
 	font-size:2rem;
 	max-width:85%;
 	margin:auto;
@@ -78,7 +78,6 @@ form {
 		max-width:100%;
 		line-height:3.5rem;
 		font-size:2rem !important;
-		font-family:Roboto Mono, monospace;
 		background:$black;
 		color:$white !important;
 		padding:0.4rem;
@@ -110,7 +109,6 @@ form {
 		height:4rem;
 		line-height:3.5rem;
 		font-size:2rem;
-		font-family:Roboto Mono, monospace;
 		background:$black;
 		color:$white;
 		-moz-appearance:none !important;
@@ -133,7 +131,6 @@ select {
 	max-width:100%;
 	line-height:3.5rem;
 	font-size:2rem !important;
-	font-family:Roboto Mono, monospace;
 	padding:0.3rem;
 	background:$black;
 	color:$white !important;

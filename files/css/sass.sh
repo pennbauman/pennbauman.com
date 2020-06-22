@@ -2,17 +2,17 @@
 # requires dart-sass
 if [[ $1 == back ]]; then
 	echo "backend.css"
-	sass backend.scss backend.css --no-source-map --watch
+	sass backend.scss backend.css --no-source-map --watch --style=compressed
 elif [[ $1 == "fin" ]]; then
 	echo "fin.css"
-	sass fin.scss fin.css --no-source-map --watch
+	sass fin.scss fin.css --no-source-map --watch --style=compressed
 elif [[ $1 == "dice" ]]; then
 	echo "dice.css"
-	sass dice.scss dice.css --no-source-map --watch
+	sass dice.scss dice.css --no-source-map --watch --style=compressed
 elif [[ $1 == "stats" ]]; then
 	echo "stats.css"
-	sass stats.scss stats.css --no-source-map --watch
+	sass stats.scss stats.css --no-source-map --watch --style=compressed
 else
 	echo "general.css"
-	sass hub.scss general.css --no-source-map --watch
+	sass hub.scss general.css --no-source-map --watch --style=compressed
 fi
