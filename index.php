@@ -11,21 +11,32 @@
 <!DOCTYPE html><html lang='en-US'>
 	<head>
 		<title>Penn Bauman</title>
+		<link rel='canonical' href='https://pennbauman.com'/>
+		<link rel='icon' href='/files/img/favicon.png'/>
+		<link rel="image_src" href="/files/img/jellyboi_x512.png">
 		<meta charset='UTF-8'/>
-		<meta name='description' content='Personal site for Penn Bauman'/>
-<!--, Student of Computer Science at the University of Virginia School of Engineering.'/-->
-		<meta name='author' content='Penn Bauman'/>
-		<meta name='keywords' content=''/>
-		<meta name='robots' content='index, follow'/>
 
-		<meta property='og:title' content='Penn Bauman'/>
-		<meta property='og:description' content='Personal site for Penn Bauman'/>
-<!--, Student of Computer Science at the University of Virginia School of Engineering.'/-->
-		<meta property='og:image' content='https://pennbauman.com/files/img/jellyboi_x512.png'/>
-		<meta property='og:url' content='https://pennbauman.com'/>
+		<meta name="author" content="Penn Bauman"/>
+		<meta name="description" content="Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering."/>
+		<meta name="keywords" content="Penn Bauman, Penn Buaman, Pen Bauman, Pen Buaman, Penn Bauman UVA, Penn Bauman Arlington"/>
+		<meta name="robots" content="index, follow"/>
 
-		<link rel='icon' href='/files/img/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/font/DejaVu_Font.css'>
+		<meta property="og:url" content="https://pennbauman.com"/>
+		<meta property="og:type" content="profile"/>
+		<meta property="og:site_name" content="Penn Bauman"/>
+		<meta property="og:title" content="Penn Bauman"/>
+		<meta property="og:description" content="Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering."/>
+		<meta property="og:image" content="/files/img/jellyboi_x512.png"/>
+
+		<meta name="twitter:url" content="https://pennbauman.com"/>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@pennbauman"/>
+		<meta name="twitter:creator" content="@pennbauman" />
+		<meta name="twitter:title" content="Penn Bauman"/>
+		<meta name="twitter:description" content="Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering."/>
+		<meta name="twitter:image" content="/files/img/jellyboi_x512.png"/>
+
+		<link rel='stylesheet' type='text/css' href='/files/font/DejaVu_Font.css'/>
 		<script src='/files/js/general.js'></script>
 		<style>
 			@import url('/files/font/DejaVu_Font.css');
