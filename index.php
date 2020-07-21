@@ -8,21 +8,29 @@
 		}
 	}
 ?>
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang='en-US'>
 	<head>
 		<title>Penn Bauman</title>
-		<meta charset='UTF-8'>
-		<meta name='description' content='Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering.'/>
-		<meta name="author" content="Penn Bauman">
+		<meta charset='UTF-8'/>
+		<meta name='description' content='Personal site for Penn Bauman'/>
+<!--, Student of Computer Science at the University of Virginia School of Engineering.'/-->
+		<meta name='author' content='Penn Bauman'/>
+		<meta name='keywords' content=''/>
 		<meta name='robots' content='index, follow'/>
+
+		<meta property='og:title' content='Penn Bauman'/>
+		<meta property='og:description' content='Personal site for Penn Bauman'/>
+<!--, Student of Computer Science at the University of Virginia School of Engineering.'/-->
+		<meta property='og:image' content='https://pennbauman.com/files/img/jellyboi_x512.png'/>
+		<meta property='og:url' content='https://pennbauman.com'/>
+
 		<link rel='icon' href='/files/img/favicon.png'>
-		<!--link rel='stylesheet' type='text/css' href='/files/css/general.css'-->
 		<link rel='stylesheet' type='text/css' href='/files/font/DejaVu_Font.css'>
 		<script src='/files/js/general.js'></script>
 		<style>
 			@import url('/files/font/DejaVu_Font.css');
-				/* Prevent Firefox selected button/link outline */
-				:focus {outline:none;}
+			/* Prevent Firefox selected button/link outline */
+			:focus {outline:none;}
 			::-moz-focus-inner {border:0;}
 			/* Prevent iOS input styling */
 			input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
