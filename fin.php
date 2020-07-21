@@ -308,10 +308,9 @@
 		<meta name='description' content='Spreadsheet to track finances.'/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel='icon' href='/files/img/favicon.png'>
-		<!--link rel='stylesheet' type='text/css' href='/files/css/general.css'-->
 		<link rel='stylesheet' type='text/css' href='/files/css/fin.css'>
-		<script src='/files/js/general.js'></script>
 	</head>
 		<?php
 			echo "<body onload='document.getElementById(\"$y\").scrollIntoView()'>";
@@ -406,7 +405,7 @@
 				// Create yearly view page
 				echo "<h1>Finances</h1>";
 				for ($y_current = $y_max; $y_current >= $y_min; $y_current--) {
-					echo "<h3 id='$y_current'>Finances $y_current</h3>";
+					echo "<h2 id='$y_current'>Finances $y_current</h2>";
 					// Get years initial value (from previous december)
 					$money = array();
 					$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=12");
@@ -458,7 +457,7 @@
 					// Print table header
 					echo "<table>";
 					echo "<tbody> <tr>";
-					echo "<th style='width:7rem'>Date</th>";
+					echo "<th style='width:6rem'>Date</th>";
 					echo "<th>Cash</th>";
 					echo "<th>Credit</th>";
 					echo "<th>Checking</th>";
@@ -468,19 +467,19 @@
 					echo "<th>Total</th>";
 					echo "</tr><tr class='bold'>";
 					// Print year start and end sums
-					echo "<td style='width:7rem'>Start</td>";
+					echo "<td style='width:6rem'>Start</td>";
 					for ($i = 1; $i < 8; $i++) {
 						printCell($i, $money[0][$i], false);
 					}
 					echo "</tr><tr class='bold thick-bottom'>";
-					echo "<td style='width:7rem'>End</td>";
+					echo "<td style='width:6rem'>End</td>";
 					for ($i = 1; $i < 8; $i++) {
 						printCell($i, $money[13][$i], false);
 					}
 					// Print monthly difference rows
 					for ($m = 1; $m < 13; $m++) {
 						echo "</tr><tr>";
-						echo "<td style='width:7rem'><b><a href='/fin?y=$y_current&m=$m'>".date("M", mktime(0,0,0,$m,1,0))."</b></td>";
+						echo "<td style='width:6rem'><b><a href='/fin?y=$y_current&m=$m'>".date("M", mktime(0,0,0,$m,1,0))."</b></td>";
 						// Check if month isn't populated with data
 						$empty = true;
 						for ($i = 1; $i < 8; $i++) {
@@ -508,7 +507,7 @@
 					}
 					// Print yearly difference row
 					echo "</tr><tr class='bold thick-top'>";
-					echo "<td style='width:7rem'>Total</td>";
+					echo "<td style='width:6rem'>Total</td>";
 					for ($i = 1; $i < 8; $i++) {
 						printCell($i, $money[13][$i] - $money[0][$i], true);
 					}
@@ -541,11 +540,11 @@
 				// Print table header
 				echo "<table>";
 				echo "<tbody> <tr>";
-				echo "<th style='width:7rem'>Date</th>";
+				echo "<th style='width:6rem'>Date</th>";
 				echo "<th>Cash</th>";
 				echo "<th>Credit</th>";
 				echo "<th>Checking</th>";
-				echo "<th style='width:11rem'>Type</th>";
+				echo "<th style='width:9rem'>Type</th>";
 				echo "<th class='hideable' style='text-align:left'>Description</th>";
 				echo "</tr><tr class='bold'>";
 				// Print month's start value
@@ -557,11 +556,11 @@
 
 				}
 				$row = $query->fetch();
-				echo "<td style='width:7rem'>Start</td>";
+				echo "<td style='width:6rem'>Start</td>";
 				printCell(1, $row['cash'], false);
 				printCell(2, $row['credit'], false);
 				printCell(3, $row['checking'], false);
-				echo "<td class='hideable' style='width:11rem'>Total</td>";
+				echo "<td class='hideable' style='width:9rem'>Total</td>";
 				printCell(3, ($row['cash'] + $row['credit'] + $row['checking'])."</td>", false, "", "left-align hideable");
 				printCell(3, ($row['cash'] + $row['credit'] + $row['checking'])."</td>", false, "", "showable");
 
@@ -570,11 +569,11 @@
 				$query = $pdo->prepare("SELECT * FROM fin_yearly WHERE year=:y AND month=:m");
 				$query->execute(["y" => $y, "m" => $m]);
 				$row = $query->fetch();
-				echo "<td style='width:7rem'>End</td>";
+				echo "<td style='width:6rem'>End</td>";
 				printCell(1, $row['cash'], false);
 				printCell(2, $row['credit'], false);
 				printCell(3, $row['checking'], false);
-				echo "<td class='hideable' style='width:11rem'>Total</td>";
+				echo "<td class='hideable' style='width:9rem'>Total</td>";
 				printCell(3, ($row['cash'] + $row['credit'] + $row['checking'])."</td>", false, "", "left-align hideable");
 				printCell(3, ($row['cash'] + $row['credit'] + $row['checking'])."</td>", false, "", "showable");
 				// Print the month's transactions
@@ -582,12 +581,12 @@
 				$query->execute(["y" => $y, "m" => $m]);
 				foreach ($query as $row) {
 					echo "</tr><tr>";
-					echo "<td class='hideable' style='width:7rem; font-weight:bold'><a href='/fin?id=".$row['id']."&edit'>".date("D j", mktime(0, 0, 0, $m, $row['day'], $y))."</a></td>";
-					echo "<td class='showable' rowspan='2' style='width:7rem; font-weight:bold'><a href='/fin?id=".$row['id']."&edit'>".date("D j", mktime(0, 0, 0, $m, $row['day'], $y))."</a></td>";
+					echo "<td class='hideable' style='width:6rem; font-weight:bold'><a href='/fin?id=".$row['id']."&edit'>".date("D j", mktime(0, 0, 0, $m, $row['day'], $y))."</a></td>";
+					echo "<td class='showable' rowspan='2' style='width:6rem; font-weight:bold'><a href='/fin?id=".$row['id']."&edit'>".date("D j", mktime(0, 0, 0, $m, $row['day'], $y))."</a></td>";
 					printCell(1, $row['cash'], true, "/fin?id=".$row['id']."&edit");
 					printCell(2, $row['credit'], true, "/fin?id=".$row['id']."&edit");
 					printCell(3, $row['checking'], true, "/fin?id=".$row['id']."&edit");
-					echo "<td style='width:11rem'><a href='/fin?id=".$row['id']."&edit'>".$row['type']."</a></td>";
+					echo "<td style='width:9rem'><a href='/fin?id=".$row['id']."&edit'>".$row['type']."</a></td>";
 					echo "<td style='width:51rem; text-align:left' class='hideable'><a href='/fin?id=".$row['id']."&edit'>".$row['description']."</a></td>";
 					echo "</tr class='showable'><tr>";
 					echo "<td colspan='5' style='text-align:left' class='showable thick-left'><a href='/fin?id=".$row['id']."&edit'>".$row['description']."</a></td>";
@@ -613,7 +612,7 @@
 				echo "<form class='centered' action='/fin?y=$y&m=$m&new' method='post'>";
 				echo "<input type='submit' value='New Transaction'>";
 				echo "</form>";
-				echo "<p></br></p>";
+				echo "<p><br/></p>";
 			}
 		?>
 	</body>
