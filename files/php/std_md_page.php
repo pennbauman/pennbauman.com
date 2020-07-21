@@ -2,25 +2,7 @@
 /* Markdown Based Page for General Site
 	markdown file is determined by page code
 */
-	$Parsedown = new Parsedown();
-
-	// Prepare page.md
-	$page = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/files/md/".$sys['path_code'].".md");
-	$page = explode("\n", $page);
-	$page_text = "";
-	$page_meta = array();
-	$inMeta = false;	for ($i = 0; $i < count($page); $i++) {
-		if (($i == 0) && preg_match("/^[-]+$/", $page[$i])) {
-			$inMeta = true;
-		} else if ($inMeta && preg_match("/^[-]+$/", $page[$i])) {
-			$inMeta = false;
-		} else if ($inMeta) {
-			$line_split = explode(":", $page[$i]);
-			$page_meta[$line_split[0]] = $line_split[1];
-		} else {
-			$page_text = $page_text.$page[$i]."\n";
-		}
-	} //*/
+	include_once "std_md.php";
 
 	// Head
 	echo "<!DOCTYPE html><head>";
@@ -35,15 +17,20 @@
 	} else {
 		echo "<meta name='robots' content='noindex'/>";
 	}
+	echo "<meta property='og:title' content='".$page_meta['title']." - Penn Bauman'/>";
+	echo "<meta property='og:image' content='https://pennbauman.com/files/img/jellyboi_x512.png'/>";
+	if (isset($page_meta['description'])) {
+		echo "<meta property='og:description' content='".$page_meta['description']."'/>";
+	} else {
+		echo "<meta property='og:description' content=''/>";
+	}
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
 	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
 	echo "<script src='/files/js/general.js'></script>";
 	// Body
 	echo "</head>\n<body>";
-	insertHTML("header");
-	echo "\n<div id='content' class='std-content'>";
-	echo $Parsedown->text($page_text);
-	echo "</div>\n";
-	insertHTML("footer");
+
+	include "std_md_body.php";
+
 	echo "</body></html>";
 ?>
