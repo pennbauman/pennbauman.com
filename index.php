@@ -13,8 +13,9 @@
 		<title>Penn Bauman</title>
 		<link rel='canonical' href='https://pennbauman.com'/>
 		<link rel='icon' href='/files/img/favicon.png'/>
-		<link rel="image_src" href="/files/img/jellyboi_x512.png">
+		<link rel='image_src' href='/files/img/jellyboi_x512.png'>
 		<meta charset='UTF-8'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
 		<meta name="author" content="Penn Bauman"/>
 		<meta name="description" content="Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering."/>
@@ -36,24 +37,19 @@
 		<meta name="twitter:description" content="Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering."/>
 		<meta name="twitter:image" content="/files/img/jellyboi_x512.png"/>
 
-		<link rel='stylesheet' type='text/css' href='/files/font/DejaVu_Font.css'/>
-		<script src='/files/js/general.js'></script>
+		<link rel='stylesheet' href='/files/font/DejaVu_Font.css'/>
 		<style>
-			@import url('/files/font/DejaVu_Font.css');
 			/* Prevent Firefox selected button/link outline */
 			:focus {outline:none;}
 			::-moz-focus-inner {border:0;}
-			/* Prevent iOS input styling */
-			input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
-				-webkit-appearance: none;
-				border-radius: 0;
-			}
-			:root {
-				font-size:1vh;
-			}
+
+			:root { font-size:1vh }
+
 			body {
+				position:fixed;
 				margin:0;
-				padding:0;
+				width:90%;
+				padding:15rem 5% 0;
 
 				background-color:#141a1b;
 				background-image:url("/files/img/background.jpg");
@@ -65,12 +61,6 @@
 				text-align:center;
 				font-family:DejaVu_Sans_Mono, Courier, Monospace;
 				color:#EEEEEE;
-			}
-			#content {
-				position:fixed;
-				top:15rem;
-				left:5%;
-				width:90%;
 			}
 			img {
 				width:20rem;
@@ -85,10 +75,6 @@
 				margin-bottom:0;
 			}
 			h2 {
-				font-size:4.0rem;
-				margin-bottom:0;
-			}
-			h3 {
 				font-size:2.5rem;
 				font-weight:normal;
 				text-decoration:underline;
@@ -97,27 +83,29 @@
 				font-size:2.6rem;
 				line-height:3.0rem;
 			}
-			a {
-				color:inherit;
-				text-decoration:none;
-			}
 			i {
 				font-size:2.0rem;
 				font-style:italic;
 			}
+			a {
+				color:inherit;
+				text-decoration:none;
+			}
 		</style>
+		<script>
+			function textSize() {
+				var vh = Math.max(document.documentElement.clientHeight||0, window.innerHeight||0);
+				document.documentElement.style.fontSize = (vh/100) + "px";
+			}
+		</script>
 	</head>
-	<body>
-		<div id="content">
-			<img src="https://pennbauman.com/files/img/jellyboi_outline_x512.png">
-			<h1>Penn Bauman</h1>
-			<i><a href="mailto:pennbauman@protonmail.com">pennbauman@protonmail.com</a></i>
-
-			<p>UVA CS Class of 2022</p>
-
-			<h3><a href="/about">About</a></h3>
-			<h3><a href="http://github.com/pennbauman">GitHub</a></h3>
-			<h3><a href="/resume">Resume</a></h3>
-		</div>
+	<body onload="textSize()">
+		<img src="/files/img/jellyboi_outline_x512.png">
+		<h1>Penn Bauman</h1>
+		<i><a href="mailto:pennbauman@protonmail.com">pennbauman@protonmail.com</a></i>
+		<p>UVA CS Class of 2022</p>
+		<h2><a href="/about">About</a></h2>
+		<h2><a href="http://github.com/pennbauman">GitHub</a></h2>
+		<h2><a href="/resume">Resume</a></h2>
 	</body>
 </html>
