@@ -1,5 +1,5 @@
-// _conditional.scss
-@media (max-aspect-ratio: 1/1) { /* Height > Width */
+// Conditional DnD Site CSS
+@media (max-aspect-ratio: 1/1) { // Height > Width
 	.dnd-navbar {
 		.navbar_link {
 			padding:0.5em 0em 0.5em;
@@ -7,7 +7,7 @@
 		}
 	}
 }
-@media (min-aspect-ratio: 1/1) { /* Height < Width */
+@media (min-aspect-ratio: 1/1) { // Height < Width
 
 }
 @media (max-aspect-ratio: 10/9) {

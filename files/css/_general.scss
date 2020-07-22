@@ -1,30 +1,16 @@
-// _general.scss
+// General Site CSS
+
 // Colors
-//$color-dark:#111111;
-//$color-light:#cccccc;
-//$color-high:#00ccff;
-
-//$black:#111111;
-//$white:#eeeeee;
-//$yellow:#ffcc00;
-//$red:#cc0000;
-
-//$content-back:#eeeeee;
-//$content-plain:#444444;
-//$content-plain:#141A1B;
-//$content-hl:#2EB398;
-//$content-hl-plain:#000000;
-
 $color-dark:#141A1B;
 $color-light:#EEEEEE;
 //$color-high:#2EB398;
 $color-high:#DB5B5B;
 
 
-/* Prevent Firefox selected button/link outline */
+// Prevent Firefox selected button/link outline
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
-/* Prevent iOS input styling */
+// Prevent iOS input styling
 input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
 	-webkit-appearance: none;
 	border-radius: 0;
@@ -66,7 +52,7 @@ body::-webkit-scrollbar {
 a { color:inherit; text-decoration:none; }
 table { border-collapse: collapse; }
 
-/* Header */
+// Header
 .std-header {
 	grid-area:header;
 	display:inline-block;
@@ -88,7 +74,6 @@ table { border-collapse: collapse; }
 		font-size:4rem;
 		line-height:5rem;
 
-		//&:hover { color:$color-high; }
 		&:hover { color:$color-light; }
 	}
 
@@ -108,7 +93,7 @@ table { border-collapse: collapse; }
 	}
 }
 
-/* Content */
+// Content
 #content {
 	grid-area:content;
 	position:relative;
@@ -127,9 +112,7 @@ table { border-collapse: collapse; }
 		margin:0;
 		
 		a {
-			//color:$content-plain;
 			text-decoration:underline;
-			//$content-hl-plain;
 
 			&:hover {
 				color:$color-high;
@@ -141,24 +124,6 @@ table { border-collapse: collapse; }
 		text-align:center;
 		margin:0 0 1rem;
 		color:$color-high;
-		
-		/*
-		&::after, &::before {
-			content:"";
-			display:inline-block;
-			//border:$bright1 solid 0;
-			//border-width:0.5rem 0;
-			height:0.5rem;
-			background:$bright1;
-			width:100%;
-			
-		}
-		&::before {
-			float:left;
-		}
-		&::after {
-			float:right;
-		}*/
 	}
 	h2 {
 		font-size:3.5rem;
@@ -214,7 +179,7 @@ table { border-collapse: collapse; }
 	color:$color-light;
 }
 
-/* Footer */
+// Footer
 #footer {
 	grid-area:footer;
 	display:block;

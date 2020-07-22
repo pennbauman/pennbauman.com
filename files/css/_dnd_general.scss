@@ -1,9 +1,10 @@
+// DnD Site CSS
 $color-dark:#141A1B;
 $color-light:#EEEEEE;
 //$color-high:#2EB398;
 $color-high:#DB5B5B;
 
-/* D&D Header */
+// DnD Header
 .dnd-header {
 	grid-area:header;
 	font-size:1.5vh;
@@ -46,7 +47,7 @@ $color-high:#DB5B5B;
 	}
 }
 
-/* D&D Navbar */
+// DnD Navbar
 .dnd-navbar {
 	grid-area:navbar;
 	font-size:1.2vh;

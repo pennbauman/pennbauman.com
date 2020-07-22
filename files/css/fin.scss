@@ -1,3 +1,4 @@
+// Finance Spreadsheet CSS
 $black:#141a1b;
 $white:#eeeeee;
 $green:#2eb398;
@@ -5,15 +6,11 @@ $red:#db5b5b;
 $green-trans:rgba(46, 179, 152, 0.5);
 $red-trans:rgba(219, 91, 91, 0.5);
 
-/* Finance Spreadsheet CSS */
 @import url('/files/font/DejaVu_Font.css');
-//:root {
-	//font-size:1.5vh;
-//}
-/* Prevent Firefox selected button/link outline */
+// Prevent Firefox selected button/link outline
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
-/* Prevent iOS input styling */
+// Prevent iOS input styling
 input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
 	-webkit-appearance: none;
 	border-radius: 0;
@@ -51,7 +48,7 @@ h2 {
 	text-align:center;
 }
 
-/* Form */
+// Form
 form {
 	font-size:0.9rem;
 	
@@ -112,7 +109,7 @@ select {
 	color:$white !important;
 }
 
-/* Table */
+// Table
 table {
 	width:99.5vw;
 	padding:0;
@@ -206,8 +203,8 @@ table {
 	}
 }
 
-/* Conditional */
-@media (max-aspect-ratio: 1/1) { /* Height > Width */
+// Conditional
+@media (max-aspect-ratio: 1/1) { // Height > Width
 	table {
 		tbody {
 			width:42rem;
@@ -223,7 +220,7 @@ table {
 		display:none;
 	}
 }
-@media (min-aspect-ratio: 1/1) { /* Height < Width */
+@media (min-aspect-ratio: 1/1) { // Height < Width
 	.showable {
 		display:none;
 	}
