@@ -1,7 +1,9 @@
 // hub.scss
 /* Written by Penn Bauman with Sass*/
 @import url('/files/font/DejaVu_Font.css');
+@import "dnd_general";
+@import "dnd_conditional";
 
-@import "general";
-@import "conditional";
-@import "utility"
+@import "dice";
+@import "stats";
+
