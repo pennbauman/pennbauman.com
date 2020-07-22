@@ -11,20 +11,22 @@
 	}
 	echo "<meta charset='UTF-8'>";
 	echo "<meta name='robots' content='noindex, nofollow'/>";
-	echo '<link rel="shortcut icon" href="/files/img/error_favicon.png"> <link rel="stylesheet" type="text/css" href="/files/css/errors.css"> </head> <body>';
+	echo '<link rel="icon" href="/files/img/error_favicon.png">';
+	echo '<link rel="stylesheet" href="/files/css/errors.css">';
+	echo '</head> <body>';
 	if ($sys['user']['auth_level'] > 0) {
 		echo '<h1>ERROR: 403 Forbidden</h1> ';
 	} else {
 		echo '<h1>ERROR: 401 Authorization Required</h1> ';
 	}
-	echo '<h2> <!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --> </h2> ';
+	echo '<p><i>'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'</i></p>';
 	if ($sys['user']['auth_level'] > 0) {
-		echo '<h3>The client is not authorized to access this content. </h3> ';
+		echo '<p><b>The client is not authorized to access this content. </b></p>';
 		echo "<p><a href='".$sys['link']['logout_url']."'>Logout</a></p>";
 	} else {
-		echo '<h3>The client must be authenticated to access this content.</h3> ';
+		echo '<p><b>The client must be authenticated to access this content.</b></p>';
 		echo "<p><a href='".$sys['link']['login_url']."'>Login</a></p>";
 	}
 	insertHTML('backend_footer');
-	echo '</body> </html>';
+	echo '</body></html>';
 ?>

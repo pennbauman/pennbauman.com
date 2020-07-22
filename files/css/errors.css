@@ -3,23 +3,19 @@ body {
 	background:#141a1b;
 	color:#eeeeee;
 	font-family:DejaVu_Sans_Mono, Courier, Monospace;
-	font-size:2vh;
 	max-width:85vw;
 	margin:auto;
-	padding:4vh 0; 
+	padding:1rem 0;
 }
 h1 {
-	font-size:5vh;
+	font-size:2rem;
 	color:#db5b5b;
-	margin-bottom:-1vh;
+	margin-bottom:-1rem;
 }
-h2 {
-	font-size:3vh;
-}
-h3 {
-	font-size:2vh;
+b {
+	font-size:1.2rem;
+	font-weight:normal;
 	color:#2eb398;
 }
-p {font-size:2vh;}
-a {	color:inherit; }
-a:hover { color:#2eb398; }
+a {color:inherit}
+a:hover {color:#2eb398}
