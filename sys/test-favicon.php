@@ -12,9 +12,9 @@
 		<meta name='description' content="Favicon tester."/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
-		<link rel='icon' href='/files/img/sys_favicon.png' id='favicon'>
-		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
-		<script src='/files/js/general.js'></script>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel='icon' href='/files/img/sys_favicon.png'>
+		<link rel='stylesheet' href='/files/css/backend.css'>
 		<script>
 			function setFavicon() {
 				//console.log(document.getElementById("favicon").href);

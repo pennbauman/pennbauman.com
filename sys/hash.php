@@ -5,9 +5,9 @@
 		<meta name='description' content="MD5, SHA-256, SHA-512 hasher."/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
-		<link rel="shortcut icon" href="/files/img/sys_favicon.png"> 
-		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
-		<script src='/files/js/general.js'></script>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel='icon' href='/files/img/sys_favicon.png'>
+		<link rel='stylesheet' href='/files/css/backend.css'>
 	</head>
 	<body>
 		<h1>Hash</h1>

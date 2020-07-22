@@ -15,9 +15,9 @@
 		<meta name='description' content='Test page.'/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<link rel='icon' href='/files/img/sys_favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
-		<script src='/files/js/general.js'></script>
+		<link rel='stylesheet' href='/files/css/backend.css'>
 	</head>
 	<body>
 		<?php
@@ -25,6 +25,11 @@
 		?>
 
 		<h1>Test</h1>
+		<h2>Test 2</h2>
+		<h3>Test 3</h3>
+		<h4>Test 4</h4>
+		<h5>Test 5</h5>
+		<h6>Test 6</h6>
 		<p>
 			Normal</br>
 			<b>Bold</b><br/>

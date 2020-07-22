@@ -5,9 +5,9 @@ $red:#db5b5b;
 
 /* Backend CSS */
 @import url('/files/font/DejaVu_Font.css');
-:root {
-	font-size:1vh;
-}
+//:root {
+	//font-size:1vh;
+//}
 /* Prevent Firefox selected button/link outline */
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
@@ -21,36 +21,35 @@ body {
 	background:$black;
 	color:$white;
 	font-family:DejaVu_Sans_Mono, Courier, Monospace;
-	font-size:2rem;
-	max-width:85%;
+	font-size:1.2rem;
+	max-width:85vw;
 	margin:auto;
-	padding:4rem 0;
+	padding:2rem 0;
 }
-p { font-size:2rem; }
 a { color:inherit; }
 a:hover { color:$green; }
 h1 {
-	font-size:5rem;
-	margin-top:0;
+	font-size:2.50rem;
+	margin-top:1rem;
 	color:$green;
 	text-align:center;
 }
 h2 {
-	font-size:4rem;
+	font-size:2rem;
 	color:$green;
 }
 h3 {
-	font-size:4rem;
+	font-size:1.8rem;
 }
 h4 {
-	font-size:3rem;
+	font-size:1.8rem;
 	display:inline;
 }
 h5 {
-	font-size:2.5rem;
+	font-size:1.5rem;
 }
 h6 {
-	font-size:2.5rem;
+	font-size:1.5rem;
 	display:inline;
 }
 ul {
@@ -59,19 +58,19 @@ ul {
 }
 /* Form */
 form {
-	font-size:2rem;
+	font-size:1.2rem;
 	
 	input[type=text], input[type=password], input[type=number], textarea {
 		display:inline-block;
 		border-radius:0;
 		border:0.2rem $white solid;
-		width:50rem;
+		width:30rem;
 		max-width:100%;
-		line-height:3.5rem;
-		font-size:2rem !important;
+		line-height:1.5rem;
+		font-size:1.2rem !important;
 		background:$black;
 		color:$white !important;
-		padding:0.4rem;
+		padding:0.2rem;
 	}
 	
 	input[type=text], input[type=password], input[type=number]  {
@@ -86,8 +85,8 @@ form {
 	}
 
 	textarea {
-		min-height:35rem;
-		padding:0.5rem 1rem 1rem;
+		min-height:25rem;
+		padding:1rem 1rem 1rem;
 		overflow-y:hidden;
 	}
 
@@ -95,11 +94,11 @@ form {
 		display:inline-block;
 		border-radius:0;
 		border:0.2em $white solid;
-		width:35rem;
+		width:20rem;
 		max-width:100%;
-		height:4rem;
-		line-height:3.5rem;
-		font-size:2rem;
+		height:2.5rem;
+		line-height:1.5rem;
+		font-size:1.2rem;
 		background:$black;
 		color:$white;
 		-moz-appearance:none !important;
@@ -118,11 +117,11 @@ select {
 	display:inline-block;
 	border-radius:0;
 	border:0.2rem $white solid;
-	width:25rem;
+	width:20rem;
 	max-width:100%;
 	line-height:3.5rem;
-	font-size:2rem !important;
-	padding:0.3rem;
+	font-size:1.2rem !important;
+	padding:0.2rem;
 	background:$black;
 	color:$white !important;
 }
@@ -132,6 +131,7 @@ select {
 
 	textarea {
 		width:100%;
+		max-width:calc(85vw - 2.5rem);
 	}
 }
 .error {

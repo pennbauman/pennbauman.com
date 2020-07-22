@@ -5,9 +5,9 @@
 		<meta name='description' content="Color tester."/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<link rel='icon' href='/files/img/sys_favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/css/backend.css'>
-		<script src='/files/js/general.js'></script>
+		<link rel='stylesheet' href='/files/css/backend.css'>
 		<style type='text/css'>
 			#content_box {
 				position:fixed;
