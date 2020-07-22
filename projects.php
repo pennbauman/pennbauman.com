@@ -2,16 +2,17 @@
 	<head>
 		<title>Projects - Penn Bauman</title>
 		<meta charset='UTF-8'>
-		<meta name='description' content="Penn Bauman's Web Based coding projects."/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
 		<meta name='author' content='Penn Bauman'>
+		<meta name='description' content="Penn Bauman's Web Based coding projects."/>
 		<meta name='robots' content='noindex, nofollow'/>
 		<link rel='icon' href='/files/img/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
-		<script src='/files/js/general.js'></script>
+		<link rel='stylesheet' href='/files/css/general.css'>
 	</head>
 	<body>
 		<?php insertHTML("header"); ?>
-		<div id="content" class="std-content">
+		<div id="content">
 			<h1>Web Projects</h1>
 			<span style="text-align:center;font-size:1.2em">
 				<p>

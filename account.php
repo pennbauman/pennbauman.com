@@ -13,13 +13,13 @@
 		<meta name='description' content='pennbauman.com main account page.'/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<link rel='icon' href='/files/img/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
-		<script src='/files/general.js'></script>
+		<link rel='stylesheet' href='/files/css/general.css'>
 	</head>
 	<body>
 		<?php insertHTML("header") ?>
-		<div id="content" class="std-content">
+		<div id="content">
 			<?php
 				echo "<h1>Hello, ".$sys['user']['display_name']."</h1>";
 				echo "<p><b>Username: </b>".$sys['user']['username']."<br/>";

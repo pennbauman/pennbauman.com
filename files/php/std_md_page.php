@@ -8,6 +8,7 @@
 	echo "<!DOCTYPE html><head>";
 	echo "<title>".$page_meta['title']." - Penn Bauman</title>";
 	echo '<meta charset="UTF-8">';
+	echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 	if (isset($page_meta['description'])) {
 		echo "<meta name='description' content=\"".$page_meta['description']."\"/>";
 	}
@@ -25,8 +26,7 @@
 		echo "<meta property='og:description' content=''/>";
 	}
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
-	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
-	echo "<script src='/files/js/general.js'></script>";
+	echo "<link rel='stylesheet' href='/files/css/general.css'>";
 	// Body
 	echo "</head>\n<body>";
 

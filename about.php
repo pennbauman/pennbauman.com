@@ -3,8 +3,10 @@
 		<title>About - Penn Bauman</title>
 		<link rel='canonical' href='https://pennbauman.com/about'/>
 		<link rel='icon' href='/files/img/favicon.png'/>
-		<link rel="image_src" href="/files/img/jellyboi_x512.png">
+		<link rel='image_src' href='/files/img/jellyboi_x512.png'>
+		<link rel='stylesheet' href='/files/css/general.css'>
 		<meta charset='UTF-8'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
 		<meta name="author" content="Penn Bauman"/>
 		<meta name='description' content='Penn Bauman is currently attening The University of Virginia. He is majoring Computer Science in the School of Engineering, and minoring in Physics.'/>
@@ -26,11 +28,10 @@
 		<meta name="twitter:description" content="Penn Bauman is currently attening The University of Virginia. He is majoring Computer Science in the School of Engineering, and minoring in Physics."/>
 		<meta name="twitter:image" content="/files/img/jellyboi_x512.png"/>
 
-		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
-		<script src='/files/js/general.js'></script>
 	</head>
+	<body>
 <?php
-	echo "<body>";
 	include "std_md_body.php";
-	echo "</body></html>";
 ?>
+	</body>
+</html>
