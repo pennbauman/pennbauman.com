@@ -5,7 +5,7 @@
 	include_once "std_md.php";
 
 	// Head
-	echo "<!DOCTYPE html><head>";
+	echo "<!DOCTYPE html><html lang='en-US'><head>";
 	echo "<title>".$page_meta['title']." - Penn Bauman</title>";
 	echo '<meta charset="UTF-8">';
 	echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";

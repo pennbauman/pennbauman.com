@@ -6,7 +6,7 @@
 		$sys['user']['password'] = hash("sha512", $_POST["password"]);
 		//$password = hash("sha512", $password);
 		$prev_username = $sys['user']['username'];
-		$error = "Incorrect login.";
+		$error = "<h4 class='error'>Incorrect login.</h4> <br/><br/>";
 	}
 	include_once "auth.php";
 
@@ -21,41 +21,25 @@
 ?>
 <!DOCTYPE html><html>
 	<head>
-		<title>Login</title>
+		<title>Login - Penn Bauman</title>
 		<meta charset='UTF-8'>
 		<meta name='description' content="pennbauman.com login page."/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<link rel='icon' href='/files/img/sys_favicon.png'>
+		<link rel='canonical' href='https://pennbauman.com/account/login'/>
+		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' href='/files/css/backend.css'>
-		<script src='/files/js/general.js'></script>
 	</head>
-	<body>
-		<div class = "bottomHalf">
-			<div class = "tabpage" id = "home">
-				<h1>Login</h1>
-				<?php
-					echo "<form action='".$_SERVER['REQUEST_URI']."' method='post'>";
-					echo "<b>Username:</b> <br/> <input autofocus type='text' name='username' value='".$prev_username."'><br><br/>";
-					echo "<b>Password:</b> <br/> <input type='password' name='password'> <br/><br/>";
-					echo "<h4 class='error'>".$error."</h4> <br/><br/>";
-					echo "<input type='submit' value='Login'>";
-					echo "</form>";
-				?>
-			</div>
-		</div>
-	<script>
-		//$(':root').css("font-size", Math.max(screen.height, window.innerHeight)*0.01);
-		//console.log(screen.height);
-		//console.log(window.innerHeight);
-		//var s = Math.max(screen.height, window.innerHeight)*0.01;
-		//console.log(s);
-		//s = String(s)
-		//document.documentElement.style.setProperty("font-size", s);
-		//document.documentElement.style.fontSize = s + "px";
-		//document.documentElement.style.setProperty("font-size", "10px");
-		//console.log("x");
-	</script>
+	<body class='centered'>
+		<h1>Login</h1>
+		<?php
+			echo "<form action='".$_SERVER['REQUEST_URI']."' method='post'>";
+			echo "<b>Username:</b> <br/> <input autofocus type='text' name='username' value='".$prev_username."'><br><br/>";
+			echo "<b>Password:</b> <br/> <input type='password' name='password'> <br/><br/>";
+			echo $error;
+			echo "<input type='submit' value='Login'>";
+			echo "</form>";
+		?>
 	</body>
 </html>
