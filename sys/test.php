@@ -1,9 +1,6 @@
 <?php
 	include_once "auth.php";
 	if ($sys['user']['auth_level'] < 9) {
-		if ($sys['user']['auth_level'] == 0) {
-			header("Location: ".$sys['link']['login_url']);
-		}
 		include "auth_error.php";
 		exit;
 	}
