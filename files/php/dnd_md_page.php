@@ -24,7 +24,7 @@
 	} //*/
 
 	// Head
-	echo "<!DOCTYPE html><head>";
+	echo "<!DOCTYPE html><html lang='en-US'><head>";
 	echo "<title>".$page_meta['title']." - Penn's D&amp;D</title>";
 	echo '<meta charset="UTF-8">';
 	echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";

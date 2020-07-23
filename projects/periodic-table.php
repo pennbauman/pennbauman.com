@@ -15,7 +15,7 @@
 		}
 	}
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html><html lang='en-US'>
 	<head>
 		<title> Periodic Table - Penn Bauman</title>
 		<meta charset='UTF-8'>

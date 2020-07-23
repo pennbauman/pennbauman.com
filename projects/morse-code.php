@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><html lang='en-US'>
 	<head>
 		<title>Morse Code - Penn Bauman</title>
 		<meta charset='UTF-8'>

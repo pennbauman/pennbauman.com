@@ -293,7 +293,7 @@
 		}
 	}
 ?>
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang='en-US'>
 	<head>
 		<?php
 			echo "<title>";

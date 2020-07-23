@@ -1,4 +1,4 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang='en-US'>
 	<head>
 		<title>Projects - Penn Bauman</title>
 		<meta charset='UTF-8'>

@@ -66,7 +66,7 @@
 		}
 	}
 ?>
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang='en-US'>
 	<head>
 		<?php
 			if ($txtFound) {
@@ -76,13 +76,13 @@
 			}
 		?>
 		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
 		<meta name='description' content="TXT format notes page."/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
 		<link rel='icon' href='/files/img/favicon.png'>
 		<link rel='stylesheet' href='files/css/backend.css'>
 		<script src='/files/js/txt.js'></script>
-		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
 	</head>
 		<?php
 			echo "<body onload=\"txtReady('$txtFile', '$txtPass')\">";
