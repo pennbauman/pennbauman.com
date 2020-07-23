@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html><html lang='en-US'>
 	<head>
 		<title>Morse Code - Penn Bauman</title>

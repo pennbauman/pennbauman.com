@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html><html lang='en-US'>
 	<head>
 		<title>Monte Carlo PI Generator - Penn Bauman</title>
