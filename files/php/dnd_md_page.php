@@ -27,6 +27,7 @@
 	echo "<!DOCTYPE html><head>";
 	echo "<title>".$page_meta['title']." - Penn's D&amp;D</title>";
 	echo '<meta charset="UTF-8">';
+	echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 	if (isset($page_meta['description'])) {
 		echo "<meta name='description' content=\"".$page_meta['description']."\"/>";
 	}
@@ -37,8 +38,7 @@
 		echo "<meta name='robots' content='noindex'/>";
 	}
 	echo "<link rel='icon' href='/files/img/favicon.png'>";
-	echo "<link rel='stylesheet' type='text/css' href='/files/css/general.css'>";
-	echo "<script src='/files/js/general.js'></script>";
+	echo "<link rel='stylesheet' href='/files/css/dnd.css'>";
 	// Body
 	echo "</head>\n<body>";
 	insertHTML("dnd_header");

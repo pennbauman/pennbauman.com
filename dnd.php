@@ -1,13 +1,13 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang='en-US'>
 	<head>
 		<title>Penn's D&amp;D</title>
 		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta name='description' content=''/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
 		<link rel='icon' href='/files/img/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
-		<script src='/files/general.js'></script>
+		<link rel='stylesheet' href='/files/css/dnd.css'>
 	</head>
 	<body>
 		<?php insertHTML("dnd_header") ?>

@@ -8,13 +8,12 @@
 	<head>
 		<title>Statistics Generator - Penn's D&amp;D</title>
 		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta name='description' content='D&D digital statistics generator with multiple methods: standard array, point buy, top 3 of 4d6, d20.'/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
 		<link rel='icon' href='/files/img/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
-		<link rel='stylesheet' type='text/css' href='/files/css/stats.css'>
-		<script src='/files/js/general.js'></script>
+		<link rel='stylesheet' href='/files/css/dnd.css'>
 		<script src='/files/js/stats.js'></script>
 	</head>
 		<?php
@@ -31,7 +30,7 @@
 			}
 			insertHTML("dnd_header");
 		?>
-		<div id="content" class='dnd-content'>
+		<div id="content" class='dnd-content stats'>
 			<h1>D&amp;D Statistics Generator</h1>
 			<div id="generator_box">
 				<div id="stat_box">

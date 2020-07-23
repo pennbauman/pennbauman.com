@@ -2,18 +2,17 @@
 	<head>
 		<title>Dice Roller - Penn's D&amp;D</title>
 		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta name='description' content='D&D format digital dice roller.'/>
 		<meta name='author' content='Penn Bauman'>
 		<meta name='robots' content='noindex, nofollow'/>
 		<link rel='icon' href='/files/img/favicon.png'>
-		<link rel='stylesheet' type='text/css' href='/files/css/general.css'>
-		<link rel='stylesheet' type='text/css' href='/files/css/dice.css'>
-		<script src='/files/js/general.js'></script>
+		<link rel='stylesheet' href='/files/css/dnd.css'>
 		<script src='/files/js/dice.js'></script>
 	</head>
 	<body onload="return false;">
 		<?php insertHTML("dnd_header") ?>
-		<div id="content" class='dnd-content'>
+		<div id="content" class='dnd-content dice'>
 			<h1>D&amp;D Dice Roller</h1>
 			<table><tbody>
 				<!--tr>
