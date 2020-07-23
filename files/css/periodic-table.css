@@ -1,4 +1,14 @@
-body {left:0; top:0; margin:0; padding:0; background:black; color:white; font-size:2vh;}
+@import url('https://rsms.me/inter/inter.css');
+body {
+	left:0;
+	top:0;
+	margin:0;
+	padding:0;
+	background:black;
+	font-family: 'Inter', sans-serif;
+	color:white;
+	font-size:120%;
+}
 b {font-size:3vh; line-height:3vh;}
 i {font-size:1.75vh; line-height:1.75vh;}
 a {color:inherit; text-decoration:inherit;}
