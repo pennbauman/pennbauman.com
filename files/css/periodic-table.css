@@ -7,49 +7,98 @@ body {
 	background:black;
 	font-family: 'Inter', sans-serif;
 	color:white;
-	font-size:120%;
 }
-b {font-size:3vh; line-height:3vh;}
-i {font-size:1.75vh; line-height:1.75vh;}
-a {color:inherit; text-decoration:inherit;}
+a {
+	color:inherit;
+}
 table {
 	margin: 0 4px;
+	margin:auto;
+	border-collapse:collapse;
+	text-align:center;
 }
 th {
 	text-align:center;
 	font-weight:bold;
-	font-size:6vh;
-	line-height:6vh;
+	font-size:3.2rem;
+	line-height:3.2rem;
 	top:0;
-	margin-top:2vh;
-	margin-bottom:3vh;
+	margin-top:0.6rem;
+	margin-bottom:1rem;
 	width:100%;
-	padding: 2vh 0;
+	padding:1rem 0;
 }
 td {
 	padding: 2px;
 }
-.hl:hover {text-decoration:underline;}
+
+#key p {
+	margin:0 auto 0;
+	font-size:0.9rem;
+	padding:0.1rem 0;
+	text-align:center;
+	width:9rem;
+}
+
+#big p {
+	display:block;
+	height:10rem;
+	width:12rem;
+	padding:1.1rem;
+	margin:auto;
+	vertical-align:center;
+	text-align:center;
+	background-color:white;
+	color:black;
+}
+#a_num {
+	font-size:1.5rem;
+	line-height:1.5rem;
+}
+#a_sym {
+	font-weight:bold;
+	font-size:3.4rem;
+	line-height:3.8rem;
+}
+#a_name {
+	font-size:1.5rem;
+	line-height:1.8rem;
+}
+#a_m {
+	font-size:1.1rem;
+	line-height:1.1rem;
+}
+
+#details {
+	vertical-align:top;
+	text-align:left;
+}
+
 .std_block{
 	width:5vw;
 	height:8vh;
 	border:1px solid white;
 	text-align:center;
-	line-height:1.75vh;
+	line-height:0.8rem;
 }
-#main_table {
-	margin:auto;
-	border-collapse:collapse;
+b {
+	font-size:1.5rem;
+	line-height:1.5rem;
 }
+i {
+	font-size:0.8rem;
+	line-height:0.8rem;
+}
+
 .num_left {
-	font-size:2.5vh;
+	font-size:1.2rem;
 	padding: 0 8px;
 	border:solid white;
 	border-width: 1px 0;
 }
 .num_top {
 	text-align:center;
-	font-size:2.5vh;
+	font-size:1.2rem;
 	border:solid white;
 	border-width: 0 1px 1px;
 }
@@ -61,34 +110,6 @@ td {
 	font-weight:bold;
 	text-align:right;
 	padding-right:0.5vw;
-}
-#big {
-	background-color:white;
-	color:black;
-	text-align:center;
-	width:24vh;
-	max-width:calc(100% - 8px);
-	height:calc(24vh - 8px);
-	padding:2px;
-	margin:auto;
-	vertical-align:center;
-}
-#a_num {
-	font-size:3vh;
-	line-height:3vh;
-}
-#a_sym {
-	font-weight:bold;
-	font-size:6vh;
-	line-height:8vh;
-}
-#a_name {
-	font-size:3vh;
-	line-height:3vh;
-}
-#a_m {
-	font-size:2vh;
-	line-height:2vh;
 }
 .outline {outline:5px solid white;}
 .nonmetal {background-color:#002282}

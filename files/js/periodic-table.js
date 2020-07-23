@@ -4,16 +4,16 @@ function htmlPrint(loc, text) {
 }
 // Display new element details
 function element(symbol) {
-	var fin = "<div><p><span id=\"a_num\">" + elements[symbol][0] + "</span> | ";
-	fin += "<span id=\"a_m\">" + elements[symbol][2];
+	var big = "<div><p><span id=\"a_num\">" + elements[symbol][0] + "</span> | ";
+	big += "<span id=\"a_m\">" + elements[symbol][2];
 	if (elements[symbol][2] == "unknown") {
-		fin += "</span><br/>";
+		big += "</span><br/>";
 	} else {
-		fin += " amu</span><br/>";
+		big += " amu</span><br/>";
 	}
-	fin += "<span id=\"a_sym\"> " + symbol + "</span><br/>";
-	fin += "<span id=\"a_name\">" + elements[symbol][1] + "</span><br/>";
-	fin += "<span id=\"a_m\">" + elements[symbol][3] + "<br/>";
+	big += "<span id=\"a_sym\"> " + symbol + "</span><br/>";
+	big += "<span id=\"a_name\">" + elements[symbol][1] + "</span><br/>";
+	big += "<span id=\"a_m\">" + elements[symbol][3] + "<br/>";
 	//ELECTRON CONFIGURATION
 	var num = elements[symbol][0];
 	if (num <= 2) {
@@ -96,9 +96,19 @@ function element(symbol) {
 			num -= num;
 		}
 	}
-	fin += ec + "</span><br/>";
-	fin += "</p></div>"
-	htmlPrint("big", fin);
+	big += ec + "</span>";
+	big += "</p></div>"
+	htmlPrint("big", big);
+
+	var details = "<p>"
+	details += "State: " + elements[symbol][5] + "<br/>";
+	details += elements[symbol][6];
+	details += "<br/><br/>";
+	details += "<a href='http://wikipedia.org/wiki/";
+	details += elements[symbol][1];
+	details += "'>Wikipedia</a>";
+	details += "</p>";
+	htmlPrint("details", details);
 	return false;
 }
 // Reset display block to default dumb info
