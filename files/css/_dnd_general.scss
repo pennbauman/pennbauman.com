@@ -1,112 +1,136 @@
 // DnD Site CSS
-$color-dark:#141A1B;
-$color-light:#EEEEEE;
-//$color-high:#2EB398;
-$color-high:#DB5B5B;
 
-// DnD Header
-.dnd-header {
-	grid-area:header;
-	font-size:1.5vh;
-	width:100%;
-	top:0;
-	left:0;
-	margin-bottom:0.5rem;
-	background:$color-dark;
-	color:$color-light;
-	text-align:center;
-	height:8em;
-	z-index:4;
+// Colors
+$color-back:#000000;
+$color-text:#eeeeee;
+$color-high:#2eb398;
+$color-accent:#575b61;
 
-	#header_title {
-		position:relative;
-		display:inline-block;
-		height:4em;
-		width:8em;
-		top:0;
-		padding:2em 1em;
-		top:-1.8em;
-
-		.header_text1 {
-			font-size:1.5em;
-			line-height:1em;
-		}
-
-		.header_text2 {
-			font-size:4em;
-			line-height:1em;
-		}
-	}
-
-	.header_img {
-		position:relative;
-		display:inline-block;
-		height:6em;
-		width:6em;
-		padding:1em 2em;
-	}
+/* Prevent Firefox selected button/link outline */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+/* Prevent iOS input styling */
+input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
+	-webkit-appearance: none;
+	border-radius: 0;
 }
 
-// DnD Navbar
-.dnd-navbar {
-	grid-area:navbar;
-	font-size:1.2vh;
-	position:-webkit-sticky;
-	position:sticky;
-	display:block;
-	height:4em;
-	width:100%;
-	padding:0;
+body {
 	margin:0;
-	left:0;
-	top:0;
-	margin-top:-0.5rem;
-	border-top:0.5rem solid $color-dark;
+	padding:0;
+	//font-family:'Times New Roman', Times, serif;
+	font-family:DejaVu_Sans_Mono, Courier, Monospace;
+	min-height:100vh;
+
+	background-color:$color-back;
+	color:$color-text;
+	font-size:1.1rem;
+
+	display:grid;
+	grid-template-areas:
+		"header"
+		"navbar"
+		"content"
+		"footer";
+	grid-gap:0;
+	grid-template-columns:100%;
+	grid-template-rows:min-content min-content auto min-content;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+a { color:inherit; text-decoration:none; }
+
+#header {
+	grid-area:header;
+	display:inline-block;
+	position:relative;
+	padding:0;
+
 	text-align:center;
-	background:$color-dark;
-	color:$color-light;
-	z-index:5;
 
-	.navbar_link {
+	font-size:1.6rem;
+
+
+	h1 {
+		margin:0;
+		color:$color-high;
+	}
+}
+#navbar {
+	grid-area:navbar;
+	display:inline-block;
+	position:relative;
+	//width:80%;
+	//margin:0 10%;
+	width:100%;
+
+	border-top:$color-accent 0.2rem solid;
+	border-bottom:$color-accent 0.2rem solid;
+	//background-color:$color-accent;
+
+	text-align:center;
+
+	a {
 		display:inline-block;
-		position:relative;
-		top:0;
-		line-height:2.5em;
-		height:3em;
-		padding:0.5em 1em 0.5em;
-		width:15em;
-		
-		margin:0 1em;
-		left:0;
-		text-align:center;
+		//width:6rem;
+		//max-width:calc(22%);
+		padding:0.2rem 1rem 0.2rem;
+	}
+	a:hover {
+		color:$color-high;
+	}
+}
+#content {
+	grid-area:content;
+	display:inline-block;
+	position:relative;
+	width:80%;
+	padding:1rem 10%;
 
-		&:hover {
-			color:$color-high;
+	h1 {
+		font-size:2.4rem;
+		text-align:center;
+	}
+	h2 {
+		margin-bottom:0;
+		border-bottom:$color-accent 0.2rem solid;
+
+		font-size:2rem;
+		color:$color-high;
+	}
+	h3 {
+		margin-bottom:0;
+		border-bottom:$color-accent 0.2rem solid;
+
+		font-size:1.8rem;
+		color:$color-high;
+	}
+	p {
+		margin:0.4rem 0 1rem;
+
+		a {
+			text-decoration:underline;
 		}
 	}
-
-	.navbar_text {
-		font-size:2.5em;
-	}
 }
+#footer {
+	grid-area:footer;
+	display:inline-block;
+	position:relative;
+	//width:80%;
+	//margin:0 10%;
+	padding:0.8rem 0;
+	width:100%;
 
-.dnd-content {
-	width:80%;
-	padding:2rem 10%;
+	border-top:$color-accent 0.2rem solid;
 
-	background:$color-light;
-	color:$color-dark;
+	text-align:center;
+	font-size:1rem;
 
-	h1, h2, h3, h4, h5, h6 {
-		color:$color-dark !important;
+	p {
+		margin:0;
 	}
-}
-
-.dnd-footer {
-	padding:1rem 0 1.5rem;
-	font-size:1.8rem;
-	line-height:2.5rem;
-	background:$color-dark;
 
 	a:hover {
 		color:$color-high;
