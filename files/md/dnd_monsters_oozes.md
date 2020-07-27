@@ -4,15 +4,11 @@ title:Oozes
 
 ## Oozes
 
-1/4 Oblex Spawn\*\*<br/>
-1/2 Gray Ooze<br/>
-2 Gelatinous Cube<br/>
-2 Ochre Jelly<br/>
-3 Slitherign Tracker\*<br/>
-4 Black Pudding<br/>
-5 Adult Oblex\*\*<br/>
-10 Elder Oblex\*\*<br/>
-
-<br/>
-\*Monsters from Volo's Guide to Monsters.<br/>
-\*\*Monsters from Mordenkainen's Tome of Foes.
+1/4 Oblex Spawn<sup>MToF</sup>  
+1/2 Gray Ooze  
+2 Gelatinous Cube  
+2 Ochre Jelly  
+3 Slitherign Tracker<sup>VGtM</sup>  
+4 Black Pudding  
+5 Adult Oblex<sup>MToF</sup>  
+10 Elder Oblex<sup>MToF</sup>  

@@ -4,39 +4,37 @@ title:Dungeon
 
 ## Dungeon
 
-1/4 Flying Sword<br/>
-1/2 Gray Ooze<br/>
-1 Animated Armor<br/>
-1 Choker\*\*<br/>
-2 Rug of Smothering<br/>
-2 Carrion Crawler<br/>
-2 Grick<br/>
-2 Minic<br/>
-2 Nothic<br/>
-2 Gelatinous Cube<br/>
-2 Ochre Jelly<br/>
-3 Beholder Spectator<br/>
-3 Grell<br/>
-3 Minotaur<br/>
-3 Water Weird<br/>
-4 Helmed Horror<br/>
-4 Black Pudding<br/>
-5 Gorgon<br/>
-5 Xorn<br/>
-7 Grick Alpha<br/>
-7 Shield Guardian<br/>
-8 Cloaker<br/>
-8 Spirit Naga<br/>
-9 Clay Golem<br/>
-10 Stone Golem<br/>
-10 Guardian Naga<br/>
-11 Gynosphinx<br/>
-12 Eidolon\*\*<br/>
-16 Iron Golem<br/>
-17 Androsphinx<br/>
+1/4 Flying Sword  
+1/2 Gray Ooze  
+1 Animated Armor  
+1 Choker<sup>MToF</sup>  
+2 Rug of Smothering  
+2 Carrion Crawler  
+2 Grick  
+2 Minic  
+2 Nothic  
+2 Gelatinous Cube  
+2 Ochre Jelly  
+3 Beholder Spectator  
+3 Grell  
+3 Minotaur  
+3 Water Weird  
+4 Helmed Horror  
+4 Black Pudding  
+5 Gorgon  
+5 Xorn  
+7 Grick Alpha  
+7 Shield Guardian  
+8 Cloaker  
+8 Spirit Naga  
+9 Clay Golem  
+10 Stone Golem  
+10 Guardian Naga  
+11 Gynosphinx  
+12 Eidolon<sup>MToF</sup>  
+16 Iron Golem  
+17 Androsphinx  
 
 <br/>
-See <a href="/dnd/monsters/undead">Undead</a>
 
-<br/>
-\*\*Monsters from Mordenkainen's Tome of Foes.
+See also <a href="/dnd/monsters/undead">Undead</a>

@@ -4,50 +4,46 @@ title:Undead
 
 ## Undead
 
-0 Crawling Claw<br/>
-1/4 Gnoll Witherling\*<br/>
-1/4 Skeleton<br/>
-1/4 Zombie<br/>
-1/2 Shadow<br/>
-1/2 Skulk\*\*<br/>
-1/2 Warhorse Skeleton<br/>
-1 Ghoul<br/>
-2 Ghast<br/>
-2 Minotaur Skeleton<br/>
-2 Will-o'-Wisp<br/>
-2 Ogre Zombie<br/>
-3 Deathlock Wight\*\*<br/>
-3 Mummy<br/>
-3 Sword Wraith\*\*<br/>
-3 Vampiric Mist\*\*<br/>
-3 Wight<br/>
-4 Banshee<br/>
-4 Bone Naga<br/>
-4 Deathlock\*\*<br/>
-4 Flameskull<br/>
-4 Ghost<br/>
-5 Allip\*\*<br/>
-5 Wraith<br/>
-5 Beholder Zombie<br/>
-5 Revenant<br/>
-5 Spawn of Kyuss\*<br/>
-5 Vampire Spawn<br/>
-6 Bodak\*<br/>
-8 Deathlock Mastermind\*\*<br/>
-8 Sword Wraith Commander\*\*<br/>
-12 Boneclaw\*\*<br/>
-13 Devourer\*<br/>
-13 Vampire<br/>
-14 Death Tyrant (Beholder)<br/>
-15 Mummy Lord (16 in lair)<br/>
-15 Skull Lord\*\*<br/>
-15 Vampire Spellcaster or Warrior<br/>
-17 Death Knight<br/>
-17 Adult Blue Dracolich<br/>
-18 Demilich (20 in lair)<br/>
-20 Nightwalker\*\*<br/>
-21 Lich (22 in lair)<br/>
-
-<br/>
-\*Monsters from Volo's Guide to Monsters.<br/>
-\*\*Monsters from Mordenkainen's Tome of Foes.
+0 Crawling Claw  
+1/4 Gnoll Witherling<sup>VGtM</sup>  
+1/4 Skeleton  
+1/4 Zombie  
+1/2 Shadow  
+1/2 Skulk<sup>MToF</sup>  
+1/2 Warhorse Skeleton  
+1 Ghoul  
+2 Ghast  
+2 Minotaur Skeleton  
+2 Will-o'-Wisp  
+2 Ogre Zombie  
+3 Deathlock Wight<sup>MToF</sup>  
+3 Mummy  
+3 Sword Wraith<sup>MToF</sup>  
+3 Vampiric Mist<sup>MToF</sup>  
+3 Wight  
+4 Banshee  
+4 Bone Naga  
+4 Deathlock<sup>MToF</sup>  
+4 Flameskull  
+4 Ghost  
+5 Allip<sup>MToF</sup>  
+5 Wraith  
+5 Beholder Zombie  
+5 Revenant  
+5 Spawn of Kyuss<sup>VGtM</sup>  
+5 Vampire Spawn  
+6 Bodak<sup>VGtM</sup>  
+8 Deathlock Mastermind<sup>MToF</sup>  
+8 Sword Wraith Commander<sup>MToF</sup>  
+12 Boneclaw<sup>MToF</sup>  
+13 Devourer<sup>VGtM</sup>  
+13 Vampire  
+14 Death Tyrant (Beholder)  
+15 Mummy Lord  
+15 Skull Lord<sup>MToF</sup>  
+15 Vampire Spellcaster or Warrior  
+17 Death Knight  
+17 Adult Blue Dracolich  
+18 Demilich  
+20 Nightwalker<sup>MToF</sup>  
+21 Lich  

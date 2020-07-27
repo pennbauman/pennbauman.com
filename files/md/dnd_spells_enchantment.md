@@ -4,46 +4,43 @@ title:Enchantment
 
 ## School of Enchantment
 
-Cantrip *Friends*<br/> 
-Cantrip *Vicious Mockery *<br/> 
-1st *Animal Friendship*<br/> 
-1st *Bane*<br/> 
-1st *Bless*<br/> 
-1st *Charm Person*<br/> 
-1st *Command*<br/> 
-1st *Compelled Duel*<br/> 
-1st *Dissonant Whispers*<br/> 
-1st *Heroism *<br/> 
-1st *Hex*<br/> 
-1st *Sleep*<br/> 
-1st *Tasha's Hideous Laughter*<br/> 
-2nd *Animal Messenger* (ritual)<br/> 
-2nd *Calm Emotions*<br/> 
-2nd *Crown of Madness*<br/> 
-2nd *Enthrall*<br/> 
-2nd *Hold Person*<br/> 
-2nd *Suggestion *<br/> 
-2nd *Zone of Truth*<br/> 
-3rd *Catnap*\*<br/>
-3rd *Enemies Abound*\*<br/>
-4th *Charm Monster*\*<br/>
-4th *Compulsion *<br/> 
-4th *Confusion *<br/> 
-4th *Dominate Beast*<br/> 
-5th *Dominate Person*<br/> 
-5th *Geas*<br/>
-5th *Hold Monster*<br/> 
-5th *Modify Memory*<br/> 
-5th *Synaptic Static*\*<br/>
-6th *Mass Suggestion*<br/> 
-6th *Otiluke's Irresistible Dance*<br/> 
-7th *Power Word Pain*\*<br/>
-8th *Antipathy/Sympathy*<br/> 
-8th *Dominate Monster*<br/> 
-8th *Feeble Mind*<br/> 
-8th *Power Word Stun*<br/> 
-9th *Power Word Kill*<br/> 
-9th *Psychic Scream*\*<br/>
-
-<br/>
-\*Spells from Xanathar's Guide to Everything. 
+Cantrip *Friends*  
+Cantrip *Vicious Mockery *  
+1st *Animal Friendship*  
+1st *Bane*  
+1st *Bless*  
+1st *Charm Person*  
+1st *Command*  
+1st *Compelled Duel*  
+1st *Dissonant Whispers*  
+1st *Heroism *  
+1st *Hex*  
+1st *Sleep*  
+1st *Tasha's Hideous Laughter*  
+2nd *Animal Messenger* (ritual)  
+2nd *Calm Emotions*  
+2nd *Crown of Madness*  
+2nd *Enthrall*  
+2nd *Hold Person*  
+2nd *Suggestion *  
+2nd *Zone of Truth*  
+3rd *Catnap*<sup>XGtE</sup>  
+3rd *Enemies Abound*<sup>XGtE</sup>  
+4th *Charm Monster*<sup>XGtE</sup>  
+4th *Compulsion *  
+4th *Confusion *  
+4th *Dominate Beast*  
+5th *Dominate Person*  
+5th *Geas*  
+5th *Hold Monster*  
+5th *Modify Memory*  
+5th *Synaptic Static*<sup>XGtE</sup>  
+6th *Mass Suggestion*  
+6th *Otiluke's Irresistible Dance*  
+7th *Power Word Pain*<sup>XGtE</sup>  
+8th *Antipathy/Sympathy*  
+8th *Dominate Monster*  
+8th *Feeble Mind*  
+8th *Power Word Stun*  
+9th *Power Word Kill*  
+9th *Psychic Scream*<sup>XGtE</sup>  

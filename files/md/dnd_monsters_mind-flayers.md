@@ -4,20 +4,17 @@ title:Minds Flayers
 
 ## Minds Flayers (Illithids)
 
-0 Cranium Rat\*<br/>
-1/4 Grimlock<br/>
-1 Giant Octopus<br/>
-2 Intellect Devourer<br/>
-3 Grell<br/>
-5 Mindwitness\*<br/>
-5 Swarm of Cranium Rats\*<br/>
-7 Mind Flayer<br/>
-8 Mind Flayer Arcanist<br/>
-9 Ulithard\*<br/>
-10 Alhoon\*<br/>
-11 Morkoth\*<br/>
-13 Neothelid\*<br/>
-14 Elder Brain\*<br/>
-
-<br/>
-\*Monsters from Volo's Guide to Monsters.
+0 Cranium Rat<sup>VGtM</sup>  
+1/4 Grimlock  
+1 Giant Octopus  
+2 Intellect Devourer  
+3 Grell  
+5 Mindwitness<sup>VGtM</sup>  
+5 Swarm of Cranium Rats<sup>VGtM</sup>  
+7 Mind Flayer  
+8 Mind Flayer Arcanist  
+9 Ulithard<sup>VGtM</sup>  
+10 Alhoon<sup>VGtM</sup>  
+11 Morkoth<sup>VGtM</sup>  
+13 Neothelid<sup>VGtM</sup>  
+14 Elder Brain<sup>VGtM</sup>  

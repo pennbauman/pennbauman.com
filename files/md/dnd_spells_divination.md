@@ -4,38 +4,35 @@ title:Divination
 
 ## School of Divination
 
-Cantrip *Guidance*<br/> 
-Cantrip *True Strike*<br/> 
-1st *Beast Bond*\*<br/>
-1st *Comprehend Languages* (ritual)<br/> 
-1st *Detect Good and Evil*<br/> 
-1st *Detect Magic* (ritual)<br/> 
-1st *Detect Poison and Disease* (ritual)<br/> 
-1st *Hunter's Mark*<br/> 
-1st *Identity* (ritual)<br/> 
-1st *Speak with Animals*<br/> 
-2nd *Augury* (ritual)<br/> 
-2nd *Beast Sense* (ritual)<br/> 
-2nd *Detect Thoughts*<br/> 
-2nd *Find Traps*<br/> 
-2nd *Locate Animals or Plants* (ritual)<br/> 
-2nd *Locate Object*<br/> 
-2nd *Mind Spike*\*<br/>
-2nd *See Invisibility*<br/> 
-3rd *Divination*<br/> 
-3rd *Tongues*<br/> 
-4th *Arcane Eye*<br/> 
-4th *Divination* (ritual)<br/> 
-4th *Locate Person*<br/> 
-5th *Commune* (ritual)<br/> 
-5th *Commune with Nature* (ritual)<br/> 
-5th *Contact Another Plane* (ritual)<br/> 
-5th *Legend Lore*<br/> 
-5th *Rary's Telepathic Bond* (ritual)<br/> 
-5th *Scrying*<br/> 
-6th *Find Path*<br/> 
-6th *True Seeing*<br/> 
-9th *Foresight*<br/> 
-
-<br/>
-\*Spells from Xanathar's Guide to Everything. 
+Cantrip *Guidance*  
+Cantrip *True Strike*  
+1st *Beast Bond*<sup>XGtE</sup>  
+1st *Comprehend Languages* (ritual)  
+1st *Detect Good and Evil*  
+1st *Detect Magic* (ritual)  
+1st *Detect Poison and Disease* (ritual)  
+1st *Hunter's Mark*  
+1st *Identity* (ritual)  
+1st *Speak with Animals*  
+2nd *Augury* (ritual)  
+2nd *Beast Sense* (ritual)  
+2nd *Detect Thoughts*  
+2nd *Find Traps*  
+2nd *Locate Animals or Plants* (ritual)  
+2nd *Locate Object*  
+2nd *Mind Spike*<sup>XGtE</sup>  
+2nd *See Invisibility*  
+3rd *Divination*  
+3rd *Tongues*  
+4th *Arcane Eye*  
+4th *Divination* (ritual)  
+4th *Locate Person*  
+5th *Commune* (ritual)  
+5th *Commune with Nature* (ritual)  
+5th *Contact Another Plane* (ritual)  
+5th *Legend Lore*  
+5th *Rary's Telepathic Bond* (ritual)  
+5th *Scrying*  
+6th *Find Path*  
+6th *True Seeing*  
+9th *Foresight*  

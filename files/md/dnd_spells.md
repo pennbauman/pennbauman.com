@@ -4,18 +4,18 @@ title:Spells
 
 # Spells by School
 
-<a href="/dnd/spells/abjuration">Abjuration</a>
+[Abjuration](/dnd/spells/abjuration)
 
-<a href="/dnd/spells/conjuration">Conjuration</a>
+[Conjuration](/dnd/spells/conjuration)
 
-<a href="/dnd/spells/divination">Divination</a>
+[Divination](/dnd/spells/divination)
 
-<a href="/dnd/spells/enchantment">Enchantment</a>
+[Enchantment](/dnd/spells/enchantment)
 
-<a href="/dnd/spells/evocation">Evocation</a>
+[Evocation](/dnd/spells/evocation)
 
-<a href="/dnd/spells/illusion">Illusion</a>
+[Illusion](/dnd/spells/illusion)
 
-<a href="/dnd/spells/necromancy">Necromancy</a>
+[Necromancy](/dnd/spells/necromancy)
 
-<a href="/dnd/spells/transmutation">Transmutation</a>
+[Transmutation](/dnd/spells/transmutation)

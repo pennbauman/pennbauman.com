@@ -4,50 +4,47 @@ title:Non-Player Characters
 
 ## Non-Player Characters
 
-0 Commoner<br/>
-1/8 Bandit<br/>
-1/8 Cultist<br/>
-1/8 Guard<br/>
-1/8 Noble<br/>
-1/8 Tribal Warrior<br/>
-1/4 Acolyte<br/>
-1/4 Apprentice Wizard\*<br/>
-1/2 Scout<br/>
-1/2 Thug<br/>
-1 Spy<br/>
-2 Bandit Captain<br/>
-2 Bard\*<br/>
-2 Berserker<br/>
-2 Cult Fanatic<br/>
-2 Druid<br/>
-2 Preist<br/>
-3 Archer\*<br/>
-3 Illusionist\*<br/>
-3 Knight<br/>
-3 Martial Arts Adept\*<br/>
-3 Swashbuckler\*<br/>
-3 Veteran<br/>
-4 Warlock of the Archfey\*<br/>
-5 Enchanter\*<br/>
-5 Kraken Priest\*<br/> 
-5 Master Thief\*<br/>
-5 Gladiator<br/>
-5 Transmuter\*<br/>
-6 Conjurer\*<br/>
-6 Mage<br/>
-6 Warlock of the Great Old One\*<br/>
-7 Warlock of the Fiend\*<br/>
-8 Assassin<br/>
-8 Blackguard\*<br/>
-8 Diviner\*<br/>
-9 Abjurer\*<br/>
-9 Champion\*<br/>
-9 Evoker\*<br/>
-9 Necromancer\*<br/>
-9 War Priest\*<br/>
-12 Archdruid\*<br/>
-12 Archmage<br/>
-12 Warlord\*<br/>
-
-<br/>
-\*Monsters from Volo's Guide to Monsters.
+0 Commoner  
+1/8 Bandit  
+1/8 Cultist  
+1/8 Guard  
+1/8 Noble  
+1/8 Tribal Warrior  
+1/4 Acolyte  
+1/4 Apprentice Wizard<sup>VGtM</sup>  
+1/2 Scout  
+1/2 Thug  
+1 Spy  
+2 Bandit Captain  
+2 Bard<sup>VGtM</sup>  
+2 Berserker  
+2 Cult Fanatic  
+2 Druid  
+2 Preist  
+3 Archer<sup>VGtM</sup>  
+3 Illusionist<sup>VGtM</sup>  
+3 Knight  
+3 Martial Arts Adept<sup>VGtM</sup>  
+3 Swashbuckler<sup>VGtM</sup>  
+3 Veteran  
+4 Warlock of the Archfey<sup>VGtM</sup>  
+5 Enchanter<sup>VGtM</sup>  
+5 Kraken Priest<sup>VGtM</sup>   
+5 Master Thief<sup>VGtM</sup>  
+5 Gladiator  
+5 Transmuter<sup>VGtM</sup>  
+6 Conjurer<sup>VGtM</sup>  
+6 Mage  
+6 Warlock of the Great Old One<sup>VGtM</sup>  
+7 Warlock of the Fiend<sup>VGtM</sup>  
+8 Assassin  
+8 Blackguard<sup>VGtM</sup>  
+8 Diviner<sup>VGtM</sup>  
+9 Abjurer<sup>VGtM</sup>  
+9 Champion<sup>VGtM</sup>  
+9 Evoker<sup>VGtM</sup>  
+9 Necromancer<sup>VGtM</sup>  
+9 War Priest<sup>VGtM</sup>  
+12 Archdruid<sup>VGtM</sup>  
+12 Archmage  
+12 Warlord<sup>VGtM</sup>  

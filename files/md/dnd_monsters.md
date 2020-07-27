@@ -4,56 +4,56 @@ title:Monsters
 
 # Monster Lists
 
-<a href="/dnd/monsters/aberrants">Aberrants</a>
+[Aberrants](/dnd/monsters/aberrants)
 
-<a href="/dnd/monsters/aboleths">Aboleths (Koa-Toa)</a>
+[Aboleths (Koa-Toa)](/dnd/monsters/aboleths)
 
-<a href="/dnd/monsters/aquatic">Aquatic</a>
+[Aquatic](/dnd/monsters/aquatic)
 
-<a href="/dnd/monsters/beasts">Beasts</a>
+[Beasts](/dnd/monsters/beasts)
 
-<a href="/dnd/monsters/celestials">Celestials</a>
+[Celestials](/dnd/monsters/celestials)
 
-<a href="/dnd/monsters/constructs">Constructs</a>
+[Constructs](/dnd/monsters/constructs)
 
-<a href="/dnd/monsters/dinosaurs">Dinosaurs</a>
+[Dinosaurs](/dnd/monsters/dinosaurs)
 
-<a href="/dnd/monsters/dragons">Dragons</a>
+[Dragons](/dnd/monsters/dragons)
 
-<a href="/dnd/monsters/drow">Drow</a>
+[Drow](/dnd/monsters/drow)
 
-<a href="/dnd/monsters/duergar">Duergar</a>
+[Duergar](/dnd/monsters/duergar)
 
-<a href="/dnd/monsters/dungeon">Dungeon</a>
+[Dungeon](/dnd/monsters/dungeon)
 
-<a href="/dnd/monsters/elementals">Elementals</a>
+[Elementals](/dnd/monsters/elementals)
 
-<a href="/dnd/monsters/fey">Fey</a>
+[Fey](/dnd/monsters/fey)
 
-<a href="/dnd/monsters/fiends">Fiends</a>
+[Fiends](/dnd/monsters/fiends)
 
-<a href="/dnd/monsters/giants">Giants</a>
+[Giants](/dnd/monsters/giants)
 
-<a href="/dnd/monsters/gnolls">Gnolls</a>
+[Gnolls](/dnd/monsters/gnolls)
 
-<a href="/dnd/monsters/goblins">Goblinoids</a>
+[Goblinoids](/dnd/monsters/goblins)
 
-<a href="/dnd/monsters/mind-flayers">Mind Flayers (Illithids)</a>
+[Mind Flayers (Illithids)](/dnd/monsters/mind-flayers)
 
-<a href="/dnd/monsters/monstrosities">Monstrosities</a>
+[Monstrosities](/dnd/monsters/monstrosities)
 
-<a href="/dnd/monsters/npcs">Non-Player Characters</a>
+[Non-Player Characters](/dnd/monsters/npcs)
 
-<a href="/dnd/monsters/oozes">Oozes</a>
+[Oozes](/dnd/monsters/oozes)
 
-<a href="/dnd/monsters/orcs">Orc</a>
+[Orc](/dnd/monsters/orcs)
 
-<a href="/dnd/monsters/plants">Plants &amp; Fungi</a>
+[Plants & Fungi](/dnd/monsters/plants)
 
-<a href="/dnd/monsters/shadow">Shadow</a>
+[Shadow](/dnd/monsters/shadow)
 
-<a href="/dnd/monsters/undead">Undead</a>
+[Undead](/dnd/monsters/undead)
 
-<a href="/dnd/monsters/underdark">Underdark</a>
+[Underdark](/dnd/monsters/underdark)
 
-<a href="/dnd/monsters/yuan-ti">Yuan-Ti</a>
+[Yuan-Ti](/dnd/monsters/yuan-ti)

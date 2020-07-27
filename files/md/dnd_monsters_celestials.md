@@ -4,16 +4,13 @@ title:Celestials
 
 ## Celestials
 
-2 Pegasus<br/>
-4 Couatl<br/>
-5 Unicorn<br/>
-10 Deva (Angel)<br/>
-11 Gynosphinx<br/>
-12 Ki-Rin\*<br/>
-16 Planetar (Angel)<br/>
-17 Androsphinx<br/>
-21 Solar (Angel)<br/>
-23 Empyrean<br/>
-
-<br/>
-\*Monsters from Volo's Guide to Monsters. 
+2 Pegasus  
+4 Couatl  
+5 Unicorn  
+10 Deva (Angel)  
+11 Gynosphinx  
+12 Ki-Rin<sup>VGtM</sup>  
+16 Planetar (Angel)  
+17 Androsphinx  
+21 Solar (Angel)  
+23 Empyrean  

@@ -4,36 +4,33 @@ title:Illusion
 
 ## School of Illusion
 
-Cantrip  *Minor Illusion*<br/>
-1st *Color Spray*<br/>
-1st *Disguise Self*<br/>
-1st *Illusionary Script* (ritual)<br/>
-1st *Silent Image*<br/>
-2nd *Blur*<br/>
-2nd *Magic Mouth* (ritual)<br/>
-2nd *Mirror Image*<br/>
-2nd *Nystul's Magic Aura*<br/>
-2nd *Phantasmal Force*<br/>
-2nd *Shadow Blade*\*<br/>
-2nd *Silence*<br/>
-3rd *Fear*<br/>
-3rd *Hypnotic Pattern*<br/>
-3rd *Major Image*<br/>
-3rd *Phantom Steed* (ritual)<br/>
-4th *Greater Invisibility*<br/>
-4th *Hallucinatory Terrain*<br/>
-4th *Phantasmal Killer*<br/>
-5ht *Creation*<br/>
-5th *Dream*<br/>
-5th *Mislead*<br/>
-5th *Seeming*<br/>
-6th *Mental Prison*\*<br/>
-6th *Mirage Arcane*<br/>
-6th *Programmed Illusion*<br/>
-7th *Project Image*<br/>
-7th *Simulacrum*<br/>
-8th *Illusory Dragon*\*<br/>
-8th *Weird*<br/>
-
-<br/>
-\*Spells from Xanathar's Guide to Everything. 
+Cantrip  *Minor Illusion*  
+1st *Color Spray*  
+1st *Disguise Self*  
+1st *Illusionary Script* (ritual)  
+1st *Silent Image*  
+2nd *Blur*  
+2nd *Magic Mouth* (ritual)  
+2nd *Mirror Image*  
+2nd *Nystul's Magic Aura*  
+2nd *Phantasmal Force*  
+2nd *Shadow Blade*<sup>XGtE</sup>  
+2nd *Silence*  
+3rd *Fear*  
+3rd *Hypnotic Pattern*  
+3rd *Major Image*  
+3rd *Phantom Steed* (ritual)  
+4th *Greater Invisibility*  
+4th *Hallucinatory Terrain*  
+4th *Phantasmal Killer*  
+5ht *Creation*  
+5th *Dream*  
+5th *Mislead*  
+5th *Seeming*  
+6th *Mental Prison*<sup>XGtE</sup>  
+6th *Mirage Arcane*  
+6th *Programmed Illusion*  
+7th *Project Image*  
+7th *Simulacrum*  
+8th *Illusory Dragon*<sup>XGtE</sup>  
+8th *Weird*  

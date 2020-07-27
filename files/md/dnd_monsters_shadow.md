@@ -4,19 +4,16 @@ title:Shadow
 
 ## Shadow
 
-1/4 The Wretched\*\*<br/>
-1/2 Skulk\*\*<br/>
-1 Meazel\*\*<br/>
-7 The Lost\*\*<br/>
-7 Shadow Dancer (Shadar-Kai)\*\*<br/>
-9 Gloom Weaver (Shadar-Kai)\*\*<br/>
-9 The Lonely\*\*<br/>
-11 Balhannoth\*\*<br/>
-11 The Hungry\*\*<br/>
-11 Soul Monger (Shadar-Kai)\*\*<br/>
-13 The Angry\*\*<br/>
-17 Nagpa\*\*<br/>
-20 Nightwalker\*\*<br/>
-
-<br/>
-\*\*Monsters from Mordenkainen's Tome of Foes.
+1/4 The Wretched<sup>MToF</sup>  
+1/2 Skulk<sup>MToF</sup>  
+1 Meazel<sup>MToF</sup>  
+7 The Lost<sup>MToF</sup>  
+7 Shadow Dancer (Shadar-Kai)<sup>MToF</sup>  
+9 Gloom Weaver (Shadar-Kai)<sup>MToF</sup>  
+9 The Lonely<sup>MToF</sup>  
+11 Balhannoth<sup>MToF</sup>  
+11 The Hungry<sup>MToF</sup>  
+11 Soul Monger (Shadar-Kai)<sup>MToF</sup>  
+13 The Angry<sup>MToF</sup>  
+17 Nagpa<sup>MToF</sup>  
+20 Nightwalker<sup>MToF</sup>  

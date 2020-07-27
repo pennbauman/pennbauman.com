@@ -5,103 +5,99 @@ title:Fiends
 ## Fiends
 
 ### Demons
-1/8 Manes<br/>
-1/4 Abyssal Wretch\*\*<br/>
-1/4 Dretch<br/>
-1 Maw Demon\*<br/>
-1 Quasit<br/>
-2 Rutterkin\*\*<br/>
-3 Bulezau\*\*<br/>
-4 Babau\*<br/>
-4 Dybbuk\*\*<br/>
-4 Shadow Demon<br/>
-5 Barlgura<br/>
-5 Tanarukk (Orc)\*<br/>
-6 Chamse<br/>
-6 Vrock<br/>
-7 Armanite\*\*<br/>
-7 Draegloth\*<br/>
-7 Maurezhi\*\*<br/>
-8 Hezrou<br/>
-8 Shoosuva\*<br/>
-9 Glabrezu<br/>
-10 Yochlol<br/>
-11 Alkilith\*\*<br/>
-13 Nalfeshnee<br/>
-13 Wastrilith\*\*<br/>
-15 Nabassu\*\*<br/>
-16 Marilith<br/>
-17 Goristro<br/>
-18 Sibriex\*\*<br/>
-19 Balor<br/>
-21 Molydeus\*\*<br/>
+1/8 Manes  
+1/4 Abyssal Wretch<sup>MToF</sup>  
+1/4 Dretch  
+1 Maw Demon<sup>VGtM</sup>  
+1 Quasit  
+2 Rutterkin<sup>MToF</sup>  
+3 Bulezau<sup>MToF</sup>  
+4 Babau<sup>VGtM</sup>  
+4 Dybbuk<sup>MToF</sup>  
+4 Shadow Demon  
+5 Barlgura  
+5 Tanarukk (Orc)<sup>VGtM</sup>  
+6 Chamse  
+6 Vrock  
+7 Armanite<sup>MToF</sup>  
+7 Draegloth<sup>VGtM</sup>  
+7 Maurezhi<sup>MToF</sup>  
+8 Hezrou  
+8 Shoosuva<sup>VGtM</sup>  
+9 Glabrezu  
+10 Yochlol  
+11 Alkilith<sup>MToF</sup>  
+13 Nalfeshnee  
+13 Wastrilith<sup>MToF</sup>  
+15 Nabassu<sup>MToF</sup>  
+16 Marilith  
+17 Goristro  
+18 Sibriex<sup>MToF</sup>  
+19 Balor  
+21 Molydeus<sup>MToF</sup>  
 
 ### Demon Lords
-23 Baphomet\*\*<br/>
-23 Fraz-Urb'luu\*\*<br/>
-23 Juiblex\*\*<br/>
-23 Zuggtmoy\*\*<br/>
-24 Graz'zt\*\*<br/>
-24 Yeenoghu\*\*<br/>
-26 Demogorgon\*\*<br/>
-26 Orcus\*\*<br/>
+23 Baphomet<sup>MToF</sup>  
+23 Fraz-Urb'luu<sup>MToF</sup>  
+23 Juiblex<sup>MToF</sup>  
+23 Zuggtmoy<sup>MToF</sup>  
+24 Graz'zt<sup>MToF</sup>  
+24 Yeenoghu<sup>MToF</sup>  
+26 Demogorgon<sup>MToF</sup>  
+26 Orcus<sup>MToF</sup>  
 
 ### Devils
-0 Lemure<br/>
-1/2 Nupperibo\*\*<br/>
-1 Imp<br/>
-2 Spined Devil<br/>
-3 Bearded Devil<br/>
-4 Merregon\*\*<br/>
-5 Barbed Devil<br/>
-6 White Abishai\*\*<br/>
-7 Black Abishai\*\*<br/>
-8 Chain Devil<br/>
-9 Bone Devil<br/>
-10 Orthon\*\*<br/>
-11 Horned Devil<br/>
-12 Erinyes<br/>
-13 Narzugon\*\*<br/>
-14 Ice Devil<br/>
-15 Green Abishai\*\*<br/>
-16 Hellfire Engine\*\*<br/>
-17 Blue Abishai\*\*<br/>
-18 Amnizu\*\*<br/>
-19 Red Abishai\*\*<br/>
-20 Pit Fiend<br/>
+0 Lemure  
+1/2 Nupperibo<sup>MToF</sup>  
+1 Imp  
+2 Spined Devil  
+3 Bearded Devil  
+4 Merregon<sup>MToF</sup>  
+5 Barbed Devil  
+6 White Abishai<sup>MToF</sup>  
+7 Black Abishai<sup>MToF</sup>  
+8 Chain Devil  
+9 Bone Devil  
+10 Orthon<sup>MToF</sup>  
+11 Horned Devil  
+12 Erinyes  
+13 Narzugon<sup>MToF</sup>  
+14 Ice Devil  
+15 Green Abishai<sup>MToF</sup>  
+16 Hellfire Engine<sup>MToF</sup>  
+17 Blue Abishai<sup>MToF</sup>  
+18 Amnizu<sup>MToF</sup>  
+19 Red Abishai<sup>MToF</sup>  
+20 Pit Fiend  
 
 ### Archdevils
-16 Titivilus\*\*<br/>
-19 Bael\*\*<br/>
-21 Hutijin\*\*<br/>
-21 Moloch\*\*<br/>
-22 Geryon\*\*<br/>
-26 Zariel\*\*<br/>
+16 Titivilus<sup>MToF</sup>  
+19 Bael<sup>MToF</sup>  
+21 Hutijin<sup>MToF</sup>  
+21 Moloch<sup>MToF</sup>  
+22 Geryon<sup>MToF</sup>  
+26 Zariel<sup>MToF</sup>  
 
 ### Yugoloths
-3 Merrenoloth\*\*<br/>
-5 Mezzoloth<br/>
-7 Dhergoloth\*\*<br/>
-8 Canoloth\*\*<br/>
-9 Hydroloth\*\*<br/>
-9 Nycaloth<br/>
-11 Yagnoloth\*\*<br/>
-12 Arcanaloth<br/>
-12 Oinoloth\*\*<br/>
-13 Ultraloth<br/>
+3 Merrenoloth<sup>MToF</sup>  
+5 Mezzoloth  
+7 Dhergoloth<sup>MToF</sup>  
+8 Canoloth<sup>MToF</sup>  
+9 Hydroloth<sup>MToF</sup>  
+9 Nycaloth  
+11 Yagnoloth<sup>MToF</sup>  
+12 Arcanaloth  
+12 Oinoloth<sup>MToF</sup>  
+13 Ultraloth  
 
 ### Other
-1 Vargouille\*<br/>
-3 Hell Hound<br/>
-3 Nightmare<br/>
-4 Barghest\*<br/>
-4 Succubus/Incubus<br/>
-5 Cambion<br/>
-8 Howler\*\*<br/>
-13 Devourer\*<br/>
-13 Rakshasa<br/>
-14 Cadaver Collector\*\*<br/>
-
-<br/>
-\*Monsters from Volo's Guide to Monsters.<br/>
-\*\*Monsters from Mordenkainen's Tome of Foes. 
+1 Vargouille<sup>VGtM</sup>  
+3 Hell Hound  
+3 Nightmare  
+4 Barghest<sup>VGtM</sup>  
+4 Succubus/Incubus  
+5 Cambion  
+8 Howler<sup>MToF</sup>  
+13 Devourer<sup>VGtM</sup>  
+13 Rakshasa  
+14 Cadaver Collector<sup>MToF</sup>  
