@@ -12,41 +12,34 @@
 	</head>
 	<body onload="return false;">
 		<?php insertHTML("dnd_header") ?>
-		<div id="content" class='dnd-content dice'>
-			<h1>D&amp;D Dice Roller</h1>
-			<table><tbody>
-				<!--tr>
-					<th id="text_mode_button" onclick="modeSwitch('text');return false;">
-						Text Box
-					</th>
-					<th id="calc_mode_button" onclick="modeSwitch('calc');return false;">
-						Calculator
-					</th>
-				</tr-->
-				<tr>
-					<td id="text_mode_box" colspan="2">
-						
-						<div id="text_mode_output">
-							<div id="result_top"><b id="rolled">Dice</b></div>
-							<div id="result_bottom"><b id="result">
-									<!--span style='color:black'>X</span-->
-								<i>Result</i>
-							</b></div>
-						</div>
-						<div id="text_mode_input">
-							<form id="input_form">
-								<div id="form_top"><p id="form_directions">Enter Dice to Be Rolled</p></div>
-								<div id="text_input_box"><input type="text" name="dice-text" id="text_input"> </div><br/>
-								<input type="submit" onClick="rollDice();return false;" style="display:none">
-								<div id="text_submit_box"><a id="submit_button" onclick="rollDice();return false;"> Roll </a></div>
-							</form>
-						</div> 
-					</td>
-					<!--td id="calc_mode_box" colspan="2">
-						<div id="calc_mode_message">Coming Soon!</div>
-					</td--	>
-				</tr>
-			</tbody></table>
+		<div id="content" class='dice'>
+			<h1>D&amp;D Dice<span class="hideable"> Roller</span></h1>
+			<div id="main_box">
+				<div id="text_mode_output">
+					<div id="result_top">
+						<b id="rolled">Dice</b>
+					</div>
+					<div id="result_bottom">
+						<i id="result">Result</i>
+					</div>
+				</div>
+				<div id="text_mode_input">
+					<form id="input_form">
+						<p>Enter Dice to Be Rolled</p>
+						<input type="text" name="dice-text" id="text_input"/>
+						<input type="submit" onClick="rollDice();return false;" style="display:none">
+						<a id="submit_button" onclick="rollDice();return false;"> Roll </a>
+					</form>
+				</div>
+			</div>
+			<!--tr>
+				<th id="text_mode_button" onclick="modeSwitch('text');return false;">
+					Text Box
+				</th>
+				<th id="calc_mode_button" onclick="modeSwitch('calc');return false;">
+					Calculator
+				</th>
+			</tr-->
 		</div>
 		<?php insertHTML("dnd_footer") ?>
 	</body>

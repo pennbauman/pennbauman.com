@@ -30,7 +30,7 @@
 			}
 			insertHTML("dnd_header");
 		?>
-		<div id="content" class='dnd-content stats'>
+		<div id="content" class='stats'>
 			<h1>D&amp;D Statistics Generator</h1>
 			<div id="generator_box">
 				<div id="stat_box">
@@ -64,7 +64,7 @@
 					?>
 				</div>
 				<div id="button_box">
-					<div id='button_top'><p>Pick Generation Method</p></div>
+					<div id='button_label'><p>Pick Generation Method</p></div>
 					<?php
 						if ($url == "point") {
 							echo "<a href='/dnd/stats?s=d20' id='d20_button' class='type_button'> 1d20 </a>";

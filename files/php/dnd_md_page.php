@@ -42,7 +42,7 @@
 	// Body
 	echo "</head>\n<body>";
 	insertHTML("dnd_header");
-	echo "\n<div id='content' class='dnd-content'>";
+	echo "\n<div id='content'>";
 	echo $Parsedown->text($page_text);
 	echo "</div>\n";
 	insertHTML("dnd_footer");

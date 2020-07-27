@@ -3,165 +3,108 @@ $plain:#141A1B;
 $hl:#2EB398;
 
 .dice {
-	#content h1 {
-		text-align:center;
-	}
-	table {
-		outline: 0.5rem solid $plain;
-		width:100%;
-	}
-	td {
-		/*height:calc(58vh - 2rem);*/
-		height:58vh;
-		padding:1rem 5%;
-	}
-	th {
-		width:50%;
-		padding:0.5rem 0;
-	}
-	#text_mode_button {
-		background:$back;
-		color:$plain;
-	}
-	#calc_mode_button {
-		background:$back;
-		color:$plain;
-		outline: 0.5rem solid $plain;
-	}
-	#text_mode_box {
-		display:inline-block;
+	#main_box {
+		display:block;
 		width:90%;
-	}
-	#calc_mode_box {
-		display:none;
-		width:190%;
-	}
-
-	#text_mode_input {
-		position:relative;
-		display: inline-block;
+		outline:0.2rem solid $color-accent;
 		text-align:center;
 	}
 	#text_mode_output {
-		position:relative;
-		display: inline-block;
-		text-align:center;
-	}
-	#form_top {
-		display:inline-block;
-		margin: 0 5%;
-		width:90%;
-		margin:0;
-		height:10em;
-	}
-	#form_directions {
-		display:inline;
-		font-size:2.5rem;
-	}
-	#text_input_box {
-		display:inline-block;
-		padding:calc((20em - 5rem)/2) 0;
-		margin:0;
-		height:4rem;
-	}
-	#text_input {
-		width:90%;
-		height:4rem;
-		padding:0 2%;
-		font-size:2.5rem;
-		text-align:center;
-		border:0.5rem solid $plain;
-		background:$back;
-		color:$plain;
-	}
-	#text_submit_box {
-		display:inline-block;
-		padding: 8em 0 0;
-		width:100%;
-	}
-	#submit_button {
-		display:inline-block;
-		width:35%;
-		height:4rem;
-		padding:1rem 0;
-		font-size:3rem;
-		border:0.5rem solid $plain;
-		background:$plain;
-		color:$back;
-	}
-	#submit_button:hover {
-		background:$back;
-		color:$plain;
-	}
-	#submit_button:hover {
-		background:$plain;
-		color:$back;
-	}
-	#result_top {
-		display:inline-block;
-		margin:0 5%;
-		width:90%;
-		height:10em;
-		border-bottom:1rem $plain solid;
-	}
-	#rolled {
-		font-size:5rem;
-	}
-	#result_bottom {
-		display:inline-block;
-		padding:5em 0;
-		height:40em;
-	}
-	#result {
-		font-size:4rem;
-	}
-	#calc_mode_message {
-		width:100%;
-		text-align:center;
-		font-size:5rem;
-		padding:20vh 0 0;
+		display:block;
 
+		#result_top {
+			display:block;
+			width:100%;
+			height:3rem;
+			padding:2rem 0 0;
+
+			b {
+				display:inline-block;
+				width:16rem;
+				margin:0 calc(50% - 8rem);
+				padding:0 0 0.4rem;
+				border-bottom:0.2rem solid $color-text;
+				font-size:1.8rem;
+			}
+		}
+
+		#result_bottom {
+			display:inline-block;
+			width:100%;
+			height:5rem;
+			padding:1rem 0 0;
+
+			i {
+				font-size:2.4rem;
+			}
+		}
+	}
+	#text_mode_input {
+		p {
+			font-size:1.2rem;
+			margin-bottom:1rem;
+		}
+
+		#text_input {
+			display:block;
+			height:2rem;
+			width:16rem;
+			margin:auto;
+			margin-bottom:2rem;
+
+			text-align:center;
+			font-size:1.5rem;
+			background-color:$color-back;
+			color:$color-text;
+		}
+		#submit_button {
+			display:block;
+			height:1.8rem;
+			width:12rem;
+			padding:1rem 0;
+			margin:1rem auto;
+
+			font-size:1.2rem;
+			text-align:center;
+			background:$color-text;
+			color:$color-back;
+		}
+		#submit_button:hover {
+			background:$color-high;
+			color:$color-back;
+		}
 	}
 	/* Height >= Width */
 	@media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
-		#text_mode_input {
-			width:100%;
-			height:calc(27.5vh - 1rem);
-			font-size:calc((27.5vh - 1rem)/100);
-			float:bottom;
+		.hideable {
+			display:none;
+		}
+		#main_box {
+			padding:0 5% 2rem;
 		}
 		#text_mode_output {
 			width:100%;
-			height:calc(27.5vh - 1rem);
-			font-size:calc((27.5vh - 1rem)/100);
 		}
-		#result_top {
-			padding:18em 0 calc(22em - 1rem);
-		}
-		#form_top {
-			padding:10em 0 10em;
+		#text_mode_input {
+			padding-top:1rem;
+			display:block;
+			width:100%;
+			height:12rem;
 		}
 	}
 	/* Height < Width */
 	@media (min-aspect-ratio: 1/1) {
-		#text_mode_input {
-			width:45%;
-			height:calc(55vh - 2rem);
-			padding:0 2%;
-			font-size:calc((55vh - 2rem)/100);
+		#main_box {
+			padding:3rem 5%;
 		}
 		#text_mode_output {
-			width:45%;
-			height:calc(55vh - 2rem);
+			width:50%;
 			float:right;
-			padding:0 2%;
-			font-size:calc((55vh - 2rem)/100);
 		}
-		#result_top {
-			padding:28em 0 calc(12em - 1rem);
-		}
-		#form_top {
-			padding:25.5em 0 0;
+		#text_mode_input {
+			display:inline-block;
+			width:50%;
+			height:12rem;
 		}
 	}
 }
