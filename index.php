@@ -13,7 +13,7 @@
 		<title>Penn Bauman</title>
 		<link rel='canonical' href='https://pennbauman.com'/>
 		<link rel='icon' href='/files/img/favicon.png'/>
-		<link rel='image_src' href='/files/img/jellyboi_x512.png'>
+		<link rel='image_src' href='https://pennbauman.com/files/img/jellyboi_x512.png'>
 		<meta charset='UTF-8'/>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
@@ -27,7 +27,7 @@
 		<meta property="og:site_name" content="Penn Bauman"/>
 		<meta property="og:title" content="Penn Bauman"/>
 		<meta property="og:description" content="Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering."/>
-		<meta property="og:image" content="/files/img/jellyboi_x512.png"/>
+		<meta property="og:image" content="https://pennbauman.com/files/img/jellyboi_x512.png"/>
 
 		<meta name="twitter:url" content="https://pennbauman.com"/>
 		<meta name="twitter:card" content="summary"/>
@@ -35,7 +35,7 @@
 		<meta name="twitter:creator" content="@pennbauman" />
 		<meta name="twitter:title" content="Penn Bauman"/>
 		<meta name="twitter:description" content="Personal site for Penn Bauman, Student of Computer Science at the University of Virginia School of Engineering."/>
-		<meta name="twitter:image" content="/files/img/jellyboi_x512.png"/>
+		<meta name="twitter:image" content="https://pennbauman.com/files/img/jellyboi_x512.png"/>
 
 		<link rel='stylesheet' href='/files/font/DejaVu_Font.css'/>
 		<style>
