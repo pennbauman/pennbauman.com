@@ -4,3 +4,4 @@ files/css/*.bin
 .fuse*
 sys/test/*
 files/misc/*
+.well-known
