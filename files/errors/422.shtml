@@ -10,7 +10,8 @@
 				background:#141a1b;
 				color:#eeeeee;
 				font-family:DejaVu_Sans_Mono, Courier, Monospace;
-				max-width:85vw;
+				width:60rem;
+				max-width:90vw;
 				margin:auto;
 				padding:1rem 0;
 			}

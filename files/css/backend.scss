@@ -19,7 +19,9 @@ body {
 	color:$white;
 	font-family:DejaVu_Sans_Mono, Courier, Monospace;
 	font-size:1.2rem;
-	max-width:85vw;
+	word-wrap:break-word;
+	width:60rem;
+	max-width:90vw;
 	margin:auto;
 	padding:2rem 0;
 }
