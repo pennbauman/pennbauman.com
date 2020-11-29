@@ -5,3 +5,6 @@ files/css/*.bin
 sys/test/*
 files/misc/*
 .well-known
+**/__pycache__
+**.pyc
+/env

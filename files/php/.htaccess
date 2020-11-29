@@ -1,5 +1,0 @@
-<FilesMatch "^(?!dir\.php$).+\.php$">
-	Allow from 127.0.0.1
-	Deny from all
-</FilesMatch>
-
