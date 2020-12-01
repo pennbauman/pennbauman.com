@@ -6,6 +6,7 @@
 from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__, static_url_path="/files", static_folder="files")
+application = app
 
 # Core Pages
 @app.route("/")

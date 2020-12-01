@@ -7,4 +7,6 @@ files/misc/*
 .well-known
 **/__pycache__
 **.pyc
+**.log
 /env
+/tmp
