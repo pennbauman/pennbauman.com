@@ -4,9 +4,12 @@
 #   Author:
 #     Penn Bauman (pennbauman@protonmail.com)
 from flask import Flask, render_template, redirect, url_for
+from dnd import dnd_app
 
 app = Flask(__name__, static_url_path="/files", static_folder="files")
 application = app
+
+app.register_blueprint(dnd_app)
 
 # Core Pages
 @app.route("/")

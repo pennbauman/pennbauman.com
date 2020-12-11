@@ -2,6 +2,51 @@
 import sys, os, time
 from colorama import Fore, Style
 import sass
+from markdown import markdown
+
+# compile dnd md to html
+def dnd_md_compile(src, target):
+    #print(Style.BRIGHT + "MD: " + Style.RESET_ALL, end="")
+    #print(src + " -> " + Fore.GREEN + target + Fore.RESET)
+    src_md = open(src)
+    try:
+        md_target = open(target, "w")
+    except:
+        md_target = open(target, "x")
+    md_target.write("{% extends 'dnd/page.html' %}\n")
+
+    # parse title from metadata
+    src_text = ""
+    title = ""
+    meta = 0
+    for line in src_md.readlines():
+        # check entry and exit of metadata section
+        if line[0:3] == "---":
+            if meta == 0:
+                meta = 1
+            else:
+                meta = 2
+        else:
+            # add title block
+            if meta == 1:
+                if line[0:6] == "title:":
+                    md_target.write("{% block title %}" + line[6:-1] + "{% endblock %}\n")
+            elif meta == 2:
+                src_text += line
+
+    # compile actual markdown
+    md_target.write("{% block content %}\n")
+    md_target.write(markdown(src_text))
+    md_target.write("\n{% endblock %}")
+    md_target.close()
+
+# compile markdown for dnd pages
+for f in os.listdir("src/md/"):
+    if f[0:3] == "dnd":
+        dnd_md_compile("src/md/" + f, "templates/" + f[0:-3].replace("_", "/") + ".html")
+
+
+
 
 # compile sass source file to css target file
 def sass_compile(src, target):
@@ -29,6 +74,7 @@ sass_files = {
 # compile all files
 for s in sass_files:
     sass_compile(s, sass_files[s])
+
 
 # continue to watch for changes
 if len(sys.argv) > 1 and sys.argv[1] == "watch":
