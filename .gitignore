@@ -1,12 +1,9 @@
-**~
-**/error_log
-files/css/*.bin
-.fuse*
+*~
+*log
 sys/test/*
 files/misc/*
 .well-known
-**/__pycache__
-**.pyc
-**.log
+__pycache__
+*.pyc
 /env
 /tmp
