@@ -19,7 +19,8 @@ def dice():
 
 @dnd_app.route("/dnd/stats")
 def stats():
-    return render_template("dnd/stats.html")
+    return render_template("dnd/stats.html",
+            stats = ["Str", "Dex", "Con", "Int", "Wis", "Cha"])
 
 # Spell pages
 @dnd_app.route("/dnd/spells")
