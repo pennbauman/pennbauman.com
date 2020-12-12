@@ -41,9 +41,8 @@ def dnd_md_compile(src, target):
     md_target.close()
 
 # compile markdown for dnd pages
-for f in os.listdir("src/md/"):
-    if f[0:3] == "dnd":
-        dnd_md_compile("src/md/" + f, "templates/" + f[0:-3].replace("_", "/") + ".html")
+for f in os.listdir("src/md/dnd"):
+    dnd_md_compile("src/md/dnd/" + f, "templates/dnd/" + f[0:-3].replace("_", "/") + ".html")
 
 
 
