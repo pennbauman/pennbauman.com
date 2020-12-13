@@ -1,0 +1,23 @@
+{% extends 'test/page.html' %}
+{% block title %}Favicon Tester{% endblock %}
+{% block head %}
+	<script>
+		function setFavicon() {
+			//console.log(document.getElementById("link[rel='icon']").href);
+			//console.log(document.getElementById("url").value);
+			document.querySelector("link[rel='icon']").href = document.getElementById("url").value;
+			document.getElementById("url_display").innerText = document.getElementById("url").value;
+			return false;
+		}
+	</script>
+{% endblock %}
+{% block content %}
+	<h1>Favicon Tester</h1>
+	<p>href: <b id="url_display">/files/img/sys_favicon.png</b></p>
+	<form onsubmit="setFavicon(); return false">
+		<b>Favicon URL:</b> <br/>
+		<input autofocus type='text' name='url' id='url' value='/files/img/'>
+		<br><br/>
+		<input type='submit' value='Enter'>
+	</form>
+{% endblock %}

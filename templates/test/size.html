@@ -1,0 +1,17 @@
+{% extends 'test/page.html' %}
+{% block title %}Page Size{% endblock %}
+{% block head %}
+	<script type="text/javascript">
+		function pageSize() {
+			document.getElementById("w").innerHTML = window.innerWidth;
+			document.getElementById("h").innerHTML = window.innerHeight;
+		}
+		window.onresize = pageSize;
+	</script>
+{% endblock %}
+{% block onload %}pageSize(){% endblock %}
+{% block content %}
+	<h1>Page Size</h1>
+	<h5>Width: <span id="w"></span>px</h5>
+	<h5>Height: <span id="h"></span>px</h5>
+{% endblock %}

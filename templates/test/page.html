@@ -1,0 +1,23 @@
+<!DOCTYPE html><html>
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+		<meta charset='UTF-8'>
+		<meta name='author' content='Penn Bauman'>
+		<meta name='robots' content='noindex, nofollow'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel='icon' href='/files/img/sys_favicon.png'>
+		<link rel='stylesheet' href='/files/css/backend.css'>
+		{% block head %}
+		{% endblock %}
+	</head>
+	<body onload="{% block onload %}{% endblock %}; return false;">
+		<div id='content'>
+			{% block content %}
+			{% endblock %}
+			<br/>
+			<p>
+				<a href='/'>Home</a> - <a href='/test'>Test</a>
+			</p>
+		</div>
+	</body>
+</html>

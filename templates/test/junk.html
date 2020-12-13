@@ -1,0 +1,20 @@
+{% extends 'test/page.html' %}
+{% block title %}Junk Tests{% endblock %}
+{% block content %}
+	<h1>Test 1</h1>
+	<h2>Test 2</h2>
+	<h3>Test 3</h3>
+	<h4>Test 4</h4>
+	<h5>Test 5</h5>
+	<h6>Test 6</h6>
+	<p>
+		Normal</br>
+		<b>Bold</b><br/>
+		<i>Italic</i>
+	</p>
+	<hr>
+	<p>
+	{% for d in data %}
+		<b>{{ d }}:</b> {{ data[d] }} <br/>
+	{% endfor %}
+{% endblock %}
