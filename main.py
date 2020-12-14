@@ -9,9 +9,9 @@ from werkzeug.exceptions import HTTPException
 app = Flask(__name__, static_url_path="/files", static_folder="files")
 application = app
 
-from dnd import dnd_app
+from apps.dnd import dnd_app
 app.register_blueprint(dnd_app)
-from test import test_app
+from apps.test import test_app
 app.register_blueprint(test_app)
 
 
