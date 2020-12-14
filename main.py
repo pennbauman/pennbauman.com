@@ -4,6 +4,7 @@
 #   Author:
 #     Penn Bauman (pennbauman@protonmail.com)
 from flask import Flask, render_template, redirect, url_for
+from werkzeug.exceptions import HTTPException
 
 app = Flask(__name__, static_url_path="/files", static_folder="files")
 application = app
@@ -35,3 +36,13 @@ def resume():
 @app.route("/github")
 def github():
     return redirect("http://github.com/pennbauman")
+
+
+# Error Pages
+@app.errorhandler(HTTPException)
+def error(e):
+    return render_template('error.html',
+            code = e.code,
+            name = e.name,
+            desc = e.description,
+        ), e.code

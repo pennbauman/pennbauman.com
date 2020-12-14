@@ -1,6 +1,6 @@
 <!DOCTYPE html><html>
 	<head>
-		<title>417 Expectation Failed</title>
+		<title>{{ code }} {{ name }}</title>
 		<link rel='icon' href='/files/img/error_favicon.png'>
 		<meta charset='UTF-8'/>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -30,9 +30,9 @@
 		</style>
 	</head>
 	<body>
-		<h1>ERROR: 417 Expectation Failed</h1>
-		<p><i><!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --></i></p>
-		<p><b>The expectation indicated cannot be met by the server.</b></p>
+		<h1>ERROR: {{ code }} {{ name }}</h1>
+		<p><i>{{ request.host }}{{ request.path }}</i></p>
+		<p><b>{{ desc }}</b></p>
 		<p><a href="/">Home</a> - <a href="mailto:pennbauman@protonmail.com">Contact</a></p>
 	</body>
 </html>
