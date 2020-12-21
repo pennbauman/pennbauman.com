@@ -1,6 +1,0 @@
-# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
-PassengerAppRoot "/home/valypfnd/flask-pennbauman"
-PassengerBaseURI "/"
-PassengerPython "/home/valypfnd/virtualenv/flask-pennbauman/2.7/bin/python2.7"
-PassengerAppLogFile "/home/valypfnd/flask-pennbauman/flask.log"
-# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
