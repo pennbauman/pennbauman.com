@@ -4,6 +4,11 @@ from colorama import Fore, Style
 import sass
 from markdown import markdown
 
+def path(local):
+    return os.path.dirname(__file__) + "/" + local
+def crate(path):
+    return os.path.dirname(__file__) + "/../" + path
+
 # compile dnd md to html
 def dnd_md_compile(src, target):
     #print(Style.BRIGHT + "MD: " + Style.RESET_ALL, end="")
@@ -42,15 +47,16 @@ def dnd_md_compile(src, target):
 
 # compile markdown for dnd pages
 try:
-    os.makedirs("templates/dnd/spells")
+    os.makedirs(crate("templates/dnd/spells"))
 except:
     pass
 try:
-    os.makedirs("templates/dnd/monsters")
+    os.makedirs(crate("templates/dnd/monsters"))
 except:
     pass
-for f in os.listdir("src/md/dnd"):
-    dnd_md_compile("src/md/dnd/" + f, "templates/dnd/" + f[0:-3].replace("_", "/") + ".html")
+
+for f in os.listdir(path("src/md/dnd")):
+    dnd_md_compile(path("src/md/dnd/" + f), crate("templates/dnd/" + f[0:-3].replace("_", "/") + ".html"))
 
 print(Style.BRIGHT + "DND.md: " + Style.RESET_ALL + "src/md/dnd/* -> " + Fore.GREEN + "templates/dnd/*" + Fore.RESET)
 print()
@@ -82,7 +88,7 @@ sass_files = {
 }
 # compile all files
 for s in sass_files:
-    sass_compile(s, sass_files[s])
+    sass_compile(path(s), crate(sass_files[s]))
 
 
 # continue to watch for changes
@@ -94,7 +100,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "watch":
             src = open(s)
             for line in src.readlines():
                 if line[0:9] == "@import \"":
-                    new_src = "src/sass/_" + line[9:line.find("\"", 9)] + ".scss"
+                    new_src = path("src/sass/_" + line[9:line.find("\"", 9)] + ".scss")
                     sass_src[new_src] = s
         # check modification times
         sass_times = {}

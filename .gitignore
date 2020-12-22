@@ -1,10 +1,7 @@
 *~
 *log
-sys/test/*
 files/misc/*
-.well-known
 __pycache__
 *.pyc
-/env
-/tmp
-/.htaccess
+/target
+
