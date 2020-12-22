@@ -4,7 +4,7 @@
 	<div class="form-wrapper">
 		<h1>Login</h1>
 
-		<form method="POST" action="{{ url_for("accounts.login") }}">
+		<form method="POST" action="{# url_for("accounts.login") #}">
 			{{ form.csrf_token }}
 
 			<b>{{ form.username.label }}</b> <br/>

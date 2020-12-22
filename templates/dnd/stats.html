@@ -9,11 +9,12 @@
 	<div id="generator_box">
 		<div id="stat_box_points" class="stat_box">
 			<div id='points_display'>Available points: <span id='available_points'>27</span></div>
-			{% for i in range(6) %}
+			{% set stats = ["Str", "Dex", "Con", "Int", "Wis", "Cha"] %}
+			{% for i in range(end=6) %}
 				<div class='pstat'><p>{{ stats[i] }}</p>
 					<select id='pstat{{ i }}'
 						onchange='pointChange(this.value, {{ i }})'>
-					{% for n in range(6, 16) %}
+					{% for n in range(start=6, end=16) %}
 						<option id='pstat{{ i }}_{{ n }}' value='{{ n }}' {% if n == 8 %}selected{% endif %}>
 							{{ n }}
 						</option>
