@@ -1,18 +1,56 @@
-use tide::Request;
-use tide::Response;
+// pennbauman.com
+//   URL: https://github.com/pennbauman/pennbauman.com
+//   License: GPLv3.0
+//   Author:
+//     Penn Bauman (pennbauman@protonmail.com)
+use tide::{Request, Redirect};
+use tera::Tera;
+use tide_tera::prelude::*;
+
+// Static Variables
+pub static FILES_DIR: &str ="files/";
+pub static FILES_PATH: &str ="/files";
+
+macro_rules! files_path {
+    ($local_path:literal) => {
+        format!("{}/{}", FILES_PATH, $local_path);
+    }
+}
+
 
 #[async_std::main]
 async fn main() -> tide::Result<()> {
-    let mut app = tide::new();
-    app.at("/").get(|_| async { Ok("Hello, world!") });
-    app.at("/test").get(hello_world);
-    app.listen("127.0.0.1:8080").await?;
+    tide::log::start();
+
+    let mut tera = Tera::new("templates/**/*")?;
+    tera.autoescape_on(vec!["html"]);
+    let mut app = tide::with_state(tera);
+
+    // Core Routing
+    app.at("/").all(|req: Request<Tera>| async move {
+        let tera = req.state();
+        tera.render_response("core/index.html", &context!{})
+    });
+    app.at("/about").all(|req: Request<Tera>| async move {
+        let tera = req.state();
+        tera.render_response("core/about.html", &context!{
+            "title" => "About - Penn Bauman",
+            "description" => "Penn Bauman is currently attening The University of Virginia. He is majoring Computer Science in the School of Engineering, and minoring in Physics.",
+        })
+    });
+    app.at("/site").all(|req: Request<Tera>| async move {
+        let tera = req.state();
+        tera.render_response("core/site.html", &context!{
+            "title" => "Site - Penn Bauman",
+            "description" => "Site information for pennbauman.com"
+        })
+    });
+    app.at("/github").all(|_| async { Ok(Redirect::new("http://github.com/pennbauman")) });
+    app.at("/resume").all(|_| async { Ok(Redirect::new(files_path!("Penn_Bauman_Resume.pdf"))) });
+
+    // Basic Server
+    app.at(FILES_PATH).serve_dir(FILES_DIR)?;
+    app.listen("0.0.0.0:8080").await?;
     Ok(())
 }
 
-async fn hello_world(mut _req: Request<()>) -> tide::Result {
-    println!("hi");
-    let mut res = Response::new(200);
-    res.set_body("Hello, world!");
-    Ok(res)
-}
