@@ -3,12 +3,13 @@
 //   License: GPLv3.0
 //   Author:
 //     Penn Bauman (pennbauman@protonmail.com)
+use std::env;
 use tide::{Request, Redirect};
 use tera::Tera;
 use tide_tera::prelude::*;
 
 // Static Variables
-pub static FILES_DIR: &str ="files/";
+pub static FILES_DIR: &str = "/files/";
 pub static FILES_PATH: &str ="/files";
 
 macro_rules! files_path {
@@ -22,7 +23,7 @@ macro_rules! files_path {
 async fn main() -> tide::Result<()> {
     tide::log::start();
 
-    let mut tera = Tera::new("templates/**/*")?;
+    let mut tera = Tera::new(&(env::var("TIDE_DIR")? + "/templates/**/*"))?;
     tera.autoescape_on(vec!["html"]);
     let mut app = tide::with_state(tera);
 
@@ -49,8 +50,8 @@ async fn main() -> tide::Result<()> {
     app.at("/resume").all(|_| async { Ok(Redirect::new(files_path!("Penn_Bauman_Resume.pdf"))) });
 
     // Basic Server
-    app.at(FILES_PATH).serve_dir(FILES_DIR)?;
-    app.listen("0.0.0.0:8080").await?;
+    app.at(FILES_PATH).serve_dir(&(env::var("TIDE_DIR")? + FILES_DIR))?;
+    app.listen(env::var("TIDE_ADDR")? + ":" + &(env::var("TIDE_PORT")?)).await?;
     Ok(())
 }
 
