@@ -1,43 +1,28 @@
-// core website - pennbauman.com
+// core pages - pennbauman.com
 //   URL: https://github.com/pennbauman/pennbauman.com
 //   License: GPLv3.0
 //   Author:
 //     Penn Bauman (pennbauman@protonmail.com)
 use tide::{Request, Redirect};
-use tera::Tera;
 use tide_tera::prelude::*;
 use crate::config;
+use super::State;
+use crate::{path, tera_page};
 
-pub async fn routes() -> tide::Server<Tera> {
-    // Tera Template Engine
-    let mut app = match super::tera_app().await {
-        Ok(a) => a,
-        Err(_) => panic!("core")
-    };
+const HOME: &str = "";
 
+// Core Page Routes
+pub async fn routes(app: &mut tide::Server<State>) {
     // Core Routing
-    app.at("/").all(|req: Request<Tera>| async move {
-        let tera = req.state();
-        tera.render_response("core/index.html", &context!{})
-    });
+    app.at(path!("")).all(tera_page!("core/index.html"));
+    app.at(path!("/about")).all(tera_page!("core/about.html"));
+    app.at(path!("/site")).all(tera_page!("core/site.html"));
 
-    app.at("/about").all(|req: Request<Tera>| async move {
-        let tera = req.state();
-        tera.render_response("core/about.html", &context!{
-            "title" => "About - Penn Bauman",
-            "description" => "Penn Bauman is currently attening The University of Virginia. He is majoring Computer Science in the School of Engineering, and minoring in Physics.",
-        })
+    // Redirects
+    app.at(path!("/github")).all(|_| async {
+        Ok(Redirect::new("http://github.com/pennbauman"))
     });
-    app.at("/site").all(|req: Request<Tera>| async move {
-        let tera = req.state();
-        tera.render_response("core/site.html", &context!{
-            "title" => "Site - Penn Bauman",
-            "description" => "Site information for pennbauman.com"
-        })
+    app.at(path!("/resume")).all(|_| async {
+        Ok(Redirect::new(config::files_path("Penn_Bauman_Resume.pdf").await))
     });
-
-    app.at("/github").all(|_| async { Ok(Redirect::new("http://github.com/pennbauman")) });
-    app.at("/resume").all(|_| async { Ok(Redirect::new(config::files_path("Penn_Bauman_Resume.pdf").await)) });
-
-    return app;
 }

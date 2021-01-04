@@ -8,11 +8,10 @@ use tide::{Response, StatusCode};
 mod apps;
 mod config;
 
-
 #[async_std::main]
 async fn main() -> tide::Result<()> {
     tide::log::start();
-    let mut app = tide::new();
+    let mut app = apps::new_server().await?;
 
     // Print basic error messages
     app.with(After(|mut res: Response| async {
@@ -27,8 +26,8 @@ async fn main() -> tide::Result<()> {
     }));
 
     // Apps
-    app.at("/").nest(apps::core::routes().await);
-    app.at("/dnd").nest(apps::dnd::routes().await);
+    apps::core::routes(&mut app).await;
+    apps::dnd::routes(&mut app).await;
 
     // Basic Server
     app.at(&config::files_path("/").await).serve_dir(&config::files_dir().await?)?;
