@@ -28,6 +28,7 @@ async fn main() -> tide::Result<()> {
     // Apps
     apps::core::routes(&mut app).await;
     apps::dnd::routes(&mut app).await;
+    apps::links::routes(&mut app).await;
 
     // Basic Server
     app.at(&config::files_path("/").await).serve_dir(&config::files_dir().await?)?;

@@ -4,14 +4,17 @@
 //   Author:
 //     Penn Bauman (pennbauman@protonmail.com)
 use tera::Tera;
+use mongodb::{Client, options::ClientOptions, Database};
 use crate::config;
 
 pub mod dnd;
 pub mod core;
+pub mod links;
 
 #[derive(Clone)]
 pub struct State {
     tera: Tera,
+    db: Database,
 }
 impl State {
     async fn new() -> Result<State, tide::Error> {
@@ -20,8 +23,12 @@ impl State {
             Err(_) => return Err(tide::Error::from_str(500, "broken template path")),
         };
 
+        let db_options = ClientOptions::parse(&config::db().await?).await?;
+        let client = Client::with_options(db_options)?;
+
         Ok(State {
             tera: Tera::new(&template_dir)?,
+            db: client.database("pennbauman"),
         })
     }
 }

@@ -29,3 +29,6 @@ pub async fn host() -> Result<String, env::VarError> {
 pub async fn path(local: &str) -> Result<String, env::VarError> {
     Ok(env::var("TIDE_DIR")? + "/" + local)
 }
+pub async fn db() -> Result<String, env::VarError> {
+    Ok(env::var("TIDE_DB")?)
+}
