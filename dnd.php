@@ -13,11 +13,11 @@
 		<?php insertHTML("dnd_header") ?>
 		<div id="content">
 			<h1>Penn Bauman's Dungeons &amp; Dragons</h1>
-			<a href="/dice">
+			<a href="/dnd/dice">
 				<h2>Dice</h2>
 				<p>Simple digital dice roller. Just enter the dice to be rolled in standard D&amp;D format and it will calculate their total for you.</p>
 			</a>
-			<a href="/stats">
+			<a href="/dnd/stats">
 				<h2>Stats</h2> 
 				<p>Quick D&amp;D statistic generator. Instantly generate a full set of statistics. Standard array, 1d20, best 3 of 4d6, and point buy avaiable. </p>
 			</a>
