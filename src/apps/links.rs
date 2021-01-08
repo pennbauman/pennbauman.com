@@ -5,12 +5,15 @@
 //     Penn Bauman (pennbauman@protonmail.com)
 use async_std::stream::StreamExt;
 use tide::{Request, Response, Redirect};
+use tide_fluent_routes::prelude::*;
 use mongodb::{bson::doc, options::FindOptions};
-use super::State;
+use crate::State;
 
 // Link Redirect Routes
-pub async fn routes(app: &mut tide::Server<State>) {
-    app.at(":name").all(|req: Request<State>| async move {
+//pub async fn routes(app: &mut tide::Server<State>) {
+
+pub fn routes(routes: RouteSegment<State>) -> RouteSegment<State> {
+    routes.at(":name", |route| route.all(|req: Request<State>| async move {
         let name: &str = req.param("name")?;
         let collection = &req.state().db.collection("links");
 
@@ -31,5 +34,5 @@ pub async fn routes(app: &mut tide::Server<State>) {
             };
         };
         Ok(res)
-    });
+    }))
 }

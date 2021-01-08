@@ -66,12 +66,12 @@ print()
 # compile sass source file to css target file
 def sass_compile(src, target):
     try:
-        target_file = open(target, "w")
+        target_file = open(crate(target), "w")
     except:
-        target_file = open(target, "x")
+        target_file = open(crate(target), "x")
     print(Style.BRIGHT + "Sass: " + Style.RESET_ALL, end="")
     try:
-        target_file.write(sass.compile(filename=src, output_style="compressed"))
+        target_file.write(sass.compile(filename=path(src), output_style="compressed"))
     except Exception as e:
         print(Fore.RED + src + " -> " + target + Fore.RESET)
         print(e)
@@ -88,7 +88,7 @@ sass_files = {
 }
 # compile all files
 for s in sass_files:
-    sass_compile(path(s), crate(sass_files[s]))
+    sass_compile(s, sass_files[s])
 
 
 # continue to watch for changes

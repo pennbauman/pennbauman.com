@@ -1637,6 +1637,7 @@ dependencies = [
  "mongodb",
  "tera",
  "tide",
+ "tide-fluent-routes",
  "tide-tera",
 ]
 
@@ -2447,6 +2448,17 @@ dependencies = [
  "route-recognizer",
  "serde",
  "serde_json",
+]
+
+[[package]]
+name = "tide-fluent-routes"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "168f6ab871c6f61b9a5a18c482a67383f9fd5abb7c160b086f000c616ddee650"
+dependencies = [
+ "async-std",
+ "log",
+ "tide",
 ]
 
 [[package]]

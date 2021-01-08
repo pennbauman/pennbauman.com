@@ -4,25 +4,22 @@
 //   Author:
 //     Penn Bauman (pennbauman@protonmail.com)
 use tide::{Request, Redirect};
+use tide_fluent_routes::prelude::*;
 use tide_tera::prelude::*;
 use crate::config;
-use super::State;
-use crate::{path, tera_page};
+use crate::State;
+use crate::tera_page;
 
-const HOME: &str = "";
+pub fn routes(routes: RouteSegment<State>) -> RouteSegment<State> {
+    routes
+        .at("", |route| route.all(tera_page!("core/index.html")))
+        .at("about", |route| route.all(tera_page!("core/about.html")))
+        .at("site", |route| route.all(tera_page!("core/site.html")))
 
-// Core Page Routes
-pub async fn routes(app: &mut tide::Server<State>) {
-    // Core Routing
-    app.at(path!("")).all(tera_page!("core/index.html"));
-    app.at(path!("/about")).all(tera_page!("core/about.html"));
-    app.at(path!("/site")).all(tera_page!("core/site.html"));
-
-    // Redirects
-    app.at(path!("/github")).all(|_| async {
-        Ok(Redirect::new("http://github.com/pennbauman"))
-    });
-    app.at(path!("/resume")).all(|_| async {
-        Ok(Redirect::new(config::files_path("Penn_Bauman_Resume.pdf").await))
-    });
+        .at("github", |route| route.all(|_| async {
+            Ok(Redirect::new("http://github.com/pennbauman"))
+        }))
+        .at("resume", |route| route.all(|_| async {
+            Ok(Redirect::new(config::files_path("Penn_Bauman_Resume.pdf").await))
+        }))
 }
