@@ -60,7 +60,7 @@ async fn main() -> tide::Result<()> {
 
     // Basic Server
     app.at(&config::files_path("/").await).serve_dir(&config::files_dir().await?)?;
-    app.listen(config::host().await?).await?;
+    app.listen("localhost:8080").await?;
 
     Ok(())
 }

@@ -23,9 +23,6 @@ pub async fn files_path(local: &str) -> String {
 }
 
 // ENV
-pub async fn host() -> Result<String, env::VarError> {
-    Ok(env::var("TIDE_ADDR")? + ":" + &(env::var("TIDE_PORT")?))
-}
 pub async fn path(local: &str) -> Result<String, env::VarError> {
     Ok(env::var("TIDE_DIR")? + "/" + local)
 }
