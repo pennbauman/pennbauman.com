@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en-US">
+	<head>
+		<title>{% block title %}Penn Bauman{% endblock %}</title>
+		<link rel="icon" href="/files/img/favicon.png"/>
+		<link rel="image_src" href="https://pennbauman.com/files/img/jellyboi_x512.png">
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="author" content="Penn Bauman"/>
+		<meta name="description" content="{% block description %}{% endblock %}"/>
+		<meta name="robots" content="{% block robots %}index, follow{% endblock %}"/>
+
+		<meta property="og:type" content="profile"/>
+		<meta property="og:site_name" content="Penn Bauman"/>
+		<meta property="og:image" content="https://pennbauman.com/files/img/jellyboi_x512.png"/>
+
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@pennbauman"/>
+		<meta name="twitter:creator" content="@pennbauman" />
+		<meta name="twitter:image" content="https://pennbauman.com/files/img/jellyboi_x512.png"/>
+
+		<link rel='stylesheet' href='/files/css/general.css'>
+	</head>
+	<body>
+		<div id='header'>
+			<a href='/'><h1>Penn Bauman</h1></a>
+			<div class='navlinks'>
+				<a href='/about'>About</a>
+				<a href='http://github.com/pennbauman'>GitHub</a>
+				<a href='/resume'>Resume</a>
+			</div>
+		</div>
+		<div id='content'>
+			{% block content %}
+			{% endblock %}
+		</div>
+		<div id='footer'>
+			<p><a href='/site'>&copy; 2020 Penn Bauman</a></p>
+		</div>
+	</body>
+</html>
