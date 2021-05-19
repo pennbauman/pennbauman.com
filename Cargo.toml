@@ -9,3 +9,6 @@ tide = "0.15.0"
 async-std = { version = "1.6.0", features = ["attributes"] }
 tera = "1.6.0"
 tide-tera = "0.2.3"
+
+[build-dependencies]
+sass-rs = "0.2"
