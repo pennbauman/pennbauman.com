@@ -8,11 +8,11 @@ COPY ./Cargo.lock ./Cargo.lock
 COPY ./Cargo.toml ./Cargo.toml
 RUN cargo fetch
 COPY ./src ./src
-RUN cargo build --release --target x86_64-unknown-linux-musl
-
-COPY ./target/x86_64-unknown-linux-musl ./target/x86_64-unknown-linux-musl
+COPY ./sass ./sass
+COPY ./build.rs ./build.rs
 COPY ./templates ./templates
 COPY ./files ./files
+RUN cargo build --release --target x86_64-unknown-linux-musl
 
 RUN rm -f ./target/x86_64-unknown-linux-musl/deps/pennbauman_com*
 RUN cargo build --release --target x86_64-unknown-linux-musl
@@ -26,7 +26,8 @@ ARG APP_USER=appuser
 USER root
 
 ENV TIDE_DIR=${APP}
-EXPOSE 8080
+ENV TIDE_PORT=80
+EXPOSE 80
 
 RUN addgroup --system ${APP_USER}
 RUN adduser --no-create-home --system --ingroup $APP_USER $APP_USER

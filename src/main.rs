@@ -53,7 +53,11 @@ async fn main() -> tide::Result<()> {
     });
 
     // Run Server
-    app.listen("0.0.0.0:8080").await?;
+    let addr = match env::var("TIDE_PORT") {
+        Ok(p) => format!("0.0.0.0:{}", p),
+        Err(_) => String::from("0.0.0.0:8080"),
+    };
+    app.listen(addr).await?;
 
     Ok(())
 }
