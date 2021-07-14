@@ -2,7 +2,7 @@
 //   URL: https://github.com/pennbauman/pennbauman.com
 //   License: GPLv3.0
 //   Author:
-//     Penn Bauman (pennbauman@protonmail.com)
+//     Penn Bauman (me@pennbauman.com)
 use std::fs::File;
 use std::io::Write;
 use sass_rs::{Options, compile_file};

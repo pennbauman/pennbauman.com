@@ -2,7 +2,7 @@
 //   URL: https://github.com/pennbauman/pennbauman.com
 //   License: GPLv3.0
 //   Author:
-//     Penn Bauman (pennbauman@protonmail.com)
+//     Penn Bauman (me@pennbauman.com)
 use std::env;
 use tide::{Request, Response, Redirect, StatusCode};
 use tide::utils::After;
