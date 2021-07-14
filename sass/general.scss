@@ -6,6 +6,9 @@ $color-light:#EEEEEE;
 //$color-high:#2EB398;
 $color-high:#DB5B5B;
 
+// Imports
+@import url('/files/font/DejaVu_Font.css');
+
 
 // Prevent Firefox selected button/link outline
 :focus {outline:none;}
