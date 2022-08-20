@@ -1,14 +1,22 @@
 <!DOCTYPE html><html lang="en-US">
 	<head>
-		<title>{% block title %}Penn Bauman{% endblock %}</title>
+		{% if title %}
+			<title>{{ title }}</title>
+		{% else %}
+			<title>Penn Bauman</title>
+		{% endif %}
 		<link rel="icon" href="/files/img/favicon.png"/>
 		<link rel="image_src" href="https://pennbauman.com/files/img/jellyboi_x512.png">
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<meta name="author" content="Penn Bauman"/>
-		<meta name="description" content="{% block description %}{% endblock %}"/>
-		<meta name="robots" content="{% block robots %}index, follow{% endblock %}"/>
+		<meta name="description" content="{{ description }}"/>
+		{% if robots %}
+			<meta name="robots" content="{{ robots }}"/>
+		{% else %}
+			<meta name="robots" content="index, follow"/>
+		{% endif %}
 
 		<meta property="og:type" content="profile"/>
 		<meta property="og:site_name" content="Penn Bauman"/>

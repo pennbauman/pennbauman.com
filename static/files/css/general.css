@@ -1,0 +1,193 @@
+@import url("/files/font/DejaVu_Font.css");
+
+:root {
+	--color-dark:#141A1B;
+	--color-light:#EEEEEE;
+	--color-high:#DB5B5B;
+}
+
+/* Prevent Firefox selected button/link outline */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+/* Prevent iOS input styling */
+input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: DejaVu_Sans_Mono, Courier, Monospace;
+	min-height: 100%;
+	background-color: var(--color-dark);
+	color: var(--color-light);
+	font-size: 1.2rem;
+	display: grid;
+	grid-template-areas: "header" "content" "footer";
+	grid-gap: 0;
+	grid-template-columns: 100%;
+	grid-template-rows: min-content auto min-content;
+	background-image: url("/files/img/background_blur.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#background {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+	background-image: url("/files/img/background_blur.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#header {
+	grid-area: header;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	z-index: 5;
+	width: 90%;
+	padding: 0.5rem 5% 0.8rem;
+	background: var(--color-dark);
+	color: var(--color-light);
+}
+#header h1 {
+	display: inline;
+	padding: 0.3rem 0 0.3rem 1rem;
+	color: var(--color-high);
+	font-weight: bold;
+	font-size: 2.4rem;
+	line-height: 2.5rem;
+}
+#header h1:hover {
+	color: var(--color-light);
+}
+#header .navlinks {
+	position: relative;
+	float: right;
+	padding: 0.8rem 0.5rem 0.2rem;
+	text-align: right;
+}
+#header .navlinks a {
+	padding: 0.5rem 0.5rem 0.5rem;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
+}
+#header .navlinks a:hover {
+	color: var(--color-high);
+}
+
+#content {
+	grid-area: content;
+	position: relative;
+	display: block;
+	z-index: 1;
+	overflow: hidden;
+	width: calc(100% - 6rem);
+	max-width: 50rem;
+	padding: 1.5rem 2rem 2rem;
+	margin: auto;
+	margin-top: 1rem;
+	margin-bottom: 0.6rem;
+	border-radius: 1rem;
+	background: var(--color-dark);
+	color: var(--color-light);
+}
+#content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover, #content td a:hover {
+		color: var(--color-high);
+}
+#content p {
+	margin: 0;
+}
+#content p a {
+	text-decoration: underline;
+}
+#content p a:hover {
+	color: var(--color-high);
+}
+#content h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 0;
+	color: var(--color-high);
+}
+#content h2 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 0.8em 0 0.8rem;
+}
+#content h3 {
+	font-size: 2rem;
+	margin: 0.8em 0 0;
+}
+#content h4 {
+	font-size: 1.8rem;
+	text-align: center;
+	margin: 1em 0 0.5rem;
+}
+#content h5 {
+	font-size: 1.8rem;
+	margin: 1em 0 0;
+}
+#content h6 {
+	font-size: 1.5rem;
+	margin: 1em 0 0;
+}
+#content ul {
+	margin: 0.3rem;
+}
+#content hr {
+	border-width: 0.2rem;
+	border-color: var(--color-light);
+}
+#content table.two-columns {
+	width: 100%;
+}
+#content table.two-columns td:nth-child(2) {
+	text-align: right;
+}
+#content img {
+	width: 80%;
+	margin: 0 10%;
+	border-radius: 0.8rem;
+}
+
+#footer {
+	grid-area: footer;
+	display: block;
+	z-index: 2;
+	width: 100%;
+	height: 1rem;
+	padding: 0.5rem 0 1rem;
+	text-align: center;
+	line-height: 1rem;
+	font-size: 1rem;
+	color: var(--color-light);
+}
+#footer p {
+	margin: 0;
+}
