@@ -11,3 +11,7 @@ context = { title = "Site - Penn Bauman", description = "Site information for pe
 [[redirect]]
 path = "/github.html"
 url = "https://github.com/pennbauman"
+
+[[redirect]]
+path = "/resume.html"
+url = "/files/Penn_Bauman_Resume.pdf"
