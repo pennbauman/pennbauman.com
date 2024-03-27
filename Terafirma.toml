@@ -1,10 +1,6 @@
 # pennbauman.com site
 
 [[page]]
-path = "/about.html"
-context = { title = "About - Penn Bauman", description = "Penn Bauman is currently attening The University of Virginia. He is majoring Computer Science in the School of Engineering, and minoring in Physics." }
-
-[[page]]
 path = "/site.html"
 context = { title = "Site - Penn Bauman", description = "Site information for pennbauman.com", robots = "noindex,nofollow" }
 
